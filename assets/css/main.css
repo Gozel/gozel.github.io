@@ -2322,23 +2322,33 @@ input, select, textarea {
 		/* opacity: 0.8; */
 		/* background: white; */
 		background-position: center center;
-		background-size: 100% 100%;
+		background-size: 100% auto;
 		background-repeat: no-repeat;
 		text-align: center;
 		position: relative;
 		padding: 6em 0;
+		object-fit: contain;
 		/* margin: 3em 0 0 0; */
 	}
 		.index {
-			background: #ffffff url("../../images/gallery/workshop-optm.jpg");
+			background: linear-gradient(
+				rgba(0, 0, 0, 0.33),
+				rgba(0, 0, 0, 0.33)
+			  ), url("../../images/gallery/workshop-optm.jpg");
 		}
 
 		.services {
-			background: #ffffff url("../../images/gallery/seminar.jpg");
+			background: linear-gradient(
+				rgba(0, 0, 0, 0.33),
+				rgba(0, 0, 0, 0.33)
+			  ), url("../../images/gallery/seminar.jpg");
 		}
 
 		.design-thinking {
-			background: #ffffff url("../../images/gallery/explanation.jpg");
+			background: linear-gradient(
+				rgba(0, 0, 0, 0.33),
+				rgba(0, 0, 0, 0.33)
+			  ), url("../../images/gallery/explanation.jpg");
 		}
 
 		.contact {
@@ -2346,7 +2356,10 @@ input, select, textarea {
 		}
 
 		.resources {
-			background: #ffffff url("../../images/gallery/stationary.jpg");
+			background: linear-gradient(
+				rgba(0, 0, 0, 0.33),
+				rgba(0, 0, 0, 0.33)
+			  ), url("../../images/gallery/stationary.jpg");
 		}
 
 		.talks {
@@ -2359,7 +2372,8 @@ input, select, textarea {
 
 		#banner header {
 			/* background-color: #FFFFFFEE; */
-			background-color: rgba(34, 30, 31, 0.98);
+			/* background-color: rgba(34, 30, 31, 0.98); */
+			background-color: rgba(255, 255, 255, 1);
 			display: inline-block;
 			padding: 2.5em 5em;
 			border-radius: 5px;
@@ -2367,7 +2381,8 @@ input, select, textarea {
 		}
 
 			#banner header h2 {
-				color: #d52349;
+				/* color: #d52349; */
+				color: black;
 				font-weight: 700;
 				font-size: 2.5em;
 				margin: 0 0 0.65em 0;
@@ -2384,7 +2399,7 @@ input, select, textarea {
 				line-height: 1.5em; */
 				/* background: #fff; */
 				position: relative;
-				color: white;
+				color: black;
 				top: -0.65em;
 				display: inline;
 				margin: 0;
@@ -2393,7 +2408,8 @@ input, select, textarea {
 
 			#banner header p {
 				/* color: #d52349; */
-				color: white;
+				/* color: white; */
+				color: black;
 				padding: 0;
 				font-style: normal;
 				margin: 0;
@@ -3174,6 +3190,7 @@ input, select, textarea {
 					/* display: block; */
 					border-radius: 0;
 					text-align: center;
+					padding: 0.75em;
 				}
 
 					#banner header h2 {
