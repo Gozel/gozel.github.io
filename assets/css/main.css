@@ -2211,7 +2211,7 @@ input, select, textarea {
 		position: relative;
 		background: #ffffff;
 		border-bottom: solid 1px #ccc;
-		padding: 1em 0 0em 0;
+		/* padding: 1em 0 0em 0; */
 		text-align: center;
 	}
 
@@ -2325,17 +2325,19 @@ input, select, textarea {
 		background-position: center center;
 		background-size: 100% auto;
 		background-repeat: no-repeat;
-		text-align: center;
+		text-align: left;
 		position: relative;
 		padding: 2em 0;
 		object-fit: contain;
 		/* margin: 3em 0 0 0; */
 	}
 		.index {
-			background: linear-gradient(
+			background-color: white;
+			/* opacity: 0.4; */
+			/* background: linear-gradient(
 				rgba(0, 0, 0, 0.33),
 				rgba(0, 0, 0, 0.33)
-			  ), url("../../images/gallery/workshop-optm.jpg");
+			  ), url("../../images/gallery/workshop-optm.jpg"); */
 		}
 
 		.research {
@@ -2397,9 +2399,9 @@ input, select, textarea {
 
 			#banner header h2 {
 				/* color: #d52349; */
-				color: white;
+				color: black;
 				/* font-weight: 700; */
-				font-size: 5em;
+				font-size: 3.5em;
 				margin: 0 0 0.65em 0;
 				/* font-family: 'Open Sans', sans-serif, Arial, Helvetica; */
 				line-height: 1.25em;
@@ -2426,12 +2428,25 @@ input, select, textarea {
 			#banner header p {
 				/* color: #d52349; */
 				/* color: white; */
-				color: white;
+				color: black;
 				padding: 0;
 				font-style: normal;
 				margin: 0;
-				font-size: 2em;
+				font-size: 1.5em;
+				line-height: 1.25em;
 			}
+
+			#banner header img {
+						width: 100%;
+					}
+
+					.left {
+						margin-top: 3em;
+					}
+
+					.middle {
+						margin-top: 7em;
+					}
 
 /* Intro */
 
@@ -2832,6 +2847,7 @@ input, select, textarea {
 				padding: 2em 0; 
 				margin: 0em 0 0 0;
 			}
+			
 
 		/* Copyright */
 
@@ -3198,8 +3214,12 @@ input, select, textarea {
 		/* Banner */
 
 			#banner {
-				padding: 4em 0em 4em 0em; 
-				margin: 0em 0 0 0;
+				/* padding: 4em 0em 4em 0em;  */
+				/* margin: 0em 0 0 0; */
+				/* height: 100vh;        Full viewport height */
+				/* width: auto;          Keep natural width (aspect ratio) */
+				/* object-fit: cover;    Optional: crop to fill height */
+				/* display: block; */
 			}
 
 				#banner header {
@@ -3218,6 +3238,11 @@ input, select, textarea {
 
 					#banner header p {
 						font-size: 1.2em;
+					}
+
+					#banner header img {
+						width: 100%;
+						margin-top: 0;
 					}
 
 		/* Main */
