@@ -1,0 +1,187 @@
+{
+  "header": {
+    "title": "Shakeri et al. | Conseil en numérisation centrée sur l’humain"
+  },
+  "nav": {
+    "services": "Services",
+    "serviceslist": "",
+    "servicesresearch": "Recherche",
+    "serviceseducation": "Éducation",
+    "servicesinnovation": "Innovation",
+    "about": "À propos",
+    "aboutlist": "",
+    "aboutgozel": "À propos de G&#246;zel",
+    "aboutHCD": "Design centré sur l’humain",
+    "aboutpublications": "Publications",
+    "abouttalks": "Conférences et interventions",
+    "contact": "Contact"
+  },
+  "footer": {
+    "about": "À propos",
+    "contact": "Contact",
+    "terms": "Conditions générales",
+    "privacy": "Confidentialité",
+    "credits": "Crédits",
+    "subtitle": "Conseil en numérisation centrée sur l’humain"
+  },
+  "landing": {
+    "title": "Un avenir meilleur grâce à la technologie est possible.",
+    "subtitle": "Grâce à la recherche, à l’innovation et à l’éducation, Shakeri <i>et al</i>. veille à ce que les technologies servent l’humanité et protègent notre planète."
+  },
+  "hero": {
+    "title": "Bonjour, je suis <b style='font-weight: 700;'>Dr G&#246;zel Shakeri</b>",
+    "subtitle": "Je suis titulaire d’un <b style='font-weight: 700;'>doctorat en interaction homme-machine</b> et je possède plus de 10 ans d’expérience à la frontière de la <a href='designthinking'>conception centrée sur l’humain</a> et de la <b style='font-weight: 700;'>numérisation durable</b>, grâce à mes compétences en recherche et en communication <b style='font-weight: 700;'>récompensées à l’international</b>. <a href='gozel'>En savoir plus</a>"
+  },
+  "whatIdo": {
+    "title": "Ce que je fais",
+    "subtitle1": "Recherche",
+    "text1": "J’étudie l’interaction entre les humains et la technologie afin que vous puissiez prendre des décisions <b style='font-weight: 700;'>éclairées</b>, <b style='font-weight: 700;'>stratégiques</b> et <b style='font-weight: 700;'>durables</b> pour atteindre vos objectifs numériques.",
+    "more1": "En savoir plus",
+    "subtitle2": "Éducation",
+    "text2": "J’enseigne comment les technologies influencent notre comportement et notre planète, afin que vous puissiez renforcer vos <b style='font-weight: 700;'>compétences numériques</b> et faire des choix plus intelligents et plus durables.",
+    "more2": "En savoir plus",
+    "subtitle3": "Innovation",
+    "text3": "Je vous aide à imaginer, prototyper et tester des solutions durables et centrées sur l’humain, afin que vous puissiez innover de manière <b style='font-weight: 700;'>créative</b>, <b style='font-weight: 700;'>collaborative</b> et <b style='font-weight: 700;'>efficace</b>.",
+    "more3": "En savoir plus"
+  },
+  "waysIcanhelp": {
+    "title": "Façons dont je peux vous aider",
+    "text": "Proposant une gamme de services allant du <b style='font-weight: 700;'>conseil adapté à vos besoins</b> aux <b style='font-weight: 700;'>ateliers</b> et <b style='font-weight: 700;'>formations</b>, j’offre un accompagnement sur site dans la <b style='font-weight: 700;'>région de l’Eurométropole</b> ainsi que des solutions à distance pour des clients dans le monde entier. Mes services sont disponibles en <b style='font-weight: 700;'>anglais</b>, <b style='font-weight: 700;'>allemand</b> et <b style='font-weight: 700;'>français</b>.",
+    "more": "Discutons-en"
+  },
+  "casestudies": {
+    "title": "Études de cas"
+  },
+  "research": {
+    "nav": "Services > Recherche",
+    "title": "Apporter des preuves à la prise de décision",
+    "subtitle": "Shakeri <i>et al.</i> réalise des recherches mixtes et met son expertise à disposition aux points d’intervention stratégiques."
+  },
+  "researchbody": {
+    "questions": "Questions auxquelles j’aide à répondre",
+    "questionsanswers": "<ul><li>Que veulent, pensent, ressentent et font les utilisateurs actuels ou potentiels&nbsp;?</li><li>Quelle est leur expérience actuelle des technologies ou des services numériques&nbsp;?</li><li>Quel type de recherche ou de conception expérimentale convient le mieux à nos objectifs&nbsp;?</li><li>Qui d’autre fait quelque chose de similaire&nbsp;?</li><li>Quelle est la meilleure façon de communiquer les résultats de la recherche afin de générer un impact&nbsp;?</li></ul>",
+    "methods": "Méthodes que j’utilise",
+    "methodsanswers": "<ul><li>Revue de la littérature et analyse de marché</li><li><b style='font-weight: 700;'>Méthodes quantitatives</b> (fondées sur les données chiffrées)&nbsp;: enquêtes et questionnaires, tests A/B, analyses et données d’utilisation, expériences contrôlées, études de référence</li><li><b style='font-weight: 700;'>Méthodes qualitatives</b> (approfondies et centrées sur l’humain)&nbsp;: entretiens, groupes de discussion, études de terrain / ethnographie, tests d’utilisabilité, études journalières, recherche par la conception</li><li>Analyse statistique</li></ul>",
+    "outcomes": "Résultats",
+    "outcomesanswers": "<ul><li><b style='font-weight: 700;'>Réduire les risques</b>&nbsp;: détecter les défauts de conception tôt, avant qu’ils ne coûtent du temps et de l’argent.</li><li><b style='font-weight: 700;'>Augmenter l’adoption</b>&nbsp;: créer des produits et services que les gens veulent réellement utiliser.</li><li><b style='font-weight: 700;'>Améliorer la performance</b>&nbsp;: accroître l’efficacité, la conversion et la fidélité des utilisateurs.</li><li><b style='font-weight: 700;'>Rester compétitif</b>&nbsp;: exploiter les données et les insights pour devancer la concurrence.</li></ul>",
+    "resources": "Ressources",
+    "resourcesanswers": "<ul><li>À propos de <a href='designthinking'>la conception centrée sur l’humain</a></li><li><a href='publications'>Publications</a> de G&#246;zel</li></ul>",
+    "expertise": "Expertise",
+    "expertiseanswers": "Titulaire d’un <b style='font-weight: 700;'>doctorat en interaction homme-machine</b> <a style='text-decoration: none;' href='https://theses.gla.ac.uk/81258/'>&#x1F517;</a> de l’Université de Glasgow, ma thèse a été présélectionnée pour le <b style='font-weight: 700;'>meilleur doctorat en informatique d’Écosse</b> <a style='text-decoration: none;' href='https://sicsaconference.org/panel-sessions/'>&#x1F517;</a>. J’ai été reconnue par le prix <b style='font-weight: 700;'>Jeunes scientifiques exceptionnels</b> <a style='text-decoration: none;' href='https://shakeri.eu/certifcates/fellowship.pdf'>&#x1F517;</a> pour mes recherches en interaction homme-machine durable. J’ai <a href='publications'>publié 13 articles de conférence et de revue</a>, dont 4 dans la principale conférence internationale (A*) en interaction homme-machine, CHI.",
+    "contact": "Exploitez la recherche pour répondre à vos questions les plus urgentes",
+    "more": "Discutons-en"
+  },
+  "education": {
+    "nav": "Services > Éducation",
+    "title": "Apporter de la clarté au public",
+    "subtitle": "Shakeri <i>et al.</i> clarifie les défis technologiques les plus urgents de notre société, donnant ainsi au public les moyens d’agir.",
+    "article": "La technologie est une présence quasi constante dans nos vies, influençant notre culture, notre psychologie et notre environnement. Mais le public peine souvent à décoder les effets négatifs de la technologie au fur et à mesure qu’ils apparaissent — ou à imaginer de meilleures voies à suivre grâce à la conception technologique. Shakeri <i>et al.</i> démystifie nos défis actuels liés à la technologie à travers des programmes d’éducation à la technologie et à la durabilité.",
+    "what": "Sujets que j’aborde",
+    "whatanswers": "<ul><li><b style='font-weight: 700;'>Culture numérique</b> : Utilisation intelligente, sûre et efficace de la technologie.</li><li><b style='font-weight: 700;'>Culture de la durabilité</b> : Compétences pour vivre et travailler de manière durable, avec un impact réel.</li></ul>",
+    "how": "Méthodes que j’utilise",
+    "howanswers": "<ul><li><b style='font-weight: 700;'>Cours magistraux traditionnels</b> : Transmission claire des connaissances essentielles.</li><li><b style='font-weight: 700;'>Futuring</b> : Conception et prototypage de solutions futures.</li><li><b style='font-weight: 700;'>Ateliers interactifs</b> : Approche pratique, créative et participative.</li></ul>",
+    "who": "Publics cibles",
+    "whoanswers": "<ul><li><b style='font-weight: 700;'>Écoles (âges 11–18)</b> : Programmes inspirants, liés aux programmes scolaires.</li><li><b style='font-weight: 700;'>Enseignement supérieur</b> : Cours et ateliers au niveau universitaire.</li><li><b style='font-weight: 700;'>Grand public</b> : Séances accessibles via bibliothèques, ONG et centres culturels.</li></ul>",
+    "outcomes": "Résultats",
+    "outcomesanswers": "<ul><li><b style='font-weight: 700;'>Compétences d’avenir</b> : Les apprenants acquièrent des connaissances numériques et en durabilité essentielles pour la société et le monde du travail de demain.</li></ul>",
+    "resources": "Ressources",
+    "resourcesanswers": "<ul><li>Brochure informative : <a href='resources/media literacy/flyer_generic_English.png'>Anglais</a>, <a href='resources/media literacy/flyer_generic_French.png'>Français</a>, <a href='resources/media literacy/flyer_generic_German.png'>Allemand</a></li><li><a href='fact-checker'>Vérificateur de faits</a> de G&#246;zel</li><li><a href='science-search'>Moteur scientifique</a> de G&#246;zel</li><li><a href='resources/media literacy/Shakeri - Media Literacy Starter Kit.pdf'>Kit de démarrage en culture médiatique</a> de G&#246;zel</li></ul>",
+    "expertise": "Expertise",
+    "expertiseanswers": "En tant que <b style='font-weight: 700;'>jeune scientifique exceptionnelle</b> <a style='text-decoration: none;' href='https://shakeri.eu/certifcates/fellowship.pdf'>&#x1F517;</a> dans le domaine de l’interaction homme–machine, j’ai <b style='font-weight: 700;'>enseigné la numérisation durable</b>, dirigé des <b style='font-weight: 700;'>ateliers de culture médiatique numérique</b>, et excellé en tant que <b style='font-weight: 700;'>communicatrice scientifique primée</b> (en <a style='text-decoration: none;' href='https://www.youtube.com/watch?v=-kEmFw36Pxs'>expression orale</a> et en <a style='text-decoration: none;' href='https://sicsaconference.org/panel-sessions/'>écriture</a>). En tant qu’<b style='font-weight: 700;'>enseignante expérimentée et certifiée</b> <a style='text-decoration: none;' href='http://shakeri.eu/certifcates/HDZ%20Zertifikat.pdf'>&#x1F517;</a>, je m’engage dans un apprentissage continu et reste à la pointe de la recherche émergente et de l’innovation pédagogique. <a href='gozel'>En savoir plus</a>",
+    "contact": "Naviguez la numérisation et la durabilité avec confiance et créativité",
+    "more": "Discutons-en"
+  },
+  "innovation": {
+    "nav": "Services > Innovation",
+    "title": "Réflexion globale et action concrète",
+    "subtitle": "Ancré dans le <u><a href='designthinking'>design centré sur l’humain</a></u>, Shakeri <i>et al.</i> dote les équipes d’outils et de méthodes pour une collaboration créative et une résolution de problèmes efficace — des séances de co-conception aux formations personnalisées.",  
+    "divider": "Ateliers que je propose",
+    "what": "Design Sprints", 
+    "whatanswers": "Cadrez des questions complexes, définissez vos objectifs, identifiez des solutions, créez des prototypes rapides, puis testez et validez vos idées avec des utilisateurs au cours d’un sprint de conception sur plusieurs jours.",
+    "how": "Laboratoires de prospective",
+    "howanswers": "Préparez-vous aux changements numériques et durables en anticipant les défis, en imaginant des opportunités et en concevant des stratégies résilientes pour une réussite à long terme.",
+    "who": "Ateliers personnalisés",
+    "whoanswers": "Les thèmes abordés dans les ateliers sur mesure ont inclus la communication efficace en équipe et la réévaluation des indicateurs de performance des équipes.",
+    "outcomes": "Résultats",
+    "outcomesanswers": "<ul><li><b style='font-weight: 700;'>Réduire les risques</b> : Identifier tôt les défis et les points de friction pour éviter des erreurs coûteuses.</li><li><b style='font-weight: 700;'>Augmenter l’adoption</b> : Concevoir des solutions pertinentes pour garantir une adoption plus rapide.</li><li><b style='font-weight: 700;'>Libérer la créativité</b> : Co-créer et collaborer pour générer des idées nouvelles et concrètes.</li><li><b style='font-weight: 700;'>Accélérer l’innovation</b> : Transformer les idées en stratégies concrètes pour garder une longueur d’avance.</li></ul>",
+    "resources": "Ressources",
+    "resourcesanswers": "<ul><li>À propos du <a href='designthinking'>design centré sur l’humain</a></li><li><a href='http://www.designkit.org/index.html'>Human-centered Design Kit</a></li><li><a href='https://www.designinginsights.com/'>Jeux d’improvisation pour la conception et la collaboration à distance</a></li><li><a href='https://www.systemicdesigntoolkit.org/'>Systemic Design Toolkit</a></li><li><a href='https://imaginari.es/new-metaphors/'>New Metaphors</a></li><li><a href='https://designthinkmakebreakrepeat.com/'>Design Think Make Break Repeat</a></li><li><a href='https://apphaus.sap.com/'>AppHaus</a></li><li><a href='https://www.strategyzer.com/'>Strategyzer</a></li></ul>",
+    "expertise": "Expertise",
+    "expertiseanswers": "Récompensée par un <b style='font-weight: 700;'>Prix des jeunes scientifiques exceptionnels</b> <a style='text-decoration: none;' href='https://shakeri.eu/certifcates/fellowship.pdf'>&#x1F517;</a> pour avoir redéfini de manière créative l’<b style='font-weight: 700;'>Interaction Homme-Machine durable</b>, j’ai collaboré avec des <b style='font-weight: 700;'>leaders industriels</b> (p. ex. Tesco), des organismes gouvernementaux (p. ex. Food Standards Agency) et des ONG (p. ex. WWF-UK) afin de générer un impact concret. En tant qu’<b style='font-weight: 700;'>enseignante certifiée</b> <a style='text-decoration: none;' href='http://shakeri.eu/certifcates/HDZ%20Zertifikat.pdf'>&#x1F517;</a> et <b style='font-weight: 700;'>formatrice expérimentée</b>, je m’engage dans un apprentissage continu et j’intègre les dernières recherches et innovations pédagogiques pour garantir des ateliers et séminaires engageants, tournés vers l’avenir et efficaces. <a href='gozel'>En savoir plus</a>",
+    "contact": "Collaborez de manière créative et résolvez les problèmes efficacement",
+    "more": "Discutons-en"
+  },
+  "gozel": {
+    "title": "Dr Gözel Shakeri",
+    "text": "<p>Je suis une innovatrice, chercheuse et éducatrice axée sur l’<a href='designthinking'>humain</a>, spécialisée dans la numérisation durable et le comportement numérique humain. Animée par une passion pour la résolution de problèmes complexes, j’ai réinventé la manière dont les gens interagissent avec la technologie — en transformant les expériences à bord des véhicules et en améliorant la collaboration dans les pratiques médicales — en utilisant des méthodes et pratiques de conception éprouvées.</p><p>Détentrice d’un <b style='font-weight: 700;'>doctorat en interaction homme–machine (HCI)</b> <a style='text-decoration: none;' href='https://theses.gla.ac.uk/81258/'>&#x1F517;</a> de l’Université de Glasgow, ma thèse a été présélectionnée pour le prix de la <b style='font-weight: 700;'>meilleure thèse en informatique d’Écosse</b> <a style='text-decoration: none;' href='https://sicsaconference.org/panel-sessions/'>&#x1F517;</a>.</p><p>Lauréate du <b style='font-weight: 700;'>Prix des jeunes scientifiques exceptionnels</b> <a style='text-decoration: none;' href='https://shakeri.eu/certifcates/fellowship.pdf'>&#x1F517;</a> pour avoir repensé et redéfini de manière créative l’expérience d’achat durable, j’ai collaboré avec des <b style='font-weight: 700;'>leaders de l’industrie</b> (par ex. Tesco), des organismes gouvernementaux (par ex. Food Standards Agency) et des ONG (par ex. WWF-UK) afin de générer un impact concret. Mon expertise m’a menée sur des <b style='font-weight: 700;'>scènes internationales</b>, notamment la COP26 <a style='text-decoration: none;' href='https://ukcop26.org/the-conference/green-zone-programme-of-events/green-zone-exhibitors/'>&#x1F517;</a>, le UN Game Changers Lab <a style='text-decoration: none;' href='https://thoughtforfood.org/gamechangerslab/'>&#x1F517;</a> et la Global Conference for Safety Regulation and Sustainability <a style='text-decoration: none;' href='https://sustainablefoodregulation.co.uk/register/interest?type=virtual'>&#x1F517;</a>, où <b style='font-weight: 700;'>j’ai dirigé des discussions sur l’innovation et la durabilité</b>.</p><p>En tant que <b style='font-weight: 700;'>communicatrice scientifique primée</b> (en <a style='text-decoration: none;' href='https://www.youtube.com/watch?v=-kEmFw36Pxs'>expression orale</a> et en <a style='text-decoration: none;' href='https://sicsaconference.org/panel-sessions/'>écriture</a>), <b style='font-weight: 700;'>enseignante certifiée</b> <a style='text-decoration: none;' href='http://shakeri.eu/certifcates/HDZ%20Zertifikat.pdf'>&#x1F517;</a> et <b style='font-weight: 700;'>gestionnaire certifiée</b> <a style='text-decoration: none;' href='https://shakeri.eu/certifcates/progressio%20certificate.pdf'>&#x1F517;</a>, j’ai mis ma passion pour le design centré sur l’humain au service de l’enseignement, en exerçant comme <b style='font-weight: 700;'>maîtresse de conférences en innovation centrée sur l’humain</b>.</p><p>Auteure de <b style='font-weight: 700;'>nombreuses publications</b> <a style='text-decoration: none;' href='publications'>&#x1F517;</a> et <b style='font-weight: 700;'>conférencière régulière</b> <a style='text-decoration: none;' href='talks'>&#x1F517;</a> lors de conférences internationales, je suis disponible pour des interventions publiques afin d’inspirer et de partager des idées sur l’innovation et le design.</p>",
+    "team": "Équipe et collaboratrices·eurs",
+    "teamtext": "Je dispose d’un vaste réseau international d’expertes et d’experts que je sollicite pour différents projets. Mes collaboratrices et collaborateurs viennent de domaines tels que le changement de comportement, le droit du numérique et la recherche en design.",
+    "divider1": "Mes valeurs",
+    "subtitle1": "Les gens d’abord",
+    "subtitle1text": "Commencer par les humains, pas par les politiques, les outils ou les technologies.",
+    "subtitle2": "S’amuser",
+    "subtitle2text": "Je crois que les gens font un meilleur travail et sont plus créatifs lorsqu’ils prennent plaisir à ce qu’ils font.",
+    "subtitle3": "Collaborer",
+    "subtitle3text": "Les équipes sont meilleures lorsqu’elles travaillent ensemble, en tirant parti de la diversité et de la complexité du groupe.",
+    "subtitle4": "Oui, et ...",
+    "subtitle4text": "Je favorise un environnement de type « oui, et » dans lequel les idées des uns enrichissent celles des autres.",
+    "contact": "Comment pourrions-nous travailler ensemble ?",
+    "more": "Discutons-en",
+    "divider2": "Parcours",
+    "experience": "Expérience",
+    "experiencetext": "<p><b style='font-weight: 700;'>2025 -- aujourd’hui</b> : Consultante indépendante en numérisation durable : recherche, éducation, innovation</p><p><b style='font-weight: 700;'>2024 -- 2025</b> : Consultante en entreprise durable : management, transformation numérique, changement de comportement</p><p><b style='font-weight: 700;'>2023 -- 2023</b> : Chercheuse associée (équivalent <b>maître de conférences junior</b>) : Numérisation durable, Université d’Oldenburg</p><p><b style='font-weight: 700;'>2021 -- 2022</b> : Chercheuse postdoctorale : Durabilité par les interventions comportementales numériques, Université d’Oldenburg</p><p><b style='font-weight: 700;'>2019 -- 2021</b> : Chercheuse postdoctorale : Systèmes d’IA pour soutenir les personnes atteintes de démence, Université de Glasgow</p>",
+    "education": "Formation",
+    "educationtext": "<p><b style='font-weight: 700;'>2015 -- 2019</b> : Doctorat en interaction homme–machine (informatique), Université de Glasgow</p><p><b style='font-weight: 700;'>2013 -- 2014</b> : Master en informatique, Université de Glasgow</p><p><b style='font-weight: 700;'>2009 -- 2013</b> : Licence en informatique, Université technique RheinMain</p>",
+    "cv": "Téléchargez mon CV <a href='resources/Shakeri_CV.pdf'>ici</a> (dernière mise à jour : août 2025)."
+  },
+  "publications": {
+  "title": "Publications",
+  "abstract": "J’ai publié 13 articles de conférence et de revue, dont 4 dans la principale conférence internationale (A*) en interaction homme–machine, CHI.",
+  "list": "Liste complète des publications"
+  },
+  "talks": {
+    "title": "Conférences et Interventions",
+    "abstract": "Je suis disponible pour des conférences publiques afin d’inspirer et de partager des réflexions sur la numérisation durable et le comportement humain.",
+    "list": "Sélection de conférences et interventions"
+  },
+  "hcd": {
+    "title": "Conception centrée sur l’humain",
+    "abstract": "Mon travail repose sur la conception centrée sur l’humain — un cadre créatif de résolution de problèmes qui favorise le leadership et l’engagement par l’empathie, tout en concevant des solutions innovantes à des problèmes complexes.",
+    "whattitle": "Qu’est-ce que la conception centrée sur l’humain (HCD) ?",
+    "whatanswers": "<p>La conception centrée sur l’humain (<a href='https://www.iso.org/standard/77520.html'>norme ISO 9241-210:2019</a>), également appelée design thinking, est un <b style='font-weight: 700;'>processus de résolution de problèmes</b> qui se concentre principalement sur les <b style='font-weight: 700;'>solutions</b>. Elle se compose de méthodes rigoureuses et d’états d’esprit fondamentaux qui, pratiqués conjointement, permettent aux personnes de collaborer, de communiquer et de travailler différemment.</p><p>Elle consiste à découvrir et comprendre les besoins des utilisateurs, à définir et identifier les opportunités, à explorer et développer des options, puis à livrer des solutions en construisant et testant des prototypes.</p>",
+    "divider1": "Mon approche",
+    "approach1title": "Centrée sur l’humain",
+    "approach1answers": "Grâce au design thinking, je peux vous aider à transformer votre manière d’aborder la résolution de problèmes et l’innovation. Ce cadre centré sur l’humain permet aux entreprises de concevoir des solutions à fort impact tout en aidant les professionnels à devenir plus adaptables, créatifs et efficaces dans leurs rôles.",
+    "approach2title": "Basée sur les données",
+    "approach2answers": "En combinant des perspectives qualitatives et quantitatives avec le prototypage et les tests rapides, je révèle l’histoire complète — mettant en lumière les besoins, motivations et comportements profonds pour guider des décisions plus intelligentes et percutantes.",
+    "approach3title": "Fondée sur la science",
+    "approach3answers": "En intégrant des cadres scientifiques éprouvés tels que la Behavior Change Wheel et la théorie des dispositions motivationnelles, je conçois des stratégies et solutions qui inspirent un changement durable, renforcent l’engagement et la résilience.",
+    "divider2": "La conception centrée sur l’humain est au cœur de mon approche pour ...",
+    "research": "Recherche",
+    "innovation": "Innovation",
+    "more": "En savoir plus"
+  },
+  "contact": {
+    "title": "Contact",
+    "collab": "Comment pourrions-nous collaborer ?",
+    "more": "Discutons-en"
+  },
+  "factchecker": {
+    "title": "Vérificateur de faits",
+    "subtitle": "Des informations crédibles, pas des appâts à clics", 
+    "sources": "<h3>Sources journalistiques utilisées dans le Vérificateur de faits</h3><ul><li><a href='https://snopes.com/'>https://snopes.com/</a></li><li><a href='https://checkyourfact.com/'>https://checkyourfact.com/</a></li><li><a href='https://www.factcheck.org/'>https://www.factcheck.org/</a></li><li><a href='https://factcheckni.org/'>https://factcheckni.org/</a></li><li><a href='https://theferret.scot/'>https://theferret.scot/</a></li><li><a href='https://fullfact.org/'>https://fullfact.org/</a></li><li><a href='https://www.leadstory.com/'>https://www.leadstory.com/</a></li><li><a href='https://www.poynter.org/'>https://www.poynter.org/mediawise/</a></li><li><a href='https://www.politifact.com/'>https://www.politifact.com/</a></li><li><a href='https://mediabiasfactcheck.com/'>https://mediabiasfactcheck.com/</a></li></ul><p>France</p><ul><li><a href='https://www.20minutes.fr/'>https://www.20minutes.fr/</a></li><li><a href='https://science.feedback.org/'>https://science.feedback.org/</a></li><li><a href='https://www.lemonde.fr/les-decodeurs/'>https://www.lemonde.fr/les-decodeurs/</a></li><li><a href='https://www.afp.com/'>https://www.afp.com/</a></li><li><a href='https://captainfact.io/'>https://captainfact.io/</a></li><li><a href='https://www.hoaxbuster.com/'>https://www.hoaxbuster.com/</a></li><li><a href='https://observers.france24.com/'>https://observers.france24.com/</a></li><li><a href='https://lessurligneurs.eu/'>https://lessurligneurs.eu/</a></li></ul><p>Allemagne</p><ul><li><a href='https://correctiv.org/en/'>https://correctiv.org/en/</a></li><li><a href='https://www.dpa.com/de'>https://www.dpa.com/de</a></li><li><a href='https://www.dw.com/en/top-stories/s-9097'>https://www.dw.com/</a></li><li><a href='https://www.tagesschau.de/'>https://www.tagesschau.de/</a></li><li><a href='https://www.volksverpetzer.de/'>https://www.volksverpetzer.de/</a></li></ul>",
+    "howIbuilt": "<h3 style='color: white;'>Comment j'ai construit le Vérificateur de faits</h3><p><strong style='color: white;'>J'ai construit ce vérificateur de faits à partir de sources scientifiques et évaluées par des pairs, de médias journalistiques et de vérificateurs approuvés par le <a href='https://ifcncodeofprinciples.poynter.org/signatories' style='color: white;'>Réseau international de vérification des faits (IFCN)</a> ou répertoriés sur <a href='https://en.wikipedia.org/wiki/List_of_fact-checking_websites' style='color: white;'>la liste Wikipédia des sites de vérification des faits</a>.</strong></p><p>Dernière mise à jour du Vérificateur de faits : avril 2025</p>",
+    "contact": "Des commentaires ou des questions sur le Vérificateur de faits ?",
+    "more": "Parlons-en",
+    "resources": "<h3>Ressources supplémentaires</h3><ul><li><a href='https://shakeri.eu/resources/media%20literacy/Shakeri%20-%20Media%20Literacy%20Starter%20Kit.pdf'>Kit de démarrage en littératie médiatique</a> de Gözel</li><li>Vous souhaitez <a href='https://programmablesearchengine.google.com/controlpanel/create'>créer votre propre moteur de recherche</a> ?</li><li>Extensions de navigateur pour la vérification des faits : <a href='https://captainfact.io/help/extension'>Captain Fact</a>, <a href='https://mediabiasfactcheck.com/appsextensions/'>Media Bias / Fact Check</a>, <a href='https://www.trustservista.com/'>TrustServista</a>, <a href='https://chromewebstore.google.com/detail/check/pjfgpbclkfjkfiljlcfehjmpafeoafdi?hl=en&pli=1'>Check</a>, <a href='https://our.news/how-it-works/?main'>Newstrition</a>, etc.</li></ul>"
+  },
+  "scienceengine": {
+    "title": "Moteur Scientifique",
+    "subtitle": "Des informations fondées sur des preuves, pas sur des appâts à clics", 
+    "sources": "<h3>Sources scientifiques utilisées dans le Moteur Scientifique</h3><ul><li><a href='https://dl.acm.org/'>https://dl.acm.org</a></li><li><a href='https://www.sciencedaily.com/'>https://www.sciencedaily.com</a></li><li><a href='https://www.science.org/'>https://www.science.org</a></li><li><a href='https://www.nature.com/'>https://www.nature.com</a></li><li><a href='https://www.growkudos.com/showcase/'>https://www.growkudos.com/showcase</a></li><li><a href='https://academic.oup.com/nsr'>https://academic.oup.com/nsr</a></li><li><a href='https://www.nature.com/ncomms/'>https://www.nature.com/ncomms/</a></li><li><a href='https://cacm.acm.org/'>https://cacm.acm.org/</a></li><li><a href='https://interactions.acm.org/'>https://interactions.acm.org/</a></li><li><a href='https://royalsocietypublishing.org/journal/rsta'>https://royalsocietypublishing.org/journal/rsta</a></li><li><a href='https://journals.plos.org/plosone/'>https://journals.plos.org/plosone/</a></li><li><a href='https://www.pnas.org/'>https://www.pnas.org/</a></li><li><a href='https://royalsocietypublishing.org/journal/rspa'>https://royalsocietypublishing.org/journal/rspa</a></li><li><a href='https://www.science.org/journal/sciadv'>https://www.science.org/journal/sciadv</a></li><li><a href='https://www.nature.com/srep/'>https://www.nature.com/srep/</a></li><li>Sites institutionnels se terminant par « .edu » ou « .ac.uk »</li></ul>",
+    "howIbuilt": "<h3 style='color: white;'>Comment j'ai créé le Moteur Scientifique</h3><p><strong style='color: white;'>J'ai créé ce moteur de recherche scientifique à partir de sources scientifiques internationales réputées et évaluées par des pairs.</strong></p><p>Dernière mise à jour du Moteur Scientifique : avril 2025</p>",
+    "contact": "Des commentaires ou des questions sur le Moteur Scientifique ?",
+    "more": "Parlons-en",
+    "resources": "<h3>Ressources supplémentaires</h3><ul><li><a href='https://shakeri.eu/resources/media%20literacy/Shakeri%20-%20Media%20Literacy%20Starter%20Kit.pdf'>Kit de démarrage en littératie médiatique</a> de Gözel</li><li>Vous souhaitez <a href='https://programmablesearchengine.google.com/controlpanel/create'>créer votre propre moteur de recherche</a> ?</li></ul>"
+  }
+}
