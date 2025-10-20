@@ -2265,6 +2265,33 @@ input, select, textarea {
 					color: white !important;
 					font-weight: 700;
 				}
+		nav select {
+			appearance: none;
+			background-color: #f8f8f8;
+			border: 1px solid #ccc;
+			border-radius: 6px;
+			padding: 6px 30px 6px 12px;
+			font-size: 14px;
+			font-weight: 500;
+			color: #333;
+			cursor: pointer;
+			transition: all 0.2s ease;
+			background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='10' viewBox='0 0 10 6' width='10' xmlns='http://www.w3.org/2000/svg'><path d='M0 0l5 6 5-6z'/></svg>");
+			background-repeat: no-repeat;
+			background-position: right 10px center;
+			}
+
+			nav select:hover {
+			border-color: #0077ff;
+			background-color: #f0f8ff;
+			}
+
+			nav select:focus {
+			outline: none;
+			border-color: #0077ff;
+			box-shadow: 0 0 0 3px rgba(0, 119, 255, 0.2);
+			}
+
 
 	.dropotron {
 		border-radius: 5px;
@@ -2974,6 +3001,8 @@ input, select, textarea {
 				#navPanel .indent-1 {
 					display: inline-block;
 					width: 1em;
+					/* outline: 1px solid red; */
+					white-space: nowrap; 
 				}
 
 				#navPanel .indent-2 {
