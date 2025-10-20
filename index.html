@@ -5,17 +5,14 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html lang="en">
-	<head>
-		<title>Shakeri et al. | Human-centered Digitalisation Consultancy</title>
+	<head id="header">
+		<title id="header-title"></title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		
 		<link rel="icon" href="images/logo/favicon.ico">
-		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
-		<!-- Global site tag (gtag.js) - Google Analytics -->
+		 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css"/>
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-DVME2JVJE7"></script>
 		<script>
 		window.dataLayer = window.dataLayer || [];
@@ -39,31 +36,34 @@
 								
 							</div>
 							<div class="col-8 col-0-medium col-0-small">
-								<!-- <div class="container" style="text-align: right;">
-									DE | FR | EN
-								</div> -->
 								<div class="container">
 									<nav id="nav" style="text-align: right;">
 										<ul>
-											<li><a href="">Services</a>
-												<ul>
-													<li><a href="services-research">Research</a></li>
-													<li><a href="services-education">Education</a></li>
-													<li><a href="services-innovation">Innovation</a></li>
+											<li><a id="nav-services" href=""></a>
+												<ul id="nav-serviceslist">
+													<li><a id="nav-servicesresearch" href="services-research" title=""></a></li>
+													<li><a id="nav-serviceseducation"href="services-education"></a></li>
+													<li><a id="nav-servicesinnovation"href="services-innovation"></a></li>
 												</ul>
 											</li>
 											
-											<li><a>About</a>
-												<ul>
-													<li><a href="gozel">About G&#246;zel</a></li>
-													<li><a href="designthinking">About Human-centred Design</a></li>
-													<li><a href="publications">Publications</a></li>
-													<li><a href="talks">Talks & Speaking</a></li>
+											<li><a id="nav-about" href=""></a>
+												<ul id="nav-aboutlist">
+													<li><a id="nav-aboutgozel" href="gozel"></a></li>
+													<li><a id="nav-aboutHCD" href="designthinking"></a></li>
+													<li><a id="nav-aboutpublications" href="publications"></a></li>
+													<li><a id="nav-abouttalks" href="talks"></a></li>
 												</ul>
 											</li>
-											<li><a href="contact">Contact</a></li>
+											<li><a id="nav-contact" href="contact"></a></li>
+											<select id="language">
+												<option value="en">En</option>
+												<option value="fr">Fr</option>
+												<!-- <option value="de">De</option> -->
+											</select>
 										</ul>
 									</nav>
+									
 								</div>
 							</div>
 						</div>
@@ -71,11 +71,11 @@
 				</section>
 
 				<section id="banner" class="index">
-					<header>
+					<header id="landing">
 						<div class="row">
 							<div class="col-6 col-6-medium col-12-small">
-								<h2>A better future with technology is possible.</h2>
-								<p>Through research, innovation, and education, Shakeri <i>et al</i>. ensures that technologies serve humanity and protect our planet.</p>
+								<h2 id="landing-title"></h2>
+								<p id="landing-subtitle"></p>
 								<p></p>
 								<!-- <p style="font-size: small;">(images & videos are intentionally low quality - sustainability starts here)</p> -->
 							</div>
@@ -92,9 +92,6 @@
 										<img class="right" src="images/gallery/left_tiktok.gif" loop=infinite />
 										
 									</div>
-									<!-- <div class="col-6 col-6-medium col-12-small">
-										<img src="images/gallery/index.png" width="100%"/>
-									</div> -->
 								</div>
 							</div>
 						</div>
@@ -120,9 +117,9 @@
 							<div class="row">
 								<div class="col-8 col-8-medium col-12-small">
 									<section class="box" style="text-align: left;">
-										<h2>Hi, I am <b style="font-weight: 700;">Dr G&#246;zel Shakeri</b></h2>
+										 <h2 id="hero-title"></h2>
 										<p></p>
-										<p>I hold a <b style="font-weight: 700;">Ph.D. in Human-Computer Interaction</b> and I have over 10 years of experience at the frontier of <a href="designthinking">human-centered</a>, <b style="font-weight: 700;">sustainable digitalisation</b> through my <b style="font-weight: 700;">internationally award-winning</b> research and communication skills. <a href="gozel">More</a> </p>
+										<p id="hero-subtitle"></p>
 									</section>
 								</div>
 								<div class="col-4 col-4-medium col-12-small" style="text-align: center;">
@@ -131,43 +128,43 @@
 							</div>
 						</section>
 
-						<section>
+						<section id="whatIdo">
 							<header class="major">
-								<h2>What I do</h2>
+								<h2 id="whatIdo-title"></h2>
 							</header>
 							<section class="box" style="text-align: center;">
 								<div class="row">
 									<div class="col-4 col-4-medium col-12-small">
 										<header>
-											<h2 style="text-align: center;">Research</h2>
+											<h2 style="text-align: center;" id="whatIdo-subtitle1"></h2>
 										</header>
 										<ul style="text-align: left;">
 										</ul>
-										<p style="text-align: left;">I research the interaction between humans and technology ...</p>
-										<p style="text-align: left;">... so you can make <b style="font-weight: 700;">informed</b>, <b style="font-weight: 700;">strategic</b>, and <b style="font-weight: 700;">sustainable decisions</b> towards your digital goals.</p>
-										<p><a href="services-research" class="button">More</a></p>
+										<p id="whatIdo-text1" style="text-align: left;"></p>
+										<!-- <p style="text-align: left;">so you can make <b style="font-weight: 700;">informed</b>, <b style="font-weight: 700;">strategic</b>, and <b style="font-weight: 700;">sustainable decisions</b> towards your digital goals.</p> -->
+										<p><a href="services-research" class="button" id="whatIdo-more1"></a></p>
 									</div>
 
 									<div class="col-4 col-4-medium col-12-small">
 										<header>
-											<h2 style="text-align: center;">Education</h2>
+											<h2 style="text-align: center;" id="whatIdo-subtitle2"></h2>
 										</header>
 										<ul style="text-align: left;">
 										</ul>
-										<p style="text-align: left;">I teach how technologies impact our behaviour and planet ...</p>
-										<p style="text-align: left;">... so you can strengthen your <b style="font-weight: 700;">digital skills</b> and make smarter, more sustainable choices.</p>
-										<p><a href="services-education" class="button">More</a></p>
+										<p style="text-align: left;" id="whatIdo-text2"></p>
+										<!-- <p style="text-align: left;">so you can strengthen your <b style="font-weight: 700;">digital skills</b> and make smarter, more sustainable choices.</p> -->
+										<p><a href="services-education" class="button" id="whatIdo-more2"></a></p>
 									</div>
 									
 									<div class="col-4 col-4-medium col-12-small">
 										<header>
-											<h2 style="text-align: center;">Innovation</h2>
+											<h2 style="text-align: center;" id="whatIdo-subtitle3"></h2>
 										</header>
 										<ul style="text-align: left;">
 										</ul>
-										<p style="text-align: left;">I help you ideate, prototype, and test human-centered, sustainable solutions ...</p>
-										<p style="text-align: left;">... so you can innovate <b style="font-weight: 700;">creatively</b>, <b style="font-weight: 700;">collaboratively</b>, and <b style="font-weight: 700;">effectively</b>.</p>
-										<p><a href="services-innovation" class="button">More</a></p>
+										<p style="text-align: left;" id="whatIdo-text3"></p>
+										<!-- <p style="text-align: left;">so you can innovate <b style="font-weight: 700;">creatively</b>, <b style="font-weight: 700;">collaboratively</b>, and <b style="font-weight: 700;">effectively</b>.</p> -->
+										<p><a href="services-innovation" class="button" id="whatIdo-more3"></a></p>
 									</div>
 									
 									
@@ -175,17 +172,17 @@
 							</section>
 						</section>
 
-						<section>
+						<section id="waysIcanhelp">
 							<header class="major">
-								<h2>Ways I can help you</h2>
+								<h2 id="waysIcanhelp-title"></h2>
 							</header>
 							<section class="box">
 								<div class="row">
 									<div class="col-4 col-12-medium col-12-small">
 										
 										<section class="box" style="text-align: left;">
-											<p>Offering a range of services from <b style="font-weight: 700;">needs-specific consultancy</b> to <b style="font-weight: 700;">workshops</b> and <b style="font-weight: 700;">trainings</b>, I provide on-site support in the <b style="font-weight: 700;">Eurometropole region</b> and remote solutions for clients worldwide. My services are in <b style="font-weight: 700;">English</b>, <b style="font-weight: 700;">German</b>, and <b style="font-weight: 700;">French</b>.</p> 
-											<p style="text-align: center;"><a href="contact" class="button">Let's talk</a></p>
+											<p id="waysIcanhelp-text"></p> 
+											<p style="text-align: center;"><a href="contact" class="button" id="waysIcanhelp-more"></a></p>
 										</section>
 									</div>
 									<div class="col-8 col-12-medium col-12-small">
@@ -198,9 +195,9 @@
 							</section>
 						</section>
 
-						<section>
+						<section id="casestudies">
 							<header class="major">
-								<h2>Case Studies</h2>
+								<h2 id="casestudies-title"></h2>
 							</header>
 							<section class="box">
 								<div class="row">
@@ -253,8 +250,7 @@
 
 		</div>
 
-		<!-- Scripts -->
-		<!-- <script src="assets/js/bootstrap.min.js"></script> -->
+		<script src="assets/js/language.js"></script>
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.dropotron.min.js"></script>
 		<script src="assets/js/browser.min.js"></script>
@@ -262,75 +258,11 @@
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
 		<script> 
-		$(function(){
-		$("#inject_footer").load("footer.html"); 
-		});
-		</script>
-		<script>
-		const texts = ["through  Research", "through Education", "through Innovation"];
-		let i = 0, j = 0, currentText = "", isDeleting = false;
-
-		function type() {
-		currentText = texts[i];
-		document.getElementById("typed").innerHTML = currentText.substring(0, j);
-
-		if (!isDeleting && j++ === currentText.length) {
-			isDeleting = true;
-			setTimeout(type, 1500); // pause before deleting
-		} else if (isDeleting && j-- === "through ".length) {
-			isDeleting = false;
-			i = (i + 1) % texts.length;
-			setTimeout(type, 0);
-		} else {
-			setTimeout(type, isDeleting ? 50 : 100);
-		}
-		}
-		type();
-		</script>
-		<script>
-			document.addEventListener('DOMContentLoaded', function() {
-				const slides = document.querySelectorAll('.client-slide');
-				const dots = document.querySelectorAll('.dot');
-				const prevBtn = document.querySelector('.carousel-prev');
-				const nextBtn = document.querySelector('.carousel-next');
-				let currentSlide = 0;
-				
-				// Initialize carousel
-				function showSlide(n) {
-					slides.forEach(slide => slide.classList.remove('active'));
-					dots.forEach(dot => dot.classList.remove('active'));
-					
-					currentSlide = (n + slides.length) % slides.length;
-					
-					slides[currentSlide].classList.add('active');
-					dots[currentSlide].classList.add('active');
-				}
-				
-				// Next slide
-				function nextSlide() {
-					showSlide(currentSlide + 1);
-				}
-				
-				// Previous slide
-				function prevSlide() {
-					showSlide(currentSlide - 1);
-				}
-				
-				// Event listeners
-				nextBtn.addEventListener('click', nextSlide);
-				prevBtn.addEventListener('click', prevSlide);
-				
-				// Dot navigation
-				dots.forEach((dot, index) => {
-					dot.addEventListener('click', () => showSlide(index));
-				});
-				
-				// Auto-advance slides
-				setInterval(nextSlide, 7000);
-				
-				// Initialize first slide
-				showSlide(0);
+			$(function(){
+			$("#inject_footer").load("footer.html"); 
 			});
 		</script>
+
+		
 	</body>
 </html>

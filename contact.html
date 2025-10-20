@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Shakeri et al. | Human-centered Digitalisation Consultancy</title>
+		<title id="header-title"></title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		
@@ -47,25 +47,28 @@
 												<div class="container">
 													<nav id="nav" style="text-align: right;">
 														<ul>
-															<li><a href="">Services</a>
-																<ul>
-																	<li><a href="services-research">Research</a></li>
-																	<li><a href="services-education">Education</a></li>
-																	<li><a href="services-innovation">Innovation</a></li>
+															<li><a id="nav-services" href=""></a>
+																<ul id="nav-serviceslist">
+																	<li><a id="nav-servicesresearch" href="services-research" title=""></a></li>
+																	<li><a id="nav-serviceseducation"href="services-education"></a></li>
+																	<li><a id="nav-servicesinnovation"href="services-innovation"></a></li>
 																</ul>
 															</li>
 															
-															<li><a>About</a>
-																<ul>
-																	<li><a href="gozel">About G&#246;zel</a></li>
-																	<li><a href="designthinking">About Human-centred Design</a></li>
-																	<li><a href="publications">Publications</a></li>
-																	<li><a href="talks">Talks & Speaking</a></li>
-																	
-																	
+															<li><a id="nav-about" href=""></a>
+																<ul id="nav-aboutlist">
+																	<li><a id="nav-aboutgozel" href="gozel"></a></li>
+																	<li><a id="nav-aboutHCD" href="designthinking"></a></li>
+																	<li><a id="nav-aboutpublications" href="publications"></a></li>
+																	<li><a id="nav-abouttalks" href="talks"></a></li>
 																</ul>
 															</li>
-															<li class="current"><a href="contact">Contact</a></li>
+															<li class="current"><a id="nav-contact" href="contact"></a></li>
+															<select id="language">
+																<option value="en">En</option>
+																<option value="fr">Fr</option>
+																<!-- <option value="de">De</option> -->
+															</select>
 														</ul>
 													</nav>
 												</div>
@@ -77,9 +80,9 @@
 					</div>
 
 					<section id="banner" class="contact">
-						<header>
+						<header id="contact">
 							<!-- <h2>How might we work together?</h2> -->
-							<h2 style="text-align: center; color: white;">Contact</h2>
+							<h2 style="text-align: center; color: white;" id="contact-title"></h2>
 							<!-- <p>From co-design workshops to custom trainings, I equip you with tools and methods for creative collaboration and effective problem-solving. </p> -->
 							
 						</header>
@@ -88,15 +91,15 @@
 					
 			</section>
 
-			<section id="main">
+			<section id="main" id="contact">
 				<div class="container">
 
 					<article class="box post" style="text-align: center;">
 						<header>
 							<!-- <h3 style="text-align: center;">I’m available for public speaking engagements to inspire and share insights on innovation and design.</h3> -->
-							 <h2>How might we work together?</h2>
+							 <h2 id="contact-collab"></h2>
 						</header>
-						<p><a href="mailto:gozel@shakeri.eu?subject=Discovery Chat&body=[Note:%20Please%20don't%20forget%20to%20provide%20Name,%20Organisation,%20and Website%20(if%20applicable).]" class="button">Let's Talk</a></p>
+						<p><a href="mailto:gozel@shakeri.eu?subject=Discovery Chat&body=[Note:%20Please%20don't%20forget%20to%20provide%20Name,%20Organisation,%20and Website%20(if%20applicable).]" class="button" id="contact-more"></a></p>
 					</article>
 
 				</div>
@@ -150,6 +153,7 @@
 
 		<!-- Scripts -->
 		<!-- <script src="assets/js/bootstrap.min.js"></script> -->
+		<script src="assets/js/language.js"></script>
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.dropotron.min.js"></script>
 		<script src="assets/js/browser.min.js"></script>

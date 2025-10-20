@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Shakeri et al. | Human-centered Digitalisation Consultancy</title>
+		<title id="header-title"></title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -39,25 +39,28 @@
 									<div class="container">
 									<nav id="nav" style="text-align: right;">
 										<ul>
-											<li class="current"><a href="">Services</a>
-												<ul>
-													<li><a href="services-research">Research</a></li>
-													<li><a href="services-education">Education</a></li>
-													<li><a href="services-innovation">Innovation</a></li>
+											<li class="current"><a id="nav-services" href=""></a>
+												<ul id="nav-serviceslist">
+													<li><a id="nav-servicesresearch" href="services-research" title=""></a></li>
+													<li><a id="nav-serviceseducation"href="services-education"></a></li>
+													<li><a id="nav-servicesinnovation"href="services-innovation"></a></li>
 												</ul>
 											</li>
 											
-											<li><a>About</a>
-												<ul>
-													<li><a href="gozel">About G&#246;zel</a></li>
-													<li><a href="designthinking">About Human-centred Design</a></li>
-													<li><a href="publications">Publications</a></li>
-													<li><a href="talks">Talks & Speaking</a></li>
-													
-													
+											<li><a id="nav-about" href=""></a>
+												<ul id="nav-aboutlist">
+													<li><a id="nav-aboutgozel" href="gozel"></a></li>
+													<li><a id="nav-aboutHCD" href="designthinking"></a></li>
+													<li><a id="nav-aboutpublications" href="publications"></a></li>
+													<li><a id="nav-abouttalks" href="talks"></a></li>
 												</ul>
 											</li>
-											<li><a href="contact">Contact</a></li>
+											<li><a id="nav-contact" href="contact"></a></li>
+											<select id="language">
+												<option value="en">En</option>
+												<option value="fr">Fr</option>
+												<!-- <option value="de">De</option> -->
+											</select>
 										</ul>
 									</nav>
 								</div>
@@ -67,13 +70,13 @@
 				</section>
 
 				<section id="banner" class="index">
-					<header>
+					<header id="research">
 						<div class="row">
 							<div class="col-6 col-6-medium col-12-small">
-								<p>Services > Research</p>
-								<h2>Bringing Evidence to Decision-making</h2>
+								<p id="research-nav"></p>
+								<h2 id="research-title"></h2>
 								<!-- <p>Shakeri et al. drives / delivers research insights most urgent challenges with technology, which in turn empowers the public to act.</p> -->
-								<p>Shakeri <i>et al</i>. delivers mixed-methods research and lends expertise across strategic intervention points.</p>
+								<p id="research-subtitle"></p>
 							</div>
 							<div class="col-6 col-6-medium col-12-small">
 								<img src="images/gallery/EU_parliament.jpg" width="100%"/>
@@ -108,24 +111,18 @@
 							</header>
 						</article> -->
 
-						<section class="box">
+						<section class="box" id="researchbody">
 							<div class="row">
 								<div class="col-4 col-4-medium col-12-small">
 									<section class="box" style="text-align: left;">
 										<header>
-											<h2>Questions I help answer</h2>
+											<h2 id="researchbody-questions"></h2>
 										</header>
 									</section>
 								</div>
 								<div class="col-8 col-8-medium col-12-small">
-									<section class="box" style="text-align: left;">
-										<ul>
-											<li>What do current or desired users want, think, feel, and do?</li>
-											<li>What is their current experience of technologies or digital service?</li>
-											<li>Which research or experimental design is right for our goals?</li>
-											<li>Who else is doing something similar?</li>
-											<li>What’s the best way to communicate research results so they drive impact?</li>
-										</ul>
+									<section class="box" style="text-align: left;" id="researchbody-questionsanswers">
+										
 									</section>
 								</div>
 							</div>
@@ -133,22 +130,17 @@
 						
 						<section class="box">
 							
-							<div class="row">
+							<div class="row" id="researchbody">
 								<div class="col-4 col-4-medium col-12-small">
 									<section class="box" style="text-align: left;">
 										<header>
-											<h2>Methods I use</h2>
+											<h2 id="researchbody-methods"></h2>
 										</header>
 									</section>
 								</div>
 								<div class="col-8 col-8-medium col-12-small">
-									<section class="box" style="text-align: left;">
-										<ul>
-											<li>Literature review & market analysis</li>
-											<li><b style="font-weight: 700;">Quantitative methods</b> (numbers-driven insights): surveys & questionnaires, A/B testing, analytics and usage data, controlled experiments, benchmarking studies</li>
-											<li><b style="font-weight: 700;">Qualitative methods</b> (deep human insights): interviews, focus groups, field studies / ethnography, usability testing, diary studies, Research-through-Design</li>
-											<li>Statistical analysis</li>
-										</ul>
+									<section class="box" style="text-align: left;" id="researchbody-methodsanswers">
+										
 									</section>
 								</div>
 								<!-- <div class="col-12 col-12-small">
@@ -158,73 +150,59 @@
 							</div>
 						</section>	
 
-						<section class="box">	
+						<section class="box" id="researchbody">	
 							<div class="row">
 								<div class="col-4 col-4-medium col-12-small">
 									<section class="box" style="text-align: left;">
 										<header>
-											<h2>Outcomes</h2>
+											<h2 id="researchbody-outcomes"></h2>
 										</header>
 									</section>
 								</div>
 								<div class="col-8 col-8-medium col-12-small">
-									<section class="box" style="text-align: left;">
-										<ul>
-											<li><b style="font-weight: 700;">Reduce Risk</b>: Spot design flaws early before they cost time and money.</li>
-											<li><b style="font-weight: 700;">Increase Adoption</b>: Create products and services people actually want to use.</li>
-											<li><b style="font-weight: 700;">Boost Performance</b>: Improve efficiency, conversion, and customer loyalty.</li>
-											<li><b style="font-weight: 700;">Stay Competitive</b>: Leverage data and insights to outpace rivals.</li>
-										</ul>
+									<section class="box" style="text-align: left;" id="researchbody-outcomesanswers">
+										
 									</section>
 								</div>
 							</div>
 						</section>	
 
-						<section class="box">	
+						<section class="box" id="researchbody">	
 							<div class="row">
 								<div class="col-4 col-4-medium col-12-small">
 									<section class="box" style="text-align: left;">
 										<header>
-											<h2>Resources</h2>
+											<h2 id="researchbody-resources"></h2>
 										</header>
 									</section>
 								</div>
 								<div class="col-8 col-8-medium col-12-small">
-									<section class="box" style="text-align: left;">
-										<ul>
-											<li>About <a href="designthinking">Human-centred Design</a></li>
-											<li>G&#246;zel's <a href="publications">Publications</a></li>
-											<!-- <li>G&#246;zel's <a href="science-search">Science Engine</a></li>
-											<li>G&#246;zel's <a href="resources/media literacy/Shakeri - Media Literacy Starter Kit.pdf">Media Literacy Starter Kit</a></li> -->
-											<!-- <li><b style="font-weight: 700;">Engaged Audiences</b>: Educational science based methods that ensure participation and retention.</li>
-											<li><b style="font-weight: 700;">Flexible Delivery</b>: Content tailored to different age groups, settings, and institutional needs.</li> -->
-										</ul>
+									<section class="box" style="text-align: left;" id="researchbody-resourcesanswers">
 									</section>
 								</div>
 							</div>
 						</section>
 
-						<section class="box">	
+						<section class="box" id="researchbody">	
 							<div class="row">
 								<div class="col-4 col-4-medium col-12-small">
 									<section class="box" style="text-align: left;">
 										<header>
-											<h2>Expertise</h2>
+											<h2 id="researchbody-expertise"></h2>
 										</header>
 									</section>
 								</div>
 								<div class="col-8 col-8-medium col-12-small">
-									<section class="box" style="text-align: left;">
-										Holding a <b style="font-weight: 700;">Ph.D. in Human-Computer Interaction</b> <a style="text-decoration: none;" href="https://theses.gla.ac.uk/81258/">&#x1F517;</a> from the University of Glasgow, my thesis was shortlisted for the <b style="font-weight: 700;">Best Computing Science PhD in Scotland</b> <a style="text-decoration: none;" href="https://sicsaconference.org/panel-sessions/">&#x1F517;</a>. I got recognised with an <b style="font-weight: 700;">Outstanding Young Scientists</b> <a style="text-decoration: none;" href="https://shakeri.eu/certifcates/fellowship.pdf">&#x1F517;</a> award for my research in sustainable Human-Computer Interaction. 
-										I <a href="publications">published 13 conference and journal articles</a> with 4 at the leading (A*) international conference in Human-Computer Interaction CHI.
+									<section class="box" style="text-align: left;" id="researchbody-expertiseanswers">
+										
 									</section>
 								</div>
 							</div>
 						</section>
 						
-						<section>
+						<section id="casestudies">
 							<header class="major">
-								<h2>Case Studies</h2>
+								<h2 id="casestudies-title"></h2>
 							</header>
 							<section class="box" style="text-align: left;">
 								<div class="row">
@@ -242,14 +220,14 @@
 							</section>
 						</section>
 
-						<section class="box">
+						<section class="box" id="researchbody">
 							<header style="text-align: center;">
-								<h2>Leverage research to answer your most pressing questions </h2>
+								<h2 id="researchbody-contact"></h2>
 							</header>
 							<div class="row">
 								
 								<div class="col-12 col-12-small">
-									<p style="text-align: center;"><a href="contact" class="button">Let's talk</a> </p>
+									<p style="text-align: center;"><a href="contact" class="button" id="researchbody-more"></a> </p>
 								</div>
 							</div>
 						</section>	
@@ -263,17 +241,18 @@
 		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script> 
-			$(function(){
-			$("#inject_footer").load("footer.html"); 
-			});
-			</script>
+		<script src="assets/js/language.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script> 
+		$(function(){
+		$("#inject_footer").load("footer.html"); 
+		});
+		</script>
 
 	</body>
 </html>

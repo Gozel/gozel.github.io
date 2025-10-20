@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Shakeri et al. | Human-centered Digitalisation Consultancy</title>
+		<title id="header-title"></title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		
@@ -48,25 +48,31 @@
 												<div class="container">
 													<nav id="nav" style="text-align: right;">
 														<ul>
-															<li><a href="">Services</a>
-																<ul>
-																	<li><a href="services-research">Research</a></li>
-																	<li><a href="">Education</a></li>
-																	<li><a href="services-innovation">Innovation</a></li>
+															<li><a id="nav-services" href=""></a>
+																<ul id="nav-serviceslist">
+																	<li><a id="nav-servicesresearch" href="services-research" title=""></a></li>
+																	<li><a id="nav-serviceseducation"href="services-education"></a></li>
+																	<li><a id="nav-servicesinnovation"href="services-innovation"></a></li>
 																</ul>
 															</li>
 															
-															<li  class="current"><a>About</a>
-																<ul>
-																	<li><a href="gozel">About G&#246;zel</a></li>
-																	<li><a href="designthinking">About Human-centred Design</a></li>
-																	<li><a href="publications">Publications</a></li>
-																	<li><a href="talks">Talks & Speaking</a></li>
-																	
-																	
+															<li class="current"><a id="nav-about" href=""></a>
+																<ul id="nav-aboutlist">
+																	<li><a id="nav-aboutgozel" href="gozel"></a></li>
+																	<li><a id="nav-aboutHCD" href="designthinking"></a></li>
+																	<li><a id="nav-aboutpublications" href="publications"></a></li>
+																	<li><a id="nav-abouttalks" href="talks"></a></li>
 																</ul>
 															</li>
-															<li><a href="contact">Contact</a></li>
+															<li><a id="nav-contact" href="contact"></a></li>
+															<li>
+																<select id="language">
+																	<option value="en">En</option>
+																	<option value="fr">Fr</option>
+																	<!-- <option value="de">De</option> -->
+																</select>
+															</li>
+															
 														</ul>
 													</nav>
 												</div>
@@ -80,20 +86,20 @@
 					</div>
 				</section>
 
-				<section id="banner" class="design-thinking">
+				<section id="banner" class="design-thinking" id="hcd">
 					<header>
-						<h2 style="text-align: center; color: white;">Human-centered Design</h2>
+						<h2 style="text-align: center; color: white;" id="hcd-title"></h2>
 					</header>
 				</section>
 
 			<!-- Main -->
-				<section id="main">
+				<section id="main"id="hcd">
 					
 					<div class="container">
 
 						<article class="box post" style="background-color: #d52349">
 							<header>
-								<h3 style="text-align: center; color: white;">My work is grounded in human-centered design — a creative problem-solving framework for leading and engaging with empathy and designing innovative solutions to complex problems.</h3>
+								<h3 style="text-align: center; color: white;" id="hcd-abstract"></h3>
 							</header>
 						</article>
 
@@ -106,12 +112,10 @@
 											<div class="col-6 col-12-medium col-12-small">
 												<section class="box" style="text-align: center;">
 													<header>
-														<h2>What is Human-Centered Design (HCD)?</h2>
+														<h2 id="hcd-whattitle"></h2>
 													</header>
-													
-													 <p>Human-centered design (<a href="https://www.iso.org/standard/77520.html">ISO standard ISO 9241-210:2019</a>), also referred to as design thinking, is a <b style="font-weight: 700;">problem-solving process</b>, by being predominantly <b style="font-weight: 700;">solution-focused</b>. 
-														It is comprised of robust methods and core mindsets that, when practiced together, allow people to collaborate, communicate, and work differently.</p>
-													 <p>It involves discovering and understanding customer needs, defining and identifying opportunities, exploring and developing options, and delivering solutions by building and testing prototypes.</p>
+													<p id="hcd-whatanswers"></p>
+													 
 												</section>
 											</div>
 											<div class="col-6 col-12-medium col-12-small">
@@ -123,37 +127,37 @@
 									</section>
 								</section>
 
-								<section>
+								<section id="hcd">
 									<header class="major">
-										<h2>My Approach</h2>
+										<h2 id="hcd-divider1"></h2>
 									</header>
 									<section class="box">
 										<div class="row">											
 											<div class="col-4 col-4-medium col-12-small">
 												<section class="box" style="text-align: center;">
 													<header>
-														<h2>Human-Centered</h2>
+														<h2 id="hcd-approach1title"></h2>
 													</header>
 													<img src="images/gallery/community.jpg" width="50%"/>
-													<p>Using design thinking, I can help you transform your approach to problem-solving and innovation. This human-centered framework empowers businesses to craft impactful solutions while enabling professionals to become more adaptable, creative, and effective in their roles. </p>
+													<p id="hcd-approach1answers"> </p>
 												</section>
 											</div>
 											<div class="col-4 col-4-medium col-12-small">
 												<section class="box" style="text-align: center;">
 													<header>
-														<h2>Data-driven</h2>
+														<h2 id="hcd-approach2title"></h2>
 													</header>
 													<img src="images/gallery/transformation.jpg" width="50%"/>
-													 <p>By combining qualitative and quantitative insights with rapid prototyping and testing, I uncover the full story — revealing deeper needs, motivations, and behaviors to drive smarter, more impactful decisions for your success.</p>
+													 <p id="hcd-approach2answers"></p>
 												</section>
 											</div>
 											<div class="col-4 col-4-medium col-12-small">
 												<section class="box" style="text-align: center;">
 													<header>
-														<h2>Science-backed</h2>
+														<h2 id="hcd-approach3title"></h2>
 													</header>
 													<img src="images/gallery/transformation.jpg" width="50%"/>
-													<p>By integrating evidence-based behavioral science frameworks such as the Behavior Change Wheel and Motive Disposition Theory, I craft strategies and solutions that inspire lasting change, deepen engagement, and strengthen resilience.</p>
+													<p id="hcd-approach3answers"></p>
 												</section>
 											</div>
 										</div>
@@ -163,7 +167,7 @@
 								<!-- Portfolio -->
 								<section>
 									<header class="major">
-										<h2>HCD is embedded in my approach to ... </h2>
+										<h2 id="hcd-divider2"></h2>
 									</header>
 
 									<!-- <section class="box"> -->
@@ -171,7 +175,7 @@
 											<div class="col-6 col-6-medium col-12-small">
 												<section class="box">
 												<header style="text-align: center;">
-													<h2>Research</h2>
+													<h2 id="hcd-research"></h2>
 												</header>
 												
 												<div class="row">
@@ -192,7 +196,7 @@
 											<div class="col-6 col-6-medium col-12-small">
 												<section class="box">
 												<header style="text-align: center;">
-													<h2>Innovation</h2>
+													<h2 id="hcd-innovation"></h2>
 												</header>
 												<div class="row">
 													<div class="col-6 col-6-medium col-6-small">
@@ -206,7 +210,7 @@
 														</section>
 													</div>
 												</div>
-												<p style="text-align: center;"><a href="services-innovation" class="button">More</a></p>
+												<p style="text-align: center;"><a href="services-innovation" class="button" id="hcd-more"></a></p>
 												</section>
 												
 											</div>
@@ -224,6 +228,7 @@
 
 		<!-- Scripts -->
 		<!-- <script src="assets/js/bootstrap.min.js"></script> -->
+		<script src="assets/js/language.js"></script>
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.dropotron.min.js"></script>
 		<script src="assets/js/browser.min.js"></script>

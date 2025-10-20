@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Shakeri et al. | Human-centered Digitalisation Consultancy</title>
+		<title id="header-title"></title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -39,25 +39,28 @@
 									<div class="container">
 									<nav id="nav" style="text-align: right;">
 										<ul>
-											<li class="current"><a href="">Services</a>
-												<ul>
-													<li><a href="services-research">Research</a></li>
-													<li><a href="services-education">Education</a></li>
-													<li><a href="services-innovation">Innovation</a></li>
+											<li class="current"><a id="nav-services" href=""></a>
+												<ul id="nav-serviceslist">
+													<li><a id="nav-servicesresearch" href="services-research" title=""></a></li>
+													<li><a id="nav-serviceseducation"href="services-education"></a></li>
+													<li><a id="nav-servicesinnovation"href="services-innovation"></a></li>
 												</ul>
 											</li>
 											
-											<li><a>About</a>
-												<ul>
-													<li><a href="gozel">About G&#246;zel</a></li>
-													<li><a href="designthinking">About Human-centred Design</a></li>
-													<li><a href="publications">Publications</a></li>
-													<li><a href="talks">Talks & Speaking</a></li>
-													
-													
+											<li><a id="nav-about" href=""></a>
+												<ul id="nav-aboutlist">
+													<li><a id="nav-aboutgozel" href="gozel"></a></li>
+													<li><a id="nav-aboutHCD" href="designthinking"></a></li>
+													<li><a id="nav-aboutpublications" href="publications"></a></li>
+													<li><a id="nav-abouttalks" href="talks"></a></li>
 												</ul>
 											</li>
-											<li><a href="contact">Contact</a></li>
+											<li><a id="nav-contact" href="contact"></a></li>
+											<select id="language">
+												<option value="en">En</option>
+												<option value="fr">Fr</option>
+												<!-- <option value="de">De</option> -->
+											</select>
 										</ul>
 									</nav>
 								</div>
@@ -80,13 +83,13 @@
 					</header>
 				</section> -->
 
-				<section id="banner" class="index">
+				<section id="banner" class="index" id="innovation">
 					<header>
 						<div class="row">
 							<div class="col-6 col-6-medium col-12-small">
-								<p>Services > Innovation</p>
-								<h2>Big-picture Thinking & Practical Action</h2>
-								<p>Grounded in <u><a href="designthinking">human-centered design</a></u>, Shakeri <i>et al</i>. equips teams with tools and methods for creative collaboration and effective problem-solving, from co-design sessions to customized trainings.</p>
+								<p id="innovation-nav"></p>
+								<h2 id="innovation-title"></h2>
+								<p id="innovation-subtitle"></p>
 							</div>
 							<div class="col-6 col-6-medium col-12-small">
 								<img src="images/gallery/big_picture.jpg" width="100%"/>
@@ -97,7 +100,7 @@
 				</section>
 
 			<!-- Main -->
-				<section id="main">
+				<section id="main" id="innovation">
 					
 					<div class="container">
 						<!-- <article class="box post" style="background-color: #d52349">
@@ -108,32 +111,32 @@
 
 						<section>
 							<header class="major">
-								<h2>Workshops I offer</h2>
+								<h2 id="innovation-divider"></h2>
 							</header>
 							<section class="box">
 							<div class="row">
 								<div class="col-4 col-4-medium col-12-small">
 									<section class="box">
 										<header style="text-align: center;">
-											<h2>Design Sprints</h2>
+											<h2 id="innovation-what"></h2>
 										</header>
-										<p>Frame complex questions, define your goals, identify solutions, build rapid prototypes, and test and validate ideas with users in a multi-day design sprint.</p>
+										<p id="innovation-whatanswers"></p>
 									</section>
 								</div>
 								<div class="col-4 col-4-medium col-12-small">
 									<section class="box">
 										<header style="text-align: center;">
-											<h2>Futures Thinking Labs</h2>
+											<h2 id="innovation-how"></h2>
 										</header>
-										<p>Be ready for digital and sustainable change by anticipating challenges, imagining opportunities, and designing resilient strategies for long-term success.</p>
+										<p id="innovation-howanswers"></p>
 									</section>
 								</div>
 								<div class="col-4 col-4-medium col-12-small">
 									<section class="box">
 										<header style="text-align: center;">
-											<h2>Custom Workshops</h2>
+											<h2 id="innovation-who"></h2>
 										</header>
-										<p>Topics for bespoke workshops have included effective team communication and re-assessment of team perfomance metrics.</p>
+										<p id="innovation-whoanswers"></p>
 									</section>
 								</div>
 							</div>
@@ -145,18 +148,13 @@
 								<div class="col-4 col-4-medium col-12-small">
 									<section class="box" style="text-align: left;">
 										<header>
-											<h2>Outcomes</h2>
+											<h2 id="innovation-outcomes"></h2>
 										</header>
 									</section>
 								</div>
 								<div class="col-8 col-8-medium col-12-small">
-									<section class="box" style="text-align: left;">
-										<ul>
-											<li><b style="font-weight: 700;">Reduce Risk</b>: Identify challenges and pain points early, avoiding costly missteps.</li>
-											<li><b style="font-weight: 700;">Increase Adoption</b>: Design solutions that resonate, ensuring faster uptake.</li>
-											<li><b style="font-weight: 700;">Unlock Creativity</b>: Co-create and collaborate to generate fresh, practical ideas.</li>
-											<li><b style="font-weight: 700;">Accelerate Innovation</b>: Turn insights into actionable strategies and stay ahead.</li>
-										</ul>
+									<section class="box" style="text-align: left;" id="innovation-outcomesanswers">
+										
 									</section>
 								</div>
 							</div>
@@ -167,25 +165,13 @@
 								<div class="col-4 col-4-medium col-12-small">
 									<section class="box" style="text-align: left;">
 										<header>
-											<h2>Resources</h2>
+											<h2 id="innovation-resources"></h2>
 										</header>
 									</section>
 								</div>
 								<div class="col-8 col-8-medium col-12-small">
-									<section class="box" style="text-align: left;">
-										<ul>
-											<!-- <li><a href="https://european-digital-innovation-hubs.ec.europa.eu/open-dma">The European Commission's Digital Maturity Assessment Tool</a></li> -->
-											<li>About <a href="designthinking">Human-centered Design</a></li>
-											<li><a href="http://www.designkit.org/index.html">Human-centered Design Kit</a></li>
-											<li><a href="https://www.designinginsights.com/">Improv Games for Remote Design + Collaboration</a></li>
-											<li><a href="https://www.systemicdesigntoolkit.org/">Systemic Design Toolkit</a></li>
-											<li><a href="https://imaginari.es/new-metaphors/">New Metaphors</a></li>
-											<li><a href="https://designthinkmakebreakrepeat.com/">Design Think Make Break Repeat</a></li>
-											<li><a href="https://apphaus.sap.com/">AppHaus</a></li>
-											<li><a href="https://www.strategyzer.com/">Strategyzer</a></li>
-											<!-- <li><b style="font-weight: 700;">Engaged Audiences</b>: Educational science based methods that ensure participation and retention.</li>
-											<li><b style="font-weight: 700;">Flexible Delivery</b>: Content tailored to different age groups, settings, and institutional needs.</li> -->
-										</ul>
+									<section class="box" style="text-align: left;" id="innovation-resourcesanswers">
+										
 									</section>
 								</div>
 							</div>
@@ -196,21 +182,21 @@
 								<div class="col-4 col-4-medium col-12-small">
 									<section class="box" style="text-align: left;">
 										<header>
-											<h2>Expertise</h2>
+											<h2 id="innovation-expertise"></h2>
 										</header>
 									</section>
 								</div>
 								<div class="col-8 col-8-medium col-12-small">
-									<section class="box" style="text-align: left;">
-										Recognised with an <b style="font-weight: 700;">Outstanding Young Scientists Award</b> <a style="text-decoration: none;" href="https://shakeri.eu/certifcates/fellowship.pdf">&#x1F517;</a> for creatively reshaping and redefining <b style="font-weight: 700;">Sustainable Human-Computer Interaction</b>, I have partnered with <b style="font-weight: 700;">industry leaders</b> (e.g., Tesco), government bodies (e.g., Food Standards Agency), and NGOs (e.g., WWF-UK) to drive tangible impact. As a <b style="font-weight: 700;">certified</b> <a style="text-decoration: none;" href="http://shakeri.eu/certifcates/HDZ%20Zertifikat.pdf">&#x1F517;</a> and <b style="font-weight: 700;">experienced educator</b>, I am dedicated to continuous learning and to integrating the latest research and pedagogical innovations to ensure my workshops and seminars are engaging, forward-looking, and effective. <a href="gozel">More</a>
+									<section class="box" style="text-align: left;" id="innovation-expertiseanswers">
+										
 									</section>
 								</div>
 							</div>
 						</section>
 						
-						<section>
+						<section id="casestudies">
 							<header class="major">
-								<h2>Case Studies</h2>
+								<h2 id="casestudies-title"></h2>
 							</header>
 							<section class="box" style="text-align: left;">
 								<div class="row">
@@ -230,12 +216,12 @@
 
 						<section class="box">
 							<header style="text-align: center;">
-								<h2>Collaborate creatively and solve problems effectively </h2>
+								<h2 id="innovation-contact"></h2>
 							</header>
 							<div class="row">
 								
 								<div class="col-12 col-12-small">
-									<p style="text-align: center;"><a href="contact" class="button">Let's talk</a> </p>
+									<p style="text-align: center;"><a href="contact" class="button" id="innovation-more"></a> </p>
 								</div>
 							</div>
 						</section>		
@@ -249,17 +235,18 @@
 		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script> 
-			$(function(){
-			$("#inject_footer").load("footer.html"); 
-			});
-			</script>
+		<script src="assets/js/language.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script> 
+		$(function(){
+		$("#inject_footer").load("footer.html"); 
+		});
+		</script>
 
 	</body>
 </html>

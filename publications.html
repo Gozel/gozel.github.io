@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Shakeri et al. | Human-centered Digitalisation Consultancy</title>
+		<title id="header-title"></title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -45,25 +45,28 @@
 												<div class="container">
 													<nav id="nav" style="text-align: right;">
 														<ul>
-															<li><a href="">Services</a>
-																<ul>
-																	<li><a href="services-research">Research</a></li>
-																	<li><a href="services-education">Education</a></li>
-																	<li><a href="services-innovation">Innovation</a></li>
+															<li><a id="nav-services" href=""></a>
+																<ul id="nav-serviceslist">
+																	<li><a id="nav-servicesresearch" href="services-research" title=""></a></li>
+																	<li><a id="nav-serviceseducation"href="services-education"></a></li>
+																	<li><a id="nav-servicesinnovation"href="services-innovation"></a></li>
 																</ul>
 															</li>
 															
-															<li class="current"><a>About</a>
-																<ul>
-																	<li><a href="gozel">About G&#246;zel</a></li>
-																	<li><a href="designthinking">About Human-centred Design</a></li>
-																	<li><a href="publications">Publications</a></li>
-																	<li><a href="talks">Talks & Speaking</a></li>
-																	
-																	
+															<li class="current"><a id="nav-about" href=""></a>
+																<ul id="nav-aboutlist">
+																	<li><a id="nav-aboutgozel" href="gozel"></a></li>
+																	<li><a id="nav-aboutHCD" href="designthinking"></a></li>
+																	<li><a id="nav-aboutpublications" href="publications"></a></li>
+																	<li><a id="nav-abouttalks" href="talks"></a></li>
 																</ul>
 															</li>
-															<li><a href="contact">Contact</a></li>
+															<li><a id="nav-contact" href="contact"></a></li>
+															<select id="language">
+																<option value="en">En</option>
+																<option value="fr">Fr</option>
+																<!-- <option value="de">De</option> -->
+															</select>
 														</ul>
 													</nav>
 												</div>
@@ -77,18 +80,18 @@
 
 				</section>
 
-				<section id="banner" class="publications">
+				<section id="banner" class="publications" id="publications">
 					<header>
 						<div class="row">
 							<div class="col-6 col-6-medium col-12-small">
-								<h2 style="text-align: center; color: white;">Publications</h2>
+								<h2 style="text-align: center; color: white;" id="publications-title"></h2>
 								<!-- <p>Digital and Sustainability Literacy</p> -->
 								<!-- <p>Through research, innovation, and education, Shakeri et al. ensures that technologies serve humanity and protect our planet.</p> -->
 							</div>
 							<div class="col-6 col-6-medium col-12-small">
 								<!-- <article class="box post" style="background-color: #d52349"> -->
 									<header style="background-color: #d52349">
-										<p style="text-align: center; color: white;">I published 13 conference and journal articles with 4 at the leading (A*) international conference in Human-Computer Interaction CHI.</p>
+										<p style="text-align: center; color: white;" id="publications-abstract"></p>
 										<!-- Using mixed-methods research, I uncover your (customers’) goals, needs, and motivations so you can make informed strategic decisions. -->
 									</header>
 								<!-- </article> -->
@@ -101,12 +104,12 @@
 				</section>
 
 			<!-- Main -->
-				<section id="main">
+				<section id="main" id="publications">
 					<div class="container">
 							<article class="box post">
 								
 								<header>
-									<h3><a name="publications">Full List of Publications</a></h3>
+									<h3><a name="publications" id="publications-list"></a></h3>
 								</header>	
 									<header>
 										<h4><a name="2025">2025</a></h4>
@@ -226,17 +229,18 @@
 				<div id="inject_footer"></div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script> 
+		<script src="assets/js/language.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script> 
 			$(function(){
 			$("#inject_footer").load("footer.html"); 
 			});
-			</script>
+		</script>
 
 	</body>
 </html>

@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Shakeri et al. | Human-centered Digitalisation Consultancy</title>
+		<title id="header-title"></title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -40,25 +40,28 @@
 								<div class="container">
 									<nav id="nav" style="text-align: right;">
 										<ul>
-											<li class="current"><a href="">Services</a>
-												<ul>
-													<li><a href="services-research">Research</a></li>
-													<li><a href="">Education</a></li>
-													<li><a href="services-innovation">Innovation</a></li>
+											<li class="current"><a id="nav-services" href=""></a>
+												<ul id="nav-serviceslist">
+													<li><a id="nav-servicesresearch" href="services-research" title=""></a></li>
+													<li><a id="nav-serviceseducation"href="services-education"></a></li>
+													<li><a id="nav-servicesinnovation"href="services-innovation"></a></li>
 												</ul>
 											</li>
 											
-											<li><a>About</a>
-												<ul>
-													<li><a href="gozel">About G&#246;zel</a></li>
-													<li><a href="designthinking">About Human-centred Design</a></li>
-													<li><a href="publications">Publications</a></li>
-													<li><a href="talks">Talks & Speaking</a></li>
-													
-													
+											<li><a id="nav-about" href=""></a>
+												<ul id="nav-aboutlist">
+													<li><a id="nav-aboutgozel" href="gozel"></a></li>
+													<li><a id="nav-aboutHCD" href="designthinking"></a></li>
+													<li><a id="nav-aboutpublications" href="publications"></a></li>
+													<li><a id="nav-abouttalks" href="talks"></a></li>
 												</ul>
 											</li>
-											<li><a href="contact">Contact</a></li>
+											<li><a id="nav-contact" href="contact"></a></li>
+											<select id="language">
+												<option value="en">En</option>
+												<option value="fr">Fr</option>
+												<!-- <option value="de">De</option> -->
+											</select>
 										</ul>
 									</nav>
 								</div>
@@ -74,13 +77,13 @@
 			</section> -->
 
 			<!-- Main -->
-				<section id="main">
+				<section id="main" id="factchecker">
 					<div class="container">
 
 						<article class="box post">							
 								<header style="text-align: center;">
-									<h2>Fact Checker</h2> 
-									<p>Information with Credentials, Not Clickbait</p>
+									<h2 id="factchecker-title"></h2> 
+									<p id="factchecker-subtitle"></p>
 								</header>
 
 								<div class="gcse-search"></div>		
@@ -102,114 +105,32 @@
 								<div class="col-6 col-6-medium col-12-small">
 
 									<section class="box" style="text-align: left;">
-										<h3>Journalistic Outlets used in Fact Checker</h3>
-										
-										<!-- <p>(last updated March 2025)</p> -->
-
-										<!-- <p>International</p> -->
-										<ul>
-											<li><a href="https://snopes.com/">https://snopes.com/</a></li>
-											<li><a href="https://checkyourfact.com/">https://checkyourfact.com/</a></li>
-											<li><a href="https://www.factcheck.org/">https://www.factcheck.org/</a></li>
-											<li><a href="https://factcheckni.org/">https://factcheckni.org/</a></li>
-											<li><a href="https://theferret.scot/">https://theferret.scot/</a></li>
-											<li><a href="https://fullfact.org/">https://fullfact.org/</a></li>
-											<li><a href="https://www.leadstory.com/">https://www.leadstory.com/</a></li>
-											<li><a href="https://www.poynter.org/">https://www.poynter.org/mediawise/</a></li>
-											<li><a href="https://www.politifact.com/">https://www.politifact.com/</a></li>
-											<li><a href="https://mediabiasfactcheck.com/">https://mediabiasfactcheck.com/</a></li>
-										</ul>
-
-										<p>France</p>
-										<ul>
-											<li><a href="https://www.20minutes.fr/">https://www.20minutes.fr/</a></li>
-											<li><a href="https://science.feedback.org/">https://science.feedback.org/</a></li>
-											<li><a href="https://www.lemonde.fr/les-decodeurs/">https://www.lemonde.fr/les-decodeurs/</a></li>
-											<li><a href="https://www.afp.com/">https://www.afp.com/</a></li>
-											<li><a href="https://captainfact.io/">https://captainfact.io/</a></li>
-											<li><a href="https://www.hoaxbuster.com/">https://www.hoaxbuster.com/</a></li>
-											<li><a href="https://observers.france24.com/">https://observers.france24.com/</a></li>
-											<li><a href="https://lessurligneurs.eu/">https://lessurligneurs.eu/</a></li>
-										</ul>
-
-										<p>Germany</p>
-										<ul>
-											<li><a href="https://correctiv.org/en/">https://correctiv.org/en/</a></li>
-											<li><a href="https://www.dpa.com/de">https://www.dpa.com/de</a></li>
-											<li><a href="https://www.dw.com/en/top-stories/s-9097">https://www.dw.com/</a></li>
-											<li><a href="https://www.tagesschau.de/">https://www.tagesschau.de/</a></li>
-											<li><a href="https://www.volksverpetzer.de/">https://www.volksverpetzer.de/</a></li>
-										</ul>
+										<p id="factchecker-sources"></p>
 									</section>
-
-									<!-- <section class="box" style="text-align: left;">
-										<h3>Scientific Outlets used in Fact Checker</h3>
-									
-										<ul>
-											<li><a href="https://dl.acm.org/">https://dl.acm.org</a></li>
-											<li><a href="https://www.sciencedaily.com/">https://www.sciencedaily.com</a></li>
-											<li><a href="https://www.science.org/">https://www.science.org</a></li>
-											<li><a href="https://www.nature.com/">https://www.nature.com</a></li>
-											<li><a href="https://www.growkudos.com/showcase/">https://www.growkudos.com/showcase</a></li>
-											<li><a href="https://academic.oup.com/nsr">https://academic.oup.com/nsr</a></li>
-											<li><a href="https://www.nature.com/ncomms/">https://www.nature.com/ncomms/</a></li>
-											<li><a href="https://cacm.acm.org/">https://cacm.acm.org/</a></li>
-											<li><a href="https://interactions.acm.org/">https://interactions.acm.org/</a></li>
-											<li><a href="https://royalsocietypublishing.org/journal/rsta">https://royalsocietypublishing.org/journal/rsta</a></li>
-											<li><a href="https://journals.plos.org/plosone/">https://journals.plos.org/plosone/</a></li>
-											<li><a href="https://www.pnas.org/">https://www.pnas.org/</a></li>
-											<li><a href="https://royalsocietypublishing.org/journal/rspa">https://royalsocietypublishing.org/journal/rspa</a></li>
-											<li><a href="https://www.science.org/journal/sciadv">https://www.science.org/journal/sciadv</a></li>
-											<li><a href="https://www.nature.com/srep/">https://www.nature.com/srep/</a></li>
-											<li>Institutional websites ending on ".edu" or ".ac.uk"</li>
-										</ul>
-										
-									</section> -->
-
-									
 								</div>
 								
 								<div class="col-6 col-6-medium col-12-small">
 									<section class="box" style="text-align: left; background-color: #d52349; color: white;">
-										<h3 style="color: white;">How I built Fact Checker</h3>
-										<!-- <p>Based on scientific outputs that ... </p> -->
-
-										<p><strong style="color: white;">I built this fact checker based on scientific and peer-reviewed outlets, journalistic outlets and fact checkers that are approved by the <a href="https://ifcncodeofprinciples.poynter.org/signatories" style="color: white;">International Fact-Checking Network (IFCN)</a> or are on <a href="https://en.wikipedia.org/wiki/List_of_fact-checking_websites" style="color: white;">Wikipedia's List of Fact-Checking Websites</a>.</strong></p>
-										<!-- <p>All sources are listed. </p> -->
-										<p>Fact Checker was last updated: April 2025</p>
-										
+										<p id="factchecker-howIbuilt"></p>
 									</section>
 
 									<section class="box" style="text-align: center;">
 										<header>
-											<h3>Feedback or Questions on the Fact Checker?</h3>
+											<h3 id="factchecker-contact"></h3>
 										</header>
 										
-										<p><a href="contact" class="button">Let's Talk</a></p>										
+										<p><a href="contact" class="button" id="factchecker-more"></a></p>										
 									</section>
 									
 									<section class="box" style="text-align: left;">
-										<h3>More Resources</h3>
-										<ul>
-											<li>Gözel's <a href="https://shakeri.eu/resources/media%20literacy/Shakeri%20-%20Media%20Literacy%20Starter%20Kit.pdf">Media Literacy Starter Kit</a></li>
-											<li>Want to <a href="https://cse.google.com/">build your own search enginge</a>?</li>
-											<li>Fact checking Browser Addons: <a href="https://captainfact.io/help/extension">Captain Fact</a>, <a href="https://mediabiasfactcheck.com/appsextensions/">Media Bias / Fact Check</a>, <a href="https://www.trustservista.com/">TrustServista</a>, 
-												<a href="https://chromewebstore.google.com/detail/check/pjfgpbclkfjkfiljlcfehjmpafeoafdi?hl=en&pli=1">Check</a>, <a href="https://our.news/how-it-works/?main">Newstrition</a>, etc.</li>
-										</ul>
-										
+										<p id="factchecker-resources"></p>
+											
 									</section>
 
 								</div>
 
 							</div>
 						</section>
-
-						<!-- <article class="box post" style="text-align: center;">							
-							<header>
-								<h3>Feedback or Questions on the Fact Checker?</h3>
-							</header>
-							<a href="contact" class="button">Let's Talk</a>
-						</article> -->
 					</div>
 				</section>
 
@@ -221,17 +142,18 @@
 		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script> 
+		<script src="assets/js/language.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script> 
 			$(function(){
 			$("#inject_footer").load("footer.html"); 
 			});
-			</script>
+		</script>
 
 	</body>
 </html>

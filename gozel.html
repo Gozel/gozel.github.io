@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Shakeri et al. | Human-centered Digitalisation Consultancy</title>
+		<title id="header-title"></title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -45,25 +45,28 @@
 												<div class="container">
 													<nav id="nav" style="text-align: right;">
 														<ul>
-															<li><a href="">Services</a>
-																<ul>
-																	<li><a href="services-research">Research</a></li>
-																	<li><a href="services-education">Education</a></li>
-																	<li><a href="services-innovation">Innovation</a></li>
+															<li><a id="nav-services" href=""></a>
+																<ul id="nav-serviceslist">
+																	<li><a id="nav-servicesresearch" href="services-research" title=""></a></li>
+																	<li><a id="nav-serviceseducation"href="services-education"></a></li>
+																	<li><a id="nav-servicesinnovation"href="services-innovation"></a></li>
 																</ul>
 															</li>
 															
-															<li class="current"><a>About</a>
-																<ul>
-																	<li><a href="gozel">About G&#246;zel</a></li>
-																	<li><a href="designthinking">About Human-centred Design</a></li>
-																	<li><a href="publications">Publications</a></li>
-																	<li><a href="talks">Talks & Speaking</a></li>
-																	
-																	
+															<li class="current"><a id="nav-about" href=""></a>
+																<ul id="nav-aboutlist">
+																	<li><a id="nav-aboutgozel" href="gozel"></a></li>
+																	<li><a id="nav-aboutHCD" href="designthinking"></a></li>
+																	<li><a id="nav-aboutpublications" href="publications"></a></li>
+																	<li><a id="nav-abouttalks" href="talks"></a></li>
 																</ul>
 															</li>
-															<li><a href="contact">Contact</a></li>
+															<li><a id="nav-contact" href="contact"></a></li>
+															<select id="language">
+																<option value="en">En</option>
+																<option value="fr">Fr</option>
+																<!-- <option value="de">De</option> -->
+															</select>
 														</ul>
 													</nav>
 												</div>
@@ -79,19 +82,17 @@
 
 			<!-- Main -->
 				<section id="main">
-					<div class="container">
-
-						<!-- <header class="major">
-							
-						</header> -->
+					<div class="container" id="gozel">
 
 						<!-- Content -->
 							<article class="box post">
 								<div class="row">
 									<div class="col-8 col-12-small">
 										<header>
-											<h2>Dr Gözel Shakeri</h2>
+											<h2 id="gozel-title"></h2>
 										</header>
+
+										<p id="gozel-text"></p>
 											<!-- <p>I’m a <a href="designthinking">human-centered design</a> consultant, workshop facilitator, and innovation and creativity strategist. From re-imaging how people interact with technology in cars to helping teams in medical practises collaborate effectively, I have experience applying design methods and practices to complex challenges.</p>
 											<p>With a <b style="font-weight: 700;">Ph.D. in Human-Computer Interaction (HCI)</b> <a style="text-decoration: none;" href="https://theses.gla.ac.uk/81258/">&#x1F517;</a> from the University of Glasgow, where my thesis was shortlisted for <b style="font-weight: 700;">Best Computing Science PhD in Scotland</b> <a style="text-decoration: none;" href="https://sicsaconference.org/panel-sessions/">&#x1F517;</a>, 
 												I have creatively reimagined and redesigned how we interact with technology, for example during shopping. </p> 
@@ -106,7 +107,7 @@
 											</p>
 											<p>As the author of <b style="font-weight: 700;">numerous papers and articles</b> <a style="text-decoration: none;" href="publications">&#x1F517;</a> and <b style="font-weight: 700;">frequent speaker</b> <a style="text-decoration: none;" href="talks">&#x1F517;</a> at conferences, I’m available for public speaking engagements.</p> -->
 
-											<p>I am a <a href="designthinking">human-centered</a> innovator, researcher, and educator consulting on Sustainable Digitalisation and digital human behaviour. With a passion for solving complex challenges, I have reimagined how people interact with technology --- from transforming in-car experiences to enhancing collaboration in medical practices --- using proven design methods and practices.</p>
+											<!-- <p>I am a <a href="designthinking">human-centered</a> innovator, researcher, and educator consulting on Sustainable Digitalisation and digital human behaviour. With a passion for solving complex challenges, I have reimagined how people interact with technology --- from transforming in-car experiences to enhancing collaboration in medical practices --- using proven design methods and practices.</p>
 
 											<p>Holding a <b style="font-weight: 700;">Ph.D. in Human-Computer Interaction (HCI)</b> <a style="text-decoration: none;" href="https://theses.gla.ac.uk/81258/">&#x1F517;</a> from the University of Glasgow, my thesis was shortlisted for the <b style="font-weight: 700;">Best Computing Science PhD in Scotland</b> <a style="text-decoration: none;" href="https://sicsaconference.org/panel-sessions/">&#x1F517;</a>.</p>
 
@@ -114,7 +115,7 @@
 
 											<p>As an <b style="font-weight: 700;">award-winning science communicator</b> (both in <a style="text-decoration: none;" href="https://www.youtube.com/watch?v=-kEmFw36Pxs">speech</a> and <a style="text-decoration: none;" href="https://sicsaconference.org/panel-sessions/">writing</a>), a <b style="font-weight: 700;">certified educator</b> <a style="text-decoration: none;" href="http://shakeri.eu/certifcates/HDZ%20Zertifikat.pdf">&#x1F517;</a>, and a <b style="font-weight: 700;">certified manager</b> <a style="text-decoration: none;" href="https://shakeri.eu/certifcates/progressio%20certificate.pdf">&#x1F517;</a>, I have channeled my passion for human-centered design into teaching, serving as a <b style="font-weight: 700;">university lecturer on human-centered innovation</b>.</p>
 
-											<p>With <b style="font-weight: 700;">numerous publications</b> <a style="text-decoration: none;" href="publications">&#x1F517;</a> and as a <b style="font-weight: 700;">frequent speaker</b> <a style="text-decoration: none;" href="talks">&#x1F517;</a> at international conferences, I’m available for public speaking engagements to inspire and share insights on innovation and design.</p>
+											<p>With <b style="font-weight: 700;">numerous publications</b> <a style="text-decoration: none;" href="publications">&#x1F517;</a> and as a <b style="font-weight: 700;">frequent speaker</b> <a style="text-decoration: none;" href="talks">&#x1F517;</a> at international conferences, I’m available for public speaking engagements to inspire and share insights on innovation and design.</p> -->
 									</div>
 
 									<div class="col-4 col-12-small">
@@ -137,56 +138,56 @@
 									</div>
 									<div class="col-8 col-12-small">
 										<header>
-											<h3>Team & Collaborators</h3>
+											<h3 id="gozel-team"></h3>
 										</header>
 										<!-- <section class="box"> -->
 											<!-- <p>Leverage my international network of academics and industry partners for cutting-edge, globally informed strategies.</p> -->
-											 <p>I have an extensive international network of experts I call on for engagements. My collaborators come from backgrounds in behaviour change, digital tech law, and design research.</p>
+											 <p id="gozel-teamtext"></p>
 									</div>
 								</div>
 							</article>
 
 							<section>
 								<header class="major">
-									<h2>My Values</h2>
+									<h2 id="gozel-divider1"></h2>
 								</header>
 							</section>
 							<article class="box post">
 								<div class="row" style="text-align: center;">
 									<div class="col-3 col-6-small">
 										<header>
-											<h3>People First</h3>
+											<h3 id="gozel-subtitle1"></h3>
 										</header>
 										<img src="images/gallery/community.jpg" width="90%"/>
 										<section class="box" style="text-align: center;">
-											<p>Start with humans, not policies, tools, or technologies.</p>
+											<p id="gozel-subtitle1text"></p>
 										</section>
 									</div>
 									<div class="col-3 col-6-small">
 										<header>
-											<h3>Have Fun</h3>
+											<h3 id="gozel-subtitle2"></h3>
 										</header>
 										<img src="images/gallery/have_fun.jpg" width="90%"/>
 										<section class="box" style="text-align: center;">
-											<p>I believe that people do better work and are more creative when they are having fun.</p>
+											<p id="gozel-subtitle2text"></p>
 										</section>
 									</div>
 									<div class="col-3 col-6-small">
 										<header>
-											<h3>Collaborate</h3>
+											<h3 id="gozel-subtitle3"></h3>
 										</header>
 										<img src="images/gallery/innovation.jpg" width="90%"/>
 										<section class="box" style="text-align: center;">
-											<p>Teams are better when they work together, harnessing the diversity and complexity of the group.</p>
+											<p id="gozel-subtitle3text"></p>
 										</section>
 									</div>
 									<div class="col-3 col-6-small">
 										<header>
-											<h3>Yes, and ...</h3>
+											<h3 id="gozel-subtitle4"></h3>
 										</header>
 										<img src="images/gallery/yes_and.jpg" width="90%"/>
 										<section class="box" style="text-align: center;">
-											<p>I foster a “yes, and” environment in which people accept and build on each others’ ideas.</p>
+											<p id="gozel-subtitle4text"></p>
 										</section>
 									</div>
 								</div>
@@ -196,9 +197,9 @@
 								<div class="row">
 									<div class="col-12 col-12-small" style="text-align: center;">
 										<header>
-											<h3>How might we work together?</h3>
+											<h3 id="gozel-contact"></h3>
 										</header>
-										<a href="contact" class="button">Let's Talk</a>
+										<a href="contact" class="button" id="gozel-more"></a>
 									</div>
 								</div>
 							</article>
@@ -222,7 +223,7 @@
 
 							<section>
 								<header class="major">
-									<h2>Career</h2>
+									<h2 id="gozel-divider2"></h2>
 								</header>
 								<section>
 									<!-- <header class="major">
@@ -233,27 +234,19 @@
 											<section class="box" style="text-align: left;">
 												<header>
 													<!-- <h3 style="font-weight: 300; font-size: 2em;">Experience</h3> -->
-													 <h3>Experience</h3>
+													 <h3 id="gozel-experience"></h3>
 												</header>
-												<!-- <img src="images/gallery/digital.png" width="100%"/>													 -->
-												 <p><b style="font-weight: 700;">2025 -- now</b>: Independent Sustainable Digitalisation Consultant: Research, Education, Innovation</p>
-												<p><b style="font-weight: 700;">2024 -- 2025</b>: Sustainable Business Consultant: Management, Digital Transformation, Behaviour Change</p>
-												<p><b style="font-weight: 700;">2023 -- 2023</b>: Research Fellow (equiv. to <b>Junior Professorship</b>): Sustainable Digitalization, University of Oldenburg</p>
-												<!-- <p><b style="font-weight: 700;">2021 -- 2022</b>: Postdoctoral Researcher: Sustainability through Digital Behavior Change Interventions, University of Oldenburg </p> -->
-												<p><b style="font-weight: 700;">2021 -- 2022</b>: Postdoctoral Researcher: Sustainability through Digital Behavior Change Interventions, University of Oldenburg </p>
-												<p><b style="font-weight: 700;">2019 -- 2021</b>: Postdoctoral Researcher: AI Systems to Support People with Dementia, Univeristy of Glasgow </p>
+												<p id="gozel-experiencetext"></p>
 											</section>
 										</div>
 										<div class="col-6 col-6-medium col-12-small">
 											<section class="box" style="text-align: left;">
 												<header>
 													<!-- <h3 style="font-weight: 300; font-size: 2em; ">Education</h3> -->
-													<h3>Education</h3>
+													<h3 id="gozel-education"></h3>
 												</header>
+												<p id="gozel-educationtext"></p>
 												<!-- <img src="images/gallery/ideas_lightbulb.png" width="100%"/> -->
-												<p><b style="font-weight: 700;">2015 -- 2019</b>: Ph.D. in Human-Computer Interaction (Computer Science), University of Glasgow</p>
-												<p><b style="font-weight: 700;">2013 -- 2014</b>: MSc of Computing Science, University of Glasgow </p>
-												<p><b style="font-weight: 700;">2009 -- 2013</b>: BSc of Computer Science, Technical University RheinMain </p>
 											</section>
 
 											<section class="box" style="text-align: left;">
@@ -261,7 +254,7 @@
 													<!-- <h3 style="font-weight: 300;font-size: 2em;">Curriculum Vitae</h3> -->
 													 <!-- <h3>Curriculum Vitae <a href="resources/Shakeri_CV.pdf">here</a></h3> -->
 												<!-- </header> -->
-												<p>Download my CV <a href="resources/Shakeri_CV.pdf">here</a> (last updated: Aug 2025).</p>	
+												<p id="gozel-cv"></p>	
 											</section>
 										</div>
 										<!-- <div class="col-4 col-6-medium col-12-small">
@@ -283,17 +276,18 @@
 				<div id="inject_footer"></div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script> 
+		<script src="assets/js/language.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script> 
 			$(function(){
 			$("#inject_footer").load("footer.html"); 
 			});
-			</script>
+		</script>
 
 	</body>
 </html>

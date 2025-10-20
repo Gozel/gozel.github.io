@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Shakeri et al. | Human-centered Digitalisation Consultancy</title>
+		<title id="header-title"></title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -39,25 +39,28 @@
 									<div class="container">
 									<nav id="nav" style="text-align: right;">
 										<ul>
-											<li class="current"><a href="">Services</a>
-												<ul>
-													<li><a href="services-research">Research</a></li>
-													<li><a href="">Education</a></li>
-													<li><a href="services-innovation">Innovation</a></li>
+											<li class="current"><a id="nav-services" href=""></a>
+												<ul id="nav-serviceslist">
+													<li><a id="nav-servicesresearch" href="services-research" title=""></a></li>
+													<li><a id="nav-serviceseducation"href="services-education"></a></li>
+													<li><a id="nav-servicesinnovation"href="services-innovation"></a></li>
 												</ul>
 											</li>
 											
-											<li><a>About</a>
-												<ul>
-													<li><a href="gozel">About G&#246;zel</a></li>
-													<li><a href="designthinking">About Human-centred Design</a></li>
-													<li><a href="publications">Publications</a></li>
-													<li><a href="talks">Talks & Speaking</a></li>
-													
-													
+											<li><a id="nav-about" href=""></a>
+												<ul id="nav-aboutlist">
+													<li><a id="nav-aboutgozel" href="gozel"></a></li>
+													<li><a id="nav-aboutHCD" href="designthinking"></a></li>
+													<li><a id="nav-aboutpublications" href="publications"></a></li>
+													<li><a id="nav-abouttalks" href="talks"></a></li>
 												</ul>
 											</li>
-											<li><a href="contact">Contact</a></li>
+											<li><a id="nav-contact" href="contact"></a></li>
+											<select id="language">
+												<option value="en">En</option>
+												<option value="fr">Fr</option>
+												<!-- <option value="de">De</option> -->
+											</select>
 										</ul>
 									</nav>
 								</div>
@@ -66,13 +69,13 @@
 						</div>
 				</section>
 
-				<section id="banner" class="index">
+				<section id="banner" class="index" id="education">
 					<header>
 						<div class="row">
 							<div class="col-6 col-6-medium col-12-small">
-								<p>Services > Education</p>
-								<h2>Bringing Clarity to the Public</h2>
-								<p>Shakeri <i>et al</i>. clarifies society’s most urgent challenges with technology, which in turn empowers the public to act.</p>
+								<p id="education-nav"></p>
+								<h2 id="education-title"></h2>
+								<p id="education-subtitle"></p>
 							</div>
 							<div class="col-6 col-6-medium col-12-small">
 								<img src="images/gallery/kids_digital.jpg" width="100%"/>
@@ -82,29 +85,12 @@
 					</header>
 				</section>
 
-				<!-- <section id="banner" class="education">
-					<header>
-						<div class="row">
-							<div class="col-6 col-6-medium col-12-small">
-								<h2 style="text-align: center; color: white;">Education</h2>
-							</div>
-							<div class="col-6 col-6-medium col-12-small">
-									<header style="background-color: #d52349">
-										<p style="text-align: center; color: white;">Stay future-proof by strengthening digital and sustainability literacy.</p>
-									</header>
-							</div>
-						</div>
-
-					</header>
-				</section> -->
-
 			<!-- Main -->
 				<section id="main">
-					
-					<div class="container">
+					<div class="container" id="education">
 						<article class="box post" style="background-color: #d52349">
 							<header>
-								<h3 style="text-align: center; color: white;">Technology is a near-constant presence in our lives, influencing our culture, our psychologies, and our environment. But the public often struggles to decipher the negative impact of technology as it’s unfolding — or envision better paths forward with tech design. Shakeri <i>et al</i>. demystifies our current challenges with tech through technology and sustainability education. </h3>
+								<h3 style="text-align: center; color: white;" id="education-article"></h3>
 							</header>
 						</article>
 
@@ -113,36 +99,28 @@
 								<div class="col-4 col-4-medium col-12-small">
 									<section class="box">
 										<header style="text-align: center;">
-											<h2>Topics I cover</h2>
+											<h2 id="education-what"></h2>
 										</header>
-										<ul>
-											<li><b style="font-weight: 700;">Digital Literacy</b>: Smart, safe, and effective use of technology.</li>
-											<li><b style="font-weight: 700;">Sustainability Literacy</b>: Skills for sustainable living and working with real-world impact.</li>
-										</ul>
+
+										<section id="education-whatanswers"></section>
+										
 									</section>
 								</div>	
 								<div class="col-4 col-4-medium col-12-small">
 									<section class="box" style="text-align: left;">
 										<header style="text-align: center;">
-											<h2>Methods I use</h2>
+											<h2 id="education-how"></h2>
 										</header>
-										<ul>
-											<li><b style="font-weight: 700;">Traditional Lectures</b>: Clear delivery of core knowledge.</li>
-											<li><b style="font-weight: 700;">Futuring</b>: Designing and prototyping future solutions.</li>
-											<li><b style="font-weight: 700;">Interactive Workshops</b>: Hands-on, creative, and participatory.</li>
-											</ul>
+										<div id="education-howanswers"></div>
+										
 									</section>
 								</div>
 								<div class="col-4 col-4-medium col-12-small">
 									<section class="box" style="text-align: left;">
 										<header style="text-align: center;">
-											<h2>Audiences</h2>
+											<h2 id="education-who"></h2>
 										</header>
-										<ul>
-											<li><b style="font-weight: 700;">Schools (ages 11-18)</b>: Inspiring, curriculum-linked programs.</li>
-											<li><b style="font-weight: 700;">Higher Education</b>: Lectures and workshops at university level.</li>
-											<li><b style="font-weight: 700;">General Public</b>: Accessible sessions via libraries, NGOs, and cultural centers.</li>
-										</ul>
+										<div id="education-whoanswers"></div>
 									</section>
 								</div>
 							</div>
@@ -153,17 +131,13 @@
 								<div class="col-4 col-4-medium col-12-small">
 									<section class="box" style="text-align: left;">
 										<header>
-											<h2>Outcomes</h2>
+											<h2 id="education-outcomes"></h2>
 										</header>
 									</section>
 								</div>
 								<div class="col-8 col-8-medium col-12-small">
 									<section class="box" style="text-align: left;">
-										<ul>
-											<li><b style="font-weight: 700;">Future-Proof Skills</b>: Learners will be equipped with digital and sustainability knowledge critical for tomorrow’s workforce and society.</li>
-											<!-- <li><b style="font-weight: 700;">Engaged Audiences</b>: Educational science based methods that ensure participation and retention.</li>
-											<li><b style="font-weight: 700;">Flexible Delivery</b>: Content tailored to different age groups, settings, and institutional needs.</li> -->
-										</ul>
+										<div id="education-outcomesanswers"></div>
 									</section>
 								</div>
 							</div>
@@ -174,20 +148,13 @@
 								<div class="col-4 col-4-medium col-12-small">
 									<section class="box" style="text-align: left;">
 										<header>
-											<h2>Resources</h2>
+											<h2 id="education-resources"></h2>
 										</header>
 									</section>
 								</div>
 								<div class="col-8 col-8-medium col-12-small">
-									<section class="box" style="text-align: left;">
-										<ul>
-											<li>Informative Flyer: <a href="resources/media literacy/flyer_generic_English.png">English</a>, <a href="resources/media literacy/flyer_generic_French.png">French</a>, <a href="resources/media literacy/flyer_generic_German.png">German</a></li>
-											<li>G&#246;zel's <a href="fact-checker">Fact Checker</a></li>
-											<li>G&#246;zel's <a href="science-search">Science Engine</a></li>
-											<li>G&#246;zel's <a href="resources/media literacy/Shakeri - Media Literacy Starter Kit.pdf">Media Literacy Starter Kit</a></li>
-											<!-- <li><b style="font-weight: 700;">Engaged Audiences</b>: Educational science based methods that ensure participation and retention.</li>
-											<li><b style="font-weight: 700;">Flexible Delivery</b>: Content tailored to different age groups, settings, and institutional needs.</li> -->
-										</ul>
+									<section class="box" style="text-align: left;" id="education-resourcesanswers">
+										
 									</section>
 								</div>
 							</div>
@@ -198,22 +165,21 @@
 								<div class="col-4 col-4-medium col-12-small">
 									<section class="box" style="text-align: left;">
 										<header>
-											<h2>Expertise</h2>
+											<h2 id="education-expertise"></h2>
 										</header>
 									</section>
 								</div>
 								<div class="col-8 col-8-medium col-12-small">
-									<section class="box" style="text-align: left;">
-										As an Outstanding Young Scientists <a style="text-decoration: none;" href="https://shakeri.eu/certifcates/fellowship.pdf">&#x1F517;</a> in Human–Computer Interaction, I have <b style="font-weight: 700;">lectured on Sustainable Digitalisation</b>, led <b style="font-weight: 700;">Digital Media Literacy workshops</b>, and excelled as an <b style="font-weight: 700;">award-winning science communicator</b> (both in <a style="text-decoration: none;" href="https://www.youtube.com/watch?v=-kEmFw36Pxs">speech</a> and <a style="text-decoration: none;" href="https://sicsaconference.org/panel-sessions/">writing</a>). 
-										As an experienced and <b style="font-weight: 700;">certified educator</b> <a style="text-decoration: none;" href="http://shakeri.eu/certifcates/HDZ%20Zertifikat.pdf">&#x1F517;</a>, I am committed to continuous learning and staying at the forefront of emerging research and pedagogical innovation. <a href="gozel">More</a>
+									<section class="box" style="text-align: left;" id="education-expertiseanswers">
+										
 									</section>
 								</div>
 							</div>
 						</section>
 						
-						<section>
+						<section id="casestudies">
 							<header class="major">
-								<h2>Case Studies</h2>
+								<h2 id="casestudies-title"></h2>
 							</header>
 							<section class="box" style="text-align: left;">
 								<div class="row">
@@ -230,38 +196,15 @@
 
 						<section class="box">
 							<header style="text-align: center;">
-								<h2>Navigate digitalisation and sustainability confidently and creatively </h2>
+								<h2 id="education-contact"></h2>
 							</header>
 							<div class="row">
 								
 								<div class="col-12 col-12-small">
-									<p style="text-align: center;"><a href="contact" class="button">Let's talk</a> </p>
+									<p style="text-align: center;"><a href="contact" class="button" id="education-more"></a> </p>
 								</div>
 							</div>
 						</section>	
-
-						<!-- <section class="box">	
-							<div class="row">
-								<div class="col-4 col-4-medium col-12-small">
-									<section class="box" style="text-align: left;">
-										<header>
-											<h2>Why Research?</h2>
-										</header>
-									</section>
-								</div>
-								<div class="col-8 col-8-medium col-12-small">
-									<section class="box" style="text-align: left;">
-										<ul>
-											<li><b style="font-weight: 700;">Reduce Risk</b>: Spot design flaws early before they cost time and money.</li>
-											<li><b style="font-weight: 700;">Increase Adoption</b>: Create products and services people actually want to use.</li>
-											<li><b style="font-weight: 700;">Boost Performance</b>: Improve efficiency, conversion, and customer loyalty.</li>
-											<li><b style="font-weight: 700;">Stay Competitive</b>: Leverage data and insights to outpace rivals.</li>
-										</ul>
-									</section>
-								</div>
-							</div>
-						</section>	 -->
-
 					</div>
 				</section>
 
@@ -271,17 +214,18 @@
 		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script> 
-			$(function(){
-			$("#inject_footer").load("footer.html"); 
-			});
-			</script>
+		 <script src="assets/js/language.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script> 
+		$(function(){
+		$("#inject_footer").load("footer.html"); 
+		});
+		</script>
 
 	</body>
 </html>
