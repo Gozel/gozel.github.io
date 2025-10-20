@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Shakeri <i>et al</i>. | Human-centered Digitalisation Consultancy</title>
+		<title id="header-title"></title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		
@@ -48,25 +48,28 @@
 												<div class="container">
 													<nav id="nav" style="text-align: right;">
 														<ul>
-															<li><a href="">Services</a>
-																<ul>
-																	<li><a href="services-research">Research</a></li>
-																	<li><a href="">Education</a></li>
-																	<li><a href="services-innovation">Innovation</a></li>
+															<li class="current"><a id="nav-services" href=""></a>
+																<ul id="nav-serviceslist">
+																	<li><a id="nav-servicesresearch" href="services-research" title=""></a></li>
+																	<li><a id="nav-serviceseducation"href="services-education"></a></li>
+																	<li><a id="nav-servicesinnovation"href="services-innovation"></a></li>
 																</ul>
 															</li>
 															
-															<li><a>About</a>
-																<ul>
-																	<li><a href="gozel">About G&#246;zel</a></li>
-																	<li><a href="designthinking">About Human-centred Design</a></li>
-																	<li><a href="publications">Publications</a></li>
-																	<li><a href="talks">Talks & Speaking</a></li>
-																	
-																	
+															<li><a id="nav-about" href=""></a>
+																<ul id="nav-aboutlist">
+																	<li><a id="nav-aboutgozel" href="gozel"></a></li>
+																	<li><a id="nav-aboutHCD" href="designthinking"></a></li>
+																	<li><a id="nav-aboutpublications" href="publications"></a></li>
+																	<li><a id="nav-abouttalks" href="talks"></a></li>
 																</ul>
 															</li>
-															<li><a href="contact">Contact</a></li>
+															<li><a id="nav-contact" href="contact"></a></li>
+															<select id="language">
+																<option value="en">En</option>
+																<option value="fr">Fr</option>
+																<option value="de">De</option>
+															</select>
 														</ul>
 													</nav>
 												</div>
@@ -92,6 +95,8 @@
 									<section class="box">
 										<div class="row">											
 											<div class="col-12 col-12-small">
+												<!-- <p>Shakeri et al. has not translated this page into French or German yet. We apologise for any inconvenience this might cause. We are working to fix this as soon as possible.</p> -->
+
 												<header>
 													<h2>Terms and Conditions</h2>
 												</header>
@@ -161,6 +166,7 @@
 
 		<!-- Scripts -->
 		<!-- <script src="assets/js/bootstrap.min.js"></script> -->
+		<script src="assets/js/language.js"></script>
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.dropotron.min.js"></script>
 		<script src="assets/js/browser.min.js"></script>
