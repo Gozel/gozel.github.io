@@ -1,4 +1,8 @@
-const langSelect = document.getElementById("language");
+const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
+              || window.matchMedia("(max-width: 980px)").matches;
+const langSelect = (!isMobile) ? document.getElementById("language") : document.querySelectorAll('.link.depth-0')[3];
+
+// localStorage.setItem("lang", "en");
 
 async function loadLanguage(lang) {
 	try {
@@ -6,9 +10,10 @@ async function loadLanguage(lang) {
 		const data = await response.json();
 
 		// Header
-		document.getElementById("header-title").innerHTML = data.header.title;
+		// document.getElementById("header-title").innerHTML = data.header.title;
 
 		// console.log(document.getElementById("navPanel"))
+		// document.getElementById("language").innerHTML = data.nav.language;
 
 		// Navigation
 		document.getElementById("nav-services").innerHTML = data.nav.services;
@@ -24,6 +29,7 @@ async function loadLanguage(lang) {
 		document.getElementById("nav-aboutpublications").innerHTML = data.nav.aboutpublications;
 		document.getElementById("nav-abouttalks").innerHTML = data.nav.abouttalks;
 		document.getElementById("nav-contact").innerHTML = data.nav.contact;
+		// document.getElementById("nav-language").innerHTML = data.nav.language;
 
 		// Footer
 		if (document.getElementById("footer-contact")) document.getElementById("footer-contact").innerHTML = data.footer.contact;
@@ -193,7 +199,7 @@ async function loadLanguage(lang) {
 		// Update HTML language
 		document.documentElement.lang = lang;
 		updateNavTexts(data);
-		document.addEventListener('shown.bs.offcanvas', () => updateNavTexts(data));
+		// document.addEventListener('shown.bs.offcanvas', () => updateNavTexts(data));
 
 	} catch (err) {
 		console.error("Error loading translation:", err);
@@ -202,7 +208,6 @@ async function loadLanguage(lang) {
 
 function updateNavTexts(data) {
 
-	console.log("updateNavTexts")
   // Desktop version
   const desktopServices = document.getElementById('nav-services');
   if (desktopServices) desktopServices.innerHTML = data.nav.services;
@@ -220,20 +225,28 @@ function updateNavTexts(data) {
   document.querySelectorAll('.link.depth-1 span.indent-1')[6].innerHTML = data.nav.abouttalks;
 
   document.querySelectorAll('.link.depth-0 span.indent-0')[2].innerHTML = data.nav.contact;
+//   document.querySelectorAll('.link.depth-0')[3].innerHTML = ;
+	console.log(document.querySelectorAll('.link.depth-0')[3]);
+
   // add more mappings as needed
 }
 
 // Load default or saved language
 const savedLang = localStorage.getItem("lang") || "en";
+console.log(savedLang)
 langSelect.value = savedLang;
+// console.log(langSelect.options.selectedIndex);
 loadLanguage(savedLang);
-
-//
 
 // Change language
 langSelect.addEventListener("change", () => {
-	console.log("language: " + langSelect.value)
-const lang = langSelect.value;
-localStorage.setItem("lang", lang);
-loadLanguage(lang);
+	// console.log("inside event listener")
+	// console.log("language.js language: " + langSelect.value)
+	// // console.log(langSelect.children.language.selectedIndex);
+	// // console.log(langSelect.children.language.value);
+	// langSelect.value = langSelect.children.language.value;
+	const lang = (!isMobile) ? langSelect.value : langSelect.children.language.value;
+	// const lang = langSelect.value;
+	localStorage.setItem("lang", lang);
+	loadLanguage(lang);
 });

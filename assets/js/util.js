@@ -6,28 +6,42 @@
 	 */
 	$.fn.navList = function() {
 
-		var	$this = $(this);
-			$a = $this.find('a'),
-			b = [];
+		var $this = $(this);
+		var $items = $this.find('a, select'); // 👈 include selects as well
+		var b = [];
 
-		$a.each(function() {
+		$items.each(function() {
+			var $el = $(this);
+			var indent = Math.max(0, $el.parents('li').length - 1);
 
-			var	$this = $(this),
-				indent = Math.max(0, $this.parents('li').length - 1),
-				href = $this.attr('href'),
-				target = $this.attr('target');
+			if ($el.is('a')) {
+			// Handle links as before
+			var href = $el.attr('href');
+			var target = $el.attr('target');
 
 			b.push(
 				'<a ' +
-					'class="link depth-' + indent + '"' +
-					( (typeof target !== 'undefined' && target != '') ? ' target="' + target + '"' : '') +
-					( (typeof href !== 'undefined' && href != '') ? ' href="' + href + '"' : '') +
+				'class="link depth-' + indent + '"' +
+				((typeof target !== 'undefined' && target != '') ? ' target="' + target + '"' : '') +
+				((typeof href !== 'undefined' && href != '') ? ' href="' + href + '"' : '') +
 				'>' +
-					'<span class="indent-' + indent + '"></span>' +
-					$this.text() +
+				'<span class="indent-' + indent + '"></span>' +
+				$el.text() +
 				'</a>'
 			);
 
+			} else if ($el.is('select')) {
+			// Handle selects — preserve ID if exists
+			
+			const idAttr = $el.attr('id') ? ' id="' + $el.attr('id') + '"' : '';
+			b.push(
+				'<a class="link depth-' + indent + '">' +
+				'<select' + idAttr + ' class="' + ($el.attr('class') || '') + '">' +
+					$el.html() +
+				'</select>' +
+				'</a>'
+			);
+			}
 		});
 
 		return b.join('');
