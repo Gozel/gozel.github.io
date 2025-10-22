@@ -2,18 +2,10 @@ const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
               || window.matchMedia("(max-width: 980px)").matches;
 const langSelect = (!isMobile) ? document.getElementById("language") : document.querySelectorAll('.link.depth-0')[3];
 
-// localStorage.setItem("lang", "en");
-
 async function loadLanguage(lang) {
 	try {
 		const response = await fetch(`lang/${lang}.json`);
 		const data = await response.json();
-
-		// Header
-		// document.getElementById("header-title").innerHTML = data.header.title;
-
-		// console.log(document.getElementById("navPanel"))
-		// document.getElementById("language").innerHTML = data.nav.language;
 
 		// Navigation
 		document.getElementById("nav-services").innerHTML = data.nav.services;
@@ -225,28 +217,18 @@ function updateNavTexts(data) {
   document.querySelectorAll('.link.depth-1 span.indent-1')[6].innerHTML = data.nav.abouttalks;
 
   document.querySelectorAll('.link.depth-0 span.indent-0')[2].innerHTML = data.nav.contact;
-//   document.querySelectorAll('.link.depth-0')[3].innerHTML = ;
-	console.log(document.querySelectorAll('.link.depth-0')[3]);
-
   // add more mappings as needed
 }
 
 // Load default or saved language
 const savedLang = localStorage.getItem("lang") || "en";
-console.log(savedLang)
 langSelect.value = savedLang;
-// console.log(langSelect.options.selectedIndex);
+if (isMobile) langSelect.children.language.value = savedLang;
 loadLanguage(savedLang);
 
 // Change language
 langSelect.addEventListener("change", () => {
-	// console.log("inside event listener")
-	// console.log("language.js language: " + langSelect.value)
-	// // console.log(langSelect.children.language.selectedIndex);
-	// // console.log(langSelect.children.language.value);
-	// langSelect.value = langSelect.children.language.value;
 	const lang = (!isMobile) ? langSelect.value : langSelect.children.language.value;
-	// const lang = langSelect.value;
 	localStorage.setItem("lang", lang);
 	loadLanguage(lang);
 });
