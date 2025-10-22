@@ -17,7 +17,7 @@
     "contact": "Kontakt"
   },
   "footer": {
-    "about": "Über",
+    "about": "Über uns",
     "contact": "Kontakt",
     "terms": "AGB",
     "privacy": "Datenschutz",
@@ -159,7 +159,8 @@
     "divider2": "MZD steckt in meinem Ansatz für ...",
     "research": "Forschung",
     "innovation": "Innovation",
-    "more": "Mehr"
+    "more": "Mehr",
+    "more2": "Mehr"
   },
   "contact": {
     "title": "Kontakt",
