@@ -14,6 +14,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css"/>
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-DVME2JVJE7"></script>
+		<!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
 		<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
@@ -56,11 +57,14 @@
 												</ul>
 											</li>
 											<li><a id="nav-contact" href="contact"></a></li>
-											<select id="language">
-												<option value="en">En</option>
-												<option value="fr">Fr</option>
-												<option value="de">De</option>
-											</select>
+											<li id="nav-language">
+												<select id="language">
+													<option value="en">🇬🇧 En</option>
+													<option value="fr">🇫🇷 Fr</option>
+													<option value="de">🇩🇪 De</option>
+												</select>
+											</li>
+											
 										</ul>
 									</nav>
 									
@@ -249,14 +253,13 @@
 				<div id="inject_footer"></div>
 
 		</div>
-
-		<script src="assets/js/language.js"></script>
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.dropotron.min.js"></script>
 		<script src="assets/js/browser.min.js"></script>
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script src="assets/js/language.js"></script>
 		<script> 
 			$(function(){
 			$("#inject_footer").load("footer.html"); 
