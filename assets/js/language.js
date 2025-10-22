@@ -164,6 +164,8 @@ async function loadLanguage(lang) {
 		if (document.getElementById("hcd-divider2")) document.getElementById("hcd-divider2").innerHTML = data.hcd.divider2;
 		if (document.getElementById("hcd-research")) document.getElementById("hcd-research").innerHTML = data.hcd.research;
 		if (document.getElementById("hcd-innovation")) document.getElementById("hcd-innovation").innerHTML = data.hcd.innovation;
+		if (document.getElementById("hcd-more")) document.getElementById("hcd-more").innerHTML = data.hcd.more;
+		if (document.getElementById("hcd-more2")) document.getElementById("hcd-more2").innerHTML = data.hcd.more2;
 
 		// CONTACT
 		if (document.getElementById("contact-title")) document.getElementById("contact-title").innerHTML = data.contact.title;
@@ -232,3 +234,4 @@ langSelect.addEventListener("change", () => {
 	localStorage.setItem("lang", lang);
 	loadLanguage(lang);
 });
+
