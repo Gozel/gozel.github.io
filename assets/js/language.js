@@ -2,6 +2,21 @@ const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
               || window.matchMedia("(max-width: 980px)").matches;
 const langSelect = (!isMobile) ? document.getElementById("language") : document.querySelectorAll('.link.depth-0')[3];
 
+async function loadHTML(url, container) {
+    try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        const html = await response.text();
+        container.innerHTML = html;
+    } catch (error) {
+        console.error('Error loading HTML:', error);
+    }
+}
+
+// finish building DOM i.e. inject footer
+const targetElement = document.getElementById('inject_footer');
+loadHTML('footer.html', targetElement);
+
 async function loadLanguage(lang) {
 	try {
 		const response = await fetch(`lang/${lang}.json`);
@@ -24,6 +39,8 @@ async function loadLanguage(lang) {
 		// document.getElementById("nav-language").innerHTML = data.nav.language;
 
 		// Footer
+		// console.log("footer exists: " + document.getElementById("footer-contact"));
+		// if (document.getElementById("footer-contact")) $('#inject_footer').load('footer.html'); 
 		if (document.getElementById("footer-contact")) document.getElementById("footer-contact").innerHTML = data.footer.contact;
 		if (document.getElementById("footer-about")) document.getElementById("footer-about").innerHTML = data.footer.about;
 		if (document.getElementById("footer-terms")) document.getElementById("footer-terms").innerHTML = data.footer.terms;
