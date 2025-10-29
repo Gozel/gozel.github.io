@@ -207,6 +207,18 @@ async function loadLanguage(lang) {
 		if (document.getElementById("scienceengine-more")) document.getElementById("scienceengine-more").innerHTML = data.scienceengine.more;
 		if (document.getElementById("scienceengine-resources")) document.getElementById("scienceengine-resources").innerHTML = data.scienceengine.resources;
 
+		// PRIVACY POLICY
+		if (document.getElementById("privacypolicy-title")) document.getElementById("privacypolicy-title").innerHTML = data.privacypolicy.title;
+		if (document.getElementById("privacypolicy-content")) document.getElementById("privacypolicy-content").innerHTML = data.privacypolicy.content;
+
+		// CREDITS
+		if (document.getElementById("credits-title")) document.getElementById("credits-title").innerHTML = data.credits.title;
+		if (document.getElementById("credits-content")) document.getElementById("credits-content").innerHTML = data.credits.content;
+		
+		// TERMS AND CONDITIONS
+		if (document.getElementById("terms-title")) document.getElementById("terms-title").innerHTML = data.terms.title;
+		if (document.getElementById("terms-content")) document.getElementById("terms-content").innerHTML = data.terms.content;
+
 		// Update HTML language
 		document.documentElement.lang = lang;
 		updateNavTexts(data);
