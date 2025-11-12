@@ -55,15 +55,15 @@
   "research": {
     "nav": "Services > Research",
     "title": "Bringing Evidence to Decision-making",
-    "subtitle": "Shakeri <i>et al</i>. delivers mixed-methods research and lends expertise across strategic intervention points."
+    "subtitle": "Shakeri <i>et al</i>. supports organisations, research institutions, and public bodies to understand people, technology, and their interaction - through mixed-methods Human-Computer Interaction research."
   },
   "researchbody": {
     "questions": "Questions I help answer",
-    "questionsanswers": "<ul><li>What do current or desired users want, think, feel, and do?</li><li>What is their current experience of technologies or digital service?</li><li>Which research or experimental design is right for our goals?</li><li>Who else is doing something similar?</li><li>What's the best way to communicate research results so they drive impact?</li></ul>",
+    "questionsanswers": "<ul><li>What do current or desired users want, think, feel, and do?</li><li>How do they experience existing or emerging technologies?</li><li>Which research or experimental design best fits our goals?</li><li>Who else is working in this space — and what can we learn from them?</li><li>How can research findings be translated into actionable design or policy impact?</li></ul>",
     "methods": "Methods I use",
-    "methodsanswers": "<ul><li>Literature review & market analysis</li><li><b style='font-weight: 700;'>Quantitative methods</b> (numbers-driven insights): surveys & questionnaires, A/B testing, analytics and usage data, controlled experiments, benchmarking studies</li><li><b style='font-weight: 700;'>Qualitative methods</b> (deep human insights): interviews, focus groups, field studies / ethnography, usability testing, diary studies, Research-through-Design</li><li>Statistical analysis</li></ul>",
+    "methodsanswers": "<ul><li><b style='font-weight: 700;'>Literature review & landscape / market analysis</b></li><li><b style='font-weight: 700;'>Quantitative methods</b> (numbers-driven insights): surveys, experiments, analytics, A/B testing, benchmarking</li><li><b style='font-weight: 700;'>Qualitative methods</b> (deep human insights): interviews, focus groups, usability testing, field studies, ethnography, diary studies, Research-through-Design</li><li><b style='font-weight: 700;'>Data analysis & synthesis</b>: from statistical insights to behavioural patterns</li><li><b style='font-weight: 700;'>Participatory design & co-creation workshops:</b> for collective learning and innovation</li></ul>",
     "outcomes": "Outcomes",
-    "outcomesanswers": "<ul><li><b style='font-weight: 700;'>Reduce Risk</b>: Spot design flaws early before they cost time and money.</li><li><b style='font-weight: 700;'>Increase Adoption</b>: Create products and services people actually want to use.</li><li><b style='font-weight: 700;'>Boost Performance</b>: Improve efficiency, conversion, and customer loyalty.</li><li><b style='font-weight: 700;'>Stay Competitive</b>: Leverage data and insights to outpace rivals.</li></ul>",
+    "outcomesanswers": "<ul><li><b style='font-weight: 700;'>Reduce Risk</b>: Identify design or policy blind spots early.</li><li><b style='font-weight: 700;'>Better Adoption</b>: Create technologies and services that genuinely meet human needs.</li><li><b style='font-weight: 700;'>Improved Performance</b>: Strengthen engagement, efficiency, and user satisfaction.</li><li><b style='font-weight: 700;'>Use Evidence</b>: Use evidence to shape digital strategy and policies.</li></ul>",
     "resources": "Resources",
     "resourcesanswers": "<ul><li>About <a href='designthinking'>Human-centred Design</a></li><li>G&#246;zel's <a href='publications'>Publications</a></li></ul>",
     "expertise": "Expertise",
