@@ -35,7 +35,7 @@
   "whatIdo": {
     "title": "Was ich mache",
     "subtitle1": "Forschung",
-    "text1": "Ich erforsche, wie Menschen mit Technologie interagieren, damit Sie <b style='font-weight: 700;'>informierte</b>, <b style='font-weight: 700;'>strategische</b> und <b style='font-weight: 700;'>nachhaltige Entscheidungen</b> für deine digitalen Ziele treffen.",
+    "text1": "Ich erforsche, wie Menschen mit Technologie interagieren, damit Sie <b style='font-weight: 700;'>informierte</b>, <b style='font-weight: 700;'>strategische</b> und <b style='font-weight: 700;'>nachhaltige Entscheidungen</b> für Ihre digitalen Ziele treffen.",
     "more1": "Mehr",
     "subtitle2": "Bildung",
     "text2": "Ich zeige, wie Technologie unser Verhalten und unseren Planeten beeinflusst, damit Sie Ihre <b style='font-weight: 700;'>digitale Kompetenz</b> stärken und schlauere, nachhaltigere Entscheidungen treffen.",
@@ -45,7 +45,7 @@
     "more3": "Mehr"
   },
   "waysIcanhelp": {
-    "title": "Wie ich dir helfen kann",
+    "title": "Wie ich Ihnen helfen kann",
     "text": "Ich biete ein Spektrum von <b style='font-weight: 700;'>bedarfsspezifischer Beratung</b> über <b style='font-weight: 700;'>Workshops</b> bis hin zu <b style='font-weight: 700;'>Trainings</b> an, mit vor Ort Unterstützung in der <b style='font-weight: 700;'>Eurometropole-Region</b> und Remote-Lösungen weltweit. Meine Services gibt’s auf <b style='font-weight: 700;'>Englisch</b>, <b style='font-weight: 700;'>Deutsch</b> und <b style='font-weight: 700;'>Französisch</b>.",
     "more": "Lass uns reden"
   },
@@ -59,7 +59,7 @@
   },
   "researchbody": {
     "questions": "Fragen, bei denen ich helfe",
-    "questionsanswers": "<ul><li>Was wollen, denken, fühlen und tun aktuelle oder potenzielle Nutzerinnen und Nutzer?</li><li>Wie erleben sie bestehende oder neue Technologien?</li><li>Welches Forschungs- oder Experimentaldesign passt am besten zu unseren Zielen?</li><li>Wer arbeitet sonst noch in diesem Bereich – und was können wir daraus lernen?</li><li>Wie lassen sich Forschungsergebnisse in konkrete Design- oder Politikmaßnahmen umsetzen?</li></ul>",
+    "questionsanswers": "<ul><li>Was wollen, denken, fühlen und tun aktuelle oder potenzielle Nutzer:innen?</li><li>Wie erleben sie bestehende oder neue Technologien?</li><li>Welches Forschungs- oder Experimentaldesign passt am besten zu unseren Zielen?</li><li>Wer arbeitet sonst noch in diesem Bereich – und was können wir daraus lernen?</li><li>Wie lassen sich Forschungsergebnisse in konkrete Design- oder Politikmaßnahmen umsetzen?</li></ul>",
     "methods": "Methoden, die ich nutze",
     "methodsanswers": "<ul><li><b style='font-weight: 700;'>Literaturrecherche & Markt- / Umfeldanalyse</b></li><li><b style='font-weight: 700;'>Quantitative Methoden</b> (datenbasierte Erkenntnisse): Umfragen, Experimente, Analysen, A/B-Tests, Benchmarking</li><li><b style='font-weight: 700;'>Qualitative Methoden</b> (tiefgehende menschliche Einblicke): Interviews, Fokusgruppen, Usability-Tests, Feldstudien, Ethnografie, Tagebuchstudien, Research-through-Design</li><li><b style='font-weight: 700;'>Datenanalyse & Synthese</b>: von statistischen Erkenntnissen bis zu Verhaltensmustern</li><li><b style='font-weight: 700;'>Partizipatives Design & Co-Creation-Workshops</b>: für gemeinsames Lernen und Innovation</li></ul>",
     "outcomes": "Ergebnisse",
