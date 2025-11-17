@@ -17,6 +17,37 @@ async function loadHTML(url, container) {
 const targetElement = document.getElementById('inject_footer');
 loadHTML('footer.html', targetElement);
 
+const imageBasePath = "/images/clients/";
+
+function setImage(lang) {
+	if (document.getElementById("envirofy-img")) {
+		const img = document.getElementById("envirofy-img");
+		const fileName = `envirofy_${lang}.png`;
+		img.src = `${imageBasePath}${fileName}`;
+	} if (document.getElementById("fsa_ngos-img")) {
+		const img = document.getElementById("fsa_ngos-img");
+		const fileName = `fsa_ngos_${lang}.png`;
+		img.src = `${imageBasePath}${fileName}`;
+	} if (document.getElementById("medialiteracy-img")) {
+		const img = document.getElementById("medialiteracy-img");
+		const fileName = `medialiteracy_${lang}.png`;
+		img.src = `${imageBasePath}${fileName}`;
+	} if (document.getElementById("offis-img")) {
+		const img = document.getElementById("offis-img");
+		const fileName = `offis_${lang}.png`;
+		img.src = `${imageBasePath}${fileName}`;
+	} if (document.getElementById("CNRS_workshop-img")) {
+		const img = document.getElementById("CNRS_workshop-img");
+		const fileName = `CNRS_workshop_${lang}.png`;
+		img.src = `${imageBasePath}${fileName}`;
+	} if (document.getElementById("accessibility-img")) {
+		const img = document.getElementById("accessibility-img");
+		const fileName = `accessibility_${lang}.png`;
+		img.src = `${imageBasePath}${fileName}`;
+	}
+  
+}
+
 async function loadLanguage(lang) {
 	try {
 		const response = await fetch(`lang/${lang}.json`);
@@ -256,11 +287,13 @@ const savedLang = localStorage.getItem("lang") || "en";
 langSelect.value = savedLang;
 if (isMobile) langSelect.children.language.value = savedLang;
 loadLanguage(savedLang);
+setImage(savedLang);
 
 // Change language
 langSelect.addEventListener("change", () => {
 	const lang = (!isMobile) ? langSelect.value : langSelect.children.language.value;
 	localStorage.setItem("lang", lang);
 	loadLanguage(lang);
+	setImage(lang);
 });
 
