@@ -48,6 +48,10 @@ function setImage(lang) {
 		const img = document.getElementById("European_school-img");
 		const fileName = `European_school_${lang}.png`;
 		img.src = `${imageBasePath}${fileName}`;
+	} if (document.getElementById("ChallengeEU-img")) {
+		const img = document.getElementById("ChallengeEU-img");
+		const fileName = `ChallengeEU_${lang}.png`;
+		img.src = `${imageBasePath}${fileName}`;
 	}
   
 }
