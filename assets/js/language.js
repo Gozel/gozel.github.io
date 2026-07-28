@@ -62,6 +62,7 @@ async function loadLanguage(lang) {
 		const data = await response.json();
 
 		// Navigation
+		document.getElementById("nav-approach").innerHTML = data.nav.approach;
 		document.getElementById("nav-services").innerHTML = data.nav.services;
 		document.getElementById("nav-serviceslist").innerHTML = data.nav.serviceslist;
 		document.getElementById("nav-servicesresearch").innerHTML = data.nav.servicesresearch;
@@ -71,7 +72,7 @@ async function loadLanguage(lang) {
 		document.getElementById("nav-about").innerHTML = data.nav.about;
 		document.getElementById("nav-aboutlist").innerHTML = data.nav.aboutlist;
 		document.getElementById("nav-aboutgozel").innerHTML = data.nav.aboutgozel;
-		document.getElementById("nav-aboutHCD").innerHTML = data.nav.aboutHCD;
+		// document.getElementById("nav-aboutHCD").innerHTML = data.nav.aboutHCD;
 		document.getElementById("nav-aboutpublications").innerHTML = data.nav.aboutpublications;
 		document.getElementById("nav-abouttalks").innerHTML = data.nav.abouttalks;
 		document.getElementById("nav-contact").innerHTML = data.nav.contact;
@@ -89,6 +90,15 @@ async function loadLanguage(lang) {
 		// Landing
 		if (document.getElementById("landing-title")) document.getElementById("landing-title").innerHTML = data.landing.title;
 		if (document.getElementById("landing-subtitle")) document.getElementById("landing-subtitle").innerHTML = data.landing.subtitle;
+		if (document.getElementById("landing-more1")) document.getElementById("landing-more1").innerHTML = data.landing.more1;
+		if (document.getElementById("landing-more2")) document.getElementById("landing-more2").innerHTML = data.landing.more2;
+		if (document.getElementById("landing-divider")) document.getElementById("landing-divider").innerHTML = data.landing.divider;
+		if (document.getElementById("landing-successtitle1")) document.getElementById("landing-successtitle1").innerHTML = data.landing.successtitle1;
+		if (document.getElementById("landing-successstory1")) document.getElementById("landing-successstory1").innerHTML = data.landing.successstory1;
+		if (document.getElementById("landing-successtitle2")) document.getElementById("landing-successtitle2").innerHTML = data.landing.successtitle2;
+		if (document.getElementById("landing-successstory2")) document.getElementById("landing-successstory2").innerHTML = data.landing.successstory2;
+		if (document.getElementById("landing-successtitle3")) document.getElementById("landing-successtitle3").innerHTML = data.landing.successtitle3;
+		if (document.getElementById("landing-successstory3")) document.getElementById("landing-successstory3").innerHTML = data.landing.successstory3;
 
 		// Hero section
 		if (document.getElementById("hero-title")) document.getElementById("hero-title").innerHTML = data.hero.title;
@@ -96,6 +106,7 @@ async function loadLanguage(lang) {
 
 		// What I do
 		if (document.getElementById("whatIdo-title")) document.getElementById("whatIdo-title").innerHTML = data.whatIdo.title;
+		if (document.getElementById("whatIdo-subtitle")) document.getElementById("whatIdo-subtitle").innerHTML = data.whatIdo.subtitle;
 		if (document.getElementById("whatIdo-subtitle1")) document.getElementById("whatIdo-subtitle1").innerHTML = data.whatIdo.subtitle1;
 		if (document.getElementById("whatIdo-text1")) document.getElementById("whatIdo-text1").innerHTML = data.whatIdo.text1;
 		if (document.getElementById("whatIdo-more1")) document.getElementById("whatIdo-more1").innerHTML = data.whatIdo.more1;
@@ -108,8 +119,58 @@ async function loadLanguage(lang) {
 
 		// Ways I can help you
 		if (document.getElementById("waysIcanhelp-title")) document.getElementById("waysIcanhelp-title").innerHTML = data.waysIcanhelp.title;
+		if (document.getElementById("waysIcanhelp-subtitle")) document.getElementById("waysIcanhelp-subtitle").innerHTML = data.waysIcanhelp.subtitle;
 		if (document.getElementById("waysIcanhelp-text")) document.getElementById("waysIcanhelp-text").innerHTML = data.waysIcanhelp.text;
 		if (document.getElementById("waysIcanhelp-more")) document.getElementById("waysIcanhelp-more").innerHTML = data.waysIcanhelp.more;
+		if (document.getElementById("waysIcanhelp-subtitle1")) document.getElementById("waysIcanhelp-subtitle1").innerHTML = data.waysIcanhelp.subtitle1;
+		if (document.getElementById("waysIcanhelp-text1")) document.getElementById("waysIcanhelp-text1").innerHTML = data.waysIcanhelp.text1;
+		if (document.getElementById("waysIcanhelp-subtitle2")) document.getElementById("waysIcanhelp-subtitle2").innerHTML = data.waysIcanhelp.subtitle2;
+		if (document.getElementById("waysIcanhelp-text2")) document.getElementById("waysIcanhelp-text2").innerHTML = data.waysIcanhelp.text2;
+		if (document.getElementById("waysIcanhelp-subtitle3")) document.getElementById("waysIcanhelp-subtitle3").innerHTML = data.waysIcanhelp.subtitle3;
+		if (document.getElementById("waysIcanhelp-text3")) document.getElementById("waysIcanhelp-text3").innerHTML = data.waysIcanhelp.text3;
+		if (document.getElementById("waysIcanhelp-subtitle4")) document.getElementById("waysIcanhelp-subtitle4").innerHTML = data.waysIcanhelp.subtitle4;
+		if (document.getElementById("waysIcanhelp-text4")) document.getElementById("waysIcanhelp-text4").innerHTML = data.waysIcanhelp.text4;
+
+		// Our Approach
+		if (document.getElementById("ourapproach-title")) document.getElementById("ourapproach-title").innerHTML = data.ourapproach.title;
+		if (document.getElementById("ourapproach-subtitle")) document.getElementById("ourapproach-subtitle").innerHTML = data.ourapproach.subtitle;
+		if (document.getElementById("ourapproach-text")) document.getElementById("ourapproach-text").innerHTML = data.ourapproach.text;
+		if (document.getElementById("ourapproach-more")) document.getElementById("ourapproach-more").innerHTML = data.ourapproach.more;
+		
+
+		// Who we work with
+		if (document.getElementById("whoweworkwith-title")) document.getElementById("whoweworkwith-title").innerHTML = data.whoweworkwith.title;
+		if (document.getElementById("whoweworkwith-subtitle")) document.getElementById("whoweworkwith-subtitle").innerHTML = data.whoweworkwith.subtitle;
+		if (document.getElementById("whoweworkwith-subtitle1")) document.getElementById("whoweworkwith-subtitle1").innerHTML = data.whoweworkwith.subtitle1;
+		if (document.getElementById("whoweworkwith-text1")) document.getElementById("whoweworkwith-text1").innerHTML = data.whoweworkwith.text1;
+		// if (document.getElementById("whoweworkwith-more1")) document.getElementById("whatIdo-more1").innerHTML = data.whatIdo.more1;
+		if (document.getElementById("whoweworkwith-subtitle2")) document.getElementById("whoweworkwith-subtitle2").innerHTML = data.whoweworkwith.subtitle2;
+		if (document.getElementById("whoweworkwith-text2")) document.getElementById("whoweworkwith-text2").innerHTML = data.whoweworkwith.text2;
+		// if (document.getElementById("whatIdo-more2")) document.getElementById("whatIdo-more2").innerHTML = data.whatIdo.more2;
+		if (document.getElementById("whoweworkwith-subtitle3")) document.getElementById("whoweworkwith-subtitle3").innerHTML = data.whoweworkwith.subtitle3;
+		if (document.getElementById("whoweworkwith-text3")) document.getElementById("whoweworkwith-text3").innerHTML = data.whoweworkwith.text3;
+		// if (document.getElementById("whatIdo-more3")) document.getElementById("whatIdo-more3").innerHTML = data.whatIdo.more3;
+		if (document.getElementById("whoweworkwith-subtitle4")) document.getElementById("whoweworkwith-subtitle4").innerHTML = data.whoweworkwith.subtitle4;
+		if (document.getElementById("whoweworkwith-text4")) document.getElementById("whoweworkwith-text4").innerHTML = data.whoweworkwith.text4;
+		if (document.getElementById("whoweworkwith-subtitle5")) document.getElementById("whoweworkwith-subtitle5").innerHTML = data.whoweworkwith.subtitle5;
+		if (document.getElementById("whoweworkwith-text5")) document.getElementById("whoweworkwith-text5").innerHTML = data.whoweworkwith.text5;
+		if (document.getElementById("whoweworkwith-subtitle6")) document.getElementById("whoweworkwith-subtitle6").innerHTML = data.whoweworkwith.subtitle6;
+		if (document.getElementById("whoweworkwith-text6")) document.getElementById("whoweworkwith-text6").innerHTML = data.whoweworkwith.text6;
+
+		// Why clients work with us
+		if (document.getElementById("whyclientsworkwithus-title")) document.getElementById("whyclientsworkwithus-title").innerHTML = data.whyclientsworkwithus.title;
+		if (document.getElementById("whyclientsworkwithus-subtitle")) document.getElementById("whyclientsworkwithus-subtitle").innerHTML = data.whyclientsworkwithus.subtitle;
+		if (document.getElementById("whyclientsworkwithus-subtitle1")) document.getElementById("whyclientsworkwithus-subtitle1").innerHTML = data.whyclientsworkwithus.subtitle1;
+		if (document.getElementById("whyclientsworkwithus-text1")) document.getElementById("whyclientsworkwithus-text1").innerHTML = data.whyclientsworkwithus.text1;
+		if (document.getElementById("whyclientsworkwithus-more1")) document.getElementById("whyclientsworkwithus-more1").innerHTML = data.whyclientsworkwithus.more1;
+		if (document.getElementById("whyclientsworkwithus-subtitle2")) document.getElementById("whyclientsworkwithus-subtitle2").innerHTML = data.whyclientsworkwithus.subtitle2;
+		if (document.getElementById("whyclientsworkwithus-text2")) document.getElementById("whyclientsworkwithus-text2").innerHTML = data.whyclientsworkwithus.text2;
+		// if (document.getElementById("whatIdo-more2")) document.getElementById("whatIdo-more2").innerHTML = data.whatIdo.more2;
+		if (document.getElementById("whyclientsworkwithus-subtitle3")) document.getElementById("whyclientsworkwithus-subtitle3").innerHTML = data.whyclientsworkwithus.subtitle3;
+		if (document.getElementById("whyclientsworkwithus-text3")) document.getElementById("whyclientsworkwithus-text3").innerHTML = data.whyclientsworkwithus.text3;
+		if (document.getElementById("whyclientsworkwithus-subtitle4")) document.getElementById("whyclientsworkwithus-subtitle4").innerHTML = data.whyclientsworkwithus.subtitle4;
+		if (document.getElementById("whyclientsworkwithus-text4")) document.getElementById("whyclientsworkwithus-text4").innerHTML = data.whyclientsworkwithus.text4;
+		if (document.getElementById("whyclientsworkwithus-more")) document.getElementById("whyclientsworkwithus-more").innerHTML = data.whyclientsworkwithus.more;
 
 		// Case Studies
 		if (document.getElementById("casestudies-title")) document.getElementById("casestudies-title").innerHTML = data.casestudies.title;
@@ -130,6 +191,7 @@ async function loadLanguage(lang) {
 		if (document.getElementById("researchbody-expertise")) document.getElementById("researchbody-expertise").innerHTML = data.researchbody.expertise;
 		if (document.getElementById("researchbody-expertiseanswers")) document.getElementById("researchbody-expertiseanswers").innerHTML = data.researchbody.expertiseanswers;
 		if (document.getElementById("researchbody-contact")) document.getElementById("researchbody-contact").innerHTML = data.researchbody.contact;
+		if (document.getElementById("researchbody-divider")) document.getElementById("researchbody-divider").innerHTML = data.researchbody.divider;
 		if (document.getElementById("researchbody-more")) document.getElementById("researchbody-more").innerHTML = data.researchbody.more;
 
 		// EDUCATION
@@ -150,6 +212,7 @@ async function loadLanguage(lang) {
 		if (document.getElementById("education-expertise")) document.getElementById("education-expertise").innerHTML = data.education.expertise;
 		if (document.getElementById("education-expertiseanswers")) document.getElementById("education-expertiseanswers").innerHTML = data.education.expertiseanswers;
 		if (document.getElementById("education-contact")) document.getElementById("education-contact").innerHTML = data.education.contact;
+		if (document.getElementById("education-divider")) document.getElementById("education-divider").innerHTML = data.education.divider;
 		if (document.getElementById("education-more")) document.getElementById("education-more").innerHTML = data.education.more;
 
 		// INNOVATION
@@ -170,6 +233,7 @@ async function loadLanguage(lang) {
 		if (document.getElementById("innovation-expertise")) document.getElementById("innovation-expertise").innerHTML = data.innovation.expertise;
 		if (document.getElementById("innovation-expertiseanswers")) document.getElementById("innovation-expertiseanswers").innerHTML = data.innovation.expertiseanswers;
 		if (document.getElementById("innovation-contact")) document.getElementById("innovation-contact").innerHTML = data.innovation.contact;
+		if (document.getElementById("innovation-divider2")) document.getElementById("innovation-divider2").innerHTML = data.innovation.divider2;
 		if (document.getElementById("innovation-more")) document.getElementById("innovation-more").innerHTML = data.innovation.more;
 
 		// GOZEL
@@ -222,6 +286,62 @@ async function loadLanguage(lang) {
 		if (document.getElementById("hcd-innovation")) document.getElementById("hcd-innovation").innerHTML = data.hcd.innovation;
 		if (document.getElementById("hcd-more")) document.getElementById("hcd-more").innerHTML = data.hcd.more;
 		if (document.getElementById("hcd-more2")) document.getElementById("hcd-more2").innerHTML = data.hcd.more2;
+
+		// APPROACH
+		if (document.getElementById("approach-title")) document.getElementById("approach-title").innerHTML = data.approach.title;
+		if (document.getElementById("approach-subtitle")) document.getElementById("approach-subtitle").innerHTML = data.approach.subtitle;
+		if (document.getElementById("approach-problemtitle")) document.getElementById("approach-problemtitle").innerHTML = data.approach.problemtitle;
+		if (document.getElementById("approach-problemanswer")) document.getElementById("approach-problemanswer").innerHTML = data.approach.problemanswer;
+		if (document.getElementById("approach-abstract")) document.getElementById("approach-abstract").innerHTML = data.approach.abstract;
+		if (document.getElementById("approach-whattitle")) document.getElementById("approach-whattitle").innerHTML = data.approach.whattitle;
+		if (document.getElementById("approach-whatanswers")) document.getElementById("approach-whatanswers").innerHTML = data.approach.whatanswers;
+		if (document.getElementById("approach-whatanswers1")) document.getElementById("approach-whatanswers1").innerHTML = data.approach.whatanswers1;
+		if (document.getElementById("approach-whatanswers2")) document.getElementById("approach-whatanswers2").innerHTML = data.approach.whatanswers2;
+		if (document.getElementById("approach-whatanswers3")) document.getElementById("approach-whatanswers3").innerHTML = data.approach.whatanswers3;
+		if (document.getElementById("approach-whatanswers4")) document.getElementById("approach-whatanswers4").innerHTML = data.approach.whatanswers4;
+		if (document.getElementById("approach-whatanswers4title")) document.getElementById("approach-whatanswers4title").innerHTML = data.approach.whatanswers4title;
+		if (document.getElementById("approach-solution")) document.getElementById("approach-solution").innerHTML = data.approach.solution;
+		if (document.getElementById("approach-divider1")) document.getElementById("approach-divider1").innerHTML = data.approach.divider1;
+		if (document.getElementById("approach-step1title")) document.getElementById("approach-step1title").innerHTML = data.approach.step1title;
+		if (document.getElementById("approach-step1text")) document.getElementById("approach-step1text").innerHTML = data.approach.step1text;
+		if (document.getElementById("approach-step2title")) document.getElementById("approach-step2title").innerHTML = data.approach.step2title;
+		if (document.getElementById("approach-step2text")) document.getElementById("approach-step2text").innerHTML = data.approach.step2text;
+		if (document.getElementById("approach-step3title")) document.getElementById("approach-step3title").innerHTML = data.approach.step3title;
+		if (document.getElementById("approach-step3text")) document.getElementById("approach-step3text").innerHTML = data.approach.step3text;
+		if (document.getElementById("approach-step4title")) document.getElementById("approach-step4title").innerHTML = data.approach.step4title;
+		if (document.getElementById("approach-step4text")) document.getElementById("approach-step4text").innerHTML = data.approach.step4text;
+		if (document.getElementById("approach-summary2")) document.getElementById("approach-summary2").innerHTML = data.approach.summary2;
+		if (document.getElementById("approach-summary3")) document.getElementById("approach-summary3").innerHTML = data.approach.summary3;
+		if (document.getElementById("approach-summary4")) document.getElementById("approach-summary4").innerHTML = data.approach.summary4;
+		if (document.getElementById("approach-approach1title")) document.getElementById("approach-approach1title").innerHTML = data.approach.approach1title;
+		if (document.getElementById("approach-approach1answers")) document.getElementById("approach-approach1answers").innerHTML = data.approach.approach1answers;
+		if (document.getElementById("approach-approach2title")) document.getElementById("approach-approach2title").innerHTML = data.approach.approach2title;
+		if (document.getElementById("approach-approach2answers")) document.getElementById("approach-approach2answers").innerHTML = data.approach.approach2answers;
+		if (document.getElementById("approach-approach3title")) document.getElementById("approach-approach3title").innerHTML = data.approach.approach3title;
+		if (document.getElementById("approach-approach3answers")) document.getElementById("approach-approach3answers").innerHTML = data.approach.approach3answers;
+		if (document.getElementById("approach-approach4title")) document.getElementById("approach-approach4title").innerHTML = data.approach.approach4title;
+		if (document.getElementById("approach-approach4answers")) document.getElementById("approach-approach4answers").innerHTML = data.approach.approach4answers;
+		if (document.getElementById("approach-divider2")) document.getElementById("approach-divider2").innerHTML = data.approach.divider2;
+		if (document.getElementById("approach-divider3")) document.getElementById("approach-divider3").innerHTML = data.approach.divider3;
+		if (document.getElementById("approach-divider4")) document.getElementById("approach-divider4").innerHTML = data.approach.divider4;
+		if (document.getElementById("approach-research")) document.getElementById("approach-research").innerHTML = data.approach.research;
+		if (document.getElementById("approach-innovation")) document.getElementById("approach-innovation").innerHTML = data.approach.innovation;
+		if (document.getElementById("approach-more")) document.getElementById("approach-more").innerHTML = data.approach.more;
+		if (document.getElementById("approach-more2")) document.getElementById("approach-more2").innerHTML = data.approach.more2;
+		if (document.getElementById("approach-more3")) document.getElementById("approach-more3").innerHTML = data.approach.more3;
+		if (document.getElementById("approach-reason1title")) document.getElementById("approach-reason1title").innerHTML = data.approach.reason1title;
+		if (document.getElementById("approach-reason1answer")) document.getElementById("approach-reason1answer").innerHTML = data.approach.reason1answer;
+		if (document.getElementById("approach-reason2title")) document.getElementById("approach-reason2title").innerHTML = data.approach.reason2title;
+		if (document.getElementById("approach-reason2answer")) document.getElementById("approach-reason2answer").innerHTML = data.approach.reason2answer;
+		if (document.getElementById("approach-reason3title")) document.getElementById("approach-reason3title").innerHTML = data.approach.reason3title;
+		if (document.getElementById("approach-reason3answer")) document.getElementById("approach-reason3answer").innerHTML = data.approach.reason3answer;
+		if (document.getElementById("approach-reason4title")) document.getElementById("approach-reason4title").innerHTML = data.approach.reason4title;
+		if (document.getElementById("approach-reason4answer")) document.getElementById("approach-reason4answer").innerHTML = data.approach.reason4answer;
+		if (document.getElementById("approach-reason5title")) document.getElementById("approach-reason5title").innerHTML = data.approach.reason5title;
+		if (document.getElementById("approach-reason5answer")) document.getElementById("approach-reason5answer").innerHTML = data.approach.reason5answer;
+		if (document.getElementById("approach-reason6title")) document.getElementById("approach-reason6title").innerHTML = data.approach.reason6title;
+		if (document.getElementById("approach-reason6answer")) document.getElementById("approach-reason6answer").innerHTML = data.approach.reason6answer;
+		if (document.getElementById("approach-canvasdesc")) document.getElementById("approach-canvasdesc").innerHTML = data.approach.canvasdesc;
 
 		// CONTACT
 		if (document.getElementById("contact-title")) document.getElementById("contact-title").innerHTML = data.contact.title;
@@ -282,9 +402,9 @@ function updateNavTexts(data) {
 
   document.querySelectorAll('.link.depth-0 span.indent-0')[1].innerHTML = data.nav.about;
   document.querySelectorAll('.link.depth-1 span.indent-1')[3].innerHTML = data.nav.aboutgozel;
-  document.querySelectorAll('.link.depth-1 span.indent-1')[4].innerHTML = data.nav.aboutHCD;
-  document.querySelectorAll('.link.depth-1 span.indent-1')[5].innerHTML = data.nav.aboutpublications;
-  document.querySelectorAll('.link.depth-1 span.indent-1')[6].innerHTML = data.nav.abouttalks;
+//   document.querySelectorAll('.link.depth-1 span.indent-1')[4].innerHTML = data.nav.aboutHCD;
+  document.querySelectorAll('.link.depth-1 span.indent-1')[4].innerHTML = data.nav.aboutpublications;
+  document.querySelectorAll('.link.depth-1 span.indent-1')[5].innerHTML = data.nav.abouttalks;
 
   document.querySelectorAll('.link.depth-0 span.indent-0')[2].innerHTML = data.nav.contact;
   // add more mappings as needed
