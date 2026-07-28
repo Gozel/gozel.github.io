@@ -1618,10 +1618,12 @@ input, select, textarea {
 			header.major h2 {
 				background: #fff;
 				position: relative;
-				top: -0.65em;
+				top: -0.85em;
 				display: inline;
 				margin: 0;
 				padding: 0 1em 0 1em;
+				font-weight: 200;
+				font-size: 1em;
 			}
 
 	footer {
@@ -1679,11 +1681,12 @@ input, select, textarea {
 		cursor: pointer;
 		border: 0;
 		border-radius: 5px;
-		background: #d52349;;
-		color: #fff !important;
-		font-weight: 700;
+		background: #cdd64aff;;
+		color: black !important;
+		/* font-weight: 700; */
 		outline: 0;
-		font-size: 1.1em;
+		margin: 2em 0;
+		/* font-size: 1.1em; */
 		padding: 0.65em 1.5em 0.65em 1.5em;
 		text-align: center;
 		-moz-transition: background-color .25s ease-in-out;
@@ -1785,7 +1788,7 @@ input, select, textarea {
 		.image.featured {
 			display: block;
 			width: 100%;
-			margin: 0 0 2em 0;
+			margin: 0 0 0.5em 0;
 		}
 
 		.image.main {
@@ -2226,7 +2229,7 @@ input, select, textarea {
 /* Nav */
 
 	#nav {
-		margin: 2.5em 0 0 0;
+		margin: 1.25em 0 0 0;
 	}
 
 		#nav > ul {
@@ -2349,22 +2352,24 @@ input, select, textarea {
 	#banner {
 		/* opacity: 0.8; */
 		/* background: white; */
-		background-position: center center;
+		background-color: #08231dff;
+		background-position: center top;
 		background-size: 100% auto;
 		background-repeat: no-repeat;
 		text-align: left;
 		position: relative;
-		padding: 2em 0;
+		/* padding: 2em 0; */
 		object-fit: contain;
 		/* margin: 3em 0 0 0; */
 	}
 		.index {
 			background-color: white;
 			/* opacity: 0.4; */
-			/* background: linear-gradient(
-				rgba(0, 0, 0, 0.33),
-				rgba(0, 0, 0, 0.33)
-			  ), url("../../images/gallery/workshop-optm.jpg"); */
+			padding: 2.5em;
+			background: linear-gradient(
+				rgba(0, 0, 0, 0.0),
+				rgba(0, 0, 0, 0.0)
+			  ), url("../../images/gallery/advantage_06_feathered.png");
 		}
 
 		.research {
@@ -2382,21 +2387,23 @@ input, select, textarea {
 		}
 
 		.innovation {
+			/* padding-bottom: 50px; */
 			background: linear-gradient(
 				rgba(0, 0, 0, 0.33),
 				rgba(0, 0, 0, 0.33)
-			  ), url("../../images/gallery/design\ thinking_banner.png");
+			  ), url("../../images/gallery/dt.png");
 		}
 
 		.design-thinking {
 			background: linear-gradient(
 				rgba(0, 0, 0, 0.33),
 				rgba(0, 0, 0, 0.33)
-			  ), url("../../images/gallery/explanation.jpg");
+			  ), url("../../images/gallery/dt.png");
 		}
 
 		.contact {
 			background: #ffffff url("../../images/gallery/contact.jpg");
+			padding: 2em;
 		}
 
 		.resources {
@@ -2408,10 +2415,12 @@ input, select, textarea {
 
 		.talks {
 			background: #ffffff url("../../images/gallery/scienceslam.png");
+			padding: 2em;
 		}
 
 		.publications {
 			background: #ffffff url("../../images/gallery/publications.jpg");
+			/* padding: 2em; */
 		}
 
 		#banner header {
@@ -2419,16 +2428,16 @@ input, select, textarea {
 			/* background-color: rgba(34, 30, 31, 0.98); */
 			/* background-color: rgba(255, 255, 255, 1); */
 			display: inline-block;
-			padding: 2.5em 5em;
+			/* padding: 0em 5em 0em 5em; */
 			border-radius: 5px;
 			max-width: 100%;
 		}
 
 			#banner header h2 {
 				/* color: #d52349; */
-				color: black;
+				color: white;
 				/* font-weight: 700; */
-				font-size: 3.5em;
+				font-size: 2.75em;
 				margin: 0 0 0.65em 0;
 				/* font-family: 'Open Sans', sans-serif, Arial, Helvetica; */
 				line-height: 1.25em;
@@ -2455,11 +2464,11 @@ input, select, textarea {
 			#banner header p {
 				/* color: #d52349; */
 				/* color: white; */
-				color: black;
+				color: white;
 				padding: 0;
 				font-style: normal;
 				margin: 0;
-				font-size: 1.5em;
+				font-size: 1.15em;
 				line-height: 1.25em;
 			}
 
@@ -2589,7 +2598,7 @@ input, select, textarea {
 	#footer {
 		position: relative;
 		color: white;
-		background-color: rgba(34, 30, 31, 0.98);
+		background-color: #08231dff; /*rgba(34, 30, 31, 0.98);*/
 		padding: 2em 0;
 	}
 
@@ -2727,7 +2736,7 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				padding: 4em 0 3em 0;
+				padding: 0.5em 0 0.25em 0;
 			}
 
 		/* Banner */
