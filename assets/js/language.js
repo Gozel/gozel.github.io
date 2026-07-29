@@ -395,18 +395,19 @@ function updateNavTexts(data) {
   if (desktopServices) desktopServices.innerHTML = data.nav.services;
 
   // Bootstrap mobile version
-  document.querySelectorAll('.link.depth-0 span.indent-0')[0].innerHTML = data.nav.services;
+  document.querySelectorAll('.link.depth-0 span.indent-0')[0].innerHTML = data.nav.approach;
+  document.querySelectorAll('.link.depth-0 span.indent-0')[1].innerHTML = data.nav.services;
   document.querySelectorAll('.link.depth-1 span.indent-1')[0].innerHTML = data.nav.servicesresearch;
   document.querySelectorAll('.link.depth-1 span.indent-1')[1].innerHTML = data.nav.serviceseducation;
   document.querySelectorAll('.link.depth-1 span.indent-1')[2].innerHTML = data.nav.servicesinnovation;
 
-  document.querySelectorAll('.link.depth-0 span.indent-0')[1].innerHTML = data.nav.about;
+  document.querySelectorAll('.link.depth-0 span.indent-0')[2].innerHTML = data.nav.about;
   document.querySelectorAll('.link.depth-1 span.indent-1')[3].innerHTML = data.nav.aboutgozel;
 //   document.querySelectorAll('.link.depth-1 span.indent-1')[4].innerHTML = data.nav.aboutHCD;
   document.querySelectorAll('.link.depth-1 span.indent-1')[4].innerHTML = data.nav.aboutpublications;
   document.querySelectorAll('.link.depth-1 span.indent-1')[5].innerHTML = data.nav.abouttalks;
 
-  document.querySelectorAll('.link.depth-0 span.indent-0')[2].innerHTML = data.nav.contact;
+  document.querySelectorAll('.link.depth-0 span.indent-0')[3].innerHTML = data.nav.contact;
   // add more mappings as needed
 }
 
