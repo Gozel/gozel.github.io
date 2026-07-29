@@ -1,6 +1,6 @@
 const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
               || window.matchMedia("(max-width: 980px)").matches;
-const langSelect = (!isMobile) ? document.getElementById("language") : document.querySelectorAll('.link.depth-0')[3];
+const langSelect = (!isMobile) ? document.getElementById("language") : document.querySelectorAll('.link.depth-0')[4];
 
 async function loadHTML(url, container) {
     try {
