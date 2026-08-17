@@ -182,10 +182,20 @@ async function loadLanguage(lang) {
 		// RESEARCH
 		if (document.getElementById("researchbody-questions")) document.getElementById("researchbody-questions").innerHTML = data.researchbody.questions;
 		if (document.getElementById("researchbody-questionsanswers")) document.getElementById("researchbody-questionsanswers").innerHTML = data.researchbody.questionsanswers;
+		if (document.getElementById("researchbody-title")) document.getElementById("researchbody-title").innerHTML = data.researchbody.title;
+		if (document.getElementById("researchbody-subtitle")) document.getElementById("researchbody-subtitle").innerHTML = data.researchbody.subtitle;
 		if (document.getElementById("researchbody-methods")) document.getElementById("researchbody-methods").innerHTML = data.researchbody.methods;
 		if (document.getElementById("researchbody-methodsanswers")) document.getElementById("researchbody-methodsanswers").innerHTML = data.researchbody.methodsanswers;
+		// if (document.getElementById("researchbody-casestudies")) document.getElementById("researchbody-casestudies").innerHTML = data.researchbody.casestudies;
+		// if (document.getElementById("researchbody-evidencetitle")) document.getElementById("researchbody-evidencetitle").innerHTML = data.researchbody.evidencetitle;
+		if (document.getElementById("researchbody-evidencecontent")) document.getElementById("researchbody-evidencecontent").innerHTML = data.researchbody.evidencecontent;
 		if (document.getElementById("researchbody-outcomes")) document.getElementById("researchbody-outcomes").innerHTML = data.researchbody.outcomes;
-		if (document.getElementById("researchbody-outcomesanswers")) document.getElementById("researchbody-outcomesanswers").innerHTML = data.researchbody.outcomesanswers;
+		if (document.getElementById("researchbody-outcome1")) document.getElementById("researchbody-outcome1").innerHTML = data.researchbody.outcome1;
+		if (document.getElementById("researchbody-outcome2")) document.getElementById("researchbody-outcome2").innerHTML = data.researchbody.outcome2;
+		if (document.getElementById("researchbody-outcome3")) document.getElementById("researchbody-outcome3").innerHTML = data.researchbody.outcome3;
+		if (document.getElementById("researchbody-outcome4")) document.getElementById("researchbody-outcome4").innerHTML = data.researchbody.outcome4;
+		if (document.getElementById("researchbody-outcome5")) document.getElementById("researchbody-outcome5").innerHTML = data.researchbody.outcome5;
+		if (document.getElementById("researchbody-outcome6")) document.getElementById("researchbody-outcome6").innerHTML = data.researchbody.outcome6;
 		if (document.getElementById("researchbody-resources")) document.getElementById("researchbody-resources").innerHTML = data.researchbody.resources;
 		if (document.getElementById("researchbody-resourcesanswers")) document.getElementById("researchbody-resourcesanswers").innerHTML = data.researchbody.resourcesanswers;
 		if (document.getElementById("researchbody-expertise")) document.getElementById("researchbody-expertise").innerHTML = data.researchbody.expertise;
@@ -296,10 +306,15 @@ async function loadLanguage(lang) {
 		if (document.getElementById("approach-whattitle")) document.getElementById("approach-whattitle").innerHTML = data.approach.whattitle;
 		if (document.getElementById("approach-whatanswers")) document.getElementById("approach-whatanswers").innerHTML = data.approach.whatanswers;
 		if (document.getElementById("approach-whatanswers1")) document.getElementById("approach-whatanswers1").innerHTML = data.approach.whatanswers1;
+		if (document.getElementById("approach-whatanswers1title")) document.getElementById("approach-whatanswers1title").innerHTML = data.approach.whatanswers1title;
 		if (document.getElementById("approach-whatanswers2")) document.getElementById("approach-whatanswers2").innerHTML = data.approach.whatanswers2;
+		if (document.getElementById("approach-whatanswers2title")) document.getElementById("approach-whatanswers2title").innerHTML = data.approach.whatanswers2title;
+		if (document.getElementById("approach-whatanswers3title")) document.getElementById("approach-whatanswers3title").innerHTML = data.approach.whatanswers3title;
 		if (document.getElementById("approach-whatanswers3")) document.getElementById("approach-whatanswers3").innerHTML = data.approach.whatanswers3;
 		if (document.getElementById("approach-whatanswers4")) document.getElementById("approach-whatanswers4").innerHTML = data.approach.whatanswers4;
+		if (document.getElementById("approach-whatanswers5")) document.getElementById("approach-whatanswers5").innerHTML = data.approach.whatanswers5;
 		if (document.getElementById("approach-whatanswers4title")) document.getElementById("approach-whatanswers4title").innerHTML = data.approach.whatanswers4title;
+		if (document.getElementById("approach-whatanswers5title")) document.getElementById("approach-whatanswers5title").innerHTML = data.approach.whatanswers5title;
 		if (document.getElementById("approach-solution")) document.getElementById("approach-solution").innerHTML = data.approach.solution;
 		if (document.getElementById("approach-divider1")) document.getElementById("approach-divider1").innerHTML = data.approach.divider1;
 		if (document.getElementById("approach-step1title")) document.getElementById("approach-step1title").innerHTML = data.approach.step1title;
@@ -408,7 +423,7 @@ function updateNavTexts(data) {
   document.querySelectorAll('.link.depth-1 span.indent-1')[5].innerHTML = data.nav.abouttalks;
 
   document.querySelectorAll('.link.depth-0 span.indent-0')[3].innerHTML = data.nav.contact;
-  // add more mappings as needed
+//   add more mappings as needed
 }
 
 // Load default or saved language
