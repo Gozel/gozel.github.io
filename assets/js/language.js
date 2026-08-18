@@ -361,6 +361,7 @@ async function loadLanguage(lang) {
 		// CONTACT
 		if (document.getElementById("contact-title")) document.getElementById("contact-title").innerHTML = data.contact.title;
 		if (document.getElementById("contact-collab")) document.getElementById("contact-collab").innerHTML = data.contact.collab;
+		if (document.getElementById("contact-content")) document.getElementById("contact-content").innerHTML = data.contact.content;
 		if (document.getElementById("contact-more")) document.getElementById("contact-more").innerHTML = data.contact.more;
 
 		// FACT CHECKER
