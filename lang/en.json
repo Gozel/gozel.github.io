@@ -108,7 +108,7 @@
   }, 
   "research": {
     "nav": "Services > Research",
-    "title": "Discover new markets through research",
+    "title": "Discover new opportunities through research",
     "subtitle": "We turn cutting-edge research into successful sustainable innovation—reducing uncertainty before you invest and revealing opportunities for new products, services, and business models."
   },
   "researchbody": {
@@ -235,7 +235,7 @@
     "problemtitle": "Three pillars - One practical way",
     "problemanswer": "We believe lasting innovation requires a positive mindset. However, most respond to sustainability with caution, compliance, and constraint. We do something different: we dream, design, and build. ",
     "abstract": "Optimism → Better imagination → More opportunities",
-    "whattitle": "WHY THE 3 PILLARS?",
+    "whattitle": "WHY THE THREE PILLARS?",
     "whatanswers": "Sustainability conversations are often constrained by",
     "whatanswers1title": "Organisational Constraints",
     "whatanswers1": "Regulatory compliance, risk management, legacy systems, and competing stakeholder priorities <b style='font-weight: 700;'>encourage caution and incremental decision-making</b>.",
@@ -245,9 +245,8 @@
     "whatanswers3": "Ever-shifting laws, complex climate reporting, and hollow sustainability exercises, <b style='font-weight: 700;'>breed both exhaustion and a deepening cynicism about whether efforts truly matter</b>.",
     "whatanswers4title": "The Sustainable Innovation Method",
     "whatanswers4": "When these forces reinforce one another, sustainability becomes something organisations manage and respond to—rather than an opportunity to innovate.",
-    "whatanswers5title": "Change the way you see sustainability. Change what's possible.",
-    "whatanswers5": "Grounded in over a decade of <a href=''>academic research</a> and <a href=''>industry collaboration</a>, we developed the <b style='font-weight: 700;'>Sustainable Innovation Method</b>. Its <b style='font-weight: 700;'>three pillars</b> are designed to overcome these barriers, open up new possibilities, and turn ambitious ideas into action.<br><br><b style='font-weight: 700;'>Lead the future, don’t just adapt to it</b>.",
-    
+    "whatanswers5title": "Change the way you see sustainability: change what's possible.",
+    "whatanswers5": "Grounded in over a decade of <a href='services-research'>academic research</a> and <a href='services-innovation'>industry collaboration</a>, we developed the <b style='font-weight: 700;'>Sustainable Innovation Method</b>. Its <b style='font-weight: 700;'>three pillars</b> are designed to overcome these barriers, open up new possibilities, and turn ambitious ideas into action.<br><br><b style='font-weight: 700;'>Lead the future, don’t just adapt to it</b>.",
     "solution": "THE SOLUTION?",
     "canvasdesc": "Sustainable Innovation Canvas (<a href=''>download here</a>)",
     "step1title": "Reframe",
@@ -282,7 +281,7 @@
     "reason5answer": "You will be better equipped to: <ul><li>Spot emerging market opportunities early</li> <li>Build innovations customers genuinely value</li> <li>Reduce uncertainty before investing</li> <li>Align stakeholders around one shared future</li> <li>Strengthen adoption of what you launch</li> <li>Create business models built to last</li></ul>",
     "reason6title": "Set the Standard",
     "reason6answer": "The organisations that lead the sustainability transition won't just adapt to change.<br><br>They'll create the products, services, and experiences that define it.",
-    "divider3": "THE 3 PILLARS IN DETAIL",
+    "divider3": "THE THREE PILLARS IN DETAIL",
     "divider4": "BUILT ON RESEARCH - DESIGNED FOR PRACTICE",
     "research": "Research",
     "innovation": "Innovation",
