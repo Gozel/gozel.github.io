@@ -1,0 +1,6 @@
+{%- comment -%}
+	YouTube video (the ID is the part after "v=" in the link).
+	{% include tt/video.html youtube="dQw4w9WgXcQ" title="…" %}
+	Any other embeddable player: {% include tt/video.html url="https://player.vimeo.com/video/123" %}
+{%- endcomment -%}
+<div class="tt-embed"><iframe src="{% if include.youtube %}https://www.youtube-nocookie.com/embed/{{ include.youtube }}{% else %}{{ include.url }}{% endif %}" title="{{ include.title | default: 'Video' | escape }}" allowfullscreen loading="lazy"></iframe></div>

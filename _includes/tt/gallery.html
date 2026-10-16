@@ -1,0 +1,9 @@
+{%- comment -%}
+	2–3 images side by side; separate the entries with "|".
+	{% include tt/gallery.html images="a.jpg|b.jpg" captions="Left|Right" alts="…|…" %}
+{%- endcomment -%}
+{%- assign piece = page.relative_path | remove_first: "_thinktank/" | split: "/" | first -%}
+{%- assign images = include.images | split: "|" -%}
+{%- assign captions = include.captions | split: "|" -%}
+{%- assign alts = include.alts | split: "|" -%}
+<div class="tt-gallery">{% for image in images %}{% assign caption = captions[forloop.index0] | strip %}<figure class="tt-figure"><img src="{% include tt/src.html src=image piece=piece %}" alt="{{ alts[forloop.index0] | strip | escape }}" loading="lazy">{% if caption != "" %}<figcaption>{{ caption | markdownify | remove: "<p>" | remove: "</p>" | strip }}</figcaption>{% endif %}</figure>{% endfor %}</div>

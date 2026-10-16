@@ -15,6 +15,7 @@
     "aboutHCD": "Conception centrée sur l'humain",
     "aboutpublications": "Publications",
     "abouttalks": "Conférences",
+    "thinktank": "Think Tank",
     "contact": "Contact"
   },
   "footer": {
@@ -321,6 +322,11 @@
   },
   "terms": {
     "title": "Conditions générales"
+  },
+  "thinktank": {
+    "title": "Think Tank",
+    "intro": "Essais, analyses et prises de position sur la durabilité, la technologie et la société.",
+    "readmore": "Lire la suite",
+    "empty": "Aucune publication pour le moment."
   }
 }
-

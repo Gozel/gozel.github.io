@@ -1,0 +1,49 @@
+---
+layout: tt-base
+---
+{%- comment -%}
+	Layout for one language version of a Think Tank piece.
+	The language is the file name (de.md, fr.md, en.md); the folder groups the versions.
+{%- endcomment -%}
+{%- assign lang = page.slug -%}
+{%- assign t = site.data.thinktank[lang] | default: site.data.thinktank.en -%}
+{%- assign piece = page.relative_path | remove_first: "_thinktank/" | split: "/" | first -%}
+{%- assign dir = "_thinktank/" | append: piece | append: "/" -%}
+{%- assign versions = site.thinktank | where_exp: "d", "d.relative_path contains dir" -%}
+<!-- Main -->
+			<section id="main">
+				<div class="container">
+					<article class="tt-post" lang="{{ lang }}">
+
+						<a class="tt-back" href="think-tank/">{{ t.back }}</a>
+
+						<p class="tt-meta">
+							<time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%Y-%m-%d" }}</time>
+							{%- if page.author %} &middot; <span class="tt-author">{{ page.author }}</span>{% endif %}
+						</p>
+
+						{%- if versions.size > 1 %}
+						<nav class="tt-lang-toggle">
+							{%- for v in versions %}
+							<a href="{{ v.url | remove_first: '/' }}" data-lang="{{ v.slug }}"{% if v.slug == lang %} class="active" aria-current="page"{% endif %}>{{ site.data.thinktank[v.slug].name | default: v.slug }}</a>
+							{%- endfor %}
+						</nav>
+						{%- endif %}
+
+						<h1 class="tt-title">{{ page.title }}</h1>
+
+						{%- if page.lead %}
+						<p class="tt-lead">{{ page.lead }}</p>
+						{%- endif %}
+
+						{%- if page.cover %}
+						{% include tt/figure.html src=page.cover alt=page.cover_alt caption=page.cover_caption wide=true %}
+						{%- endif %}
+
+						<div class="tt-body">
+{{ content }}
+						</div>
+
+					</article>
+				</div>
+			</section>

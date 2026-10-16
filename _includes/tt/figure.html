@@ -1,0 +1,6 @@
+{%- comment -%}
+	Image with optional caption.
+	{% include tt/figure.html src="chart.png" alt="…" caption="…" wide=true %}
+{%- endcomment -%}
+{%- assign piece = page.relative_path | remove_first: "_thinktank/" | split: "/" | first -%}
+<figure class="tt-figure{% if include.wide %} tt-wide{% endif %}"><img src="{% include tt/src.html src=include.src piece=piece %}" alt="{{ include.alt | escape }}" loading="lazy">{% if include.caption %}<figcaption>{{ include.caption | markdownify | remove: "<p>" | remove: "</p>" | strip }}</figcaption>{% endif %}</figure>

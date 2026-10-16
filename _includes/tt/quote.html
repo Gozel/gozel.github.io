@@ -1,0 +1,5 @@
+{%- comment -%}
+	Highlighted quotation.
+	{% include tt/quote.html text="…" cite="Name, role" %}
+{%- endcomment -%}
+<blockquote class="tt-quote"><p>{{ include.text | markdownify | remove: "<p>" | remove: "</p>" | strip }}</p>{% if include.cite %}<cite>{{ include.cite }}</cite>{% endif %}</blockquote>

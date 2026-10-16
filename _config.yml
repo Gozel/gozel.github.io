@@ -1,0 +1,19 @@
+# Jekyll configuration. GitHub Pages builds the site with Jekyll on every push.
+# Plain .html pages without front matter (the rest of the site) are copied unchanged.
+
+url: "https://shakeri.eu"
+markdown: kramdown
+
+# Think Tank pieces: _thinktank/<piece>/<lang>.md  ->  /think-tank/<piece>/<lang>/
+collections:
+  thinktank:
+    output: true
+    permalink: /think-tank/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: thinktank
+    values:
+      layout: think-tank
+      author: "Gözel Shakeri"

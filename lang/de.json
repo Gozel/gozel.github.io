@@ -15,6 +15,7 @@
     "aboutHCD": "Human-Centered Design",
     "aboutpublications": "Publikationen",
     "abouttalks": "Vorträge & Keynotes",
+    "thinktank": "Think Tank",
     "contact": "Kontakt"
   },
   "footer": {
@@ -324,5 +325,11 @@
   "terms": {
     "title": "Allgemeine Geschäftsbedingungen",
     "content": "<p>Zuletzt aktualisiert: 14.10.2025</p><h2>1. Einleitung</h2><p>Willkommen bei Shakeri <i>et al.</i>. Diese Allgemeinen Geschäftsbedingungen regeln die Nutzung unserer Website und unserer Dienstleistungen im Bereich nachhaltige Digitalisierung. Mit der Nutzung unserer Website erklären Sie sich mit diesen Bedingungen einverstanden.</p><h2>2. Dienstleistungen</h2><p>Wir bieten Dienstleistungen in den Bereichen nutzerzentrierte Forschung, Innovation und Weiterbildung an, darunter Workshops, Innovationsstrategien und Human-Centered Design. Umfang, Leistungen und Vergütung werden jeweils in separaten Angeboten oder Verträgen geregelt.</p><h2>3. Geistiges Eigentum</h2><p>Alle Inhalte dieser Website (Texte, Grafiken, Logos und Bilder) sind Eigentum von Shakeri <i>et al.</i> oder deren Lizenzgebern und urheberrechtlich geschützt. Materialien, Werkzeuge und Methoden, die im Rahmen unserer Beratungsleistungen bereitgestellt werden, bleiben unser geistiges Eigentum, sofern nichts anderes schriftlich vereinbart wurde.</p><h2>4. Pflichten der Nutzer</h2><ul><li>Wahrheitsgemäße und vollständige Angaben machen.</li><li>Website und Dienstleistungen nur rechtmäßig nutzen.</li><li>Inhalte nicht ohne Genehmigung kopieren, verändern oder verbreiten.</li></ul><h2>5. Preise und Zahlung</h2><p>Honorare und Zahlungsbedingungen werden in individuellen Angeboten oder Verträgen festgelegt.</p><h2>6. Vertraulichkeit</h2><p>Vertrauliche Informationen werden gemäß unserer <a href='privacy_policy'>Datenschutzerklärung</a> und der DSGVO behandelt.</p><h2>7. Haftungsbeschränkung</h2><p>Soweit gesetzlich zulässig, haftet Shakeri <i>et al.</i> nicht für indirekte oder Folgeschäden. Die Haftung ist auf das Honorar der jeweiligen Dienstleistung beschränkt.</p><h2>8. Kündigung</h2><p>Wir behalten uns das Recht vor, den Zugang zu unserer Website oder unseren Dienstleistungen bei Verstößen gegen diese Bedingungen jederzeit auszusetzen oder zu beenden.</p><h2>9. Anwendbares Recht</h2><p>Es gilt französisches Recht. Gerichtsstand ist Straßburg, Frankreich.</p><h2>10. Änderungen</h2><p>Diese Bedingungen können aktualisiert werden. Die jeweils aktuelle Version wird auf dieser Website veröffentlicht.</p><h2>11. Kontakt</h2><p>Shakeri <i>et al.</i><br>Straßburg, Frankreich<br>E-Mail: gozel@shakeri.eu</p>"
+  },
+  "thinktank": {
+    "title": "Think Tank",
+    "intro": "Essays, Analysen und Positionen zu Nachhaltigkeit, Technologie und Gesellschaft.",
+    "readmore": "Weiterlesen",
+    "empty": "Noch keine Beiträge veröffentlicht."
   }
 }

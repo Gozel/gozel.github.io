@@ -1,0 +1,13 @@
+# Interface labels for Think Tank pages, per language of the piece
+de:
+  name: Deutsch
+  back: "← Alle Think-Tank-Beiträge"
+  readmore: Weiterlesen
+fr:
+  name: Français
+  back: "← Toutes les publications"
+  readmore: Lire la suite
+en:
+  name: English
+  back: "← All think tank pieces"
+  readmore: Read more

@@ -2234,12 +2234,22 @@ input, select, textarea {
 
 		#nav > ul {
 			margin: 0;
+			display: flex;
+			flex-wrap: nowrap;
+			justify-content: flex-end;
+			align-items: center;
+			gap: 0.3em;
 		}
 
 			#nav > ul > li {
 				display: inline-block;
 				/* font-style: italic; */
-				margin: 0 0.35em 0 0.35em;
+				margin: 0;
+				white-space: nowrap;
+			}
+
+			#nav > ul > select {
+				margin-left: 0.5em;
 			}
 
 				#nav > ul > li > ul {
@@ -2250,7 +2260,7 @@ input, select, textarea {
 					border-radius: 5px;
 					color: black;
 					text-decoration: none;
-					padding: 0.6em 1.2em 0.6em 1.2em;
+					padding: 0.6em 0.9em 0.6em 0.9em;
 					-moz-transition: background-color .25s ease-in-out;
 					-webkit-transition: background-color .25s ease-in-out;
 					-ms-transition: background-color .25s ease-in-out;
@@ -2713,12 +2723,37 @@ input, select, textarea {
 
 /* Large */
 
+	/* Header: give the menu more room so all tabs fit on one line */
+	@media screen and (min-width: 981px) and (max-width: 1280px) {
+
+		#header .row > :has(img):not(:has(#nav)) {
+			width: 28%;
+		}
+
+		#header .row > :has(#nav):not(:has(img)) {
+			width: 72%;
+		}
+
+	}
+
 	@media screen and (max-width: 1280px) {
 
 		/* Basic */
 
 			body, input, textarea, select {
 				font-size: 11pt;
+			}
+
+		/* Header: tighter menu so all tabs fit on one line */
+
+			#nav > ul > li > a {
+				padding: 0.5em 0.6em;
+			}
+
+			#nav > ul > select {
+				padding-left: 8px;
+				padding-right: 24px;
+				background-position: right 7px center;
 			}
 
 		/* Section/Article */
@@ -3576,3 +3611,304 @@ input, select, textarea {
             flex: 0 0 180px;
         }
     }
+
+/* Think Tank */
+
+	.tt-banner-text {
+		padding-bottom: 3em;
+	}
+
+	.tt-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2em;
+	}
+
+		.tt-empty {
+			grid-column: 1 / -1;
+			text-align: center;
+		}
+
+	.tt-piece {
+		display: flex;
+	}
+
+	.tt-card[hidden] {
+		display: none;
+	}
+
+	.tt-card {
+		flex: 1;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		background: #fff;
+		border-radius: 15px;
+		overflow: hidden;
+	}
+
+		.tt-card-image img {
+			display: block;
+			width: 100%;
+			aspect-ratio: 16 / 9;
+			object-fit: cover;
+		}
+
+		.tt-card-body {
+			display: flex;
+			flex-direction: column;
+			flex: 1;
+			padding: 1.5em;
+		}
+
+			.tt-card-body h3 {
+				margin: 0 0 0.5em 0;
+				line-height: 1.35em;
+			}
+
+			.tt-card-body h3 a {
+				color: #08231d;
+				text-decoration: none;
+			}
+
+			.tt-card-meta {
+				font-size: 0.85em;
+				color: #777;
+				margin: 0 0 0.5em 0;
+			}
+
+			.tt-card-more {
+				margin-top: auto;
+				font-weight: 700;
+				color: #08231d;
+				text-decoration: none;
+			}
+
+	.tt-post {
+		max-width: 46em;
+		margin: 0 auto;
+		background: #fff;
+		border-radius: 15px;
+		padding: 3em 4em;
+	}
+
+		.tt-back {
+			display: inline-block;
+			margin-bottom: 1.5em;
+			color: #08231d;
+			text-decoration: none;
+			font-weight: 700;
+		}
+
+		.tt-meta {
+			color: #777;
+			margin: 0 0 1em 0;
+		}
+
+		.tt-lang-toggle {
+			display: flex;
+			gap: 0.5em;
+			margin-bottom: 2em;
+		}
+
+			.tt-lang-toggle a {
+				border: 1px solid #08231d;
+				background: #fff;
+				color: #08231d;
+				border-radius: 999px;
+				padding: 0.35em 1.1em;
+				font-size: 0.9em;
+				text-decoration: none;
+			}
+
+			.tt-lang-toggle a:hover {
+				background: #eef1c9;
+			}
+
+			.tt-lang-toggle a.active {
+				background: #08231d;
+				color: #fff;
+			}
+
+		.tt-post h1.tt-title {
+			font-size: 2.5em;
+			line-height: 1.2em;
+			margin: 0 0 0.5em 0;
+			color: #08231d;
+		}
+
+		.tt-post .tt-lead {
+			font-size: 1.25em;
+			line-height: 1.6em;
+			color: #444;
+		}
+
+		.tt-post h2 {
+			margin: 1.5em 0 0.5em 0;
+		}
+
+		.tt-post p, .tt-post li {
+			line-height: 1.75em;
+		}
+
+		.tt-post strong, .tt-post b {
+			font-weight: 700;
+		}
+
+		.tt-post ul, .tt-post ol {
+			padding-left: 1.5em;
+			margin-bottom: 1.5em;
+		}
+
+		.tt-post ul {
+			list-style: disc;
+		}
+
+		.tt-post ol {
+			list-style: decimal;
+		}
+
+		.tt-figure {
+			margin: 2em 0;
+		}
+
+			.tt-figure img {
+				display: block;
+				width: 100%;
+				border-radius: 10px;
+			}
+
+			.tt-figure figcaption {
+				font-size: 0.85em;
+				color: #777;
+				margin-top: 0.5em;
+			}
+
+		.tt-wide {
+			margin-left: -2em;
+			margin-right: -2em;
+		}
+
+		.tt-gallery {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+			gap: 1em;
+			margin: 2em 0;
+		}
+
+			.tt-gallery .tt-figure {
+				margin: 0;
+			}
+
+			.tt-gallery .tt-figure img {
+				aspect-ratio: 4 / 3;
+				object-fit: cover;
+			}
+
+		.tt-body img {
+			max-width: 100%;
+			border-radius: 10px;
+		}
+
+		.tt-quote, .tt-body > blockquote {
+			border-left: 4px solid #cdd64a;
+			margin: 2em 0;
+			padding: 0.5em 0 0.5em 1.5em;
+		}
+
+			.tt-quote p, .tt-body > blockquote p {
+				font-size: 1.35em;
+				line-height: 1.5em;
+				font-style: italic;
+				color: #08231d;
+				margin-bottom: 0.5em;
+			}
+
+			.tt-quote cite {
+				font-style: normal;
+				color: #777;
+			}
+
+			.tt-quote cite:before {
+				content: '— ';
+			}
+
+		.tt-callout {
+			background: #08231d;
+			color: #fff;
+			border-radius: 15px;
+			padding: 1.5em 2em;
+			margin: 2em 0;
+		}
+
+			.tt-callout h3 {
+				color: #cdd64a;
+				margin: 0 0 0.75em 0;
+			}
+
+			.tt-callout ul, .tt-callout ol, .tt-callout p:last-child {
+				margin-bottom: 0;
+			}
+
+		.tt-embed {
+			position: relative;
+			aspect-ratio: 16 / 9;
+			margin: 2em 0;
+		}
+
+			.tt-embed iframe {
+				position: absolute;
+				inset: 0;
+				width: 100%;
+				height: 100%;
+				border: 0;
+				border-radius: 10px;
+			}
+
+		.tt-references, .tt-post .footnotes {
+			border-top: 1px solid #ddd;
+			margin-top: 3em;
+			padding-top: 1.5em;
+			font-size: 0.9em;
+		}
+
+	@media screen and (max-width: 980px) {
+
+		.tt-grid {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		.tt-post {
+			padding: 2em 2.5em;
+		}
+
+			.tt-post h1.tt-title {
+				font-size: 2em;
+			}
+
+			.tt-wide {
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		.tt-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.tt-post {
+			padding: 1.5em 1.25em;
+		}
+
+			.tt-post h1.tt-title {
+				font-size: 1.6em;
+			}
+
+			.tt-post .tt-lead {
+				font-size: 1.1em;
+			}
+
+	}

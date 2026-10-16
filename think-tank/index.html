@@ -1,0 +1,56 @@
+---
+layout: tt-base
+title: Think Tank
+description: Essays, analyses and positions on sustainability, technology and society.
+---
+{%- comment -%}
+	Built automatically from _thinktank/. Never edit to add a piece.
+	One card per piece; the card for the reader's language is shown (see think-tank.js).
+{%- endcomment -%}
+{%- assign docs = site.thinktank | sort: "date" | reverse -%}
+{%- assign pieces = docs | group_by_exp: "d", "d.relative_path | remove_first: '_thinktank/' | split: '/' | first" -%}
+<!-- Banner -->
+			<section id="banner">
+				<header>
+					<div class="row">
+						<div class="col-12 banner-text tt-banner-text">
+							<h2 id="thinktank-title">Think Tank</h2>
+							<p id="thinktank-intro"></p>
+						</div>
+					</div>
+				</header>
+			</section>
+
+			<!-- Main -->
+			<section id="main">
+				<div class="container">
+					<div class="tt-grid">
+						{%- for piece in pieces %}
+						{%- assign versions = piece.items | sort: "slug" %}
+						{%- assign langs = versions | map: "slug" | join: " / " | upcase %}
+						<div class="tt-piece">
+							{%- for doc in versions %}
+							{%- assign t = site.data.thinktank[doc.slug] | default: site.data.thinktank.en %}
+							{%- capture cover %}{% if doc.cover %}{% include tt/src.html src=doc.cover piece=piece.name %}{% endif %}{% endcapture %}
+							{%- assign href = doc.url | remove_first: "/" %}
+							<article class="tt-card" data-lang="{{ doc.slug }}" lang="{{ doc.slug }}"{% unless forloop.first %} hidden{% endunless %}>
+								{%- if cover != "" %}
+								<a href="{{ href }}" class="tt-card-image"><img src="{{ cover }}" alt="{{ doc.cover_alt | escape }}" loading="lazy"></a>
+								{%- endif %}
+								<div class="tt-card-body">
+									<p class="tt-card-meta"><time datetime="{{ doc.date | date: '%Y-%m-%d' }}">{{ doc.date | date: "%Y-%m-%d" }}</time> &middot; {{ langs }}</p>
+									<h3><a href="{{ href }}">{{ doc.title }}</a></h3>
+									{%- if doc.lead %}
+									<p>{{ doc.lead }}</p>
+									{%- endif %}
+									<a href="{{ href }}" class="tt-card-more">{{ t.readmore }} &rarr;</a>
+								</div>
+							</article>
+							{%- endfor %}
+						</div>
+						{%- else %}
+						<p class="tt-empty" id="thinktank-empty"></p>
+						{%- endfor %}
+					</div>
+				</div>
+			</section>

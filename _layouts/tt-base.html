@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+{%- if page.collection == "thinktank" -%}
+	{%- assign tt_piece = page.relative_path | remove_first: "_thinktank/" | split: "/" | first -%}
+	{%- assign tt_dir = "_thinktank/" | append: tt_piece | append: "/" -%}
+	{%- assign tt_versions = site.thinktank | where_exp: "d", "d.relative_path contains tt_dir" -%}
+	{%- assign tt_description = page.description | default: page.lead | strip_html | strip -%}
+{%- else -%}
+	{%- assign tt_description = page.description -%}
+{%- endif %}
+<html{% if page.collection == "thinktank" %} lang="{{ page.slug }}"{% endif %}>
+	<head>
+		<!-- All relative links on this page start at the site root -->
+		<base href="{{ '/' | relative_url }}">
+		<title>{{ page.title }} | Shakeri et al.</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		{%- if tt_description %}
+		<meta name="description" content="{{ tt_description | escape }}" />
+		{%- endif %}
+		<meta property="og:title" content="{{ page.title | strip_html | escape }}" />
+		{%- if tt_description %}
+		<meta property="og:description" content="{{ tt_description | escape }}" />
+		{%- endif %}
+		<meta property="og:url" content="{{ page.url | absolute_url }}" />
+		{%- if page.cover %}
+		{%- capture tt_cover %}{% include tt/src.html src=page.cover piece=tt_piece %}{% endcapture %}
+		<meta property="og:image" content="{% if tt_cover contains '://' %}{{ tt_cover }}{% else %}{{ site.url }}/{{ tt_cover }}{% endif %}" />
+		<meta name="twitter:card" content="summary_large_image" />
+		{%- endif %}
+		{%- if page.collection == "thinktank" %}
+		<meta property="og:type" content="article" />
+		{%- for v in tt_versions %}
+		<link rel="alternate" hreflang="{{ v.slug }}" href="{{ v.url | absolute_url }}" />
+		{%- endfor %}
+		{%- endif %}
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" href="images/logo/favicon.ico">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-DVME2JVJE7"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-DVME2JVJE7');
+		</script>
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			{% include tt/header.html %}
+
+			{{ content }}
+
+			<!-- Footer -->
+			<div id="inject_footer"></div>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/think-tank.js"></script>
+		<script src="assets/js/language.js"></script>
+
+	</body>
+</html>

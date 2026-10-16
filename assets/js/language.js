@@ -1,6 +1,6 @@
 const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
               || window.matchMedia("(max-width: 980px)").matches;
-const langSelect = (!isMobile) ? document.getElementById("language") : document.querySelectorAll('.link.depth-0')[4];
+const langSelect = (!isMobile) ? document.getElementById("language") : [...document.querySelectorAll('.link.depth-0')].find(el => el.querySelector('select'));
 
 async function loadHTML(url, container) {
     try {
@@ -75,6 +75,7 @@ async function loadLanguage(lang) {
 		// document.getElementById("nav-aboutHCD").innerHTML = data.nav.aboutHCD;
 		document.getElementById("nav-aboutpublications").innerHTML = data.nav.aboutpublications;
 		document.getElementById("nav-abouttalks").innerHTML = data.nav.abouttalks;
+		if (document.getElementById("nav-thinktank")) document.getElementById("nav-thinktank").innerHTML = data.nav.thinktank;
 		document.getElementById("nav-contact").innerHTML = data.nav.contact;
 		// document.getElementById("nav-language").innerHTML = data.nav.language;
 
@@ -396,6 +397,7 @@ async function loadLanguage(lang) {
 
 		// Update HTML language
 		document.documentElement.lang = lang;
+		document.dispatchEvent(new CustomEvent("site:languageloaded", { detail: { lang, data } }));
 		updateNavTexts(data);
 		// document.addEventListener('shown.bs.offcanvas', () => updateNavTexts(data));
 
@@ -423,7 +425,8 @@ function updateNavTexts(data) {
   document.querySelectorAll('.link.depth-1 span.indent-1')[4].innerHTML = data.nav.aboutpublications;
   document.querySelectorAll('.link.depth-1 span.indent-1')[5].innerHTML = data.nav.abouttalks;
 
-  document.querySelectorAll('.link.depth-0 span.indent-0')[3].innerHTML = data.nav.contact;
+  document.querySelectorAll('.link.depth-0 span.indent-0')[3].innerHTML = data.nav.thinktank;
+  document.querySelectorAll('.link.depth-0 span.indent-0')[4].innerHTML = data.nav.contact;
 //   add more mappings as needed
 }
 
@@ -440,5 +443,6 @@ langSelect.addEventListener("change", () => {
 	localStorage.setItem("lang", lang);
 	loadLanguage(lang);
 	setImage(lang);
+	document.dispatchEvent(new CustomEvent("site:languagechange", { detail: lang }));
 });
 

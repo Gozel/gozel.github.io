@@ -1,0 +1,10 @@
+{%- comment -%}
+	Resolves an image path: a bare file name ("chart.png") is looked up in
+	think-tank/images/<piece>/; anything containing a "/" is used as written.
+	Parameters: src, piece
+{%- endcomment -%}
+{%- if include.src contains "/" -%}
+{{ include.src }}
+{%- else -%}
+think-tank/images/{{ include.piece }}/{{ include.src }}
+{%- endif -%}
