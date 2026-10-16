@@ -2372,6 +2372,10 @@ input, select, textarea {
 			  ), url("../../images/gallery/advantage_06_feathered.png");
 		}
 
+		.banner-text {
+			padding: 5em 5em 0em 5em;
+		}
+
 		.research {
 			background: linear-gradient(
 				rgba(0, 0, 0, 0.33),
@@ -2742,13 +2746,8 @@ input, select, textarea {
 		/* Banner */
 
 			#banner {
-				padding: 6em 0;
+				padding: 6em 2.5em;
 				margin: 3em 0 0 0;
-			}
-
-			#banner.index {
-				padding-left: 2.5em;
-				padding-right: 2.5em;
 			}
 
 		/* Intro */
@@ -2885,12 +2884,20 @@ input, select, textarea {
 			/* Banner */
 
 			#banner {
-				padding: 2em 0;
+				padding: 2em 2.5em;
 				margin: 0em 0 0 0;
 			}
 
+			#banner {
+				background-size: cover;
+				background-position: center;
+			}
+
+			#banner .banner-text {
+				padding: 2em 1.5em 1em 0;
+			}
+
 			#banner.index {
-				padding: 2em 2.5em;
 				background: linear-gradient(
 					rgba(8, 35, 29, 0.6),
 					rgba(8, 35, 29, 0.6)
@@ -3273,8 +3280,13 @@ input, select, textarea {
 				/* display: block; */
 			}
 
+			#banner,
 			#banner.index {
 				padding: 1.5em 1em;
+			}
+
+			#banner .banner-text {
+				padding: 1em 0.5em 1.5em 0.5em;
 			}
 
 				#banner header {
