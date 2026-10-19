@@ -2226,6 +2226,12 @@ input, select, textarea {
 			line-height: 1;
 		}
 
+		#header img.site-logo {
+			width: 55%;
+			margin: 1.25em 0 0 0;
+			vertical-align: middle;
+		}
+
 /* Nav */
 
 	#nav {
@@ -2875,6 +2881,10 @@ input, select, textarea {
 			#nav,
 			#header .row > :has(#nav):not(:has(img)) {
 				display: none;
+			}
+
+			#header img.site-logo {
+				width: 75%;
 			}
 
 		/* Intro */
