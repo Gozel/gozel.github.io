@@ -2,6 +2,10 @@
 layout: tt-base
 title: Think Tank
 description: Essays, analyses and positions on sustainability, technology and society.
+# Banner image (right-hand side, like the Approach page). Path from the site root.
+# Delete both lines for a text-only banner.
+banner_image: think-tank/images/think-tank-banner.png
+banner_alt: "think tank – ideas for futures worth building"
 ---
 {%- comment -%}
 	Built automatically from _thinktank/. Never edit to add a piece.
@@ -13,10 +17,19 @@ description: Essays, analyses and positions on sustainability, technology and so
 			<section id="banner">
 				<header>
 					<div class="row">
+						{%- if page.banner_image %}
+						<div class="col-6 col-6-medium col-12-small banner-text tt-banner-text">
+						{%- else %}
 						<div class="col-12 banner-text tt-banner-text">
+						{%- endif %}
 							<h2 id="thinktank-title">Think Tank</h2>
 							<p id="thinktank-intro"></p>
 						</div>
+						{%- if page.banner_image %}
+						<div class="col-6 col-6-medium col-12-small tt-banner-image">
+							<img src="{{ page.banner_image }}" alt="{{ page.banner_alt | escape }}" width="100%"/>
+						</div>
+						{%- endif %}
 					</div>
 				</header>
 			</section>
@@ -42,6 +55,7 @@ description: Essays, analyses and positions on sustainability, technology and so
 								{%- endif %}
 								<div class="tt-card-body">
 									<p class="tt-card-meta"><time datetime="{{ doc.date | date: '%Y-%m-%d' }}">{{ doc.date | date: "%Y-%m-%d" }}</time> &middot; {{ langs }}</p>
+									{% include tt/tags.html doc=doc %}
 									<h3><a href="{{ href }}">{{ doc.title }}</a></h3>
 									{%- if doc.lead %}
 									<p>{{ doc.lead }}</p>
