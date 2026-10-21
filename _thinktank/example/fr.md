@@ -2,7 +2,9 @@
 published: false
 title: "Titre de la publication"
 lead: "Une ou deux phrases qui résument le sujet et pourquoi il est important."
-date: 2026-10-16
+date: 2026-10-01
+category: think-piece
+audience: [business, policymakers]
 cover: cover.jpg
 cover_alt: "Trois personnes qui rient ensemble"
 cover_caption: "Légende · Photo : Nom"

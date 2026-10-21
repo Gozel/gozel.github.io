@@ -1,13 +1,54 @@
-# Interface labels for Think Tank pages, per language of the piece
+# Interface labels for Think Tank pages, per language of the piece.
+# category / audience: the keys on the left are what you write in a piece's header
+# (e.g. "category: research-digest"); the text on the right is what readers see.
 de:
   name: Deutsch
   back: "← Alle Think-Tank-Beiträge"
   readmore: Weiterlesen
+  for: "Für:"
+  category:
+    think-piece: Denkanstoß
+    conversation: Gespräch
+    research-digest: Forschung kompakt
+    tools: Tools & Toolkits
+    report: Bericht
+  audience:
+    researchers: Forschende
+    policymakers: Politik
+    business: Wirtschaft
+    citizens: Bürger:innen
+    everybody: Alle
 fr:
   name: Français
   back: "← Toutes les publications"
   readmore: Lire la suite
+  for: "Pour&nbsp;:"
+  category:
+    think-piece: Tribune
+    conversation: Conversation
+    research-digest: Synthèse de recherche
+    tools: Outils et boîtes à outils
+    report: Rapport
+  audience:
+    researchers: Chercheur·es
+    policymakers: Décideur·es politiques
+    business: Entreprises
+    citizens: Citoyen·nes
+    everybody: Tout le monde
 en:
   name: English
   back: "← All think tank pieces"
   readmore: Read more
+  for: "For:"
+  category:
+    think-piece: Think piece
+    conversation: Conversation
+    research-digest: Research digest
+    tools: Tools & toolkits
+    report: Report
+  audience:
+    researchers: Researchers
+    policymakers: Policymakers
+    business: Business
+    citizens: Citizens
+    everybody: Everybody

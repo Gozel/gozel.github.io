@@ -29,11 +29,18 @@ think-tank/
    | `published` | `true` to go live; `false` to keep it as a draft |
    | `title`, `lead` | Shown on the page and on the overview card |
    | `date` | `YYYY-MM-DD`; the overview sorts by it |
+   | `category` | One of `think-piece`, `conversation`, `research-digest`, `tools`, `report` |
+   | `audience` | One of `researchers`, `policymakers`, `business`, `citizens`, `everybody`, or several in brackets: `[business, policymakers]` |
    | `cover`, `cover_alt`, `cover_caption` | Cover image (also used for the card and link previews). Delete the lines for no cover. |
    | `description` | Optional: text for Google and LinkedIn previews (defaults to the lead) |
    | `author` | Optional: defaults to Gözel Shakeri |
 
 4. Write the text below the header.
+
+Category and audience appear as tags on the overview card and above the title, translated
+into the piece's language. The translations live in `_data/thinktank.yml`: add a line there
+to create a new category or audience. A value missing from that file is shown exactly as
+written, so a typo is easy to spot.
 
 Only want one language? Delete the other file. The language buttons disappear automatically.
 
@@ -90,6 +97,19 @@ starting from the site root, e.g. `images/gallery/network.jpg`.
 
 **Text containing double quotes** inside an `include` (`caption="…"`): use
 single quotes around it instead (`caption='He said "yes"'`).
+
+## Overview banner image
+
+The image on the right of the Think Tank banner is set at the top of `think-tank/index.html`:
+
+```yaml
+banner_image: think-tank/images/think-tank-banner.png
+banner_alt: "think tank – ideas for futures worth building"
+```
+
+Replace the file or change the path to use another image. A wide 16:9 image (e.g. 1600×900)
+matches the height of the Approach banner. Delete both lines for a text-only banner.
+The same image is used for link previews of the overview page.
 
 ## Publish
 

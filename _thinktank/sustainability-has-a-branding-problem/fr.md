@@ -6,7 +6,9 @@
 published: true                # true = live on the site (and on the overview)
 title: "La durabilité a un problème d'image"
 lead: "On l'associe à la sobriété subie, aux sacrifices ou à des coûts plus élevés. Voici trois étapes pratiques pour en faire une situation gagnant-gagnant pour toutes et tous."
-date: 2026-10-20                # YYYY-MM-DD — the overview sorts by this
+date: 2026-10-06                # YYYY-MM-DD — the overview sorts by this
+category: think-piece            # think-piece | conversation | research-digest | tools | report
+audience: everybody             # researchers | policymakers | business | citizens | everybody — or a list: [business, policymakers]
 cover: sustainability-definition.png                # file in think-tank/images/<folder>/ — delete line for no cover
 cover_alt: "Définition de la durabilité – moins et moins bien, pour une bonne cause"
 # cover_caption: "Par : Gözel Shakeri"
@@ -90,7 +92,7 @@ Cela implique aussi de remettre en question les récits culturels dominants [26]
 
 **Pour les entreprises**, il s'agit d'explorer des modèles économiques durables et des stratégies d'économie circulaire. Des outils tels que [*55 Business Model Patterns*](https://businessmodelnavigator.com/explore), [*40 Circular Economy Patterns*](https://bmi-lab-shop.myshopify.com/collections/frontpage/products/test-circular-economy-pattern-cards), le [Sustainable Business Model Canvas](https://www.fhnw.ch/plattformen/tt-bmi/wp-content/uploads/sites/270/SBMI-Foundation-Slides-v10_02032022.pdf) et la [Sustainable Innovation Methodology](https://shakeri.eu/approach) permettent de traduire des ambitions de durabilité en opportunités concrètes d'innovation et de création de valeur.
 
-**Et pour les citoyens et citoyennes ?** Ne vous épuisez pas à perfectionner le moindre comportement. Les choix individuels comptent, mais l'action collective aussi. Votez, sensibilisez (sans juger !), engagez-vous dans votre communauté et contribuez à façonner les systèmes qui façonnent nos vies. Beaucoup d'entre nous sont prêts pour une transition durable ; veillons à ce que nos décisions politiques et nos infrastructures publiques reflètent cette ambition.
+**Et pour les citoyens et citoyennes** ? Ne vous épuisez pas à perfectionner le moindre comportement. Les choix individuels comptent, mais l'action collective aussi. Un bon point de départ est d'essayer la [Climate Action Simulation](https://www.climateinteractive.org/climate-action-simulation/), un jeu de rôle où vous testez des politiques climatiques et observez leurs effets (ou lisez leur publication en accès libre [22]). Ensuite, votez, sensibilisez (sans juger !), engagez-vous dans votre communauté et contribuez à façonner les systèmes qui façonnent nos vies. Beaucoup d'entre nous sont prêts pour une transition durable ; veillons à ce que nos décisions politiques et nos infrastructures publiques reflètent cette ambition.
 
 **Votre défi :** transformez un objectif de durabilité ambitieux en chemins concrets, identifiez qui est responsable de les rendre possibles et définissez comment vous mesurerez les progrès. Ne perdez pas votre objectif de vue. Commencez par l'humain, puis pensez à l'humanité. Il n'y a pas de place pour le perfectionnisme ; l'essentiel est d'agir. Gardez l'optimisme, mais reconnaissez que tous les chemins ne sont pas droits. Un plan crédible doit laisser de la place aux priorités concurrentes, à l'incertitude, aux conséquences imprévues et aux charges inégalement réparties. Il ne s'agit pas de faire comme si chaque défi de durabilité avait une solution facile. Il s'agit de transformer un problème décourageant en une série de questions et d'actions sur lesquelles les gens peuvent travailler ensemble.
 

@@ -6,7 +6,9 @@
 published: true                # true = live on the site (and on the overview)
 title: "Nachhaltigkeit hat ein Imageproblem"
 lead: "Sie wird mit Verzicht und höheren Kosten verbunden. Hier sind drei praktische Schritte, um daraus eine Win-win-Situation für alle zu machen."
-date: 2026-10-20                # YYYY-MM-DD — the overview sorts by this
+date: 2026-10-06                # YYYY-MM-DD — the overview sorts by this
+category: think-piece            # think-piece | conversation | research-digest | tools | report
+audience: everybody             # researchers | policymakers | business | citizens | everybody — or a list: [business, policymakers]
 cover: sustainability-definition.png                # file in think-tank/images/<folder>/ — delete line for no cover
 cover_alt: "Definition von Nachhaltigkeit – schlechter und weniger, für einen guten Zweck"
 # cover_caption: "Von: Gözel Shakeri"
@@ -90,7 +92,9 @@ Es bedeutet auch, vorherrschende kulturelle Erzählungen [26] und vertraute Denk
 
 **Für Unternehmen** bedeutet es, nachhaltige Geschäftsmodelle und Strategien der Kreislaufwirtschaft zu erkunden. Werkzeuge wie [*55 Business Model Patterns*](https://businessmodelnavigator.com/explore), [*40 Circular Economy Patterns*](https://bmi-lab-shop.myshopify.com/collections/frontpage/products/test-circular-economy-pattern-cards), das [Sustainable Business Model Canvas](https://www.fhnw.ch/plattformen/tt-bmi/wp-content/uploads/sites/270/SBMI-Foundation-Slides-v10_02032022.pdf) und die [Sustainable Innovation Methodology](https://shakeri.eu/approach) helfen, Nachhaltigkeitsambitionen in konkrete Chancen für Innovation und Wertschöpfung zu übersetzen.
 
-**Und für Bürger:innen?** Verlieren Sie sich nicht darin, jedes kleine Verhalten zu perfektionieren. Individuelle Entscheidungen zählen, aber kollektives Handeln ebenso. Wählen Sie, bilden Sie (ohne zu urteilen!), engagieren Sie sich in Ihrer Gemeinschaft und gestalten Sie die Systeme mit, die unser Leben prägen. Viele von uns sind bereit für eine nachhaltige Transformation; lassen Sie uns dafür sorgen, dass unsere politischen Entscheidungen und unsere öffentliche Infrastruktur diesen Anspruch widerspiegeln.
+**Und für Bürger:innen**? Verlieren Sie sich nicht darin, jedes kleine Verhalten zu perfektionieren. Individuelle Entscheidungen zählen, aber kollektives Handeln ebenso. Ein guter Einstieg ist, die [Climate Action Simulation](https://www.climateinteractive.org/climate-action-simulation/) auszuprobieren, ein Rollenspiel, in dem Sie Klimapolitik testen und sehen, wie sie sich auswirkt (oder lesen Sie die frei zugängliche Publikation [22]). Wählen Sie dann, bilden Sie (ohne zu urteilen!), engagieren Sie sich in Ihrer Gemeinschaft und gestalten Sie die Systeme mit, die unser Leben prägen. Viele von uns sind bereit für eine nachhaltige Transformation; sorgen wir dafür, dass unsere politischen Entscheidungen und unsere öffentliche Infrastruktur diesen Anspruch widerspiegeln.
+
+I haven't confirmed that the publication is free to read. The MIT DSpace copy appears to be openly accessible, but please check before you promise it to readers.
 
 **Ihre Aufgabe:** Übersetzen Sie ein ambitioniertes Nachhaltigkeitsziel in konkrete Pfade, bestimmen Sie, wer dafür verantwortlich ist, sie zu ermöglichen, und legen Sie fest, wie Sie Fortschritt messen. Verlieren Sie Ihr Ziel nicht aus den Augen. Beginnen Sie *mensch*zentriert und denken Sie dann *menschheits*zentriert. Für Perfektionismus ist kein Platz; entscheidend ist zu handeln. Behalten Sie den Optimismus, aber erkennen Sie an, dass nicht jeder Pfad geradlinig ist. Ein glaubwürdiger Plan sollte Raum lassen für konkurrierende Prioritäten, Unsicherheit, unbeabsichtigte Folgen und ungleiche Lasten. Es geht nicht darum, so zu tun, als hätte jede Nachhaltigkeitsherausforderung eine einfache Lösung. Es geht darum, ein entmutigendes Problem in eine Reihe von Fragen und Maßnahmen zu verwandeln, an denen Menschen gemeinsam arbeiten können.
 

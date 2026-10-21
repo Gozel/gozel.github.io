@@ -7,7 +7,9 @@
 published: false                # true = live on the site (and on the overview)
 title: "Titel des Beitrags"
 lead: "Ein bis zwei Sätze, die zusammenfassen, worum es geht und warum es wichtig ist."
-date: 2026-10-16                # YYYY-MM-DD — the overview sorts by this
+date: 2026-10-01                # YYYY-MM-DD — the overview sorts by this
+category: think-piece            # think-piece | conversation | research-digest | tools | report
+audience: [business, policymakers]   # researchers | policymakers | business | citizens | everybody — one, or several in [ ]
 cover: cover.jpg                # file in think-tank/images/<folder>/ — delete line for no cover
 cover_alt: "Drei Menschen lachen gemeinsam"
 cover_caption: "Bildunterschrift · Foto: Name"

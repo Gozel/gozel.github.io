@@ -7,7 +7,9 @@
 published: true                # true = live on the site (and on the overview)
 title: "Sustainability has a branding problem"
 lead: "It is associated with consuming less, making sacrifices or paying more. Here are 3 practical steps to make it a win-win for all."
-date: 2026-10-20                # YYYY-MM-DD — the overview sorts by this
+date: 2026-10-06                # YYYY-MM-DD — the overview sorts by this
+category: think-piece            # think-piece | conversation | research-digest | tools | report
+audience: everybody             # researchers | policymakers | business | citizens | everybody — or a list: [business, policymakers]
 cover: sustainability-definition.png                # file in think-tank/images/<folder>/ — delete line for no cover
 cover_alt: "Sustainability definition - worse and less, for a good cause"
 # cover_caption: "By: Gözel Shakeri"
@@ -79,7 +81,7 @@ Explore this free resource for inspiration: [MIT Envisioning Cards](https://envi
 
 # 2. Act: From possibility to actionable pathways
 
-Imagining a better future is the first step. Making it happen is another challenge entirely. When faced with a complex, systemic problem like sustainability, it is easy to feel overwhelmed: Where do we start? Which actions will make a difference? And how do we know whether we are making progress?
+Imagining a better future is the first step. Making it happen is another challenge entirely. When faced with a complex, systemic problem like sustainability, it is easy to feel overwhelmed: Where do we start? Which actions will make a difference? And how do we know whether we are making progress? 
 
 **How can we make it happen?**
 
@@ -91,7 +93,7 @@ It also means challenging dominant cultural narratives [26] and familiar ways of
 
 **For businesses**, it means exploring sustainable business models and circular economy strategies. Tools such as [*55 Business Model Patterns*](https://businessmodelnavigator.com/explore), [*40 Circular Economy Patterns*](https://bmi-lab-shop.myshopify.com/collections/frontpage/products/test-circular-economy-pattern-cards), the [Sustainable Business Model Canvas](https://www.fhnw.ch/plattformen/tt-bmi/wp-content/uploads/sites/270/SBMI-Foundation-Slides-v10_02032022.pdf) and the [Sustainable Innovation Methodology](https://shakeri.eu/approach) can help translate sustainability ambitions into concrete opportunities for innovation and value creation.
 
-**And for citizens?** Do not get caught up in perfecting every tiny behaviour. Individual choices matter, but so does collective action. Vote, educate (without judgement!), get involved in your community, and help shape the systems that shape our lives. Many of us are ready for a sustainable transition; let’s make sure our political decisions and public infrastructure reflect that ambition.
+**And for citizens**? Do not get caught up in perfecting every tiny behaviour. Individual choices matter, but so does collective action. A good place to start is to try the [Climate Action Simulation](https://www.climateinteractive.org/climate-action-simulation/), a role-play game where you test climate policies and see how they play out (or read their free publication [22]). Then vote, educate (without judgement!), get involved in your community, and help shape the systems that shape our lives. Many of us are ready for a sustainable transition; let’s make sure our political decisions and public infrastructure reflect that ambition.
 
 **Your challenge:** Turn an ambitious sustainability goal into concrete pathways, identify who is responsible for making them possible, and define how you will measure progress. Do not lose sight of your goal. Start human-centred, then think humanity-centred. There is no room for perfectionism; what matters is to act. Keep the optimism, but acknowledge that not every pathway is straightforward. A credible plan should make room for competing priorities, uncertainty, unintended consequences and unequal burdens. The point is not to pretend every sustainability challenge has an easy solution. It is to turn a daunting problem into a set of questions and actions that people can work on together.
 
@@ -184,6 +186,8 @@ Sustainability should not mean a worse life today for a greater good tomorrow. I
 [20] Angela J. Dean and Kerrie A. Wilson. 2023. Relationships between hope, optimism, and conservation engagement. *Conservation Biology* 37, 2 (2023), Article e14009. https://doi.org/10.1111/cobi.14020
 
 [21] Hanna Bergeå, Therese Åhlvik, and Lars Hallgren. 2025. The flipside of hope discourse: Avoiding accountability and assigning responsibility in sustainability transitions. *Frontiers in Communication* 10 (2025), Article 1562492. https://doi.org/10.3389/fcomm.2025.1562492
+
+[22] Rooney-Varga, J. N., Kapmeier, F., Sterman, J. D., Jones, A. P., Putko, M., & Rath, K. (2020). The Climate Action Simulation. Simulation & Gaming, 51(2), 114-140. https://doi.org/10.1177/1046878119890643
 
 [23] Diletta Acuti, Marta Pizzetti, and Sara Dolnicar. 2022. When sustainability backfires: A review on the unintended negative side-effects of product and service sustainability on consumer behavior. *Psychology & Marketing* 39, 10 (2022), 1933–1945. https://doi.org/10.1002/mar.21709
 

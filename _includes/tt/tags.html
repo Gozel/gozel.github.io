@@ -1,0 +1,17 @@
+{%- comment -%}
+	Category and audience tags of a piece, in the piece's language.
+	{% include tt/tags.html doc=page %}
+	audience may be one value or a list; unknown values are shown as written.
+{%- endcomment -%}
+{%- assign t = site.data.thinktank[include.doc.slug] | default: site.data.thinktank.en -%}
+{%- assign audiences = include.doc.audience | join: "," | split: "," -%}
+{%- if include.doc.category or audiences.size > 0 -%}
+<p class="tt-tags">
+	{%- if include.doc.category -%}
+	<span class="tt-category">{{ t.category[include.doc.category] | default: include.doc.category }}</span>
+	{%- endif -%}
+	{%- if audiences.size > 0 -%}
+	<span class="tt-audience">{{ t.for }} {% for a in audiences %}{% assign key = a | strip %}{{ t.audience[key] | default: key }}{% unless forloop.last %}, {% endunless %}{% endfor %}</span>
+	{%- endif -%}
+</p>
+{%- endif -%}
