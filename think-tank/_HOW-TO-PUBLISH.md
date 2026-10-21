@@ -44,7 +44,11 @@ Plain Markdown:
 ```markdown
 Normal paragraph with **bold**, *italic* and a [link](https://example.org).
 
-## Subheading
+# Section heading        (# or ## — large, with a yellow accent line)
+
+### Subheading           (smaller)
+
+#### Small heading       (small capitals)
 
 - bullet
 - bullet
