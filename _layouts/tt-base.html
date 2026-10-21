@@ -36,6 +36,9 @@
 		<meta property="og:type" content="article" />
 		{%- for v in tt_versions %}
 		<link rel="alternate" hreflang="{{ v.slug }}" href="{{ v.url | absolute_url }}" />
+		{%- if v.slug == "en" %}
+		<link rel="alternate" hreflang="x-default" href="{{ v.url | absolute_url }}" />
+		{%- endif %}
 		{%- endfor %}
 		{%- endif %}
 		<link rel="stylesheet" href="assets/css/main.css" />

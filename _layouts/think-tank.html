@@ -9,7 +9,10 @@ layout: tt-base
 {%- assign t = site.data.thinktank[lang] | default: site.data.thinktank.en -%}
 {%- assign piece = page.relative_path | remove_first: "_thinktank/" | split: "/" | first -%}
 {%- assign dir = "_thinktank/" | append: piece | append: "/" -%}
-{%- assign versions = site.thinktank | where_exp: "d", "d.relative_path contains dir" -%}
+{%- assign all_versions = site.thinktank | where_exp: "d", "d.relative_path contains dir" -%}
+{%- assign en_version = all_versions | where: "slug", "en" -%}
+{%- assign other_versions = all_versions | where_exp: "d", "d.slug != 'en'" -%}
+{%- assign versions = en_version | concat: other_versions -%}
 <!-- Main -->
 			<section id="main">
 				<div class="container">

@@ -54,10 +54,12 @@ if (document.querySelector(".tt-grid")) {
 			if (intro) intro.innerHTML = data.thinktank.intro;
 			if (empty) empty.innerHTML = data.thinktank.empty;
 		}
-		// Show each piece in the reader's language, otherwise in its first version
+		// Show each piece in the reader's language, otherwise in English, otherwise its first version
 		ttPieces.forEach(piece => {
 			const cards = [...piece.querySelectorAll(".tt-card")];
-			const shown = cards.find(c => c.dataset.lang === lang) || cards[0];
+			const shown = cards.find(c => c.dataset.lang === lang)
+				|| cards.find(c => c.dataset.lang === "en")
+				|| cards[0];
 			cards.forEach(c => { c.hidden = c !== shown; });
 		});
 	});

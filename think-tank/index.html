@@ -26,7 +26,10 @@ description: Essays, analyses and positions on sustainability, technology and so
 				<div class="container">
 					<div class="tt-grid">
 						{%- for piece in pieces %}
-						{%- assign versions = piece.items | sort: "slug" %}
+						{%- comment %} English first: it is the default version {% endcomment %}
+						{%- assign en_version = piece.items | where: "slug", "en" %}
+						{%- assign other_versions = piece.items | where_exp: "d", "d.slug != 'en'" | sort: "slug" %}
+						{%- assign versions = en_version | concat: other_versions %}
 						{%- assign langs = versions | map: "slug" | join: " / " | upcase %}
 						<div class="tt-piece">
 							{%- for doc in versions %}
