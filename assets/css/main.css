@@ -2212,6 +2212,8 @@ input, select, textarea {
 
 	#header {
 		position: relative;
+		/* Keep the menu clickable: the banner's grid row pulls up into the header area */
+		z-index: 2;
 		background: #ffffff;
 		border-bottom: solid 1px #ccc;
 		/* padding: 1em 0 0em 0; */
