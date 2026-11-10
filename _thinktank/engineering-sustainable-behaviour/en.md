@@ -52,7 +52,7 @@ These guidelines are a starting point, not a universal checklist. The next step 
 
 For innovators, this also means staying open to new perspectives, needs and opportunities. The next breakthrough might come from designing *with* nature rather than simply designing for people. I predict that more-than-human thinking will increasingly shape design practice and industry—not just as the next design hype, but as a necessary evolution beyond user-centred design.
 
-More on *More-than-Human Design* in my next post! :-)
+More on *More-than-Human Design* in my next post! :-) References below. 
 
 #Sustainability #SustainableHCI #SustainableDesign #FuturesWorthBuilding #BehaviourChange
 
