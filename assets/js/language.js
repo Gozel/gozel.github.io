@@ -1,6 +1,5 @@
-const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
-              || window.matchMedia("(max-width: 980px)").matches;
-const langSelect = (!isMobile) ? document.getElementById("language") : [...document.querySelectorAll('.link.depth-0')].find(el => el.querySelector('select'));
+// The page head starts downloading the reader's language file early (window.siteLangPrefetch),
+// so text appears without waiting for all scripts to load first.
 
 async function loadHTML(url, container) {
     try {
@@ -15,7 +14,7 @@ async function loadHTML(url, container) {
 
 // finish building DOM i.e. inject footer
 const targetElement = document.getElementById('inject_footer');
-loadHTML('footer.html', targetElement);
+const footerReady = targetElement ? loadHTML('footer.html', targetElement) : Promise.resolve();
 
 const imageBasePath = "/images/clients/";
 
@@ -58,8 +57,17 @@ function setImage(lang) {
 
 async function loadLanguage(lang) {
 	try {
-		const response = await fetch(`lang/${lang}.json`);
-		const data = await response.json();
+		let data;
+		const prefetch = window.siteLangPrefetch;
+		if (prefetch && prefetch.lang === lang) {
+			window.siteLangPrefetch = null;
+			data = await prefetch.data;
+		} else {
+			const response = await fetch(`lang/${lang}.json`);
+			data = await response.json();
+		}
+		// the footer's texts are filled below, so wait until footer.html is in the page
+		await footerReady;
 
 		// Navigation
 		document.getElementById("nav-approach").innerHTML = data.nav.approach;
@@ -94,12 +102,37 @@ async function loadLanguage(lang) {
 		if (document.getElementById("landing-more1")) document.getElementById("landing-more1").innerHTML = data.landing.more1;
 		if (document.getElementById("landing-more2")) document.getElementById("landing-more2").innerHTML = data.landing.more2;
 		if (document.getElementById("landing-divider")) document.getElementById("landing-divider").innerHTML = data.landing.divider;
+		if (document.getElementById("landing-valuetitle")) document.getElementById("landing-valuetitle").innerHTML = data.landing.valuetitle;
+		if (document.getElementById("landing-q1")) document.getElementById("landing-q1").innerHTML = data.landing.q1;
+		if (document.getElementById("landing-q2")) document.getElementById("landing-q2").innerHTML = data.landing.q2;
+		if (document.getElementById("landing-q3")) document.getElementById("landing-q3").innerHTML = data.landing.q3;
+		if (document.getElementById("landing-q4")) document.getElementById("landing-q4").innerHTML = data.landing.q4;
+		if (document.getElementById("landing-badge")) document.getElementById("landing-badge").innerHTML = data.landing.badge;
+		if (document.getElementById("landing-stat")) document.getElementById("landing-stat").innerHTML = data.landing.stat;
+		if (document.getElementById("landing-statsource")) document.getElementById("landing-statsource").innerHTML = data.landing.statsource;
+		if (document.getElementById("landing-trusted")) document.getElementById("landing-trusted").innerHTML = data.landing.trusted;
+		if (document.getElementById("landing-ttheading")) document.getElementById("landing-ttheading").innerHTML = data.landing.ttheading;
+		if (document.getElementById("landing-ttall")) document.getElementById("landing-ttall").innerHTML = data.landing.ttall + " &rarr;";
+		if (document.getElementById("landing-tttitle")) document.getElementById("landing-tttitle").innerHTML = data.nav.thinktank;
 		if (document.getElementById("landing-successtitle1")) document.getElementById("landing-successtitle1").innerHTML = data.landing.successtitle1;
 		if (document.getElementById("landing-successstory1")) document.getElementById("landing-successstory1").innerHTML = data.landing.successstory1;
 		if (document.getElementById("landing-successtitle2")) document.getElementById("landing-successtitle2").innerHTML = data.landing.successtitle2;
 		if (document.getElementById("landing-successstory2")) document.getElementById("landing-successstory2").innerHTML = data.landing.successstory2;
+		if (document.getElementById("landing-successtitle4")) document.getElementById("landing-successtitle4").innerHTML = data.landing.successtitle4 || "";
+		if (document.getElementById("landing-successstory4")) document.getElementById("landing-successstory4").innerHTML = data.landing.successstory4 || "";
 		if (document.getElementById("landing-successtitle3")) document.getElementById("landing-successtitle3").innerHTML = data.landing.successtitle3;
 		if (document.getElementById("landing-successstory3")) document.getElementById("landing-successstory3").innerHTML = data.landing.successstory3;
+
+		// Service pages: research (ids "rp-<key>"), education ("ep-<key>"), innovation ("ip-<key>").
+		// A class of the same name fills repeated labels, e.g. class="ep-lenlabel".
+		for (const [block, prefix] of [["researchpage", "rp"], ["educationpage", "ep"], ["innovationpage", "ip"]]) {
+			if (!data[block]) continue;
+			for (const [key, value] of Object.entries(data[block])) {
+				const el = document.getElementById(prefix + "-" + key);
+				if (el) el.innerHTML = value;
+				document.querySelectorAll("." + prefix + "-" + key).forEach(e => { e.innerHTML = value; });
+			}
+		}
 
 		// Hero section
 		if (document.getElementById("hero-title")) document.getElementById("hero-title").innerHTML = data.hero.title;
@@ -108,6 +141,11 @@ async function loadLanguage(lang) {
 		// What I do
 		if (document.getElementById("whatIdo-title")) document.getElementById("whatIdo-title").innerHTML = data.whatIdo.title;
 		if (document.getElementById("whatIdo-subtitle")) document.getElementById("whatIdo-subtitle").innerHTML = data.whatIdo.subtitle;
+		if (document.getElementById("whatIdo-tagline")) document.getElementById("whatIdo-tagline").innerHTML = data.whatIdo.tagline;
+		if (document.getElementById("whatIdo-intro")) document.getElementById("whatIdo-intro").innerHTML = data.whatIdo.intro;
+		if (document.getElementById("whatIdo-lead")) document.getElementById("whatIdo-lead").innerHTML = data.whatIdo.lead;
+		if (document.getElementById("whatIdo-closing1")) document.getElementById("whatIdo-closing1").innerHTML = data.whatIdo.closing1;
+		if (document.getElementById("whatIdo-closing2")) document.getElementById("whatIdo-closing2").innerHTML = data.whatIdo.closing2;
 		if (document.getElementById("whatIdo-subtitle1")) document.getElementById("whatIdo-subtitle1").innerHTML = data.whatIdo.subtitle1;
 		if (document.getElementById("whatIdo-text1")) document.getElementById("whatIdo-text1").innerHTML = data.whatIdo.text1;
 		if (document.getElementById("whatIdo-more1")) document.getElementById("whatIdo-more1").innerHTML = data.whatIdo.more1;
@@ -187,7 +225,7 @@ async function loadLanguage(lang) {
 		if (document.getElementById("researchbody-subtitle")) document.getElementById("researchbody-subtitle").innerHTML = data.researchbody.subtitle;
 		if (document.getElementById("researchbody-methods")) document.getElementById("researchbody-methods").innerHTML = data.researchbody.methods;
 		if (document.getElementById("researchbody-methodsanswers")) document.getElementById("researchbody-methodsanswers").innerHTML = data.researchbody.methodsanswers;
-		// if (document.getElementById("researchbody-casestudies")) document.getElementById("researchbody-casestudies").innerHTML = data.researchbody.casestudies;
+		if (document.getElementById("researchbody-casestudies")) document.getElementById("researchbody-casestudies").innerHTML = data.researchbody.casestudies;
 		// if (document.getElementById("researchbody-evidencetitle")) document.getElementById("researchbody-evidencetitle").innerHTML = data.researchbody.evidencetitle;
 		if (document.getElementById("researchbody-evidencecontent")) document.getElementById("researchbody-evidencecontent").innerHTML = data.researchbody.evidencecontent;
 		if (document.getElementById("researchbody-outcomes")) document.getElementById("researchbody-outcomes").innerHTML = data.researchbody.outcomes;
@@ -430,19 +468,44 @@ function updateNavTexts(data) {
 //   add more mappings as needed
 }
 
-// Load default or saved language
-const savedLang = localStorage.getItem("lang") || "en";
-langSelect.value = savedLang;
-if (isMobile) langSelect.children.language.value = savedLang;
-loadLanguage(savedLang);
-setImage(savedLang);
+// Language switch (EN · FR · DE). The desktop one sits in the menu; a copy goes into the
+// phone title bar, because the phone menu is rebuilt from links only.
+function getStoredLang() {
+	try { return localStorage.getItem("lang") || "en"; } catch (e) { return "en"; }
+}
 
-// Change language
-langSelect.addEventListener("change", () => {
-	const lang = (!isMobile) ? langSelect.value : langSelect.children.language.value;
-	localStorage.setItem("lang", lang);
+function markActiveLang(lang) {
+	document.querySelectorAll("[data-set-lang]").forEach(btn => {
+		const active = btn.dataset.setLang === lang;
+		btn.classList.toggle("active", active);
+		btn.setAttribute("aria-pressed", active ? "true" : "false");
+	});
+}
+
+function setLanguage(lang) {
+	try { localStorage.setItem("lang", lang); } catch (e) { /* storage unavailable */ }
+	markActiveLang(lang);
 	loadLanguage(lang);
 	setImage(lang);
 	document.dispatchEvent(new CustomEvent("site:languagechange", { detail: lang }));
+}
+
+const langSwitch = document.querySelector(".lang-switch");
+const titleBar = document.getElementById("titleBar");
+if (langSwitch && titleBar && !titleBar.querySelector(".lang-switch")) {
+	titleBar.appendChild(langSwitch.cloneNode(true));
+}
+
+document.addEventListener("click", e => {
+	const btn = e.target.closest("[data-set-lang]");
+	if (!btn) return;
+	e.preventDefault();
+	if (btn.dataset.setLang !== getStoredLang()) setLanguage(btn.dataset.setLang);
 });
+
+// Load default or saved language
+const savedLang = getStoredLang();
+markActiveLang(savedLang);
+loadLanguage(savedLang);
+setImage(savedLang);
 

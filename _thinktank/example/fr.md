@@ -18,9 +18,9 @@ Un nouveau paragraphe commence après une ligne vide.
 - premier point
 - deuxième point
 
-{% include tt/figure.html src="images/gallery/network.jpg" alt="Pions reliés en réseau" caption="Image avec légende" %}
+{% include tt/figure.html src="images/gallery/network.webp" alt="Pions reliés en réseau" caption="Image avec légende" %}
 
-{% include tt/gallery.html images="images/gallery/workshop-optm.jpg|images/gallery/seminar.jpg" captions="Gauche|Droite" alts="Post-it|Salle de séminaire" %}
+{% include tt/gallery.html images="images/gallery/workshop-optm.jpg|images/gallery/seminar.webp" captions="Gauche|Droite" alts="Post-it|Salle de séminaire" %}
 
 {% include tt/quote.html text="Une citation marquante à mettre en avant." cite="Nom, fonction" %}
 

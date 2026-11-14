@@ -1,6 +1,4 @@
 @import url("fontawesome-all.min.css");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic");
-@import url("https://fonts.googleapis.com/css?family=Oleo+Script:400|Open+Sans:300,300italic,600,600italic,800");
 /* @import url("../webfonts/Alfarn\ W05\ Regular.ttf"); */
 
 
@@ -2387,7 +2385,7 @@ input, select, textarea {
 			background: linear-gradient(
 				rgba(0, 0, 0, 0.0),
 				rgba(0, 0, 0, 0.0)
-			  ), url("../../images/gallery/advantage_06_feathered.png");
+			  ), url("../../images/gallery/advantage_06_feathered.webp");
 		}
 
 		.banner-text {
@@ -2398,14 +2396,14 @@ input, select, textarea {
 			background: linear-gradient(
 				rgba(0, 0, 0, 0.33),
 				rgba(0, 0, 0, 0.33)
-			  ), url("../../images/gallery/stationary.jpg");
+			  ), url("../../images/gallery/stationary.webp");
 		}
 
 		.education {
 			background: linear-gradient(
 				rgba(0, 0, 0, 0.33),
 				rgba(0, 0, 0, 0.33)
-			  ), url("../../images/gallery/seminar.jpg");
+			  ), url("../../images/gallery/seminar.webp");
 		}
 
 		.innovation {
@@ -2413,18 +2411,18 @@ input, select, textarea {
 			background: linear-gradient(
 				rgba(0, 0, 0, 0.33),
 				rgba(0, 0, 0, 0.33)
-			  ), url("../../images/gallery/dt.png");
+			  ), url("../../images/gallery/dt.webp");
 		}
 
 		.design-thinking {
 			background: linear-gradient(
 				rgba(0, 0, 0, 0.33),
 				rgba(0, 0, 0, 0.33)
-			  ), url("../../images/gallery/dt.png");
+			  ), url("../../images/gallery/dt.webp");
 		}
 
 		.contact {
-			background: #ffffff url("../../images/gallery/contact.jpg");
+			background: #ffffff url("../../images/gallery/contact.webp");
 			padding: 2em;
 		}
 
@@ -2432,16 +2430,16 @@ input, select, textarea {
 			background: linear-gradient(
 				rgba(0, 0, 0, 0.33),
 				rgba(0, 0, 0, 0.33)
-			  ), url("../../images/gallery/stationary.jpg");
+			  ), url("../../images/gallery/stationary.webp");
 		}
 
 		.talks {
-			background: #ffffff url("../../images/gallery/scienceslam.png");
+			background: #ffffff url("../../images/gallery/scienceslam.webp");
 			padding: 2em;
 		}
 
 		.publications {
-			background: #ffffff url("../../images/gallery/publications.jpg");
+			background: #ffffff url("../../images/gallery/publications.webp");
 			/* padding: 2em; */
 		}
 
@@ -2957,7 +2955,7 @@ input, select, textarea {
 				background: linear-gradient(
 					rgba(8, 35, 29, 0.6),
 					rgba(8, 35, 29, 0.6)
-				  ), url("../../images/gallery/advantage_06_feathered.png") 80% center / cover no-repeat, #08231d;
+				  ), url("../../images/gallery/advantage_06_feathered.webp") 80% center / cover no-repeat, #08231d;
 			}
 			
 

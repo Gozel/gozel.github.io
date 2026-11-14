@@ -10,6 +10,11 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" />
+		<script>var siteLang;try{siteLang=localStorage.getItem("lang")||"en"}catch(e){siteLang="en"}window.siteLangPrefetch={lang:siteLang,data:fetch("lang/"+siteLang+".json").then(function(r){return r.json()})};</script>
+		<link rel="stylesheet" href="assets/css/fresh.css" />
 		<link rel="icon" href="images/logo/favicon.ico">
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-DVME2JVJE7"></script>
@@ -21,7 +26,7 @@
 		gtag('config', 'G-DVME2JVJE7');
 		</script>
 	</head>
-	<body class="homepage is-preload">
+	<body class="homepage is-preload fresh">
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -32,7 +37,7 @@
 						<div class="container">
 							<div class="row">
 								<div class="col-4 col-4-medium col-6-small">
-									<a href="https://shakeri.eu" class="image featured"><img src="images/logo/shakeri_et_al.png" alt="" class="site-logo"/></a>
+									<a href="https://shakeri.eu" class="image featured"><img src="images/logo/shakeri_et_al.svg" width="166" height="38" alt="" class="site-logo"/></a>
 									
 								</div>
 								<div class="col-8 col-12-medium col-12-small">
@@ -52,17 +57,13 @@
 												<ul id="nav-aboutlist">
 													<li><a id="nav-aboutgozel" href="gozel"></a></li>
 													<!-- <li><a id="nav-aboutHCD" href="designthinking"></a></li> -->
-													<li><a id="nav-aboutpublications" href="publications"></a></li>
+													<li><a id="nav-aboutpublications" href="publications.html"></a></li>
 													<li><a id="nav-abouttalks" href="talks"></a></li>
 												</ul>
 											</li>
 											<li><a id="nav-thinktank" href="think-tank/"></a></li>
 											<li><a id="nav-contact" href="contact"></a></li>
-											<select id="language">
-												<option value="en">🇬🇧 En</option>
-												<option value="fr">🇫🇷 Fr</option>
-												<option value="de">🇩🇪 De</option>
-											</select>
+											<li class="lang-li"><div class="lang-switch" role="group" aria-label="Language"><button type="button" data-set-lang="en">EN</button><button type="button" data-set-lang="fr">FR</button><button type="button" data-set-lang="de">DE</button></div></li>
 										</ul>
 									</nav>
 								</div>
@@ -81,7 +82,7 @@
 								<p id="research-subtitle"></p>
 							</div>
 							<div class="col-6 col-6-medium col-12-small">
-								<img src="images/gallery/research.png" width="100%"/>
+								<img src="images/gallery/research.webp" width="100%"/>
 								<!-- </div> -->
 							</div>
 						</div>
@@ -89,192 +90,191 @@
 				</section>
 
 			<!-- Main -->
-				<section id="main">
-					
-					<div class="container">
-						<!-- <article class="box post" style="background-color: #d52349">
-							<header>
-								<h3 style="text-align: center; color: white;">I conduct <u><a href="designthinking">human-centered research</a></u> that surfaces insights and drives better decisions.</h3>
-							</header>
-						</article> -->
+				<section id="main" class="rp-page">
 
-						<header class="major">
-							<h2 id="researchbody-outcomes"></h2>
-						</header>
-		
-						<section>
-							<section>
-								<div class="row">
-									<div class="col-4 col-4-medium col-12-small">
-										<section class="box" style="text-align: left; border-radius: 15px;">
-											<p id="researchbody-outcome1"></p>
-										</section>
-									</div>
-									<div class="col-4 col-4-medium col-12-small">
-										<section class="box" style="text-align: left; border-radius: 15px;">
-											<p id="researchbody-outcome2"></p>
-										</section>
-									</div>
-									<div class="col-4 col-4-medium col-12-small">
-										<section class="box" style="text-align: left; border-radius: 15px;">
-											<p id="researchbody-outcome3"></p>
-										</section>
-									</div>
-								</div>
-							</section>
-							<section>
-								<div class="row">
-									<div class="col-4 col-4-medium col-12-small">
-										<section class="box" style="text-align: left; border-radius: 15px;">
-											<p id="researchbody-outcome4"></p>
-										</section>
-									</div>
-									<div class="col-4 col-4-medium col-12-small">
-										<section class="box" style="text-align: left; border-radius: 15px;">
-											<p id="researchbody-outcome5"></p>
-										</section>
-									</div>
-									<div class="col-4 col-4-medium col-12-small">
-										<section class="box" style="text-align: left; border-radius: 15px;">
-											<p id="researchbody-outcome6"></p>
-										</section>
-									</div>
-								</div>
-							</section>
-						</section>
-						
-						<!-- <div class="col-4 col-4-medium col-6-small">
-							<section class="box" style="text-align: left; background-color: #cdd64aff;" id="researchbody-outcomesanswers">
-								
-							</section>
-						</div> -->
-
-						<header class="major">
-							<h2 id="researchbody-divider"></h2>
-						</header>
-
-						<section class="box" id="researchbody">
-							<div class="row">
-								<div class="col-6 col-6-medium col-12-small">
-									<section class="box" style="text-align: left;">
-										<h2 id="researchbody-title"></h2>
-										<p id="researchbody-subtitle"></p>
-									</section>
-								</div>
-								<div class="col-6 col-6-medium col-12-small">
-									<img src="images/gallery/discovery.png" style="text-align: center; border-radius: 15px;" alt="" width="100%"/>
-								</div>
+					<!-- 1. THREE WAYS TO WORK WITH US  |  edit in lang/*.json > researchpage > f1… f3… (name, question, length, what you get, best for) -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="rp-formatseyebrow"></p>
+								<h2 class="fh-h2" id="rp-formatstitle"></h2>
 							</div>
-						</section>
-
-						
-
-						<section class="box">	
-							<div class="row" id="researchbody">
-								<div class="col-4 col-4-medium col-12-small">
-									<section class="box" style="text-align: left;">
-										<header>
-											<h2 id="researchbody-methods"></h2>
-										</header>
-									</section>
-								</div>
-								<div class="col-8 col-8-medium col-12-small">
-									<section class="box" style="text-align: left;" id="researchbody-methodsanswers">
-										
-									</section>
-									
-								</div>
+							<div class="fh-grid fh-grid-3">
+								<article class="fh-card rp-format">
+									<h3 id="rp-f1name"></h3>
+									<p class="rp-question" id="rp-f1q"></p>
+									<dl class="rp-facts">
+										<dt class="rp-lenlabel"></dt><dd id="rp-f1len"></dd>
+										<dt class="rp-getlabel"></dt><dd id="rp-f1get"></dd>
+										<dt class="rp-forlabel"></dt><dd id="rp-f1for"></dd>
+									</dl>
+								</article>
+								<article class="fh-card rp-format">
+									<h3 id="rp-f2name"></h3>
+									<p class="rp-question" id="rp-f2q"></p>
+									<dl class="rp-facts">
+										<dt class="rp-lenlabel"></dt><dd id="rp-f2len"></dd>
+										<dt class="rp-getlabel"></dt><dd id="rp-f2get"></dd>
+										<dt class="rp-forlabel"></dt><dd id="rp-f2for"></dd>
+									</dl>
+								</article>
+								<article class="fh-card rp-format">
+									<h3 id="rp-f3name"></h3>
+									<p class="rp-question" id="rp-f3q"></p>
+									<dl class="rp-facts">
+										<dt class="rp-lenlabel"></dt><dd id="rp-f3len"></dd>
+										<dt class="rp-getlabel"></dt><dd id="rp-f3get"></dd>
+										<dt class="rp-forlabel"></dt><dd id="rp-f3for"></dd>
+									</dl>
+								</article>
 							</div>
-							<p id="researchbody-evidencecontent"></p>
-						</section>	
+							<p class="rp-unsure" id="rp-choose4"></p>
+						</div>
+					</section>
 
-						<!-- <section class="box" id="researchbody">
-							<div class="row">
-								<div class="col-4 col-4-medium col-12-small">
-									<section class="box" style="text-align: left;">
-										<header>
-											<h2 id="researchbody-questions"></h2>
-										</header>
-									</section>
-								</div>
-								<div class="col-8 col-8-medium col-12-small">
-									<section class="box" style="text-align: left;" id="researchbody-questionsanswers">
-										
-									</section>
-								</div>
+					<!-- 3. HOW IT WORKS  |  researchpage > s1name/s1text … s4name/s4text (add durations) -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="rp-processeyebrow"></p>
+								<h2 class="fh-h2" id="rp-processtitle"></h2>
 							</div>
-						</section>						 -->
+							<ol class="rp-steps">
+								<li class="rp-step">
+									<span class="rp-step-num">1</span>
+									<h3 id="rp-s1name"></h3>
+									<p id="rp-s1text"></p>
+								</li>
+								<li class="rp-step">
+									<span class="rp-step-num">2</span>
+									<h3 id="rp-s2name"></h3>
+									<p id="rp-s2text"></p>
+								</li>
+								<li class="rp-step">
+									<span class="rp-step-num">3</span>
+									<h3 id="rp-s3name"></h3>
+									<p id="rp-s3text"></p>
+								</li>
+								<li class="rp-step">
+									<span class="rp-step-num">4</span>
+									<h3 id="rp-s4name"></h3>
+									<p id="rp-s4text"></p>
+								</li>
+							</ol>
+						</div>
+					</section>
 
-						<!-- <section class="box" id="researchbody">	
-							<div class="row">
-								<div class="col-4 col-4-medium col-12-small">
-									<section class="box" style="text-align: left;">
-										<header>
-											<h2 id="researchbody-resources"></h2>
-										</header>
-									</section>
-								</div>
-								<div class="col-8 col-8-medium col-12-small">
-									<section class="box" style="text-align: left;" id="researchbody-resourcesanswers">
-									</section>
-								</div>
+					<!-- 4. QUESTIONS + METHODS  |  questions: researchbody > questionsanswers; method tags: researchpage > m1 … m10 -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<div class="fh-grid fh-grid-2">
+								<article class="fh-card rp-questions">
+									<h2 id="researchbody-questions"></h2>
+									<div id="researchbody-questionsanswers"></div>
+								</article>
+								<article class="fh-card">
+									<h2 id="researchbody-methods"></h2>
+									<ul class="rp-tags">
+										<li id="rp-m1"></li>
+										<li id="rp-m2"></li>
+										<li id="rp-m3"></li>
+										<li id="rp-m4"></li>
+										<li id="rp-m5"></li>
+										<li id="rp-m6"></li>
+										<li id="rp-m7"></li>
+										<li id="rp-m8"></li>
+										<li id="rp-m9"></li>
+										<li id="rp-m10"></li>
+										<li id="rp-m11"></li>
+									</ul>
+								</article>
 							</div>
-						</section> -->
+						</div>
+					</section>
 
-						<!-- <section class="box" id="researchbody">	
-							<div class="row">
-								<div class="col-4 col-4-medium col-12-small">
-									<section class="box" style="text-align: left;">
-										<header>
-											<h2 id="researchbody-expertise"></h2>
-										</header>
-									</section>
-								</div>
-								<div class="col-8 col-8-medium col-12-small">
-									<section class="box" style="text-align: left;" id="researchbody-expertiseanswers">
-										
-									</section>
-								</div>
+					<!-- 5. WHAT YOU'LL ACHIEVE  |  researchbody > outcome1 … outcome6 -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="researchbody-outcomes"></p>
 							</div>
-						</section> -->
-						
-						<section id="casestudies">
-							<header class="major">
-								<h2 id="casestudies-title"></h2>
-							</header>
-							<section class="box" style="text-align: left;">
-								<div class="row">
-									<div class="col-4 col-6-medium col-12-small">
-										<img id="envirofy-img" width="100%"/>
-										<!-- <p>Developing a Digital Transformation Strategy, Leadership and Management, Career Development, ... Product Innovation, Design Sprints, Pitching, Skills Audit,</p> -->
-									</div>
-									<div class="col-4 col-6-medium col-12-small">
-										<img id="fsa_ngos-img" width="100%"/>
-									</div>
-									<div class="col-4 col-6-medium col-12-small">
-										<img id="accessibility-img" width="100%"/>
-									</div>
-								</div>
-							</section>
-						</section>
+							<ul class="rp-outcomes">
+								<li id="researchbody-outcome1"></li>
+								<li id="researchbody-outcome2"></li>
+								<li id="researchbody-outcome3"></li>
+								<li id="researchbody-outcome4"></li>
+								<li id="researchbody-outcome5"></li>
+								<li id="researchbody-outcome6"></li>
+							</ul>
+						</div>
+					</section>
 
-						
-						<section class="box" id="researchbody" style="background-color: #08231dff; text-align: center;">
-							
-							<!-- <p id="researchbody-contact"></p> -->
-							<div class="row">
-								<div class="col-8 col-12-small">
-									<header style="text-align: left;">
-										<h3 style="color: white;" id="researchbody-contact"></h3>
-									</header>
-								</div>
-								<div class="col-4 col-12-small">
-									<p style="text-align: center;"><a href="contact" class="button" id="researchbody-more"></a> </p>
-								</div>
+					<!-- 6. EVIDENCE  |  case images: language.js; credentials: researchpage > cred1… cred3 -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="rp-proofeyebrow"></p>
+								<h2 class="fh-h2" id="researchbody-casestudies"></h2>
 							</div>
-						</section>	
+							<div class="fh-grid fh-grid-3 rp-cases">
+								<img loading="lazy" decoding="async" id="envirofy-img" alt=""/>
+								<img loading="lazy" decoding="async" id="fsa_ngos-img" alt=""/>
+								<img loading="lazy" decoding="async" id="accessibility-img" alt=""/>
+							</div>
+							<div class="rp-creds">
+								<div class="rp-cred"><p class="rp-cred-num" id="rp-cred1num"></p><p id="rp-cred1"></p></div>
+								<div class="rp-cred"><p class="rp-cred-num" id="rp-cred2num"></p><p id="rp-cred2"></p></div>
+								<div class="rp-cred"><p class="rp-cred-num" id="rp-cred3num"></p><p id="rp-cred3"></p></div>
+							</div>
+							<p class="rp-creds-more"><a href="publications.html" class="fh-more-link" id="rp-credmore"></a></p>
+						</div>
+					</section>
 
-					</div>
+					<!-- 7. FAQ  |  researchpage > faq1q/faq1a … faq5q/faq5a -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="rp-faqeyebrow"></p>
+								<h2 class="fh-h2" id="rp-faqtitle"></h2>
+							</div>
+							<div class="rp-faq">
+								<details class="rp-faq-item">
+									<summary id="rp-faq1q"></summary>
+									<p id="rp-faq1a"></p>
+								</details>
+								<details class="rp-faq-item">
+									<summary id="rp-faq2q"></summary>
+									<p id="rp-faq2a"></p>
+								</details>
+								<details class="rp-faq-item">
+									<summary id="rp-faq3q"></summary>
+									<p id="rp-faq3a"></p>
+								</details>
+								<details class="rp-faq-item">
+									<summary id="rp-faq4q"></summary>
+									<p id="rp-faq4a"></p>
+								</details>
+								<details class="rp-faq-item">
+									<summary id="rp-faq5q"></summary>
+									<p id="rp-faq5a"></p>
+								</details>
+							</div>
+						</div>
+					</section>
+
+					<!-- 8. CALL TO ACTION  |  researchbody > contact, more -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<p class="rp-crosslinks" id="rp-crosslinks"></p>
+							<div class="fh-band">
+								<div class="fh-band-text">
+									<h2 id="researchbody-contact"></h2>
+								</div>
+								<a href="contact" class="fh-btn fh-btn-sun" id="researchbody-more"></a>
+							</div>
+						</div>
+					</section>
+
 				</section>
 
 			<!-- Footer -->

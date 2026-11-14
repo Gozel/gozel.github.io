@@ -13,6 +13,11 @@
 		<link rel="icon" href="images/logo/favicon.ico">
 		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" />
+		<script>var siteLang;try{siteLang=localStorage.getItem("lang")||"en"}catch(e){siteLang="en"}window.siteLangPrefetch={lang:siteLang,data:fetch("lang/"+siteLang+".json").then(function(r){return r.json()})};</script>
+		<link rel="stylesheet" href="assets/css/fresh.css" />
 		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 		<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -25,7 +30,7 @@
 		gtag('config', 'G-DVME2JVJE7');
 		</script>
 	</head>
-	<body class="homepage is-preload">
+	<body class="homepage is-preload fresh">
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -41,7 +46,7 @@
 									<section>
 										<div class="row">
 											<div class="col-4 col-4-medium col-6-small">
-												<a href="https://shakeri.eu" class="image featured"><img src="images/logo/shakeri_et_al.png" alt="" class="site-logo"/></a>
+												<a href="https://shakeri.eu" class="image featured"><img src="images/logo/shakeri_et_al.svg" width="166" height="38" alt="" class="site-logo"/></a>
 												
 											</div>
 											<div class="col-8 col-6-medium col-12-small">
@@ -61,19 +66,14 @@
 																<ul id="nav-aboutlist">
 																	<li><a id="nav-aboutgozel" href="gozel"></a></li>
 																	<!-- <li><a id="nav-aboutHCD" href="designthinking"></a></li> -->
-																	<li><a id="nav-aboutpublications" href="publications"></a></li>
+																	<li><a id="nav-aboutpublications" href="publications.html"></a></li>
 																	<li><a id="nav-abouttalks" href="talks"></a></li>
 																</ul>
 															</li>
 															<li><a id="nav-thinktank" href="think-tank/"></a></li>
 															<li><a id="nav-contact" href="contact"></a></li>
 															<li>
-																<select id="language">
-																	<option value="en">🇬🇧 En</option>
-																	<option value="fr">🇫🇷 Fr</option>
-																	<option value="de">🇩🇪 De</option>
-																</select>
-															</li>
+																<li class="lang-li"><div class="lang-switch" role="group" aria-label="Language"><button type="button" data-set-lang="en">EN</button><button type="button" data-set-lang="fr">FR</button><button type="button" data-set-lang="de">DE</button></div></li>
 															
 														</ul>
 													</nav>
@@ -95,7 +95,7 @@
 								<p></p>
 							</div>
 							<div class="col-6 col-6-medium col-12-small">
-								<img src="images/gallery/dt.png" width="100%"/>
+								<img src="images/gallery/dt.webp" width="100%"/>
 								<!-- </div> -->
 							</div>
 						</div>
@@ -109,30 +109,30 @@
 					<div class="container">
 
 						<section>
-							<section class="box" style="background-color: #08231dff; border-radius: 15px;">
+							<section class="fh-pillars">
 								<header>
-									<h2 id="approach-problemtitle" style="text-align: center; color: white;"></h2>
+									<h2 id="approach-problemtitle" class="fh-h2"></h2>
 								</header>
 								<div class="row">	
 									<div class="col-4 col-4-medium col-12-small">
-										<section class="box" style="text-align: center; background-color: #08231dff;">
-											<img src="images/gallery/reframe.png" alt=" " width="50%"/>
-											<h3 id="approach-step1title" style="color: white;"></h3>
-											<p id="approach-step1text" style="color: white;"></p>
+										<section class="fh-card fh-pillar">
+											<span class="fh-pillar-icon"><img loading="lazy" decoding="async" src="images/gallery/reframe.png" alt=""/></span>
+											<h3 id="approach-step1title"></h3>
+											<p id="approach-step1text"></p>
 										</section>
 									</div>
 									<div class="col-4 col-4-medium col-12-small">
-										<section class="box" style="text-align: center; background-color: #08231dff;">
-											<img src="images/gallery/imagine.png" alt=" " width="50%"/>
-											<h3 id="approach-step2title" style="color: white;"></h3>
-											<p id="approach-step2text" style="color: white;"></p>
+										<section class="fh-card fh-pillar">
+											<span class="fh-pillar-icon"><img loading="lazy" decoding="async" src="images/gallery/imagine.png" alt=""/></span>
+											<h3 id="approach-step2title"></h3>
+											<p id="approach-step2text"></p>
 										</section>
 									</div>
 									<div class="col-4 col-4-medium col-12-small">
-										<section class="box" style="text-align: center; background-color: #08231dff;">
-											<img src="images/gallery/synergise.png" alt=" " width="50%"/>
-											<h3 id="approach-step3title" style="color: white;"></h3>
-											<p id="approach-step3text" style="color: white;"></p>
+										<section class="fh-card fh-pillar">
+											<span class="fh-pillar-icon"><img loading="lazy" decoding="async" src="images/gallery/synergise.png" alt=""/></span>
+											<h3 id="approach-step3title"></h3>
+											<p id="approach-step3text"></p>
 										</section>
 									</div>
 								</div>
@@ -152,21 +152,21 @@
 								<div class="row">
 									<div class="col-4 col-6-medium col-12-small">
 										<div class="row">
-											<img src="images/gallery/change-fatigue.png" alt="" width="100%"/>
+											<img loading="lazy" decoding="async" src="images/gallery/change-fatigue.webp" alt="" width="100%"/>
 											<h3 id="approach-whatanswers3title"></h3>
 											<p id="approach-whatanswers3"></p>												
 										</div>
 									</div>
 									<div class="col-4 col-6-medium col-12-small">
 										<div class="row">
-											<img src="images/gallery/eco-anxiety.png" alt="" width="100%"/>
+											<img loading="lazy" decoding="async" src="images/gallery/eco-anxiety.webp" alt="" width="100%"/>
 											<h3 id="approach-whatanswers2title"></h3>
 											<p id="approach-whatanswers2"></p>												
 										</div>
 									</div>
 									<div class="col-4 col-6-medium col-12-small">
 										<div class="row">
-											<img src="images/gallery/regulatory-compliance.png" alt="" width="100%"/>
+											<img loading="lazy" decoding="async" src="images/gallery/regulatory-compliance.webp" alt="" width="100%"/>
 											<h3 id="approach-whatanswers1title"></h3>
 											<p id="approach-whatanswers1"></p>											
 										</div>
@@ -190,7 +190,7 @@
 								<div class="row">
 									
 									<div class="col-4 col-12-medium col-12-small">
-										<img src="images/gallery/3pillars.png" alt=" " width="80%"/>
+										<img loading="lazy" decoding="async" src="images/gallery/3pillars.png" alt=" " width="80%"/>
 										<!-- <p id="approach-whatanswers4"></p>										 -->
 									</div>
 									<div class="col-8 col-12-medium col-12-small">
@@ -211,7 +211,7 @@
 								<div class="row">											
 									<div class="col-3 col-4-medium col-12-small">
 										<section class="box" style="text-align: left;">
-											<img src="images/gallery/frame.png" alt="" width="100%"/>
+											<img loading="lazy" decoding="async" src="images/gallery/frame.png" alt="" width="100%"/>
 										</section>
 									</div>
 									<div class="col-9 col-8-medium col-12-small">
@@ -229,7 +229,7 @@
 								<div class="row">											
 									<div class="col-3 col-4-medium col-12-small">
 										<section class="box" style="text-align: left;">
-											<img src="images/gallery/futures.png" alt="" width="100%"/>
+											<img loading="lazy" decoding="async" src="images/gallery/futures.png" alt="" width="100%"/>
 										</section>
 									</div>
 									<div class="col-9 col-8-medium col-12-small">
@@ -247,7 +247,7 @@
 								<div class="row">											
 									<div class="col-3 col-4-medium col-12-small">
 										<section class="box" style="text-align: left;">
-											<img src="images/gallery/people_systems.png" alt="" width="100%"/>
+											<img loading="lazy" decoding="async" src="images/gallery/people_systems.png" alt="" width="100%"/>
 										</section>
 									</div>
 									<div class="col-9 col-8-medium col-12-small">
@@ -274,17 +274,17 @@
 												
 												<div class="row">
 													<div class="col-4 col-4-medium col-12-small">
-														<img src="images/gallery/evidence_based.png" alt="" width="30%"/>
+														<img loading="lazy" decoding="async" src="images/gallery/evidence_based.png" alt="" width="30%"/>
 														<header><h3 id="approach-reason1title" style="color: #cdd64aff;"></h3></header>
 														<p id="approach-reason1answer" style="color: white;"></p> 
 													</div>
 													<div class="col-4 col-4-medium col-12-small">
-														<img src="images/gallery/human_centred.png" alt="" width="30%"/>
+														<img loading="lazy" decoding="async" src="images/gallery/human_centred.png" alt="" width="30%"/>
 														<header><h3 id="approach-reason2title" style="color: #cdd64aff;"></h3></header>
 														<p id="approach-reason2answer" style="color: white;"></p> 
 													</div>
 													<div class="col-4 col-4-medium col-12-small">
-														<img src="images/gallery/systems_oriented.png" alt="" width="30%"/>
+														<img loading="lazy" decoding="async" src="images/gallery/systems_oriented.png" alt="" width="30%"/>
 														<header><h3 id="approach-reason3title" style="color: #cdd64aff;"></h3></header>
 														<p id="approach-reason3answer" style="color: white;"></p> 
 													</div>

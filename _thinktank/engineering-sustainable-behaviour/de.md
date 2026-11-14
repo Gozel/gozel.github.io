@@ -9,7 +9,7 @@ lead: "5 Design-Leitlinien aus der Sustainable-UX-Forschung"
 date: 2026-11-04                	# YYYY-MM-DD — the overview sorts by this
 category: research-digest           # think-piece | conversation | research-digest | tools | report
 audience: business             	# researchers | policymakers | business | citizens | everybody — or a list: [business, policymakers]
-cover: engineered-human.png         # file in think-tank/images/<folder>/ — add when you have one
+cover: engineered-human.webp         # file in think-tank/images/<folder>/ — add when you have one
 # cover_alt: ""
 # description: "Optional: text for Google & link previews (otherwise the lead is used)"
 ---

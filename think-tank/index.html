@@ -4,15 +4,13 @@ title: Think Tank
 description: Essays, analyses and positions on sustainability, technology and society.
 # Banner image (right-hand side, like the Approach page). Path from the site root.
 # Delete both lines for a text-only banner.
-banner_image: think-tank/images/think-tank-banner.png
+banner_image: think-tank/images/think-tank-banner.webp
 banner_alt: "think tank – ideas for futures worth building"
 ---
 {%- comment -%}
 	Built automatically from _thinktank/. Never edit to add a piece.
-	One card per piece; the card for the reader's language is shown (see think-tank.js).
+	The cards come from _includes/tt/cards.html (also used on the home page).
 {%- endcomment -%}
-{%- assign docs = site.thinktank | sort: "date" | reverse -%}
-{%- assign pieces = docs | group_by_exp: "d", "d.relative_path | remove_first: '_thinktank/' | split: '/' | first" -%}
 <!-- Banner -->
 			<section id="banner">
 				<header>
@@ -37,37 +35,6 @@ banner_alt: "think tank – ideas for futures worth building"
 			<!-- Main -->
 			<section id="main">
 				<div class="container">
-					<div class="tt-grid">
-						{%- for piece in pieces %}
-						{%- comment %} English first: it is the default version {% endcomment %}
-						{%- assign en_version = piece.items | where: "slug", "en" %}
-						{%- assign other_versions = piece.items | where_exp: "d", "d.slug != 'en'" | sort: "slug" %}
-						{%- assign versions = en_version | concat: other_versions %}
-						{%- assign langs = versions | map: "slug" | join: " / " | upcase %}
-						<div class="tt-piece">
-							{%- for doc in versions %}
-							{%- assign t = site.data.thinktank[doc.slug] | default: site.data.thinktank.en %}
-							{%- capture cover %}{% if doc.cover %}{% include tt/src.html src=doc.cover piece=piece.name %}{% endif %}{% endcapture %}
-							{%- assign href = doc.url | remove_first: "/" %}
-							<article class="tt-card" data-lang="{{ doc.slug }}" lang="{{ doc.slug }}"{% unless forloop.first %} hidden{% endunless %}>
-								{%- if cover != "" %}
-								<a href="{{ href }}" class="tt-card-image"><img src="{{ cover }}" alt="{{ doc.cover_alt | escape }}" loading="lazy"></a>
-								{%- endif %}
-								<div class="tt-card-body">
-									<p class="tt-card-meta"><time datetime="{{ doc.date | date: '%Y-%m-%d' }}">{{ doc.date | date: "%Y-%m-%d" }}</time> &middot; {{ langs }}</p>
-									{% include tt/tags.html doc=doc %}
-									<h3><a href="{{ href }}">{{ doc.title }}</a></h3>
-									{%- if doc.lead %}
-									<p>{{ doc.lead }}</p>
-									{%- endif %}
-									<a href="{{ href }}" class="tt-card-more">{{ t.readmore }} &rarr;</a>
-								</div>
-							</article>
-							{%- endfor %}
-						</div>
-						{%- else %}
-						<p class="tt-empty" id="thinktank-empty"></p>
-						{%- endfor %}
-					</div>
+					{% include tt/cards.html %}
 				</div>
 			</section>

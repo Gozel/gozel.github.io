@@ -103,7 +103,7 @@ single quotes around it instead (`caption='He said "yes"'`).
 The image on the right of the Think Tank banner is set at the top of `think-tank/index.html`:
 
 ```yaml
-banner_image: think-tank/images/think-tank-banner.png
+banner_image: think-tank/images/think-tank-banner.webp
 banner_alt: "think tank – ideas for futures worth building"
 ```
 

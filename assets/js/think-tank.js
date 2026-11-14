@@ -47,10 +47,11 @@ const ttPieces = document.querySelectorAll(".tt-piece");
 if (document.querySelector(".tt-grid")) {
 	document.addEventListener("site:languageloaded", e => {
 		const { lang, data } = e.detail;
+		const title = document.getElementById("thinktank-title");
 		const intro = document.getElementById("thinktank-intro");
 		const empty = document.getElementById("thinktank-empty");
 		if (data.thinktank) {
-			document.getElementById("thinktank-title").innerHTML = data.thinktank.title;
+			if (title) title.innerHTML = data.thinktank.title;
 			if (intro) intro.innerHTML = data.thinktank.intro;
 			if (empty) empty.innerHTML = data.thinktank.empty;
 		}

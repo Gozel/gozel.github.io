@@ -1,3 +1,6 @@
+---
+# Processed by Jekyll so the Think Tank preview stays up to date
+---
 <!DOCTYPE HTML>
 <!--
 	Dopetrope by HTML5 UP
@@ -12,7 +15,11 @@
 		
 		<link rel="icon" href="images/logo/favicon.ico">
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" />
+		<script>var siteLang;try{siteLang=localStorage.getItem("lang")||"en"}catch(e){siteLang="en"}window.siteLangPrefetch={lang:siteLang,data:fetch("lang/"+siteLang+".json").then(function(r){return r.json()})};</script>
+		<link rel="stylesheet" href="assets/css/fresh.css" />
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-DVME2JVJE7"></script>
 		<!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
 		<script>
@@ -23,7 +30,7 @@
 		gtag('config', 'G-DVME2JVJE7');
 		</script>
 	</head>
-	<body class="homepage is-preload">
+	<body class="homepage is-preload fresh">
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -33,7 +40,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-4 col-4-medium col-6-small">
-								<a href="index" class="image featured"><img src="images/logo/shakeri_et_al.png" alt="Logo of Shakeri et al." class="site-logo"/></a>
+								<a href="index" class="image featured"><img src="images/logo/shakeri_et_al.svg" width="166" height="38" alt="Logo of Shakeri et al." class="site-logo"/></a>
 								
 							</div>
 							<div class="col-8 col-0-medium col-0-small">
@@ -54,19 +61,13 @@
 												<ul id="nav-aboutlist">
 													<li><a id="nav-aboutgozel" href="gozel"></a></li>
 													<!-- <li><a id="nav-aboutHCD" href="designthinking"></a></li> -->
-													<li><a id="nav-aboutpublications" href="publications"></a></li>
+													<li><a id="nav-aboutpublications" href="publications.html"></a></li>
 													<li><a id="nav-abouttalks" href="talks"></a></li>
 												</ul>
 											</li>
 											<li><a id="nav-thinktank" href="think-tank/"></a></li>
 											<li><a id="nav-contact" href="contact"></a></li>
-											<li id="nav-language">
-												<select id="language">
-													<option value="en">🇬🇧 En</option>
-													<option value="fr">🇫🇷 Fr</option>
-													<option value="de">🇩🇪 De</option>
-												</select>
-											</li>
+											<li class="lang-li"><div class="lang-switch" role="group" aria-label="Language"><button type="button" data-set-lang="en">EN</button><button type="button" data-set-lang="fr">FR</button><button type="button" data-set-lang="de">DE</button></div></li>
 											
 										</ul>
 									</nav>
@@ -77,366 +78,221 @@
 					</div>
 				</section>
 
-				<section id="banner" class="index">
-					<header id="landing" >
-						<!-- <img src="images/gallery/advantage_06_feathered.png" alt="Client logos, from left to right:  University of Strasbourg, CEA, CNRS, Inria" width="100%"/> -->
+				<!-- Hero: same banner structure as the other pages -->
+				<section id="banner" class="fh-home-banner">
+					<header>
 						<div class="row">
-							<div class="col-6 col-6-medium col-12-small">
-								<h2 id="landing-title"></h2>
+							<div class="col-6 col-6-medium col-12-small banner-text">
+								<p class="fh-badge" id="landing-badge"></p>
+								<h1 id="landing-title"></h1>
 								<p id="landing-subtitle"></p>
-								<p></p>
-								<div class="row">
-									<div class="col-6 col-6-medium col-6-small">
-										<p></p>
-										<a href="contact" class="button" id="landing-more1"></a>
-									</div>
-									<div class="col-6 col-6-medium col-6-small">
-										<a href="services-research" class="button" id="landing-more2"></a>
-									</div>
+								<div class="fh-actions">
+									<a href="contact" class="fh-btn fh-btn-primary" id="landing-more1"></a>
+									<a href="approach" class="fh-btn fh-btn-ghost" id="landing-more2"></a>
 								</div>
 							</div>
-						</div>
-						<div class="row">
-							<div class="col-6 col-6-medium col-12-small">
-								<img alt="" src="images/clients/01.png" width="100%"/>
-							</div>
-							<div class="col-6 col-6-medium col-12-small">
-								<img src="images/clients/02.png" alt="" width="100%"/>
+							<div class="col-6 col-6-medium col-12-small fh-hero-media">
+								<img src="images/gallery/hero-fresh.jpg" alt="A team placing model wind turbines, solar panels and trees on a chessboard" fetchpriority="high"/>
 							</div>
 						</div>
 					</header>
 				</section>
 
-				<!-- <section class="box" style="background-color: #f7f7f7;">
-					<div class="row">
-						<div class="col-6 col-6-medium col-12-small">
-							<img alt="Client logos, from left to right: Tesco, WWF, SIGCHI, University of Glasgow" src="images/clients/01.png" width="100%"/>
-						</div>
-						<div class="col-6 col-6-medium col-12-small">
-							<img src="images/clients/02.png" alt="Client logos, from left to right:  University of Strasbourg, CEA, CNRS, Inria" width="100%"/>
-						</div>
-					</div>
-				</section> -->
-
-				<section id="main">
-					
-					<div class="container">
-						
-						<section class="box">
-							<div class="row">
-								<div class="col-6 col-6-medium col-12-small">
-									<section class="box" style="text-align: left;">
-										<h2 id="hero-title"></h2>
-										<p id="hero-subtitle"></p>
-									</section>
-								</div>
-								<div class="col-6 col-6-medium col-12-small">
-									<img src="images/gallery/value.png" style="text-align: center; border-radius: 15px;" alt="" width="100%"/>
-								</div>
-							</div>
-						</section>
-
-						<header class="major">
-							<h2 id="landing-divider"></h2>
-						</header>
-						<!-- <section class="box"> -->
-						<div class="row">
-							<div class="col-6 col-6-medium col-12-small">
-								<section class="box" style="text-align: left;">
-									<header style="text-align: center;"><h2 id="landing-successtitle1"></h2></header> 
-									<img src="images/gallery/consultancy.png" style="text-align: center; border-radius: 15px;" alt="" width="100%"/>
-									<p id="landing-successstory1"></p>
-									<img alt="" src="images/clients/01_black.png" width="100%" style="text-align: center;"/>
-								</section>
-							</div>
-							<!-- <div class="col-4 col-6-medium col-12-small">
-								<section class="box" style="text-align: left;">
-									<header style="text-align: center;"><h2 id="landing-successtitle2"></h2></header> 
-									<p><img src="images/gallery/consultancy.png" style="border-radius: 15px;" alt="" width="100%"/></p>
-									<p id="landing-successstory2"></p>
-									</section>
-							</div> -->
-							<div class="col-6 col-6-medium col-12-small">
-								<section class="box" style="text-align: left;">
-									<header style="text-align: center;"><h2 id="landing-successtitle3"></h2></header> 
-									<p><img src="images/gallery/strategy.png" style="border-radius: 15px;" alt="" width="100%"/></p>
-									<p id="landing-successstory3"></p>
-									<img alt="" src="images/clients/04.png" width="100%" style="text-align: center;"/>
-								</section>
-							</div>
-						</div>
-						<!-- </section> -->
-
-						<section id="whatIdo">
-							<header class="major">
-								<h2 id="whatIdo-title"></h2>
-							</header>
-							<section class="box" style="text-align: center;">
-								<header>
-									<h2 id="whatIdo-subtitle"></h2>
-								</header>
-								<div class="row">
-									<div class="col-4 col-4-medium col-12-small">
-										<img src="images/gallery/imagination.png" alt="" width="25%"/>
-										<header>
-											<h2 style="text-align: center;" id="whatIdo-subtitle1"></h2>
-										</header>
-										<p id="whatIdo-text1" style="text-align: left;"></p>
-									</div>
-
-									<div class="col-4 col-4-medium col-12-small">
-										<img src="images/gallery/agency.png" alt="" width="25%"/>
-										<header>
-											<h2 style="text-align: center;" id="whatIdo-subtitle2"></h2>
-										</header>
-										<ul style="text-align: left;">
-										</ul>
-										<p style="text-align: left;" id="whatIdo-text2"></p>
-									</div>
-									
-									<div class="col-4 col-4-medium col-12-small">
-										<img src="images/gallery/collaboration.png" alt="" width="25%"/>
-										<header>
-											<h2 style="text-align: center;" id="whatIdo-subtitle3"></h2>
-										</header>
-										<ul style="text-align: left;">
-										</ul>
-										<p style="text-align: left;" id="whatIdo-text3"></p>
-									</div>
-								</div>
-							</section>
-						</section>
-
-						<section id="ourapproach">
-							<!-- <header class="major">
-								<h2 id="ourapproach-title"></h2>
-							</header> -->
-							<section class="box" style="background-color: #08231dff; text-align: center;">
-								<header>
-									<h2 style="text-align: center; color: white;" id="ourapproach-subtitle"></h2>
-								</header>
-								
-								<!-- <p style="text-align: center; color: white;" id="ourapproach-text"></p>  -->
-								<!-- <img src="images/gallery/4steps_yellow.png" alt=" " width="80%"/> -->
-									
-								<!-- <div class="row">	
-									<div class="col-3 col-6-medium col-12-small">
-										<section class="box" style="text-align: center; background-color: #08231dff;">
-											<img src="images/gallery/reframe.png" alt=" " width="50%"/>
-											<h3 id="approach-step1title" style="color: white;"></h3>
-											<p id="approach-step1text" style="color: white;"></p>
-										</section>
-									</div>
-									<div class="col-3 col-6-medium col-12-small">
-										<section class="box" style="text-align: center; background-color: #08231dff;">
-											<img src="images/gallery/imagine.png" alt=" " width="50%"/>
-											<h3 id="approach-step2title" style="color: white;"></h3>
-											<p id="approach-step2text" style="color: white;"></p>
-										</section>
-									</div>
-									<div class="col-3 col-6-medium col-12-small">
-										<section class="box" style="text-align: center; background-color: #08231dff;">
-											<img src="images/gallery/synergise.png" alt=" " width="50%"/>
-											<h3 id="approach-step3title" style="color: white;"></h3>
-											<p id="approach-step3text" style="color: white;"></p>
-										</section>
-									</div>
-									<div class="col-3 col-6-medium col-12-small">
-										<section class="box" style="text-align: center; background-color: #08231dff;">
-											<img src="images/gallery/create.png" alt=" " width="50%"/>
-											<h3 id="approach-step4title" style="color: white;"></h3>
-											<p id="approach-step4text" style="color: white;"></p>
-										</section>
-									</div>
-								</div> -->
-								<p style="text-align: center;"><a href="approach" class="button" id="ourapproach-more"></a></p>
-							</section>
-						</section>
-						
-
-						<section id="waysIcanhelp">
-							<header class="major">
-								<h2 id="waysIcanhelp-title"></h2>
-							</header>
-							<section class="box" style="background-color: transparent;">
-								<header>
-									<h2 style="text-align: center;" id="waysIcanhelp-subtitle"></h2>
-								</header>
-								<!-- <section class="box"> -->
-									<div class="row">
-										<div class="col-3 col-6-medium col-12-small">
-											<section class="box" style="text-align: center; border-radius: 15px;">
-												<img src="images/gallery/innovation_workshop.png" alt="" width="100%"/>
-												<header><h3 id="waysIcanhelp-subtitle2"></h3></header>
-												<p id="waysIcanhelp-text2"></p> 
-											</section>
-										</div>
-										<div class="col-3 col-6-medium col-12-small">
-											<section class="box" style="text-align: center; border-radius: 15px; border-color: #08231dff;">
-												<img src="images/gallery/research.png" alt="" width="100%"/>
-												<header><h3 id="waysIcanhelp-subtitle3"></h3></header>
-												<p id="waysIcanhelp-text3"></p> 
-											</section>
-										</div>
-										<div class="col-3 col-6-medium col-12-small">
-											<section class="box" style="text-align: center; border-radius: 15px;">
-												<img src="images/gallery/education_training.png" alt="" width="100%"/>
-												<header><h3 id="waysIcanhelp-subtitle4"></h3></header>
-												<p id="waysIcanhelp-text4"></p> 
-											</section>
-										</div>
-										<div class="col-3 col-6-medium col-12-small">
-											<section class="box" style="text-align: center; border-radius: 15px; background-color: white;">
-												<img src="images/gallery/consultancy.png" alt="" width="100%"/>
-												<header><h3 id="waysIcanhelp-subtitle1"></h3></header>
-												<p id="waysIcanhelp-text1"></p> 
-											</section>
-										</div>
-									</div>
-								<!-- </section> -->
-							</section>
-						</section>
-
-						<section id="whoweworkwith">
-							<header class="major">
-								<h2 id="whoweworkwith-title"></h2>
-							</header>
-							<section class="box">
-								<div class="row">
-									<div class="col-3 col-6-medium col-12-small">
-										<section class="box" style="text-align: center;">
-											<img src="images/gallery/business.png" alt=" " width="30%"/>
-											<header><h3 id="whoweworkwith-subtitle1"></h3></header>
-											<p id="whoweworkwith-text1"></p> 
-										</section>
-									</div>
-									<div class="col-3 col-6-medium col-12-small">
-										<section class="box" style="text-align: center;">
-											<img src="images/gallery/incubator.png" alt=" " width="30%"/>
-											<header><h3 id="whoweworkwith-subtitle2"></h3></header>
-											<p id="whoweworkwith-text2"></p> 
-										</section>
-									</div>
-									<div class="col-3 col-6-medium col-12-small">
-										<section class="box" style="text-align: center;">
-											<img src="images/gallery/government.png" alt=" " width="30%"/>
-											<header><h3 id="whoweworkwith-subtitle3"></h3></header>
-											<p id="whoweworkwith-text3"></p> 
-										</section>
-									</div>
-									<div class="col-3 col-6-medium col-12-small">
-										<section class="box" style="text-align: center;">
-											<img src="images/gallery/academia.png" alt=" " width="30%"/>
-											<header><h3 id="whoweworkwith-subtitle4"></h3></header>
-											<p id="whoweworkwith-text4"></p> 
-										</section>
-									</div>
-									<!-- <div class="col-3 col-4-medium col-4-small">
-										<section class="box" style="text-align: center;">
-											<img src="images/gallery/design thinking_banner.png" alt=" " width="100%"/>
-											<header><h3 id="whoweworkwith-subtitle5"></h3></header>
-											<p id="whoweworkwith-text5"></p> 
-										</section>
-									</div> -->
-									<!-- <div class="col-2 col-4-medium col-4-small">
-										<section class="box" style="text-align: center;">
-											<img src="images/gallery/design thinking_banner.png" alt=" " width="100%"/>
-											<header><h3 id="whoweworkwith-subtitle6"></h3></header>
-											<p id="whoweworkwith-text6"></p> 
-										</section>
-									</div> -->
-								</div>
-							</section>
-						</section>
-						<section id="whyclientsworkwithus">
-							<section class="box" style="background-color: #08231dff;">
-								<header>
-									<h2 id="whyclientsworkwithus-title" style="color: white;"></h2>
-								</header>
-								<div class="row">
-									
-									<div class="col-8 col-8-medium col-12-small">
-										<section class="box" style="background-color: #08231dff;">
-											
-											<div class="row">
-												<div class="col-4 col-4-medium col-12-small">
-													<img src="images/gallery/evidence_based.png" alt="" width="30%"/>
-													<header><h3 id="whyclientsworkwithus-subtitle1" style="color: #cdd64aff;"></h3></header>
-													<p id="whyclientsworkwithus-text1" style="color: white;"></p> 
-												</div>
-												<div class="col-4 col-4-medium col-12-small">
-													<img src="images/gallery/human_centred.png" alt="" width="30%"/>
-													<header><h3 id="whyclientsworkwithus-subtitle2" style="color: #cdd64aff;"></h3></header>
-													<p id="whyclientsworkwithus-text2" style="color: white;"></p> 
-												</div>
-												<div class="col-4 col-4-medium col-12-small">
-													<img src="images/gallery/systems_oriented.png" alt="" width="30%"/>
-													<header><h3 id="whyclientsworkwithus-subtitle3" style="color: #cdd64aff;"></h3></header>
-													<p id="whyclientsworkwithus-text3" style="color: white;"></p> 
-												</div>
-											</div>
-										</section>
-									</div>
-									<div class="col-4 col-4-medium col-12-small" >
-										<section class="box" style="background-color: #cdd64aff; border-radius: 15px;">
-											<header><h3 id="whyclientsworkwithus-subtitle4"></h3></header>
-											<p id="whyclientsworkwithus-text4"></p> 
-											<p style="text-align: center; color: white;"><a href="contact" class="button" id="whyclientsworkwithus-more" style="background: #08231dff;"></a></p>
-										</section>
-									</div>
-								</div>
-							</section>
-						</section>
-
-						<!-- <section id="casestudies">
-							<header class="major">
-								<h2 id="casestudies-title"></h2>
-							</header>
-							<section class="box">
-								<div class="row">
-									<div class="col-4 col-6-medium col-12-small">
-										
-										<section class="box" style="text-align: center;">
-											<img id="envirofy-img" width="100%"/>
-										</section>
-									</div>
-									<div class="col-4 col-6-medium col-12-small">
-										
-										<section class="box" style="text-align: center;">
-											<img id="fsa_ngos-img" width="100%"/>
-										</section>
-									</div>
-									<div class="col-4 col-6-medium col-12-small">
-										
-										<section class="box" style="text-align: center;">
-											<img id="medialiteracy-img" width="100%"/>
-										</section>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-4 col-6-medium col-12-small">
-										
-										<section class="box" style="text-align: center;">
-											<img id="CNRS_workshop-img" width="100%"/>
-										</section>
-									</div>
-									<div class="col-4 col-6-medium col-12-small">
-										
-										<section class="box" style="text-align: center;">
-											<img id="offis-img" width="100%"/>
-										</section>
-									</div>
-									<div class="col-4 col-6-medium col-12-small">
-										
-										<section class="box" style="text-align: center;">
-											<img id="accessibility-img" width="100%"/>
-										</section>
-									</div>
-								</div>
-							</section>
-						</section> -->
+				<!-- Clients -->
+				<section class="fh-logos">
+					<div class="fh-wrap fh-trusted">
+						<p class="fh-trusted-label" id="landing-trusted"></p>
+						<p>Tesco</p>
+						<p>WWF</p>
+						<p>Food Standards Agency</p>
+						<p>University of Glasgow</p>
+						<p>CNRS</p>
+						<p>Nourish Scotland</p>
 					</div>
 				</section>
+
+				<main class="fh-main">
+
+					<!-- Creating value that lasts -->
+					<section class="fh-section" id="whatIdo">
+						<div class="fh-wrap">
+							<div class="fh-value">
+								<div class="fh-value-text">
+									<p class="fh-eyebrow" id="whatIdo-title"></p>
+									<h2 class="fh-h2" id="landing-valuetitle"></h2>
+									<ul class="fh-questions">
+										<li id="landing-q1"></li>
+										<li id="landing-q2"></li>
+										<li id="landing-q3"></li>
+										<li id="landing-q4"></li>
+									</ul>
+								</div>
+								<div class="fh-stat fh-stat-large">
+									<p class="fh-stat-num">79%</p>
+									<p id="landing-stat"></p>
+									<p class="fh-stat-source" id="landing-statsource"></p>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- Success stories -->
+					<section class="fh-section" id="successstories">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="landing-divider"></p>
+							</div>
+							<div class="fh-grid fh-grid-3">
+								<article class="fh-card fh-card-pic fh-story">
+									<img src="images/gallery/buergermobil.webp" alt="Passengers in the Bürgermobil shuttle van" loading="lazy"/>
+									<h3 id="landing-successtitle4"></h3>
+									<p id="landing-successstory4"></p>
+									<div class="fh-partners-row">
+										<img src="images/clients/buergermobil.png" alt="Bürgermobil Scheidegg-Scheffau" loading="lazy"/>
+										<img src="images/clients/nur-auge-bw.png" alt="Nur-Auge" loading="lazy"/>
+									</div>
+								</article>
+								<article class="fh-card fh-card-pic fh-story">
+									<img src="images/gallery/strategy.webp" alt="" loading="lazy"/>
+									<h3 id="landing-successtitle3"></h3>
+									<p id="landing-successstory3"></p>
+									<img class="fh-partners" src="images/clients/04.webp" alt="Hochschule Offenburg, ChallengeEU, Alka-Celić" loading="lazy"/>
+								</article>
+								<article class="fh-card fh-card-pic fh-story">
+									<img src="images/gallery/consultancy.webp" alt="" loading="lazy"/>
+									<h3 id="landing-successtitle1"></h3>
+									<p id="landing-successstory1"></p>
+									<img class="fh-partners" src="images/clients/01_black.png" alt="Tesco, WWF, Food Standards Agency, University of Glasgow" loading="lazy"/>
+								</article>
+							</div>
+						</div>
+					</section>
+
+					<!-- Call to action -->
+					<section class="fh-section" id="ourapproach">
+						<div class="fh-wrap">
+							<div class="fh-band">
+								<div class="fh-band-text">
+									<h2 id="ourapproach-subtitle"></h2>
+									<p><b id="approach-title"></b> <span id="approach-subtitle"></span></p>
+								</div>
+								<a href="approach" class="fh-btn fh-btn-sun" id="ourapproach-more"></a>
+							</div>
+						</div>
+					</section>
+
+					<!-- Services -->
+					<section class="fh-section" id="waysIcanhelp">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="waysIcanhelp-title"></p>
+								<h2 class="fh-h2" id="waysIcanhelp-subtitle"></h2>
+							</div>
+							<div class="fh-grid fh-grid-4">
+								<article class="fh-card fh-card-compact fh-card-pic">
+									<img src="images/gallery/consultancy.webp" alt="" loading="lazy"/>
+									<h3 id="waysIcanhelp-subtitle1"></h3>
+									<p id="waysIcanhelp-text1"></p>
+								</article>
+								<article class="fh-card fh-card-compact fh-card-pic">
+									<img src="images/gallery/innovation_workshop.webp" alt="" loading="lazy"/>
+									<h3 id="waysIcanhelp-subtitle2"></h3>
+									<p id="waysIcanhelp-text2"></p>
+								</article>
+								<article class="fh-card fh-card-compact fh-card-pic">
+									<img src="images/gallery/research.webp" alt="" loading="lazy"/>
+									<h3 id="waysIcanhelp-subtitle3"></h3>
+									<p id="waysIcanhelp-text3"></p>
+								</article>
+								<article class="fh-card fh-card-compact fh-card-pic">
+									<img src="images/gallery/education_training.webp" alt="" loading="lazy"/>
+									<h3 id="waysIcanhelp-subtitle4"></h3>
+									<p id="waysIcanhelp-text4"></p>
+								</article>
+							</div>
+						</div>
+					</section>
+
+					<!-- Who we work with -->
+					<section class="fh-section" id="whoweworkwith">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="whoweworkwith-title"></p>
+							</div>
+							<div class="fh-grid fh-grid-4">
+								<article class="fh-card">
+									<img class="fh-icon" src="images/gallery/business.png" alt="" loading="lazy"/>
+									<h3 id="whoweworkwith-subtitle1"></h3>
+									<p id="whoweworkwith-text1"></p>
+								</article>
+								<article class="fh-card">
+									<img class="fh-icon" src="images/gallery/incubator.png" alt="" loading="lazy"/>
+									<h3 id="whoweworkwith-subtitle2"></h3>
+									<p id="whoweworkwith-text2"></p>
+								</article>
+								<article class="fh-card">
+									<img class="fh-icon" src="images/gallery/government.png" alt="" loading="lazy"/>
+									<h3 id="whoweworkwith-subtitle3"></h3>
+									<p id="whoweworkwith-text3"></p>
+								</article>
+								<article class="fh-card">
+									<img class="fh-icon" src="images/gallery/academia.png" alt="" loading="lazy"/>
+									<h3 id="whoweworkwith-subtitle4"></h3>
+									<p id="whoweworkwith-text4"></p>
+								</article>
+							</div>
+						</div>
+					</section>
+
+					<!-- Why clients work with us -->
+					<section class="fh-section" id="whyclientsworkwithus">
+						<div class="fh-wrap">
+							<div class="fh-why">
+								<div class="fh-why-main">
+									<h2 id="whyclientsworkwithus-title"></h2>
+									<div class="fh-grid fh-grid-3">
+										<div class="fh-why-item">
+											<img class="fh-icon" src="images/gallery/evidence_based.png" alt="" loading="lazy"/>
+											<h3 id="whyclientsworkwithus-subtitle1"></h3>
+											<p id="whyclientsworkwithus-text1"></p>
+										</div>
+										<div class="fh-why-item">
+											<img class="fh-icon" src="images/gallery/human_centred.png" alt="" loading="lazy"/>
+											<h3 id="whyclientsworkwithus-subtitle2"></h3>
+											<p id="whyclientsworkwithus-text2"></p>
+										</div>
+										<div class="fh-why-item">
+											<img class="fh-icon" src="images/gallery/systems_oriented.png" alt="" loading="lazy"/>
+											<h3 id="whyclientsworkwithus-subtitle3"></h3>
+											<p id="whyclientsworkwithus-text3"></p>
+										</div>
+									</div>
+								</div>
+								<div class="fh-why-callout">
+									<h3 id="whyclientsworkwithus-subtitle4"></h3>
+									<p id="whyclientsworkwithus-text4"></p>
+									<a href="contact" class="fh-btn fh-btn-primary" id="whyclientsworkwithus-more"></a>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- Think Tank -->
+					<section class="fh-section fh-tt" id="thinktank">
+						<div class="fh-wrap">
+							<div class="fh-section-head fh-section-head-row">
+								<div>
+									<p class="fh-eyebrow" id="landing-tttitle"></p>
+									<h2 class="fh-h2" id="landing-ttheading"></h2>
+								</div>
+								<a href="think-tank/" class="fh-more-link" id="landing-ttall"></a>
+							</div>
+							{% include tt/cards.html limit=3 %}
+						</div>
+					</section>
+
+				</main>
+
 
 			<!-- Footer -->
 				<div id="inject_footer"></div>
@@ -454,6 +310,7 @@
 			$("#inject_footer").load("footer.html"); 
 			});
 		</script> -->
+		<script src="assets/js/think-tank.js"></script>
 		<script src="assets/js/language.js"></script>
 	</body>
 </html>

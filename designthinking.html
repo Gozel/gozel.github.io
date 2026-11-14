@@ -13,6 +13,11 @@
 		<link rel="icon" href="images/logo/favicon.ico">
 		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" />
+		<script>var siteLang;try{siteLang=localStorage.getItem("lang")||"en"}catch(e){siteLang="en"}window.siteLangPrefetch={lang:siteLang,data:fetch("lang/"+siteLang+".json").then(function(r){return r.json()})};</script>
+		<link rel="stylesheet" href="assets/css/fresh.css" />
 		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 		<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -25,7 +30,7 @@
 		gtag('config', 'G-DVME2JVJE7');
 		</script>
 	</head>
-	<body class="homepage is-preload">
+	<body class="homepage is-preload fresh">
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -41,7 +46,7 @@
 									<section>
 										<div class="row">
 											<div class="col-4 col-4-medium col-6-small">
-												<a href="https://shakeri.eu" class="image featured"><img src="images/logo/shakeri_et_al.png" alt="" class="site-logo"/></a>
+												<a href="https://shakeri.eu" class="image featured"><img src="images/logo/shakeri_et_al.svg" width="166" height="38" alt="" class="site-logo"/></a>
 												
 											</div>
 											<div class="col-8 col-6-medium col-12-small">
@@ -61,19 +66,14 @@
 																<ul id="nav-aboutlist">
 																	<li><a id="nav-aboutgozel" href="gozel"></a></li>
 																	<li><a id="nav-aboutHCD" href="designthinking"></a></li>
-																	<li><a id="nav-aboutpublications" href="publications"></a></li>
+																	<li><a id="nav-aboutpublications" href="publications.html"></a></li>
 																	<li><a id="nav-abouttalks" href="talks"></a></li>
 																</ul>
 															</li>
 															<li><a id="nav-thinktank" href="think-tank/"></a></li>
 															<li><a id="nav-contact" href="contact"></a></li>
 															<li>
-																<select id="language">
-																	<option value="en">🇬🇧 En</option>
-																	<option value="fr">🇫🇷 Fr</option>
-																	<option value="de">🇩🇪 De</option>
-																</select>
-															</li>
+																<li class="lang-li"><div class="lang-switch" role="group" aria-label="Language"><button type="button" data-set-lang="en">EN</button><button type="button" data-set-lang="fr">FR</button><button type="button" data-set-lang="de">DE</button></div></li>
 															
 														</ul>
 													</nav>
@@ -122,7 +122,7 @@
 											</div>
 											<div class="col-6 col-12-medium col-12-small">
 												<section class="box" style="text-align: center;">
-													<img src="images/gallery/design_thinking.jpg" width="100%"/>
+													<img loading="lazy" decoding="async" src="images/gallery/design_thinking.jpg" width="100%"/>
 												</section>
 											</div>
 										</div>
@@ -140,7 +140,7 @@
 													<header>
 														<h2 id="hcd-approach1title"></h2>
 													</header>
-													<img src="images/gallery/community.jpg" width="50%"/>
+													<img loading="lazy" decoding="async" src="images/gallery/community.jpg" width="50%"/>
 													<p id="hcd-approach1answers"> </p>
 												</section>
 											</div>
@@ -149,7 +149,7 @@
 													<header>
 														<h2 id="hcd-approach2title"></h2>
 													</header>
-													<img src="images/gallery/transformation.jpg" width="50%"/>
+													<img loading="lazy" decoding="async" src="images/gallery/transformation.jpg" width="50%"/>
 													 <p id="hcd-approach2answers"></p>
 												</section>
 											</div>
@@ -158,7 +158,7 @@
 													<header>
 														<h2 id="hcd-approach3title"></h2>
 													</header>
-													<img src="images/gallery/transformation.jpg" width="50%"/>
+													<img loading="lazy" decoding="async" src="images/gallery/transformation.jpg" width="50%"/>
 													<p id="hcd-approach3answers"></p>
 												</section>
 											</div>
@@ -183,12 +183,12 @@
 												<div class="row">
 													<div class="col-6 col-6-medium col-6-small">
 														<section style="text-align: right;">
-															<img id="envirofy-img" width="100%"/>
+															<img loading="lazy" decoding="async" id="envirofy-img" width="100%"/>
 														</section>
 													</div>
 													<div class="col-6 col-6-medium col-6-small">
 														<section style="text-align: center;">
-															<img id="fsa_ngos-img" width="100%"/>
+															<img loading="lazy" decoding="async" id="fsa_ngos-img" width="100%"/>
 														</section>
 													</div>
 												</div>
@@ -203,12 +203,12 @@
 												<div class="row">
 													<div class="col-6 col-6-medium col-6-small">
 														<section style="text-align: center;">
-															<img id="CNRS_workshop-img" width="100%"/>
+															<img loading="lazy" decoding="async" id="CNRS_workshop-img" width="100%"/>
 														</section>
 													</div>
 													<div class="col-6 col-6-medium col-6-small">
 														<section style="text-align: center;">
-															<img id="offis-img" width="100%"/>
+															<img loading="lazy" decoding="async" id="offis-img" width="100%"/>
 														</section>
 													</div>
 												</div>

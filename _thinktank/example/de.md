@@ -32,9 +32,9 @@ Nummerierte Liste:
 1. erster Schritt
 2. zweiter Schritt
 
-{% include tt/figure.html src="images/gallery/network.jpg" alt="Spielfiguren in einem Netzwerk" caption="Bild in Textbreite mit Bildunterschrift (caption weglassen = keine Unterschrift)" %}
+{% include tt/figure.html src="images/gallery/network.webp" alt="Spielfiguren in einem Netzwerk" caption="Bild in Textbreite mit Bildunterschrift (caption weglassen = keine Unterschrift)" %}
 
-{% include tt/gallery.html images="images/gallery/workshop-optm.jpg|images/gallery/seminar.jpg" captions="Links|Rechts" alts="Haftnotizen|Seminarraum" %}
+{% include tt/gallery.html images="images/gallery/workshop-optm.jpg|images/gallery/seminar.webp" captions="Links|Rechts" alts="Haftnotizen|Seminarraum" %}
 
 {% include tt/quote.html text="Ein prägnantes Zitat, das hervorgehoben werden soll." cite="Name, Funktion" %}
 

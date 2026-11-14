@@ -13,6 +13,11 @@
 		<link rel="icon" href="images/logo/favicon.ico">
 		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" />
+		<script>var siteLang;try{siteLang=localStorage.getItem("lang")||"en"}catch(e){siteLang="en"}window.siteLangPrefetch={lang:siteLang,data:fetch("lang/"+siteLang+".json").then(function(r){return r.json()})};</script>
+		<link rel="stylesheet" href="assets/css/fresh.css" />
 		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 		<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -25,7 +30,7 @@
 		gtag('config', 'G-DVME2JVJE7');
 		</script>
 	</head>
-	<body class="homepage is-preload">
+	<body class="homepage is-preload fresh">
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -41,7 +46,7 @@
 									<section>
 										<div class="row">
 											<div class="col-4 col-6-medium col-12-small">
-												<a href="https://shakeri.eu" class="image featured"><img src="images/logo/shakeri_et_al.png" alt="" class="site-logo"/></a>
+												<a href="https://shakeri.eu" class="image featured"><img src="images/logo/shakeri_et_al.svg" width="166" height="38" alt="" class="site-logo"/></a>
 												
 											</div>
 											<div class="col-8 col-6-medium col-12-small">
@@ -61,17 +66,13 @@
 																<ul id="nav-aboutlist">
 																	<li><a id="nav-aboutgozel" href="gozel"></a></li>
 																	<!-- <li><a id="nav-aboutHCD" href="designthinking"></a></li> -->
-																	<li><a id="nav-aboutpublications" href="publications"></a></li>
+																	<li><a id="nav-aboutpublications" href="publications.html"></a></li>
 																	<li><a id="nav-abouttalks" href="talks"></a></li>
 																</ul>
 															</li>
 															<li><a id="nav-thinktank" href="think-tank/"></a></li>
 															<li><a id="nav-contact" href="contact"></a></li>
-															<select id="language">
-																<option value="en">🇬🇧 En</option>
-																<option value="fr">🇫🇷 Fr</option>
-																<option value="de">🇩🇪 De</option>
-															</select>
+															<li class="lang-li"><div class="lang-switch" role="group" aria-label="Language"><button type="button" data-set-lang="en">EN</button><button type="button" data-set-lang="fr">FR</button><button type="button" data-set-lang="de">DE</button></div></li>
 														</ul>
 													</nav>
 												</div>
