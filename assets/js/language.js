@@ -21,35 +21,35 @@ const imageBasePath = "/images/clients/";
 function setImage(lang) {
 	if (document.getElementById("envirofy-img")) {
 		const img = document.getElementById("envirofy-img");
-		const fileName = `envirofy_${lang}.png`;
+		const fileName = `envirofy_${lang}.webp`;
 		img.src = `${imageBasePath}${fileName}`;
 	} if (document.getElementById("fsa_ngos-img")) {
 		const img = document.getElementById("fsa_ngos-img");
-		const fileName = `fsa_ngos_${lang}.png`;
+		const fileName = `fsa_ngos_${lang}.webp`;
 		img.src = `${imageBasePath}${fileName}`;
 	} if (document.getElementById("medialiteracy-img")) {
 		const img = document.getElementById("medialiteracy-img");
-		const fileName = `medialiteracy_${lang}.png`;
+		const fileName = `medialiteracy_${lang}.webp`;
 		img.src = `${imageBasePath}${fileName}`;
 	} if (document.getElementById("offis-img")) {
 		const img = document.getElementById("offis-img");
-		const fileName = `offis_${lang}.png`;
+		const fileName = `offis_${lang}.webp`;
 		img.src = `${imageBasePath}${fileName}`;
 	} if (document.getElementById("CNRS_workshop-img")) {
 		const img = document.getElementById("CNRS_workshop-img");
-		const fileName = `CNRS_workshop_${lang}.png`;
+		const fileName = `CNRS_workshop_${lang}.webp`;
 		img.src = `${imageBasePath}${fileName}`;
 	} if (document.getElementById("accessibility-img")) {
 		const img = document.getElementById("accessibility-img");
-		const fileName = `accessibility_${lang}.png`;
+		const fileName = `accessibility_${lang}.webp`;
 		img.src = `${imageBasePath}${fileName}`;
 	} if (document.getElementById("European_school-img")) {
 		const img = document.getElementById("European_school-img");
-		const fileName = `European_school_${lang}.png`;
+		const fileName = `European_school_${lang}.webp`;
 		img.src = `${imageBasePath}${fileName}`;
 	} if (document.getElementById("ChallengeEU-img")) {
 		const img = document.getElementById("ChallengeEU-img");
-		const fileName = `ChallengeEU_${lang}.png`;
+		const fileName = `ChallengeEU_${lang}.webp`;
 		img.src = `${imageBasePath}${fileName}`;
 	}
   
@@ -66,8 +66,6 @@ async function loadLanguage(lang) {
 			const response = await fetch(`lang/${lang}.json`);
 			data = await response.json();
 		}
-		// the footer's texts are filled below, so wait until footer.html is in the page
-		await footerReady;
 
 		// Navigation
 		document.getElementById("nav-approach").innerHTML = data.nav.approach;
@@ -91,11 +89,14 @@ async function loadLanguage(lang) {
 		// Footer
 		// console.log("footer exists: " + document.getElementById("footer-contact"));
 		// if (document.getElementById("footer-contact")) $('#inject_footer').load('footer.html'); 
-		if (document.getElementById("footer-contact")) document.getElementById("footer-contact").innerHTML = data.footer.contact;
-		if (document.getElementById("footer-about")) document.getElementById("footer-about").innerHTML = data.footer.about;
-		if (document.getElementById("footer-terms")) document.getElementById("footer-terms").innerHTML = data.footer.terms;
-		if (document.getElementById("footer-privacy")) document.getElementById("footer-privacy").innerHTML = data.footer.privacy;
-		if (document.getElementById("footer-credits")) document.getElementById("footer-credits").innerHTML = data.footer.credits;
+		// The footer arrives separately (footer.html); fill it once it is there, without holding up the page text
+		footerReady.then(() => {
+			if (document.getElementById("footer-contact")) document.getElementById("footer-contact").innerHTML = data.footer.contact;
+			if (document.getElementById("footer-about")) document.getElementById("footer-about").innerHTML = data.footer.about;
+			if (document.getElementById("footer-terms")) document.getElementById("footer-terms").innerHTML = data.footer.terms;
+			if (document.getElementById("footer-privacy")) document.getElementById("footer-privacy").innerHTML = data.footer.privacy;
+			if (document.getElementById("footer-credits")) document.getElementById("footer-credits").innerHTML = data.footer.credits;
+		});
 
 		// Landing
 		if (document.getElementById("landing-title")) document.getElementById("landing-title").innerHTML = data.landing.title;
