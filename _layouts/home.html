@@ -1,0 +1,322 @@
+---
+# Built once per language: see the pages that use this layout (e.g. index.html, fr/index.html).
+# Texts come from lang/<lang>.json; edit them there.
+---
+{%- include site/lang-vars.html -%}
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="{{ lang }}">
+	<head id="header">
+		<title>{{ t.header.title | default: en.header.title }}</title>
+		{% include site/head-meta.html description='landing.subtitle' %}
+		<meta charset="utf-8" />
+		<base href="/" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		
+		<link rel="icon" href="/images/logo/favicon.ico">
+		<link rel="stylesheet" href="/assets/css/fontawesome-all.min.css" media="print" onload="this.media='all'" />
+		<noscript><link rel="stylesheet" href="/assets/css/fontawesome-all.min.css" /></noscript>
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" />
+		<link rel="stylesheet" href="/assets/css/fresh.css" />
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-DVME2JVJE7"></script>
+		<!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-DVME2JVJE7');
+		</script>
+	</head>
+	<body class="homepage is-preload fresh">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<!-- Logo -->
+					<div class="container">
+						<div class="row">
+							<div class="col-4 col-4-medium col-6-small">
+								<a href="{% include site/url.html to='' %}" class="image featured" aria-label="Shakeri et al. home"><img src="/images/logo/shakeri_et_al.svg" width="166" height="38" alt="Logo of Shakeri et al." class="site-logo"/></a>
+								
+							</div>
+							<div class="col-8 col-0-medium col-0-small">
+								<div class="container">
+									<nav id="nav" style="text-align: right;">
+										<ul>
+											<li><a id="nav-approach" href="{% include site/url.html to='approach' %}">{{ t.nav.approach | default: en.nav.approach }}</a></li>
+
+											<li><a id="nav-services" href="">{{ t.nav.services | default: en.nav.services }}</a>
+												<ul id="nav-serviceslist">
+													<li><a id="nav-servicesconsultancy" href="{% include site/url.html to='services-consultancy' %}">{{ t.nav.servicesconsultancy | default: en.nav.servicesconsultancy }}</a></li>
+													<li><a id="nav-servicesresearch" href="{% include site/url.html to='services-research' %}" title="{{ t.nav.servicesresearch }}">{{ t.nav.servicesresearch | default: en.nav.servicesresearch }}</a></li>
+													<li><a id="nav-serviceseducation"href="{% include site/url.html to='services-education' %}">{{ t.nav.serviceseducation | default: en.nav.serviceseducation }}</a></li>
+													<li><a id="nav-servicesinnovation"href="{% include site/url.html to='services-innovation' %}">{{ t.nav.servicesinnovation | default: en.nav.servicesinnovation }}</a></li>
+												</ul>
+											</li>
+											
+											<li><a id="nav-about" href="">{{ t.nav.about | default: en.nav.about }}</a>
+												<ul id="nav-aboutlist">
+													<li><a id="nav-aboutgozel" href="{% include site/url.html to='gozel' %}">{{ t.nav.aboutgozel | default: en.nav.aboutgozel }}</a></li>
+													<!-- <li><a id="nav-aboutHCD" href="{% include site/url.html to='designthinking' %}">{{ t.nav.aboutHCD | default: en.nav.aboutHCD }}</a></li> -->
+													<li><a id="nav-aboutpublications" href="{% include site/url.html to='publications' %}">{{ t.nav.aboutpublications | default: en.nav.aboutpublications }}</a></li>
+													<li><a id="nav-abouttalks" href="{% include site/url.html to='talks' %}">{{ t.nav.abouttalks | default: en.nav.abouttalks }}</a></li>
+												</ul>
+											</li>
+											<li><a id="nav-thinktank" href="{% include site/url.html to='think-tank/' %}">{{ t.nav.thinktank | default: en.nav.thinktank }}</a></li>
+											<li><a id="nav-contact" href="{% include site/url.html to='contact' %}">{{ t.nav.contact | default: en.nav.contact }}</a></li>
+											<li class="lang-li"><div class="lang-switch" role="group" aria-label="Language"><button type="button" data-set-lang="en" data-href="{{ alt_en }}">EN</button><button type="button" data-set-lang="fr" data-href="{{ alt_fr }}">FR</button><button type="button" data-set-lang="de" data-href="{{ alt_de }}">DE</button></div></li>
+											
+										</ul>
+									</nav>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Hero: same banner structure as the other pages -->
+				<section id="banner" class="fh-home-banner">
+					<header>
+						<div class="row">
+							<div class="col-6 col-6-medium col-12-small banner-text">
+								<p class="fh-badge" id="landing-badge">{{ t.landing.badge | default: en.landing.badge }}</p>
+								<h1 id="landing-title">{{ t.landing.title | default: en.landing.title }}</h1>
+								<p id="landing-subtitle">{{ t.landing.subtitle | default: en.landing.subtitle }}</p>
+								<div class="fh-actions">
+									<a href="{% include site/url.html to='contact' %}" class="fh-btn fh-btn-primary" id="landing-more1">{{ t.landing.more1 | default: en.landing.more1 }}</a>
+									<a href="{% include site/url.html to='approach' %}" class="fh-btn fh-btn-ghost" id="landing-more2">{{ t.landing.more2 | default: en.landing.more2 }}</a>
+								</div>
+							</div>
+							<div class="col-6 col-6-medium col-12-small fh-hero-media">
+								<img src="/images/gallery/hero-fresh.jpg" alt="A team placing model wind turbines, solar panels and trees on a chessboard" fetchpriority="high"/>
+							</div>
+						</div>
+					</header>
+				</section>
+
+				<!-- Clients -->
+				<section class="fh-logos">
+					<div class="fh-wrap fh-trusted">
+						<p class="fh-trusted-label" id="landing-trusted">{{ t.landing.trusted | default: en.landing.trusted }}</p>
+						<p>Tesco</p>
+						<p>WWF</p>
+						<p>Food Standards Agency</p>
+						<p>University of Glasgow</p>
+						<p>CNRS</p>
+						<p>Nourish Scotland</p>
+					</div>
+				</section>
+
+				<main class="fh-main">
+
+					<!-- Creating value that lasts -->
+					<section class="fh-section" id="whatIdo">
+						<div class="fh-wrap">
+							<div class="fh-value">
+								<div class="fh-value-text">
+									<p class="fh-eyebrow" id="whatIdo-title">{{ t.whatIdo.title | default: en.whatIdo.title }}</p>
+									<h2 class="fh-h2" id="landing-valuetitle">{{ t.landing.valuetitle | default: en.landing.valuetitle }}</h2>
+									<ul class="fh-questions">
+										<li id="landing-q1">{{ t.landing.q1 | default: en.landing.q1 }}</li>
+										<li id="landing-q2">{{ t.landing.q2 | default: en.landing.q2 }}</li>
+										<li id="landing-q3">{{ t.landing.q3 | default: en.landing.q3 }}</li>
+										<li id="landing-q4">{{ t.landing.q4 | default: en.landing.q4 }}</li>
+									</ul>
+								</div>
+								<div class="fh-stat fh-stat-large">
+									<p class="fh-stat-num">79%</p>
+									<p id="landing-stat">{{ t.landing.stat | default: en.landing.stat }}</p>
+									<p class="fh-stat-source" id="landing-statsource">{{ t.landing.statsource | default: en.landing.statsource }}</p>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- Success stories -->
+					<section class="fh-section" id="successstories">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="landing-divider">{{ t.landing.divider | default: en.landing.divider }}</p>
+							</div>
+							<div class="fh-grid fh-grid-3">
+								<article class="fh-card fh-card-pic fh-story">
+									<img src="/images/gallery/buergermobil.webp" alt="Passengers in the Bürgermobil shuttle van" loading="lazy"/>
+									<h3 id="landing-successtitle4">{{ t.landing.successtitle4 | default: en.landing.successtitle4 }}</h3>
+									<p id="landing-successstory4">{{ t.landing.successstory4 | default: en.landing.successstory4 }}</p>
+									<div class="fh-partners-row">
+										<img src="/images/clients/buergermobil.png" alt="Bürgermobil Scheidegg-Scheffau" loading="lazy"/>
+										<img src="/images/clients/nur-auge-bw.png" alt="Nur-Auge" loading="lazy"/>
+									</div>
+								</article>
+								<article class="fh-card fh-card-pic fh-story">
+									<img src="/images/gallery/strategy.webp" alt="" loading="lazy"/>
+									<h3 id="landing-successtitle3">{{ t.landing.successtitle3 | default: en.landing.successtitle3 }}</h3>
+									<p id="landing-successstory3">{{ t.landing.successstory3 | default: en.landing.successstory3 }}</p>
+									<img class="fh-partners" src="/images/clients/04.webp" alt="Hochschule Offenburg, ChallengeEU, Alka-Celić" loading="lazy"/>
+								</article>
+								<article class="fh-card fh-card-pic fh-story">
+									<img src="/images/gallery/consultancy.webp" alt="" loading="lazy"/>
+									<h3 id="landing-successtitle1">{{ t.landing.successtitle1 | default: en.landing.successtitle1 }}</h3>
+									<p id="landing-successstory1">{{ t.landing.successstory1 | default: en.landing.successstory1 }}</p>
+									<img class="fh-partners" src="/images/clients/01_black.webp" alt="Tesco, WWF, Food Standards Agency, University of Glasgow" loading="lazy"/>
+								</article>
+							</div>
+						</div>
+					</section>
+
+					<!-- Call to action -->
+					<section class="fh-section" id="ourapproach">
+						<div class="fh-wrap">
+							<div class="fh-band">
+								<div class="fh-band-text">
+									<h2 id="ourapproach-subtitle">{{ t.ourapproach.subtitle | default: en.ourapproach.subtitle }}</h2>
+									<p><b id="approach-title">{{ t.approach.title | default: en.approach.title }}</b> <span id="approach-subtitle">{{ t.approach.subtitle | default: en.approach.subtitle }}</span></p>
+								</div>
+								<a href="{% include site/url.html to='approach' %}" class="fh-btn fh-btn-sun" id="ourapproach-more">{{ t.ourapproach.more | default: en.ourapproach.more }}</a>
+							</div>
+						</div>
+					</section>
+
+					<!-- Services -->
+					<section class="fh-section" id="waysIcanhelp">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="waysIcanhelp-title">{{ t.waysIcanhelp.title | default: en.waysIcanhelp.title }}</p>
+								<h2 class="fh-h2" id="waysIcanhelp-subtitle">{{ t.waysIcanhelp.subtitle | default: en.waysIcanhelp.subtitle }}</h2>
+							</div>
+							<div class="fh-grid fh-grid-4">
+								<article class="fh-card fh-card-compact fh-card-pic">
+									<img src="/images/gallery/consultancy.webp" alt="" loading="lazy"/>
+									<h3 id="waysIcanhelp-subtitle1">{{ t.waysIcanhelp.subtitle1 | default: en.waysIcanhelp.subtitle1 }}</h3>
+									<p id="waysIcanhelp-text1">{{ t.waysIcanhelp.text1 | default: en.waysIcanhelp.text1 }}</p>
+								</article>
+								<article class="fh-card fh-card-compact fh-card-pic">
+									<img src="/images/gallery/innovation_workshop.webp" alt="" loading="lazy"/>
+									<h3 id="waysIcanhelp-subtitle2">{{ t.waysIcanhelp.subtitle2 | default: en.waysIcanhelp.subtitle2 }}</h3>
+									<p id="waysIcanhelp-text2">{{ t.waysIcanhelp.text2 | default: en.waysIcanhelp.text2 }}</p>
+								</article>
+								<article class="fh-card fh-card-compact fh-card-pic">
+									<img src="/images/gallery/research.webp" alt="" loading="lazy"/>
+									<h3 id="waysIcanhelp-subtitle3">{{ t.waysIcanhelp.subtitle3 | default: en.waysIcanhelp.subtitle3 }}</h3>
+									<p id="waysIcanhelp-text3">{{ t.waysIcanhelp.text3 | default: en.waysIcanhelp.text3 }}</p>
+								</article>
+								<article class="fh-card fh-card-compact fh-card-pic">
+									<img src="/images/gallery/education_training.webp" alt="" loading="lazy"/>
+									<h3 id="waysIcanhelp-subtitle4">{{ t.waysIcanhelp.subtitle4 | default: en.waysIcanhelp.subtitle4 }}</h3>
+									<p id="waysIcanhelp-text4">{{ t.waysIcanhelp.text4 | default: en.waysIcanhelp.text4 }}</p>
+								</article>
+							</div>
+						</div>
+					</section>
+
+					<!-- Who we work with -->
+					<section class="fh-section" id="whoweworkwith">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="whoweworkwith-title">{{ t.whoweworkwith.title | default: en.whoweworkwith.title }}</p>
+							</div>
+							<div class="fh-grid fh-grid-4">
+								<article class="fh-card">
+									<img class="fh-icon" src="/images/gallery/business.png" alt="" loading="lazy"/>
+									<h3 id="whoweworkwith-subtitle1">{{ t.whoweworkwith.subtitle1 | default: en.whoweworkwith.subtitle1 }}</h3>
+									<p id="whoweworkwith-text1">{{ t.whoweworkwith.text1 | default: en.whoweworkwith.text1 }}</p>
+								</article>
+								<article class="fh-card">
+									<img class="fh-icon" src="/images/gallery/incubator.png" alt="" loading="lazy"/>
+									<h3 id="whoweworkwith-subtitle2">{{ t.whoweworkwith.subtitle2 | default: en.whoweworkwith.subtitle2 }}</h3>
+									<p id="whoweworkwith-text2">{{ t.whoweworkwith.text2 | default: en.whoweworkwith.text2 }}</p>
+								</article>
+								<article class="fh-card">
+									<img class="fh-icon" src="/images/gallery/government.png" alt="" loading="lazy"/>
+									<h3 id="whoweworkwith-subtitle3">{{ t.whoweworkwith.subtitle3 | default: en.whoweworkwith.subtitle3 }}</h3>
+									<p id="whoweworkwith-text3">{{ t.whoweworkwith.text3 | default: en.whoweworkwith.text3 }}</p>
+								</article>
+								<article class="fh-card">
+									<img class="fh-icon" src="/images/gallery/academia.png" alt="" loading="lazy"/>
+									<h3 id="whoweworkwith-subtitle4">{{ t.whoweworkwith.subtitle4 | default: en.whoweworkwith.subtitle4 }}</h3>
+									<p id="whoweworkwith-text4">{{ t.whoweworkwith.text4 | default: en.whoweworkwith.text4 }}</p>
+								</article>
+							</div>
+						</div>
+					</section>
+
+					<!-- Why clients work with us -->
+					<section class="fh-section" id="whyclientsworkwithus">
+						<div class="fh-wrap">
+							<div class="fh-why">
+								<div class="fh-why-main">
+									<h2 id="whyclientsworkwithus-title">{{ t.whyclientsworkwithus.title | default: en.whyclientsworkwithus.title }}</h2>
+									<div class="fh-grid fh-grid-3">
+										<div class="fh-why-item">
+											<img class="fh-icon" src="/images/gallery/evidence_based.png" alt="" loading="lazy"/>
+											<h3 id="whyclientsworkwithus-subtitle1">{{ t.whyclientsworkwithus.subtitle1 | default: en.whyclientsworkwithus.subtitle1 }}</h3>
+											<p id="whyclientsworkwithus-text1">{{ t.whyclientsworkwithus.text1 | default: en.whyclientsworkwithus.text1 }}</p>
+										</div>
+										<div class="fh-why-item">
+											<img class="fh-icon" src="/images/gallery/human_centred.png" alt="" loading="lazy"/>
+											<h3 id="whyclientsworkwithus-subtitle2">{{ t.whyclientsworkwithus.subtitle2 | default: en.whyclientsworkwithus.subtitle2 }}</h3>
+											<p id="whyclientsworkwithus-text2">{{ t.whyclientsworkwithus.text2 | default: en.whyclientsworkwithus.text2 }}</p>
+										</div>
+										<div class="fh-why-item">
+											<img class="fh-icon" src="/images/gallery/systems_oriented.png" alt="" loading="lazy"/>
+											<h3 id="whyclientsworkwithus-subtitle3">{{ t.whyclientsworkwithus.subtitle3 | default: en.whyclientsworkwithus.subtitle3 }}</h3>
+											<p id="whyclientsworkwithus-text3">{{ t.whyclientsworkwithus.text3 | default: en.whyclientsworkwithus.text3 }}</p>
+										</div>
+									</div>
+								</div>
+								<div class="fh-why-callout">
+									<h3 id="whyclientsworkwithus-subtitle4">{{ t.whyclientsworkwithus.subtitle4 | default: en.whyclientsworkwithus.subtitle4 }}</h3>
+									<p id="whyclientsworkwithus-text4">{{ t.whyclientsworkwithus.text4 | default: en.whyclientsworkwithus.text4 }}</p>
+									<a href="{% include site/url.html to='contact' %}" class="fh-btn fh-btn-primary" id="whyclientsworkwithus-more">{{ t.whyclientsworkwithus.more | default: en.whyclientsworkwithus.more }}</a>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- Think Tank -->
+					<section class="fh-section fh-tt" id="thinktank">
+						<div class="fh-wrap">
+							<div class="fh-section-head fh-section-head-row">
+								<div>
+									<p class="fh-eyebrow" id="landing-tttitle">{{ t.nav.thinktank | default: en.nav.thinktank }}</p>
+									<h2 class="fh-h2" id="landing-ttheading">{{ t.landing.ttheading | default: en.landing.ttheading }}</h2>
+								</div>
+								<a href="{% include site/url.html to='think-tank/' %}" class="fh-more-link" id="landing-ttall">{{ t.landing.ttall | default: en.landing.ttall }} &rarr;</a>
+							</div>
+							{% include tt/cards.html limit=3 lang=lang absolute=true %}
+						</div>
+					</section>
+
+				</main>
+
+
+			<!-- Footer -->
+				{% include site/footer.html %}
+
+		</div>
+
+		<script src="/assets/js/jquery.min.js"></script>
+		<script src="/assets/js/jquery.dropotron.min.js"></script>
+		<script src="/assets/js/browser.min.js"></script>
+		<script src="/assets/js/breakpoints.min.js"></script>
+		<script src="/assets/js/util.js"></script>
+		<script src="/assets/js/main.js"></script>
+		<!-- <script> 
+			$(function(){
+			$("#inject_footer").load("footer.html"); 
+			});
+		</script> -->
+		<script src="/assets/js/think-tank.js"></script>
+		<script src="/assets/js/site-lang.js"></script>
+	</body>
+</html>

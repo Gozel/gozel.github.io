@@ -1,0 +1,38 @@
+{%- comment -%} Footer of the pages built per language (the other pages load footer.html) {%- endcomment -%}
+<section id="footer">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-4 col-4-medium col-12-small">
+				<section style="text-align: center;">
+					<!-- <a href="contact.html" class="button">Contact</a>? -->
+					<p><a href="{% include site/url.html to='contact' %}" id="footer-contact">{{ t.footer.contact | default: en.footer.contact }}</a></p> 
+					<!-- <p><a href="services.html">Services</a></p> -->
+					<p><a href="{% include site/url.html to='gozel' %}" id="footer-about">{{ t.footer.about | default: en.footer.about }}</a></p>
+				</section>
+			</div>
+
+			<div class="col-4 col-4-medium col-12-small">
+				<section style="text-align: center;">
+					<h2>Shakeri <i>et al</i>.</h2>
+					<p id="footer-subtitle"></p>
+					<p>&copy; Shakeri <i>et al</i>. 2026</p>
+					<!-- <p>info@shakeri.eu</p>   -->
+					
+				</section>
+			</div>
+			
+			<div class="col-4 col-4-medium col-12-small">
+				<section style="text-align: center;">
+					<div id="copyright">
+						<!-- <ul class="links"> -->
+							<p><a href="{% include site/url.html to='terms_conditions' %}" id="footer-terms">{{ t.footer.terms | default: en.footer.terms }}</a></p>
+							<p><a href="{% include site/url.html to='privacy_policy' %}" id="footer-privacy">{{ t.footer.privacy | default: en.footer.privacy }}</a> </p>
+							<p><a href="{% include site/url.html to='credits' %}" id="footer-credits">{{ t.footer.credits | default: en.footer.credits }}</a></p>
+						<!-- </ul> -->
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+</section>

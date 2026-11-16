@@ -1,0 +1,13 @@
+{%- comment -%}
+	Language of the page being built (page.lang: en, fr or de) and its texts from lang/<lang>.json.
+	t = texts in this language, en = English texts (used when a text is not translated yet).
+	base = "" for English, "/fr" or "/de" otherwise. alt_xx = this page in language xx.
+{%- endcomment -%}
+{%- assign lang = page.lang | default: "en" -%}
+{%- assign t = site.data[lang] -%}
+{%- assign en = site.data.en -%}
+{%- if lang == "en" -%}{%- assign base = "" -%}{%- else -%}{%- assign base = "/" | append: lang -%}{%- endif -%}
+{%- assign slug = page.slug_en | default: "" -%}
+{%- assign alt_en = "/" | append: slug -%}
+{%- assign alt_fr = "/fr/" | append: slug -%}
+{%- assign alt_de = "/de/" | append: slug -%}

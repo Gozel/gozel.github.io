@@ -1,0 +1,3 @@
+{%- comment -%} Link to a page of the site in the current language, e.g. {% include site/url.html to='approach' %}.
+	Pages listed under "prerendered" in _config.yml exist per language; the others are reached at their English address. {%- endcomment -%}
+{%- if site.prerendered contains include.to -%}{{ base }}{%- endif -%}/{{ include.to }}

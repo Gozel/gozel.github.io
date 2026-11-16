@@ -17,3 +17,12 @@ defaults:
     values:
       layout: think-tank
       author: "Gözel Shakeri"
+
+# Texts of all pages: lang/en.json, lang/fr.json, lang/de.json (plus lang/thinktank.yml for Think Tank labels).
+# Jekyll reads them as site.data.en etc.; they are also published so the other pages can load them in the browser.
+data_dir: lang
+
+# Pages built once per language at build time (English at /<page>, French at /fr/<page>, German at /de/<page>).
+# "" is the home page. The other pages still get their texts in the browser from lang/*.json.
+prerendered:
+  - ""

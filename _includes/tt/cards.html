@@ -3,6 +3,8 @@
 	(think-tank.js shows the reader's language). Used by the overview and the home page.
 	{% include tt/cards.html %}            all pieces
 	{% include tt/cards.html limit=2 %}    the latest two
+	lang=fr          show the French version where there is one (pages built per language)
+	absolute=true    links start with "/" (pages not at the top level, e.g. /fr/)
 {%- endcomment -%}
 {%- assign docs = site.thinktank | sort: "date" | reverse -%}
 {%- assign pieces = docs | group_by_exp: "d", "d.relative_path | remove_first: '_thinktank/' | split: '/' | first" -%}
@@ -14,14 +16,15 @@
 	{%- assign other_versions = piece.items | where_exp: "d", "d.slug != 'en'" | sort: "slug" %}
 	{%- assign versions = en_version | concat: other_versions %}
 	{%- assign langs = versions | map: "slug" | join: " / " | upcase %}
+	{%- assign shown = versions | where: "slug", include.lang | first | default: versions.first %}
 	<div class="tt-piece">
 		{%- for doc in versions %}
 		{%- assign t = site.data.thinktank[doc.slug] | default: site.data.thinktank.en %}
 		{%- capture cover %}{% if doc.cover %}{% include tt/src.html src=doc.cover piece=piece.name %}{% endif %}{% endcapture %}
-		{%- assign href = doc.url | remove_first: "/" %}
-		<article class="tt-card" data-lang="{{ doc.slug }}" lang="{{ doc.slug }}"{% unless forloop.first %} hidden{% endunless %}>
+		{%- if include.absolute %}{% assign href = doc.url %}{% else %}{% assign href = doc.url | remove_first: "/" %}{% endif %}
+		<article class="tt-card" data-lang="{{ doc.slug }}" lang="{{ doc.slug }}"{% if doc.url != shown.url %} hidden{% endif %}>
 			{%- if cover != "" %}
-			<a href="{{ href }}" class="tt-card-image"><img src="{{ cover }}" alt="{{ doc.cover_alt | escape }}" loading="lazy"></a>
+			<a href="{{ href }}" class="tt-card-image"><img src="{% if include.absolute %}{% unless cover contains '://' or cover.first == '/' %}/{% endunless %}{% endif %}{{ cover }}" alt="{{ doc.cover_alt | escape }}" loading="lazy"></a>
 			{%- endif %}
 			<div class="tt-card-body">
 				<p class="tt-card-meta"><time datetime="{{ doc.date | date: '%Y-%m-%d' }}">{{ doc.date | date: "%Y-%m-%d" }}</time> &middot; {{ langs }}</p>
