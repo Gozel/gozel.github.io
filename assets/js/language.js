@@ -73,6 +73,7 @@ async function loadLanguage(lang) {
 		document.getElementById("nav-approach").innerHTML = data.nav.approach;
 		document.getElementById("nav-services").innerHTML = data.nav.services;
 		document.getElementById("nav-serviceslist").innerHTML = data.nav.serviceslist;
+		if (document.getElementById("nav-servicesconsultancy")) document.getElementById("nav-servicesconsultancy").innerHTML = data.nav.servicesconsultancy;
 		document.getElementById("nav-servicesresearch").innerHTML = data.nav.servicesresearch;
 		document.getElementById("nav-servicesresearch").title = data.nav.servicesresearch;
 		document.getElementById("nav-serviceseducation").innerHTML = data.nav.serviceseducation;
@@ -125,7 +126,7 @@ async function loadLanguage(lang) {
 
 		// Service pages: research (ids "rp-<key>"), education ("ep-<key>"), innovation ("ip-<key>").
 		// A class of the same name fills repeated labels, e.g. class="ep-lenlabel".
-		for (const [block, prefix] of [["researchpage", "rp"], ["educationpage", "ep"], ["innovationpage", "ip"]]) {
+		for (const [block, prefix] of [["researchpage", "rp"], ["educationpage", "ep"], ["innovationpage", "ip"], ["consultancypage", "cp"]]) {
 			if (!data[block]) continue;
 			for (const [key, value] of Object.entries(data[block])) {
 				const el = document.getElementById(prefix + "-" + key);
@@ -450,22 +451,25 @@ function updateNavTexts(data) {
   const desktopServices = document.getElementById('nav-services');
   if (desktopServices) desktopServices.innerHTML = data.nav.services;
 
-  // Bootstrap mobile version
-  document.querySelectorAll('.link.depth-0 span.indent-0')[0].innerHTML = data.nav.approach;
-  document.querySelectorAll('.link.depth-0 span.indent-0')[1].innerHTML = data.nav.services;
-  document.querySelectorAll('.link.depth-1 span.indent-1')[0].innerHTML = data.nav.servicesresearch;
-  document.querySelectorAll('.link.depth-1 span.indent-1')[1].innerHTML = data.nav.serviceseducation;
-  document.querySelectorAll('.link.depth-1 span.indent-1')[2].innerHTML = data.nav.servicesinnovation;
-
-  document.querySelectorAll('.link.depth-0 span.indent-0')[2].innerHTML = data.nav.about;
-  document.querySelectorAll('.link.depth-1 span.indent-1')[3].innerHTML = data.nav.aboutgozel;
-//   document.querySelectorAll('.link.depth-1 span.indent-1')[4].innerHTML = data.nav.aboutHCD;
-  document.querySelectorAll('.link.depth-1 span.indent-1')[4].innerHTML = data.nav.aboutpublications;
-  document.querySelectorAll('.link.depth-1 span.indent-1')[5].innerHTML = data.nav.abouttalks;
-
-  document.querySelectorAll('.link.depth-0 span.indent-0')[3].innerHTML = data.nav.thinktank;
-  document.querySelectorAll('.link.depth-0 span.indent-0')[4].innerHTML = data.nav.contact;
-//   add more mappings as needed
+  // Phone menu: main items in order, sub-items matched by their link
+  const mainLabels = [data.nav.approach, data.nav.services, data.nav.about, data.nav.thinktank, data.nav.contact];
+  document.querySelectorAll('#navPanel .link.depth-0 span.indent-0').forEach((span, n) => {
+    if (mainLabels[n]) span.innerHTML = mainLabels[n];
+  });
+  const subLabels = {
+    "services-consultancy": data.nav.servicesconsultancy,
+    "services-research": data.nav.servicesresearch,
+    "services-education": data.nav.serviceseducation,
+    "services-innovation": data.nav.servicesinnovation,
+    "gozel": data.nav.aboutgozel,
+    "publications.html": data.nav.aboutpublications,
+    "talks": data.nav.abouttalks
+  };
+  document.querySelectorAll('#navPanel .link.depth-1').forEach(link => {
+    const label = subLabels[link.getAttribute('href')];
+    const span = link.querySelector('span.indent-1');
+    if (label && span) span.innerHTML = label;
+  });
 }
 
 // Language switch (EN · FR · DE). The desktop one sits in the menu; a copy goes into the

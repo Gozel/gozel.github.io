@@ -220,6 +220,17 @@ body.fresh .lang-switch {
 		outline-offset: 1px;
 	}
 
+/* The phone title bar spans the full width over the logo: let taps through to the logo,
+   keep its own buttons (menu, language switch) clickable */
+body.fresh #titleBar {
+	pointer-events: none;
+}
+
+	body.fresh #titleBar .toggle,
+	body.fresh #titleBar .lang-switch {
+		pointer-events: auto;
+	}
+
 /* the copy in the phone title bar, left of the menu button */
 body.fresh #titleBar .lang-switch {
 	position: absolute;
