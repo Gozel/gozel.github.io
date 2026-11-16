@@ -1,0 +1,310 @@
+---
+# Built once per language: see the pages that use this layout (e.g. index.html, fr/index.html).
+# Texts come from lang/<lang>.json; edit them there.
+---
+{%- include site/lang-vars.html -%}
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="{{ lang }}">
+	<head>
+		<title>{{ t.research.title | default: en.research.title | strip_html }} | Shakeri et al.</title>
+		{% include site/head-meta.html description='research.subtitle' %}
+		<meta charset="utf-8" />
+		<base href="/" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/fontawesome-all.min.css" media="print" onload="this.media='all'" />
+		<noscript><link rel="stylesheet" href="/assets/css/fontawesome-all.min.css" /></noscript>
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" />
+		<link rel="stylesheet" href="/assets/css/fresh.css" />
+		<link rel="icon" href="/images/logo/favicon.ico">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-DVME2JVJE7"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-DVME2JVJE7');
+		</script>
+	</head>
+	<body class="homepage is-preload fresh">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<!-- Logo -->
+						<!--<h1><a href="{% include site/url.html to='envirofy.eu' %}">Envirofy</a></h1>-->
+						<div class="container">
+							<div class="row">
+								<div class="col-4 col-4-medium col-6-small">
+									<a href="{% include site/url.html to='' %}" class="image featured" aria-label="Shakeri et al. home"><img src="/images/logo/shakeri_et_al.svg" width="166" height="38" alt="" class="site-logo"/></a>
+									
+								</div>
+								<div class="col-8 col-12-medium col-12-small">
+									<div class="container">
+									<nav id="nav" style="text-align: right;">
+										<ul>
+											<li><a id="nav-approach" href="{% include site/url.html to='approach' %}">{{ t.nav.approach | default: en.nav.approach }}</a></li>
+											<li class="current"><a id="nav-services" href="">{{ t.nav.services | default: en.nav.services }}</a>
+												<ul id="nav-serviceslist">
+													<li><a id="nav-servicesconsultancy" href="{% include site/url.html to='services-consultancy' %}">{{ t.nav.servicesconsultancy | default: en.nav.servicesconsultancy }}</a></li>
+													<li><a id="nav-servicesresearch" href="{% include site/url.html to='services-research' %}" title="{{ t.nav.servicesresearch }}">{{ t.nav.servicesresearch | default: en.nav.servicesresearch }}</a></li>
+													<li><a id="nav-serviceseducation"href="{% include site/url.html to='services-education' %}">{{ t.nav.serviceseducation | default: en.nav.serviceseducation }}</a></li>
+													<li><a id="nav-servicesinnovation"href="{% include site/url.html to='services-innovation' %}">{{ t.nav.servicesinnovation | default: en.nav.servicesinnovation }}</a></li>
+												</ul>
+											</li>
+											
+											<li><a id="nav-about" href="">{{ t.nav.about | default: en.nav.about }}</a>
+												<ul id="nav-aboutlist">
+													<li><a id="nav-aboutgozel" href="{% include site/url.html to='gozel' %}">{{ t.nav.aboutgozel | default: en.nav.aboutgozel }}</a></li>
+													<!-- <li><a id="nav-aboutHCD" href="{% include site/url.html to='designthinking' %}">{{ t.nav.aboutHCD | default: en.nav.aboutHCD }}</a></li> -->
+													<li><a id="nav-aboutpublications" href="{% include site/url.html to='publications' %}">{{ t.nav.aboutpublications | default: en.nav.aboutpublications }}</a></li>
+													<li><a id="nav-abouttalks" href="{% include site/url.html to='talks' %}">{{ t.nav.abouttalks | default: en.nav.abouttalks }}</a></li>
+												</ul>
+											</li>
+											<li><a id="nav-thinktank" href="{% include site/url.html to='think-tank/' %}">{{ t.nav.thinktank | default: en.nav.thinktank }}</a></li>
+											<li><a id="nav-contact" href="{% include site/url.html to='contact' %}">{{ t.nav.contact | default: en.nav.contact }}</a></li>
+											<li class="lang-li"><div class="lang-switch" role="group" aria-label="Language"><button type="button" data-set-lang="en" data-href="{{ alt_en }}">EN</button><button type="button" data-set-lang="fr" data-href="{{ alt_fr }}">FR</button><button type="button" data-set-lang="de" data-href="{{ alt_de }}">DE</button></div></li>
+										</ul>
+									</nav>
+								</div>
+								</div>
+							</div>
+						</div>
+				</section>
+
+				<section id="banner" id="research">
+					<header>
+						<div class="row">
+							<div class="col-6 col-6-medium col-12-small banner-text">
+								<p id="research-nav">{{ t.research.nav | default: en.research.nav }}</p>
+								<h2 id="research-title">{{ t.research.title | default: en.research.title }}</h2>
+								<!-- <p>Shakeri et al. drives / delivers research insights most urgent challenges with technology, which in turn empowers the public to act.</p> -->
+								<p id="research-subtitle">{{ t.research.subtitle | default: en.research.subtitle }}</p>
+							</div>
+							<div class="col-6 col-6-medium col-12-small">
+								<img src="/images/gallery/research.webp" width="100%"/>
+								<!-- </div> -->
+							</div>
+						</div>
+					</header>
+				</section>
+
+			<!-- Main -->
+				<section id="main" class="rp-page">
+
+					<!-- 1. THREE WAYS TO WORK WITH US  |  edit in lang/*.json > researchpage > f1… f3… (name, question, length, what you get, best for) -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="rp-formatseyebrow">{{ t.researchpage.formatseyebrow | default: en.researchpage.formatseyebrow }}</p>
+								<h2 class="fh-h2" id="rp-formatstitle">{{ t.researchpage.formatstitle | default: en.researchpage.formatstitle }}</h2>
+							</div>
+							<div class="fh-grid fh-grid-3">
+								<article class="fh-card rp-format">
+									<h3 id="rp-f1name">{{ t.researchpage.f1name | default: en.researchpage.f1name }}</h3>
+									<p class="rp-question" id="rp-f1q">{{ t.researchpage.f1q | default: en.researchpage.f1q }}</p>
+									<dl class="rp-facts">
+										<dt class="rp-lenlabel">{{ t.researchpage.lenlabel | default: en.researchpage.lenlabel }}</dt><dd id="rp-f1len">{{ t.researchpage.f1len | default: en.researchpage.f1len }}</dd>
+										<dt class="rp-getlabel">{{ t.researchpage.getlabel | default: en.researchpage.getlabel }}</dt><dd id="rp-f1get">{{ t.researchpage.f1get | default: en.researchpage.f1get }}</dd>
+										<dt class="rp-forlabel">{{ t.researchpage.forlabel | default: en.researchpage.forlabel }}</dt><dd id="rp-f1for">{{ t.researchpage.f1for | default: en.researchpage.f1for }}</dd>
+									</dl>
+								</article>
+								<article class="fh-card rp-format">
+									<h3 id="rp-f2name">{{ t.researchpage.f2name | default: en.researchpage.f2name }}</h3>
+									<p class="rp-question" id="rp-f2q">{{ t.researchpage.f2q | default: en.researchpage.f2q }}</p>
+									<dl class="rp-facts">
+										<dt class="rp-lenlabel">{{ t.researchpage.lenlabel | default: en.researchpage.lenlabel }}</dt><dd id="rp-f2len">{{ t.researchpage.f2len | default: en.researchpage.f2len }}</dd>
+										<dt class="rp-getlabel">{{ t.researchpage.getlabel | default: en.researchpage.getlabel }}</dt><dd id="rp-f2get">{{ t.researchpage.f2get | default: en.researchpage.f2get }}</dd>
+										<dt class="rp-forlabel">{{ t.researchpage.forlabel | default: en.researchpage.forlabel }}</dt><dd id="rp-f2for">{{ t.researchpage.f2for | default: en.researchpage.f2for }}</dd>
+									</dl>
+								</article>
+								<article class="fh-card rp-format">
+									<h3 id="rp-f3name">{{ t.researchpage.f3name | default: en.researchpage.f3name }}</h3>
+									<p class="rp-question" id="rp-f3q">{{ t.researchpage.f3q | default: en.researchpage.f3q }}</p>
+									<dl class="rp-facts">
+										<dt class="rp-lenlabel">{{ t.researchpage.lenlabel | default: en.researchpage.lenlabel }}</dt><dd id="rp-f3len">{{ t.researchpage.f3len | default: en.researchpage.f3len }}</dd>
+										<dt class="rp-getlabel">{{ t.researchpage.getlabel | default: en.researchpage.getlabel }}</dt><dd id="rp-f3get">{{ t.researchpage.f3get | default: en.researchpage.f3get }}</dd>
+										<dt class="rp-forlabel">{{ t.researchpage.forlabel | default: en.researchpage.forlabel }}</dt><dd id="rp-f3for">{{ t.researchpage.f3for | default: en.researchpage.f3for }}</dd>
+									</dl>
+								</article>
+							</div>
+							<p class="rp-unsure" id="rp-choose4">{{ t.researchpage.choose4 | default: en.researchpage.choose4 }}</p>
+						</div>
+					</section>
+
+					<!-- 3. HOW IT WORKS  |  researchpage > s1name/s1text … s4name/s4text (add durations) -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="rp-processeyebrow">{{ t.researchpage.processeyebrow | default: en.researchpage.processeyebrow }}</p>
+								<h2 class="fh-h2" id="rp-processtitle">{{ t.researchpage.processtitle | default: en.researchpage.processtitle }}</h2>
+							</div>
+							<ol class="rp-steps">
+								<li class="rp-step">
+									<span class="rp-step-num">1</span>
+									<h3 id="rp-s1name">{{ t.researchpage.s1name | default: en.researchpage.s1name }}</h3>
+									<p id="rp-s1text">{{ t.researchpage.s1text | default: en.researchpage.s1text }}</p>
+								</li>
+								<li class="rp-step">
+									<span class="rp-step-num">2</span>
+									<h3 id="rp-s2name">{{ t.researchpage.s2name | default: en.researchpage.s2name }}</h3>
+									<p id="rp-s2text">{{ t.researchpage.s2text | default: en.researchpage.s2text }}</p>
+								</li>
+								<li class="rp-step">
+									<span class="rp-step-num">3</span>
+									<h3 id="rp-s3name">{{ t.researchpage.s3name | default: en.researchpage.s3name }}</h3>
+									<p id="rp-s3text">{{ t.researchpage.s3text | default: en.researchpage.s3text }}</p>
+								</li>
+								<li class="rp-step">
+									<span class="rp-step-num">4</span>
+									<h3 id="rp-s4name">{{ t.researchpage.s4name | default: en.researchpage.s4name }}</h3>
+									<p id="rp-s4text">{{ t.researchpage.s4text | default: en.researchpage.s4text }}</p>
+								</li>
+							</ol>
+						</div>
+					</section>
+
+					<!-- 4. QUESTIONS + METHODS  |  questions: researchbody > questionsanswers; method tags: researchpage > m1 … m10 -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<div class="fh-grid fh-grid-2">
+								<article class="fh-card rp-questions">
+									<h2 id="researchbody-questions">{{ t.researchbody.questions | default: en.researchbody.questions }}</h2>
+									<div id="researchbody-questionsanswers">{{ t.researchbody.questionsanswers | default: en.researchbody.questionsanswers }}</div>
+								</article>
+								<article class="fh-card">
+									<h2 id="researchbody-methods">{{ t.researchbody.methods | default: en.researchbody.methods }}</h2>
+									<ul class="rp-tags">
+										<li id="rp-m1">{{ t.researchpage.m1 | default: en.researchpage.m1 }}</li>
+										<li id="rp-m2">{{ t.researchpage.m2 | default: en.researchpage.m2 }}</li>
+										<li id="rp-m3">{{ t.researchpage.m3 | default: en.researchpage.m3 }}</li>
+										<li id="rp-m4">{{ t.researchpage.m4 | default: en.researchpage.m4 }}</li>
+										<li id="rp-m5">{{ t.researchpage.m5 | default: en.researchpage.m5 }}</li>
+										<li id="rp-m6">{{ t.researchpage.m6 | default: en.researchpage.m6 }}</li>
+										<li id="rp-m7">{{ t.researchpage.m7 | default: en.researchpage.m7 }}</li>
+										<li id="rp-m8">{{ t.researchpage.m8 | default: en.researchpage.m8 }}</li>
+										<li id="rp-m9">{{ t.researchpage.m9 | default: en.researchpage.m9 }}</li>
+										<li id="rp-m10">{{ t.researchpage.m10 | default: en.researchpage.m10 }}</li>
+										<li id="rp-m11">{{ t.researchpage.m11 | default: en.researchpage.m11 }}</li>
+									</ul>
+								</article>
+							</div>
+						</div>
+					</section>
+
+					<!-- 5. WHAT YOU'LL ACHIEVE  |  researchbody > outcome1 … outcome6 -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="researchbody-outcomes">{{ t.researchbody.outcomes | default: en.researchbody.outcomes }}</p>
+							</div>
+							<ul class="rp-outcomes">
+								<li id="researchbody-outcome1">{{ t.researchbody.outcome1 | default: en.researchbody.outcome1 }}</li>
+								<li id="researchbody-outcome2">{{ t.researchbody.outcome2 | default: en.researchbody.outcome2 }}</li>
+								<li id="researchbody-outcome3">{{ t.researchbody.outcome3 | default: en.researchbody.outcome3 }}</li>
+								<li id="researchbody-outcome4">{{ t.researchbody.outcome4 | default: en.researchbody.outcome4 }}</li>
+								<li id="researchbody-outcome5">{{ t.researchbody.outcome5 | default: en.researchbody.outcome5 }}</li>
+								<li id="researchbody-outcome6">{{ t.researchbody.outcome6 | default: en.researchbody.outcome6 }}</li>
+							</ul>
+						</div>
+					</section>
+
+					<!-- 6. EVIDENCE  |  case images: language.js; credentials: researchpage > cred1… cred3 -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="rp-proofeyebrow">{{ t.researchpage.proofeyebrow | default: en.researchpage.proofeyebrow }}</p>
+								<h2 class="fh-h2" id="researchbody-casestudies">{{ t.researchbody.casestudies | default: en.researchbody.casestudies }}</h2>
+							</div>
+							<div class="fh-grid fh-grid-3 rp-cases">
+								<img loading="lazy" decoding="async" id="envirofy-img" src="/images/clients/envirofy_{{ lang }}.webp" alt=""/>
+								<img loading="lazy" decoding="async" id="fsa_ngos-img" src="/images/clients/fsa_ngos_{{ lang }}.webp" alt=""/>
+								<img loading="lazy" decoding="async" id="accessibility-img" src="/images/clients/accessibility_{{ lang }}.webp" alt=""/>
+							</div>
+							<div class="rp-creds">
+								<div class="rp-cred"><p class="rp-cred-num" id="rp-cred1num">{{ t.researchpage.cred1num | default: en.researchpage.cred1num }}</p><p id="rp-cred1">{{ t.researchpage.cred1 | default: en.researchpage.cred1 }}</p></div>
+								<div class="rp-cred"><p class="rp-cred-num" id="rp-cred2num">{{ t.researchpage.cred2num | default: en.researchpage.cred2num }}</p><p id="rp-cred2">{{ t.researchpage.cred2 | default: en.researchpage.cred2 }}</p></div>
+								<div class="rp-cred"><p class="rp-cred-num" id="rp-cred3num">{{ t.researchpage.cred3num | default: en.researchpage.cred3num }}</p><p id="rp-cred3">{{ t.researchpage.cred3 | default: en.researchpage.cred3 }}</p></div>
+							</div>
+							<p class="rp-creds-more"><a href="{% include site/url.html to='publications' %}" class="fh-more-link" id="rp-credmore">{{ t.researchpage.credmore | default: en.researchpage.credmore }}</a></p>
+						</div>
+					</section>
+
+					<!-- 7. FAQ  |  researchpage > faq1q/faq1a … faq5q/faq5a -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="rp-faqeyebrow">{{ t.researchpage.faqeyebrow | default: en.researchpage.faqeyebrow }}</p>
+								<h2 class="fh-h2" id="rp-faqtitle">{{ t.researchpage.faqtitle | default: en.researchpage.faqtitle }}</h2>
+							</div>
+							<div class="rp-faq">
+								<details class="rp-faq-item">
+									<summary id="rp-faq1q">{{ t.researchpage.faq1q | default: en.researchpage.faq1q }}</summary>
+									<p id="rp-faq1a">{{ t.researchpage.faq1a | default: en.researchpage.faq1a }}</p>
+								</details>
+								<details class="rp-faq-item">
+									<summary id="rp-faq2q">{{ t.researchpage.faq2q | default: en.researchpage.faq2q }}</summary>
+									<p id="rp-faq2a">{{ t.researchpage.faq2a | default: en.researchpage.faq2a }}</p>
+								</details>
+								<details class="rp-faq-item">
+									<summary id="rp-faq3q">{{ t.researchpage.faq3q | default: en.researchpage.faq3q }}</summary>
+									<p id="rp-faq3a">{{ t.researchpage.faq3a | default: en.researchpage.faq3a }}</p>
+								</details>
+								<details class="rp-faq-item">
+									<summary id="rp-faq4q">{{ t.researchpage.faq4q | default: en.researchpage.faq4q }}</summary>
+									<p id="rp-faq4a">{{ t.researchpage.faq4a | default: en.researchpage.faq4a }}</p>
+								</details>
+								<details class="rp-faq-item">
+									<summary id="rp-faq5q">{{ t.researchpage.faq5q | default: en.researchpage.faq5q }}</summary>
+									<p id="rp-faq5a">{{ t.researchpage.faq5a | default: en.researchpage.faq5a }}</p>
+								</details>
+							</div>
+						</div>
+					</section>
+
+					<!-- 8. CALL TO ACTION  |  researchbody > contact, more -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<p class="rp-crosslinks" id="rp-crosslinks">{{ t.researchpage.crosslinks | default: en.researchpage.crosslinks }}</p>
+							<div class="fh-band">
+								<div class="fh-band-text">
+									<h2 id="researchbody-contact">{{ t.researchbody.contact | default: en.researchbody.contact }}</h2>
+								</div>
+								<a href="{% include site/url.html to='contact' %}" class="fh-btn fh-btn-sun" id="researchbody-more">{{ t.researchbody.more | default: en.researchbody.more }}</a>
+							</div>
+						</div>
+					</section>
+
+				</section>
+
+			<!-- Footer -->
+			{% include site/footer.html %}
+
+		</div>
+
+		<!-- Scripts -->
+		
+		<script src="/assets/js/jquery.min.js"></script>
+		<script src="/assets/js/jquery.dropotron.min.js"></script>
+		<script src="/assets/js/browser.min.js"></script>
+		<script src="/assets/js/breakpoints.min.js"></script>
+		<script src="/assets/js/util.js"></script>
+		<script src="/assets/js/main.js"></script>
+		<script src="/assets/js/site-lang.js"></script>
+		<!-- <script> 
+		$(function(){
+		$("#inject_footer").load("footer.html"); 
+		});
+		</script> -->
+
+	</body>
+</html>

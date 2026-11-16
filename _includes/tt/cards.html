@@ -39,6 +39,6 @@
 		{%- endfor %}
 	</div>
 	{%- else %}
-	<p class="tt-empty" id="thinktank-empty"></p>
+	<p class="tt-empty" id="thinktank-empty">{{ site.data[include.lang].thinktank.empty | default: site.data.en.thinktank.empty }}</p>
 	{%- endfor %}
 </div>

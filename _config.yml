@@ -26,3 +26,18 @@ data_dir: lang
 # "" is the home page. The other pages still get their texts in the browser from lang/*.json.
 prerendered:
   - ""
+  - approach
+  - contact
+  - credits
+  - designthinking
+  - gozel
+  - privacy_policy
+  - publications
+  - resources
+  - services-consultancy
+  - services-education
+  - services-innovation
+  - services-research
+  - talks
+  - terms_conditions
+  - think-tank/

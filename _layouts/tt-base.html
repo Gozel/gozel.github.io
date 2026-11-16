@@ -4,19 +4,24 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+{%- include site/lang-vars.html -%}
 {%- if page.collection == "thinktank" -%}
 	{%- assign tt_piece = page.relative_path | remove_first: "_thinktank/" | split: "/" | first -%}
 	{%- assign tt_dir = "_thinktank/" | append: tt_piece | append: "/" -%}
 	{%- assign tt_versions = site.thinktank | where_exp: "d", "d.relative_path contains tt_dir" -%}
 	{%- assign tt_description = page.description | default: page.lead | strip_html | strip -%}
+	{%- comment %} the switch opens this piece in the other language, or that language's overview {% endcomment -%}
+	{%- assign v = tt_versions | where: "slug", "en" | first -%}{%- if v -%}{%- assign alt_en = v.url -%}{%- else -%}{%- assign alt_en = "/think-tank/" -%}{%- endif -%}
+	{%- assign v = tt_versions | where: "slug", "fr" | first -%}{%- if v -%}{%- assign alt_fr = v.url -%}{%- else -%}{%- assign alt_fr = "/fr/think-tank/" -%}{%- endif -%}
+	{%- assign v = tt_versions | where: "slug", "de" | first -%}{%- if v -%}{%- assign alt_de = v.url -%}{%- else -%}{%- assign alt_de = "/de/think-tank/" -%}{%- endif -%}
 {%- else -%}
-	{%- assign tt_description = page.description -%}
+	{%- assign tt_description = t.thinktank.intro | default: page.description | strip_html | strip -%}
 {%- endif %}
-<html{% if page.collection == "thinktank" %} lang="{{ page.slug }}"{% endif %}>
+<html lang="{{ lang }}">
 	<head>
 		<!-- All relative links on this page start at the site root -->
 		<base href="{{ '/' | relative_url }}">
-		<title>{{ page.title }} | Shakeri et al.</title>
+		<title>{% if page.collection == "thinktank" %}{{ page.title }}{% else %}{{ t.thinktank.title | default: page.title }}{% endif %} | Shakeri et al.</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		{%- if tt_description %}
@@ -41,8 +46,17 @@
 		<link rel="alternate" hreflang="x-default" href="{{ v.url | absolute_url }}" />
 		{%- endif %}
 		{%- endfor %}
+		{%- else %}
+		<link rel="canonical" href="{{ site.url }}{% if lang == 'en' %}{{ alt_en }}{% elsif lang == 'fr' %}{{ alt_fr }}{% else %}{{ alt_de }}{% endif %}" />
+		<link rel="alternate" hreflang="en" href="{{ site.url }}{{ alt_en }}" />
+		<link rel="alternate" hreflang="fr" href="{{ site.url }}{{ alt_fr }}" />
+		<link rel="alternate" hreflang="de" href="{{ site.url }}{{ alt_de }}" />
+		<link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ alt_en }}" />
+		{%- if lang == "en" %}
+		<script>/* readers who chose French or German before get that version */try{var l=localStorage.getItem("lang");if(l==="fr")location.replace("{{ alt_fr }}");else if(l==="de")location.replace("{{ alt_de }}")}catch(e){}</script>
 		{%- endif %}
-		<script>var siteLang;try{siteLang=localStorage.getItem("lang")||"en"}catch(e){siteLang="en"}window.siteLangPrefetch={lang:siteLang,data:fetch("lang/"+siteLang+".json").then(function(r){return r.json()})};</script>
+		{%- endif %}
+		<script>window.sitePrerendered = {{ site.prerendered | jsonify }};</script>
 		<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" media="print" onload="this.media='all'" />
 		<noscript><link rel="stylesheet" href="assets/css/fontawesome-all.min.css" /></noscript>
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -69,7 +83,7 @@
 			{{ content }}
 
 			<!-- Footer -->
-			<div id="inject_footer"></div>
+			{% include site/footer.html %}
 
 		</div>
 
@@ -81,7 +95,7 @@
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
 		<script src="assets/js/think-tank.js"></script>
-		<script src="assets/js/language.js"></script>
+		<script src="assets/js/site-lang.js"></script>
 
 	</body>
 </html>

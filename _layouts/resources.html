@@ -1,0 +1,181 @@
+---
+# Built once per language: see the pages that use this layout (e.g. index.html, fr/index.html).
+# Texts come from lang/<lang>.json; edit them there.
+---
+{%- include site/lang-vars.html -%}
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="{{ lang }}">
+	<head>
+		<title>Shakeri et al. | Human-centered Digitalisation Consultancy</title>
+		<meta charset="utf-8" />
+		<base href="/" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/fontawesome-all.min.css" media="print" onload="this.media='all'" />
+		<noscript><link rel="stylesheet" href="/assets/css/fontawesome-all.min.css" /></noscript>
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" />
+		<link rel="stylesheet" href="/assets/css/fresh.css" />
+		<link rel="icon" href="/images/logo/favicon.ico">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-DVME2JVJE7"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-DVME2JVJE7');
+		</script>
+	</head>
+	<body class="no-sidebar is-preload fresh">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<section id="header">
+
+				<!-- Logo -->
+					<!--<h1><a href="{% include site/url.html to='envirofy.eu' %}">Envirofy</a></h1>-->
+					<div class="container">
+						<div class="row">
+							<div class="col-4 col-4-medium col-6-small">
+								<a href="{% include site/url.html to='' %}" class="image featured" aria-label="Shakeri et al. home"><img src="/images/logo/shakeri_et_al.svg" width="166" height="38" alt="" class="site-logo"/></a>
+								
+							</div>
+							<div class="col-8 col-6-medium col-12-small">
+								<div class="container">
+									<nav id="nav" style="text-align: right;">
+										<ul>
+											<li><a id="nav-approach" href="{% include site/url.html to='approach' %}">{{ t.nav.approach | default: en.nav.approach }}</a></li>
+											<li><a id="nav-services" href="">{{ t.nav.services | default: en.nav.services }}</a>
+												<ul id="nav-serviceslist">
+													<li><a id="nav-servicesconsultancy" href="{% include site/url.html to='services-consultancy' %}">{{ t.nav.servicesconsultancy | default: en.nav.servicesconsultancy }}</a></li>
+													<li><a id="nav-servicesresearch" href="{% include site/url.html to='services-research' %}" title="{{ t.nav.servicesresearch }}">{{ t.nav.servicesresearch | default: en.nav.servicesresearch }}</a></li>
+													<li><a id="nav-serviceseducation"href="{% include site/url.html to='services-education' %}">{{ t.nav.serviceseducation | default: en.nav.serviceseducation }}</a></li>
+													<li><a id="nav-servicesinnovation"href="{% include site/url.html to='services-innovation' %}">{{ t.nav.servicesinnovation | default: en.nav.servicesinnovation }}</a></li>
+												</ul>
+											</li>
+											
+											<li><a id="nav-about" href="">{{ t.nav.about | default: en.nav.about }}</a>
+												<ul id="nav-aboutlist">
+													<li><a id="nav-aboutgozel" href="{% include site/url.html to='gozel' %}">{{ t.nav.aboutgozel | default: en.nav.aboutgozel }}</a></li>
+													<!-- <li><a id="nav-aboutHCD" href="{% include site/url.html to='designthinking' %}">{{ t.nav.aboutHCD | default: en.nav.aboutHCD }}</a></li> -->
+													<li><a id="nav-aboutpublications" href="{% include site/url.html to='publications' %}">{{ t.nav.aboutpublications | default: en.nav.aboutpublications }}</a></li>
+													<li><a id="nav-abouttalks" href="{% include site/url.html to='talks' %}">{{ t.nav.abouttalks | default: en.nav.abouttalks }}</a></li>
+												</ul>
+											</li>
+											<li><a id="nav-thinktank" href="{% include site/url.html to='think-tank/' %}">{{ t.nav.thinktank | default: en.nav.thinktank }}</a></li>
+											<li><a id="nav-contact" href="{% include site/url.html to='contact' %}">{{ t.nav.contact | default: en.nav.contact }}</a></li>
+											<li class="lang-li"><div class="lang-switch" role="group" aria-label="Language"><button type="button" data-set-lang="en" data-href="{{ alt_en }}">EN</button><button type="button" data-set-lang="fr" data-href="{{ alt_fr }}">FR</button><button type="button" data-set-lang="de" data-href="{{ alt_de }}">DE</button></div></li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+			</section>
+
+			<section id="banner" class="resources">
+				<header>
+					<h2>Free Resources</h2>
+					<!-- <p>Explore valuable resources on design thinking and digital transformation.</p> -->
+					<!-- simple tools ... social innovation -->
+				</header>
+			</section>
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+
+						<article class="box post" style="background-color: #d52349">
+							<header>
+								<h3 style="text-align: center; color: white;">Explore valuable resources on design thinking and digital transformation.</h3>
+							</header>
+						</article>
+
+						<!-- Content -->
+							<article class="box post">
+
+								<section>
+									<!-- <header>
+										<h2>Free Resources</h2>
+									</header>
+									<p>Explore valuable resources on design thinking and leadership development. Including a podcast, essential tools, and a insightful report to empower you on your journey to becoming the leader you aspire to be.</p> -->
+									<ul class="dates">
+										<!-- 
+										<li>
+											<span class="date">2021<strong>Apr</strong></span>
+											<h3><a href="#">Second study will launch soon!</a></h3>
+											<img loading="lazy" decoding="async" src="/images/2021_11_cop26/COP_01.webp" style="width: 50%;" alt="The Envirofy stall at COP26"> 
+											<p>The long awaited second study will launch soon. With new and old behaviour intervention techniques, and <a href="{% include site/url.html to='team' %}#youssef">Youssef's</a> improved version of Envirofy.</p>
+										</li>
+										-->
+										<li>
+											<span class="date"></span>
+											<h3>Digital Transformation</h3>
+											
+											<ol>
+												<p>G&#246;zel's <a href="">7-step Guide to Developing a Digital Transformation Strategy</a> (coming soon)</p>
+												<p><a href="https://european-digital-innovation-hubs.ec.europa.eu/open-dma">The European Commission's Digital Maturity Assessment Tool</a></p>
+												<p><a href="https://www.prosci.com/change-management">Change Management - ADKAR model</a></p>
+												<!-- <p><a href="https://www.workamajig.com/blog/change-management-templates">Change Management Templates</a></p> -->
+											</ol>
+										</li>
+										<li>
+											<span class="date"></span>
+											<h3>Design Thinking</h3>
+											
+											<ol>
+												<p><a href="http://www.designkit.org/index.html">Human-centered Design Kit</a></p>
+												<p><a href="https://www.designinginsights.com/">Improv Games for Remote Design + Collaboration</a></p>
+												<p><a href="https://www.systemicdesigntoolkit.org/">Systemic Design Toolkit</a></p>
+												<p><a href="https://imaginari.es/new-metaphors/">New Metaphors</a></p>
+												<p><a href="https://designthinkmakebreakrepeat.com/">Design Think Make Break Repeat</a></p>
+												<p><a href="https://apphaus.sap.com/">AppHaus</a></p>
+												<p><a href="https://www.strategyzer.com/">Strategyzer</a></p>
+											</ol>
+										</li>
+										<li>
+											<span class="date"></span>
+											<h3>Media Literacy</h3>
+											<ol>
+												<p>G&#246;zel's <a href="{% include site/url.html to='fact-checker' %}">Fact Checker</a></p>
+												<p>G&#246;zel's <a href="{% include site/url.html to='science-search' %}">Science Engine</a></p>
+												<p>G&#246;zel's <a href="/resources/media literacy/Shakeri - Media Literacy Starter Kit.pdf">Media Literacy Starter Kit</a></p>
+												<!-- <p><a href="/resources/media literacy/Shakeri_Media Literacy Guide.pdf">G&#246;zel's 5-step Guide towards more Media Literacy</a> (last updated: Mar 2025)</p>
+												<p><a href="/resources/media literacy/Shakeri_Media Literacy AI.pdf">G&#246;zel's Quick Guide to recognising AI generated content</a> (last updated: Mar 2025)</p>
+												<p><a href="/resources/media literacy/Shakeri_Media Literacy Challenge.pdf">G&#246;zel's 5-day Media Literacy Challenge</a> (last updated: Mar 2025)</p>
+												<p><a href="/resources/media literacy/Shakeri_Media Literacy Recommended Reading.pdf">G&#246;zel's Reading Recommendations</a> (last updated: Mar 2025)</p> -->
+											</ol>
+										</li>										
+									</ul>
+								</section>
+							</article>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				{% include site/footer.html %}
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/jquery.dropotron.min.js"></script>
+			<script src="/assets/js/browser.min.js"></script>
+			<script src="/assets/js/breakpoints.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main.js"></script>
+			<script> 
+			$(function(){
+			$("#inject_footer").load("footer.html"); 
+			});
+			</script>
+
+	</body>
+</html>

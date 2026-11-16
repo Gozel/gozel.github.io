@@ -1,0 +1,340 @@
+---
+# Built once per language: see the pages that use this layout (e.g. index.html, fr/index.html).
+# Texts come from lang/<lang>.json; edit them there.
+---
+{%- include site/lang-vars.html -%}
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="{{ lang }}">
+	<head>
+		<title>{{ t.consultancypage.title | default: en.consultancypage.title | strip_html }} | Shakeri et al.</title>
+		{% include site/head-meta.html description='consultancypage.subtitle' %}
+		<meta charset="utf-8" />
+		<base href="/" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/fontawesome-all.min.css" media="print" onload="this.media='all'" />
+		<noscript><link rel="stylesheet" href="/assets/css/fontawesome-all.min.css" /></noscript>
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" />
+		<link rel="stylesheet" href="/assets/css/fresh.css" />
+		<link rel="icon" href="/images/logo/favicon.ico">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-DVME2JVJE7"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-DVME2JVJE7');
+		</script>
+	</head>
+	<body class="homepage is-preload fresh">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<!-- Logo -->
+						<!--<h1><a href="{% include site/url.html to='envirofy.eu' %}">Envirofy</a></h1>-->
+						<div class="container">
+							<div class="row">
+								<div class="col-4 col-4-medium col-6-small">
+									<a href="{% include site/url.html to='' %}" class="image featured" aria-label="Shakeri et al. home"><img src="/images/logo/shakeri_et_al.svg" width="166" height="38" alt="" class="site-logo"/></a>
+									
+								</div>
+								<div class="col-8 col-12-medium col-12-small">
+									<div class="container">
+									<nav id="nav" style="text-align: right;">
+										<ul>
+											<li><a id="nav-approach" href="{% include site/url.html to='approach' %}">{{ t.nav.approach | default: en.nav.approach }}</a></li>
+											<li class="current"><a id="nav-services" href="">{{ t.nav.services | default: en.nav.services }}</a>
+												<ul id="nav-serviceslist">
+													<li><a id="nav-servicesconsultancy" href="{% include site/url.html to='services-consultancy' %}">{{ t.nav.servicesconsultancy | default: en.nav.servicesconsultancy }}</a></li>
+													<li><a id="nav-servicesresearch" href="{% include site/url.html to='services-research' %}" title="{{ t.nav.servicesresearch }}">{{ t.nav.servicesresearch | default: en.nav.servicesresearch }}</a></li>
+													<li><a id="nav-serviceseducation"href="{% include site/url.html to='services-education' %}">{{ t.nav.serviceseducation | default: en.nav.serviceseducation }}</a></li>
+													<li><a id="nav-servicesinnovation"href="{% include site/url.html to='services-innovation' %}">{{ t.nav.servicesinnovation | default: en.nav.servicesinnovation }}</a></li>
+												</ul>
+											</li>
+											
+											<li><a id="nav-about" href="">{{ t.nav.about | default: en.nav.about }}</a>
+												<ul id="nav-aboutlist">
+													<li><a id="nav-aboutgozel" href="{% include site/url.html to='gozel' %}">{{ t.nav.aboutgozel | default: en.nav.aboutgozel }}</a></li>
+													<!-- <li><a id="nav-aboutHCD" href="{% include site/url.html to='designthinking' %}">{{ t.nav.aboutHCD | default: en.nav.aboutHCD }}</a></li> -->
+													<li><a id="nav-aboutpublications" href="{% include site/url.html to='publications' %}">{{ t.nav.aboutpublications | default: en.nav.aboutpublications }}</a></li>
+													<li><a id="nav-abouttalks" href="{% include site/url.html to='talks' %}">{{ t.nav.abouttalks | default: en.nav.abouttalks }}</a></li>
+												</ul>
+											</li>
+											<li><a id="nav-thinktank" href="{% include site/url.html to='think-tank/' %}">{{ t.nav.thinktank | default: en.nav.thinktank }}</a></li>
+											<li><a id="nav-contact" href="{% include site/url.html to='contact' %}">{{ t.nav.contact | default: en.nav.contact }}</a></li>
+											<li class="lang-li"><div class="lang-switch" role="group" aria-label="Language"><button type="button" data-set-lang="en" data-href="{{ alt_en }}">EN</button><button type="button" data-set-lang="fr" data-href="{{ alt_fr }}">FR</button><button type="button" data-set-lang="de" data-href="{{ alt_de }}">DE</button></div></li>
+										</ul>
+									</nav>
+								</div>
+								</div>
+							</div>
+						</div>
+				</section>
+
+				<section id="banner">
+					<header>
+						<div class="row">
+							<div class="col-6 col-6-medium col-12-small banner-text">
+								<p id="cp-nav">{{ t.consultancypage.nav | default: en.consultancypage.nav }}</p>
+								<h2 id="cp-title">{{ t.consultancypage.title | default: en.consultancypage.title }}</h2>
+								<p id="cp-subtitle">{{ t.consultancypage.subtitle | default: en.consultancypage.subtitle }}</p>
+							</div>
+							<div class="col-6 col-6-medium col-12-small">
+								<img src="/images/gallery/consultancy.webp" alt="Game pieces connected in a network" width="100%"/>
+							</div>
+						</div>
+					</header>
+				</section>
+
+				<section id="main" class="rp-page">
+
+					<!-- 1. THREE WAYS TO WORK WITH US  |  lang/*.json > consultancypage > f1… f3… -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="cp-formatseyebrow">{{ t.consultancypage.formatseyebrow | default: en.consultancypage.formatseyebrow }}</p>
+								<h2 class="fh-h2" id="cp-formatstitle">{{ t.consultancypage.formatstitle | default: en.consultancypage.formatstitle }}</h2>
+							</div>
+							<div class="fh-grid fh-grid-3">
+								<article class="fh-card rp-format">
+									<h3 id="cp-f3name">{{ t.consultancypage.f3name | default: en.consultancypage.f3name }}</h3>
+									<p class="rp-question" id="cp-f3q">{{ t.consultancypage.f3q | default: en.consultancypage.f3q }}</p>
+									<dl class="rp-facts">
+										<dt class="cp-lenlabel">{{ t.consultancypage.lenlabel | default: en.consultancypage.lenlabel }}</dt><dd id="cp-f3len">{{ t.consultancypage.f3len | default: en.consultancypage.f3len }}</dd>
+										<dt class="cp-getlabel">{{ t.consultancypage.getlabel | default: en.consultancypage.getlabel }}</dt><dd id="cp-f3get">{{ t.consultancypage.f3get | default: en.consultancypage.f3get }}</dd>
+										<dt class="cp-forlabel">{{ t.consultancypage.forlabel | default: en.consultancypage.forlabel }}</dt><dd id="cp-f3for">{{ t.consultancypage.f3for | default: en.consultancypage.f3for }}</dd>
+									</dl>
+								</article>
+								<article class="fh-card rp-format">
+									<h3 id="cp-f1name">{{ t.consultancypage.f1name | default: en.consultancypage.f1name }}</h3>
+									<p class="rp-question" id="cp-f1q">{{ t.consultancypage.f1q | default: en.consultancypage.f1q }}</p>
+									<dl class="rp-facts">
+										<dt class="cp-lenlabel">{{ t.consultancypage.lenlabel | default: en.consultancypage.lenlabel }}</dt><dd id="cp-f1len">{{ t.consultancypage.f1len | default: en.consultancypage.f1len }}</dd>
+										<dt class="cp-getlabel">{{ t.consultancypage.getlabel | default: en.consultancypage.getlabel }}</dt><dd id="cp-f1get">{{ t.consultancypage.f1get | default: en.consultancypage.f1get }}</dd>
+										<dt class="cp-forlabel">{{ t.consultancypage.forlabel | default: en.consultancypage.forlabel }}</dt><dd id="cp-f1for">{{ t.consultancypage.f1for | default: en.consultancypage.f1for }}</dd>
+									</dl>
+								</article>
+								<article class="fh-card rp-format">
+									<h3 id="cp-f2name">{{ t.consultancypage.f2name | default: en.consultancypage.f2name }}</h3>
+									<p class="rp-question" id="cp-f2q">{{ t.consultancypage.f2q | default: en.consultancypage.f2q }}</p>
+									<dl class="rp-facts">
+										<dt class="cp-lenlabel">{{ t.consultancypage.lenlabel | default: en.consultancypage.lenlabel }}</dt><dd id="cp-f2len">{{ t.consultancypage.f2len | default: en.consultancypage.f2len }}</dd>
+										<dt class="cp-getlabel">{{ t.consultancypage.getlabel | default: en.consultancypage.getlabel }}</dt><dd id="cp-f2get">{{ t.consultancypage.f2get | default: en.consultancypage.f2get }}</dd>
+										<dt class="cp-forlabel">{{ t.consultancypage.forlabel | default: en.consultancypage.forlabel }}</dt><dd id="cp-f2for">{{ t.consultancypage.f2for | default: en.consultancypage.f2for }}</dd>
+									</dl>
+								</article>
+							</div>
+							<p class="rp-unsure" id="cp-choose4">{{ t.consultancypage.choose4 | default: en.consultancypage.choose4 }}</p>
+						</div>
+					</section>
+
+					<!-- 3. CHALLENGES WE HELP WITH  |  consultancypage > q1 … q4 -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="cp-challengeseyebrow">{{ t.consultancypage.challengeseyebrow | default: en.consultancypage.challengeseyebrow }}</p>
+								<h2 class="fh-h2" id="cp-challengestitle">{{ t.consultancypage.challengestitle | default: en.consultancypage.challengestitle }}</h2>
+							</div>
+							<ul class="fh-questions rp-challenges">
+								<li id="cp-q1">{{ t.consultancypage.q1 | default: en.consultancypage.q1 }}</li>
+								<li id="cp-q2">{{ t.consultancypage.q2 | default: en.consultancypage.q2 }}</li>
+								<li id="cp-q3">{{ t.consultancypage.q3 | default: en.consultancypage.q3 }}</li>
+								<li id="cp-q4">{{ t.consultancypage.q4 | default: en.consultancypage.q4 }}</li>
+								<li id="cp-q5">{{ t.consultancypage.q5 | default: en.consultancypage.q5 }}</li>
+							</ul>
+						</div>
+					</section>
+
+					<!-- 4. HOW IT WORKS  |  consultancypage > s1name/s1text … s4name/s4text -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="cp-processeyebrow">{{ t.consultancypage.processeyebrow | default: en.consultancypage.processeyebrow }}</p>
+								<h2 class="fh-h2" id="cp-processtitle">{{ t.consultancypage.processtitle | default: en.consultancypage.processtitle }}</h2>
+							</div>
+							<ol class="rp-steps">
+								<li class="rp-step">
+									<span class="rp-step-num">1</span>
+									<h3 id="cp-s1name">{{ t.consultancypage.s1name | default: en.consultancypage.s1name }}</h3>
+									<p id="cp-s1text">{{ t.consultancypage.s1text | default: en.consultancypage.s1text }}</p>
+								</li>
+								<li class="rp-step">
+									<span class="rp-step-num">2</span>
+									<h3 id="cp-s2name">{{ t.consultancypage.s2name | default: en.consultancypage.s2name }}</h3>
+									<p id="cp-s2text">{{ t.consultancypage.s2text | default: en.consultancypage.s2text }}</p>
+								</li>
+								<li class="rp-step">
+									<span class="rp-step-num">3</span>
+									<h3 id="cp-s3name">{{ t.consultancypage.s3name | default: en.consultancypage.s3name }}</h3>
+									<p id="cp-s3text">{{ t.consultancypage.s3text | default: en.consultancypage.s3text }}</p>
+								</li>
+								<li class="rp-step">
+									<span class="rp-step-num">4</span>
+									<h3 id="cp-s4name">{{ t.consultancypage.s4name | default: en.consultancypage.s4name }}</h3>
+									<p id="cp-s4text">{{ t.consultancypage.s4text | default: en.consultancypage.s4text }}</p>
+								</li>
+							</ol>
+						</div>
+					</section>
+
+					<!-- 5. WHAT YOU'LL ACHIEVE  |  consultancypage > o1 … o6 -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="cp-outcomeseyebrow">{{ t.consultancypage.outcomeseyebrow | default: en.consultancypage.outcomeseyebrow }}</p>
+							</div>
+							<ul class="rp-outcomes">
+								<li id="cp-o1">{{ t.consultancypage.o1 | default: en.consultancypage.o1 }}</li>
+								<li id="cp-o2">{{ t.consultancypage.o2 | default: en.consultancypage.o2 }}</li>
+								<li id="cp-o3">{{ t.consultancypage.o3 | default: en.consultancypage.o3 }}</li>
+								<li id="cp-o4">{{ t.consultancypage.o4 | default: en.consultancypage.o4 }}</li>
+								<li id="cp-o5">{{ t.consultancypage.o5 | default: en.consultancypage.o5 }}</li>
+								<li id="cp-o6">{{ t.consultancypage.o6 | default: en.consultancypage.o6 }}</li>
+							</ul>
+						</div>
+					</section>
+
+					<!-- 6. BUILT ON OUR METHOD  |  approach > problemtitle, step1… step3 -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="cp-methodeyebrow">{{ t.consultancypage.methodeyebrow | default: en.consultancypage.methodeyebrow }}</p>
+								<h2 class="fh-h2" id="approach-problemtitle">{{ t.approach.problemtitle | default: en.approach.problemtitle }}</h2>
+							</div>
+							<div class="fh-dimensions rp-method">
+								<div class="fh-dimension">
+									<span class="fh-pillar-icon rp-pillar-icon"><img src="/images/gallery/reframe.png" alt=""/></span>
+									<h3 id="approach-step1title">{{ t.approach.step1title | default: en.approach.step1title }}</h3>
+									<p id="approach-step1text">{{ t.approach.step1text | default: en.approach.step1text }}</p>
+								</div>
+								<div class="fh-dimension">
+									<span class="fh-pillar-icon rp-pillar-icon"><img src="/images/gallery/imagine.png" alt=""/></span>
+									<h3 id="approach-step2title">{{ t.approach.step2title | default: en.approach.step2title }}</h3>
+									<p id="approach-step2text">{{ t.approach.step2text | default: en.approach.step2text }}</p>
+								</div>
+								<div class="fh-dimension">
+									<span class="fh-pillar-icon rp-pillar-icon"><img src="/images/gallery/synergise.png" alt=""/></span>
+									<h3 id="approach-step3title">{{ t.approach.step3title | default: en.approach.step3title }}</h3>
+									<p id="approach-step3text">{{ t.approach.step3text | default: en.approach.step3text }}</p>
+								</div>
+							</div>
+							<p class="rp-creds-more"><a href="{% include site/url.html to='approach' %}" class="fh-more-link"><span id="cp-methodlink">{{ t.consultancypage.methodlink | default: en.consultancypage.methodlink }}</span> →</a></p>
+						</div>
+					</section>
+
+					<!-- 7. EVIDENCE  |  stories: landing > successtitle/successstory 4, 3, 1; credentials: consultancypage > c1… c3 -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="cp-proofeyebrow">{{ t.consultancypage.proofeyebrow | default: en.consultancypage.proofeyebrow }}</p>
+								<h2 class="fh-h2" id="cp-prooftitle">{{ t.consultancypage.prooftitle | default: en.consultancypage.prooftitle }}</h2>
+							</div>
+							<div class="fh-grid fh-grid-3">
+								<article class="fh-card fh-card-pic fh-story">
+									<img src="/images/gallery/buergermobil.webp" alt="" loading="lazy"/>
+									<h3 id="landing-successtitle4">{{ t.landing.successtitle4 | default: en.landing.successtitle4 }}</h3>
+									<p id="landing-successstory4">{{ t.landing.successstory4 | default: en.landing.successstory4 }}</p>
+								</article>
+								<article class="fh-card fh-card-pic fh-story">
+									<img src="/images/gallery/strategy.webp" alt="" loading="lazy"/>
+									<h3 id="landing-successtitle3">{{ t.landing.successtitle3 | default: en.landing.successtitle3 }}</h3>
+									<p id="landing-successstory3">{{ t.landing.successstory3 | default: en.landing.successstory3 }}</p>
+								</article>
+								<article class="fh-card fh-card-pic fh-story">
+									<img src="/images/gallery/consultancy.webp" alt="" loading="lazy"/>
+									<h3 id="landing-successtitle1">{{ t.landing.successtitle1 | default: en.landing.successtitle1 }}</h3>
+									<p id="landing-successstory1">{{ t.landing.successstory1 | default: en.landing.successstory1 }}</p>
+								</article>
+							</div>
+							<div class="rp-creds">
+								<div class="rp-cred"><p class="rp-cred-num" id="cp-c1num">{{ t.consultancypage.c1num | default: en.consultancypage.c1num }}</p><p id="cp-c1">{{ t.consultancypage.c1 | default: en.consultancypage.c1 }}</p></div>
+								<div class="rp-cred"><p class="rp-cred-num" id="cp-c2num">{{ t.consultancypage.c2num | default: en.consultancypage.c2num }}</p><p id="cp-c2">{{ t.consultancypage.c2 | default: en.consultancypage.c2 }}</p></div>
+								<div class="rp-cred"><p class="rp-cred-num" id="cp-c3num">{{ t.consultancypage.c3num | default: en.consultancypage.c3num }}</p><p id="cp-c3">{{ t.consultancypage.c3 | default: en.consultancypage.c3 }}</p></div>
+							</div>
+							<!-- Testimonial: hidden until there is a quote. Fill in consultancypage > quote, quotecite, then remove these comment markers.
+							<blockquote class="rp-quote">
+								<p id="cp-quote">{{ t.consultancypage.quote | default: en.consultancypage.quote }}</p>
+								<cite id="cp-quotecite">{{ t.consultancypage.quotecite | default: en.consultancypage.quotecite }}</cite>
+							</blockquote> -->
+						</div>
+					</section>
+
+					<!-- 8. FAQ  |  consultancypage > faq1q/faq1a … faq5q/faq5a -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="cp-faqeyebrow">{{ t.consultancypage.faqeyebrow | default: en.consultancypage.faqeyebrow }}</p>
+								<h2 class="fh-h2" id="cp-faqtitle">{{ t.consultancypage.faqtitle | default: en.consultancypage.faqtitle }}</h2>
+							</div>
+							<div class="rp-faq">
+								<details class="rp-faq-item">
+									<summary id="cp-faq1q">{{ t.consultancypage.faq1q | default: en.consultancypage.faq1q }}</summary>
+									<p id="cp-faq1a">{{ t.consultancypage.faq1a | default: en.consultancypage.faq1a }}</p>
+								</details>
+								<details class="rp-faq-item">
+									<summary id="cp-faq2q">{{ t.consultancypage.faq2q | default: en.consultancypage.faq2q }}</summary>
+									<p id="cp-faq2a">{{ t.consultancypage.faq2a | default: en.consultancypage.faq2a }}</p>
+								</details>
+								<details class="rp-faq-item">
+									<summary id="cp-faq3q">{{ t.consultancypage.faq3q | default: en.consultancypage.faq3q }}</summary>
+									<p id="cp-faq3a">{{ t.consultancypage.faq3a | default: en.consultancypage.faq3a }}</p>
+								</details>
+								<details class="rp-faq-item">
+									<summary id="cp-faq4q">{{ t.consultancypage.faq4q | default: en.consultancypage.faq4q }}</summary>
+									<p id="cp-faq4a">{{ t.consultancypage.faq4a | default: en.consultancypage.faq4a }}</p>
+								</details>
+								<details class="rp-faq-item">
+									<summary id="cp-faq5q">{{ t.consultancypage.faq5q | default: en.consultancypage.faq5q }}</summary>
+									<p id="cp-faq5a">{{ t.consultancypage.faq5a | default: en.consultancypage.faq5a }}</p>
+								</details>
+							</div>
+						</div>
+					</section>
+
+					<!-- 9. CROSS-LINKS + CALL TO ACTION  |  consultancypage > crosslinks, contact, more -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<p class="rp-crosslinks" id="cp-crosslinks">{{ t.consultancypage.crosslinks | default: en.consultancypage.crosslinks }}</p>
+							<div class="fh-band">
+								<div class="fh-band-text">
+									<h2 id="cp-contact">{{ t.consultancypage.contact | default: en.consultancypage.contact }}</h2>
+								</div>
+								<a href="{% include site/url.html to='contact' %}" class="fh-btn fh-btn-sun" id="cp-more">{{ t.consultancypage.more | default: en.consultancypage.more }}</a>
+							</div>
+						</div>
+					</section>
+
+				</section>
+
+			<!-- Footer -->
+			{% include site/footer.html %}
+
+		</div>
+
+		<!-- Scripts -->
+		
+		<script src="/assets/js/jquery.min.js"></script>
+		<script src="/assets/js/jquery.dropotron.min.js"></script>
+		<script src="/assets/js/browser.min.js"></script>
+		<script src="/assets/js/breakpoints.min.js"></script>
+		<script src="/assets/js/util.js"></script>
+		<script src="/assets/js/main.js"></script>
+		<script src="/assets/js/site-lang.js"></script>
+		<!-- <script> 
+		$(function(){
+		$("#inject_footer").load("footer.html"); 
+		});
+		</script> -->
+
+	</body>
+</html>

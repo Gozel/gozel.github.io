@@ -1,0 +1,306 @@
+---
+# Built once per language: see the pages that use this layout (e.g. index.html, fr/index.html).
+# Texts come from lang/<lang>.json; edit them there.
+---
+{%- include site/lang-vars.html -%}
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="{{ lang }}">
+	<head>
+		<title>{{ t.gozel.title | default: en.gozel.title | strip_html }} | Shakeri et al.</title>
+		{% include site/head-meta.html description='gozel.text' %}
+		<meta charset="utf-8" />
+		<base href="/" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/fontawesome-all.min.css" media="print" onload="this.media='all'" />
+		<noscript><link rel="stylesheet" href="/assets/css/fontawesome-all.min.css" /></noscript>
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" />
+		<link rel="stylesheet" href="/assets/css/fresh.css" />
+
+		<link rel="icon" href="/images/logo/favicon.ico">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-DVME2JVJE7"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-DVME2JVJE7');
+		</script>
+	</head>
+	<body class="no-sidebar is-preload fresh">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<!-- Logo -->
+						<!--<h1><a href="{% include site/url.html to='' %}">Envirofy</a></h1>-->
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+
+									<!-- Portfolio -->
+									<section>
+										<div class="row">
+											<div class="col-4 col-4-medium col-6-small">
+												<a href="{% include site/url.html to='' %}" class="image featured" aria-label="Shakeri et al. home"><img src="/images/logo/shakeri_et_al.svg" width="166" height="38" alt="" class="site-logo"/></a>
+												
+											</div>
+											<div class="col-8 col-6-medium col-12-small">
+												<div class="container">
+													<nav id="nav" style="text-align: right;">
+														<ul>
+															<li><a id="nav-approach" href="{% include site/url.html to='approach' %}">{{ t.nav.approach | default: en.nav.approach }}</a></li>
+															<li><a id="nav-services" href="">{{ t.nav.services | default: en.nav.services }}</a>
+																<ul id="nav-serviceslist">
+																	<li><a id="nav-servicesconsultancy" href="{% include site/url.html to='services-consultancy' %}">{{ t.nav.servicesconsultancy | default: en.nav.servicesconsultancy }}</a></li>
+																	<li><a id="nav-servicesresearch" href="{% include site/url.html to='services-research' %}" title="{{ t.nav.servicesresearch }}">{{ t.nav.servicesresearch | default: en.nav.servicesresearch }}</a></li>
+																	<li><a id="nav-serviceseducation"href="{% include site/url.html to='services-education' %}">{{ t.nav.serviceseducation | default: en.nav.serviceseducation }}</a></li>
+																	<li><a id="nav-servicesinnovation"href="{% include site/url.html to='services-innovation' %}">{{ t.nav.servicesinnovation | default: en.nav.servicesinnovation }}</a></li>
+																</ul>
+															</li>
+															
+															<li class="current"><a id="nav-about" href="">{{ t.nav.about | default: en.nav.about }}</a>
+																<ul id="nav-aboutlist">
+																	<li><a id="nav-aboutgozel" href="{% include site/url.html to='gozel' %}">{{ t.nav.aboutgozel | default: en.nav.aboutgozel }}</a></li>
+																	<!-- <li><a id="nav-aboutHCD" href="{% include site/url.html to='designthinking' %}">{{ t.nav.aboutHCD | default: en.nav.aboutHCD }}</a></li> -->
+																	<li><a id="nav-aboutpublications" href="{% include site/url.html to='publications' %}">{{ t.nav.aboutpublications | default: en.nav.aboutpublications }}</a></li>
+																	<li><a id="nav-abouttalks" href="{% include site/url.html to='talks' %}">{{ t.nav.abouttalks | default: en.nav.abouttalks }}</a></li>
+																</ul>
+															</li>
+															<li><a id="nav-thinktank" href="{% include site/url.html to='think-tank/' %}">{{ t.nav.thinktank | default: en.nav.thinktank }}</a></li>
+															<li><a id="nav-contact" href="{% include site/url.html to='contact' %}">{{ t.nav.contact | default: en.nav.contact }}</a></li>
+															<li class="lang-li"><div class="lang-switch" role="group" aria-label="Language"><button type="button" data-set-lang="en" data-href="{{ alt_en }}">EN</button><button type="button" data-set-lang="fr" data-href="{{ alt_fr }}">FR</button><button type="button" data-set-lang="de" data-href="{{ alt_de }}">DE</button></div></li>
+														</ul>
+													</nav>
+												</div>
+											</div>
+										</div>
+									</section>
+
+								</div>
+							</div>
+						</div>
+
+				</section>
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container" id="gozel">
+
+						<!-- Content -->
+							<article class="box post">
+								<div class="row">
+									<div class="col-8 col-12-small">
+										<header>
+											<h2 id="gozel-title">{{ t.gozel.title | default: en.gozel.title }}</h2>
+										</header>
+
+										<p id="gozel-text">{{ t.gozel.text | default: en.gozel.text }}</p>
+											<!-- <p>I’m a <a href="{% include site/url.html to='designthinking' %}">human-centered design</a> consultant, workshop facilitator, and innovation and creativity strategist. From re-imaging how people interact with technology in cars to helping teams in medical practises collaborate effectively, I have experience applying design methods and practices to complex challenges.</p>
+											<p>With a <b style="font-weight: 700;">Ph.D. in Human-Computer Interaction (HCI)</b> <a style="text-decoration: none;" href="https://theses.gla.ac.uk/81258/">&#x1F517;</a> from the University of Glasgow, where my thesis was shortlisted for <b style="font-weight: 700;">Best Computing Science PhD in Scotland</b> <a style="text-decoration: none;" href="https://sicsaconference.org/panel-sessions/">&#x1F517;</a>, 
+												I have creatively reimagined and redesigned how we interact with technology, for example during shopping. </p> 
+										
+											<p>Recognized with an <b style="font-weight: 700;">Outstanding Young Scientists Award</b> <a style="text-decoration: none;" href="https://shakeri.eu/certifcates/fellowship.pdf">&#x1F517;</a> for pushing ..., I have <b style="font-weight: 700;">collaborated with industry leaders</b> (e.g. Tesco), government agencies (e.g. Food Standards Agency) as well as NGOs (e.g. WWF-UK), to drive real-world impact.
+												My work has taken me to <b style="font-weight: 700;">global stages</b>, including COP26 <a style="text-decoration: none;" href="https://ukcop26.org/the-conference/green-zone-programme-of-events/green-zone-exhibitors/">&#x1F517;</a>, the UN Game Changers Lab <a style="text-decoration: none;" href="https://thoughtforfood.org/gamechangerslab/">&#x1F517;</a>, and the Global Conference for Safety Regulation and Sustainability <a style="text-decoration: none;" href="https://sustainablefoodregulation.co.uk/register/interest?type=virtual">&#x1F517;</a>, 
+												where I’ve <b style="font-weight: 700;">shaped discussions on innovation and sustainability</b>. </p>
+
+											<p>As an <b style="font-weight: 700;">award-winning science communicator</b> (both orally <a style="text-decoration: none;" href="https://www.youtube.com/watch?v=-kEmFw36Pxs">&#x1F517;</a> and in written <a style="text-decoration: none;" href="https://sicsaconference.org/panel-sessions/">&#x1F517;</a> form), 
+												a <b style="font-weight: 700;">certified educator</b> <a style="text-decoration: none;" href="http://shakeri.eu/certifcates/HDZ%20Zertifikat.pdf">&#x1F517;</a>, and a <b style="font-weight: 700;">certified manager</b> <a style="text-decoration: none;" href="https://shakeri.eu/certifcates/progressio%20certificate.pdf">&#x1F517;</a>, 
+												and due to my love leading groups through learning experiences with human-centered design, I was a <b style="font-weight: 700;">university lecturer on human-centered innovation</b>. </p>
+											</p>
+											<p>As the author of <b style="font-weight: 700;">numerous papers and articles</b> <a style="text-decoration: none;" href="{% include site/url.html to='publications' %}">&#x1F517;</a> and <b style="font-weight: 700;">frequent speaker</b> <a style="text-decoration: none;" href="{% include site/url.html to='talks' %}">&#x1F517;</a> at conferences, I’m available for public speaking engagements.</p> -->
+
+											<!-- <p>I am a <a href="{% include site/url.html to='designthinking' %}">human-centered</a> innovator, researcher, and educator consulting on Sustainable Digitalisation and digital human behaviour. With a passion for solving complex challenges, I have reimagined how people interact with technology --- from transforming in-car experiences to enhancing collaboration in medical practices --- using proven design methods and practices.</p>
+
+											<p>Holding a <b style="font-weight: 700;">Ph.D. in Human-Computer Interaction (HCI)</b> <a style="text-decoration: none;" href="https://theses.gla.ac.uk/81258/">&#x1F517;</a> from the University of Glasgow, my thesis was shortlisted for the <b style="font-weight: 700;">Best Computing Science PhD in Scotland</b> <a style="text-decoration: none;" href="https://sicsaconference.org/panel-sessions/">&#x1F517;</a>.</p>
+
+											<p>Recognised with an <b style="font-weight: 700;">Outstanding Young Scientists Award</b> <a style="text-decoration: none;" href="https://shakeri.eu/certifcates/fellowship.pdf">&#x1F517;</a> for creatively reshaping and redefining the sustainable shopping experience, I have partnered with <b style="font-weight: 700;">industry leaders</b> (e.g., Tesco), government bodies (e.g., Food Standards Agency), and NGOs (e.g., WWF-UK) to drive tangible impact. My expertise has taken me to <b style="font-weight: 700;">global platforms</b>, including COP26 <a style="text-decoration: none;" href="https://ukcop26.org/the-conference/green-zone-programme-of-events/green-zone-exhibitors/">&#x1F517;</a>, the UN Game Changers Lab <a style="text-decoration: none;" href="https://thoughtforfood.org/gamechangerslab/">&#x1F517;</a>, and the Global Conference for Safety Regulation and Sustainability <a style="text-decoration: none;" href="https://sustainablefoodregulation.co.uk/register/interest?type=virtual">&#x1F517;</a>, where <b style="font-weight: 700;">I have led discussions on innovation and sustainability</b>.</p>
+
+											<p>As an <b style="font-weight: 700;">award-winning science communicator</b> (both in <a style="text-decoration: none;" href="https://www.youtube.com/watch?v=-kEmFw36Pxs">speech</a> and <a style="text-decoration: none;" href="https://sicsaconference.org/panel-sessions/">writing</a>), a <b style="font-weight: 700;">certified educator</b> <a style="text-decoration: none;" href="http://shakeri.eu/certifcates/HDZ%20Zertifikat.pdf">&#x1F517;</a>, and a <b style="font-weight: 700;">certified manager</b> <a style="text-decoration: none;" href="https://shakeri.eu/certifcates/progressio%20certificate.pdf">&#x1F517;</a>, I have channeled my passion for human-centered design into teaching, serving as a <b style="font-weight: 700;">university lecturer on human-centered innovation</b>.</p>
+
+											<p>With <b style="font-weight: 700;">numerous publications</b> <a style="text-decoration: none;" href="{% include site/url.html to='publications' %}">&#x1F517;</a> and as a <b style="font-weight: 700;">frequent speaker</b> <a style="text-decoration: none;" href="{% include site/url.html to='talks' %}">&#x1F517;</a> at international conferences, I’m available for public speaking engagements to inspire and share insights on innovation and design.</p> -->
+									</div>
+
+									<div class="col-4 col-12-small">
+										<section class="box" style="text-align: center;">
+											<!-- <a href="#" class="image "><img loading="lazy" decoding="async" src="/images/people/Gozel.jpg" alt="" style="border-radius: 6px;"/></a> -->
+											<img loading="lazy" decoding="async" src="/images/people/gozel_halo.webp" width="100%"/>
+										</section>
+									</div>
+								</div>
+							</article>
+
+							<article class="box post">
+								<div class="row">
+									<div class="col-4 col-12-small">
+										<section class="box" style="text-align: center;">
+											<!-- <a href="#" class="image "><img loading="lazy" decoding="async" src="/images/people/Gozel.jpg" alt="" style="border-radius: 6px;"/></a> -->
+											<img loading="lazy" decoding="async" src="/images/gallery/network.webp" width="100%"/>
+											 <!-- image here  -->
+										</section>
+									</div>
+									<div class="col-8 col-12-small">
+										<header>
+											<h3 id="gozel-team">{{ t.gozel.team | default: en.gozel.team }}</h3>
+										</header>
+										<!-- <section class="box"> -->
+											<!-- <p>Leverage my international network of academics and industry partners for cutting-edge, globally informed strategies.</p> -->
+											 <p id="gozel-teamtext">{{ t.gozel.teamtext | default: en.gozel.teamtext }}</p>
+									</div>
+								</div>
+							</article>
+
+							<section>
+								<header class="major">
+									<h2 id="gozel-divider1">{{ t.gozel.divider1 | default: en.gozel.divider1 }}</h2>
+								</header>
+							</section>
+							<article class="box post">
+								<div class="row" style="text-align: center;">
+									<div class="col-3 col-6-small">
+										<header>
+											<h3 id="gozel-subtitle1">{{ t.gozel.subtitle1 | default: en.gozel.subtitle1 }}</h3>
+										</header>
+										<img loading="lazy" decoding="async" src="/images/gallery/community.jpg" width="90%"/>
+										<section class="box" style="text-align: center;">
+											<p id="gozel-subtitle1text">{{ t.gozel.subtitle1text | default: en.gozel.subtitle1text }}</p>
+										</section>
+									</div>
+									<div class="col-3 col-6-small">
+										<header>
+											<h3 id="gozel-subtitle2">{{ t.gozel.subtitle2 | default: en.gozel.subtitle2 }}</h3>
+										</header>
+										<img loading="lazy" decoding="async" src="/images/gallery/have_fun.jpg" width="90%"/>
+										<section class="box" style="text-align: center;">
+											<p id="gozel-subtitle2text">{{ t.gozel.subtitle2text | default: en.gozel.subtitle2text }}</p>
+										</section>
+									</div>
+									<div class="col-3 col-6-small">
+										<header>
+											<h3 id="gozel-subtitle3">{{ t.gozel.subtitle3 | default: en.gozel.subtitle3 }}</h3>
+										</header>
+										<img loading="lazy" decoding="async" src="/images/gallery/innovation.jpg" width="90%"/>
+										<section class="box" style="text-align: center;">
+											<p id="gozel-subtitle3text">{{ t.gozel.subtitle3text | default: en.gozel.subtitle3text }}</p>
+										</section>
+									</div>
+									<div class="col-3 col-6-small">
+										<header>
+											<h3 id="gozel-subtitle4">{{ t.gozel.subtitle4 | default: en.gozel.subtitle4 }}</h3>
+										</header>
+										<img loading="lazy" decoding="async" src="/images/gallery/yes_and.jpg" width="90%"/>
+										<section class="box" style="text-align: center;">
+											<p id="gozel-subtitle4text">{{ t.gozel.subtitle4text | default: en.gozel.subtitle4text }}</p>
+										</section>
+									</div>
+								</div>
+							</article>
+
+							<article class="box post">
+								<div class="row">
+									<div class="col-12 col-12-small" style="text-align: center;">
+										<header>
+											<h3 id="gozel-contact">{{ t.gozel.contact | default: en.gozel.contact }}</h3>
+										</header>
+										<a href="{% include site/url.html to='contact' %}" class="button" id="gozel-more">{{ t.gozel.more | default: en.gozel.more }}</a>
+									</div>
+								</div>
+							</article>
+
+							<!-- <article class="box post">
+
+								<header>
+									<h3>Career Highlights</h3>
+								</header>
+
+								<div class="row">
+									<p>With a <b style="font-weight: 700;">Ph.D. in Human-Computer Interaction (HCI)</b> <a style="text-decoration: none;" href="">&#x1F517;</a> from the University of Glasgow, I bring a unique blend of academic rigor and practical expertise. 
+										Recognized with an <b style="font-weight: 700;">Outstanding Young Scientists Award</b> <a style="text-decoration: none;" href="https://shakeri.eu/certifcates/fellowship.pdf">&#x1F517;</a>, I have <b style="font-weight: 700;">collaborated with industry leaders</b> (e.g. Tesco), government agencies (e.g. Food Standards Agency) as well as NGOs (e.g. WWF-UK), to drive real-world impact.
+										My work has taken me to <b style="font-weight: 700;">global stages</b>, including COP26 <a style="text-decoration: none;" href="https://ukcop26.org/the-conference/green-zone-programme-of-events/green-zone-exhibitors/">&#x1F517;</a>, the UN Game Changers Lab <a style="text-decoration: none;" href="https://thoughtforfood.org/gamechangerslab/">&#x1F517;</a>, and the Global Conference for Safety Regulation and Sustainability <a style="text-decoration: none;" href="https://sustainablefoodregulation.co.uk/register/interest?type=virtual">&#x1F517;</a>, 
+										where I’ve shaped discussions on innovation and sustainability. 
+										As an <b style="font-weight: 700;">award-winning science communicator</b> (both orally <a style="text-decoration: none;" href="https://www.youtube.com/watch?v=-kEmFw36Pxs">&#x1F517;</a> and in written <a style="text-decoration: none;" href="https://sicsaconference.org/panel-sessions/">&#x1F517;</a> form), 
+										a <b style="font-weight: 700;">certified educator</b> <a style="text-decoration: none;" href="http://shakeri.eu/certifcates/HDZ%20Zertifikat.pdf">&#x1F517;</a>, and a <b style="font-weight: 700;">certified manager</b> <a style="text-decoration: none;" href="https://shakeri.eu/certifcates/progressio%20certificate.pdf">&#x1F517;</a>, I specialize in fostering high-performing, collaborative teams and delivering actionable insights. 
+										Today, as the <b style="font-weight: 700;">founder and CEO</b> of Shakeri Consulting, I help organizations navigate complex challenges, implement cutting-edge solutions, and achieve measurable results.</p>
+								</div>
+							</article> -->
+
+							<section>
+								<header class="major">
+									<h2 id="gozel-divider2">{{ t.gozel.divider2 | default: en.gozel.divider2 }}</h2>
+								</header>
+								<section>
+									<!-- <header class="major">
+										<h2>Research-backed Consultancy for SMEs</h2>
+									</header> -->
+									<div class="row">
+										<div class="col-6 col-12-small">
+											<section class="box" style="text-align: left;">
+												<header>
+													<!-- <h3 style="font-weight: 300; font-size: 2em;">Experience</h3> -->
+													 <h3 id="gozel-experience">{{ t.gozel.experience | default: en.gozel.experience }}</h3>
+												</header>
+												<div id="gozel-experiencetext">{{ t.gozel.experiencetext | default: en.gozel.experiencetext }}</div>
+											</section>
+										</div>
+										<div class="col-6 col-6-medium col-12-small">
+											<section class="box" style="text-align: left;">
+												<header>
+													<!-- <h3 style="font-weight: 300; font-size: 2em; ">Education</h3> -->
+													<h3 id="gozel-education">{{ t.gozel.education | default: en.gozel.education }}</h3>
+												</header>
+												<div id="gozel-educationtext">{{ t.gozel.educationtext | default: en.gozel.educationtext }}</div>
+												<!-- <img loading="lazy" decoding="async" src="/images/gallery/ideas_lightbulb.png" width="100%"/> -->
+											</section>
+
+											<section class="box" style="text-align: left;">
+												<!-- <header> -->
+													<!-- <h3 style="font-weight: 300;font-size: 2em;">Curriculum Vitae</h3> -->
+													 <!-- <h3>Curriculum Vitae <a href="/resources/Shakeri_CV.pdf">here</a></h3> -->
+												<!-- </header> -->
+												<p id="gozel-cv">{{ t.gozel.cv | default: en.gozel.cv }}</p>	
+											</section>
+										</div>
+										<!-- <div class="col-4 col-6-medium col-12-small">
+											<section class="box" style="text-align: center;">
+												<header>
+													<h3 style="font-weight: 300;font-size: 2em;">Curriculum Vitae</h3>
+												</header>
+												<p>Download my CV <a href="/resources/Shakeri_CV.pdf">here</a> (last updated: Feb 2025).</p>	
+											</section>
+										</div> -->
+									</div>
+								</section>
+							</section>
+
+					</div>
+				</section>
+
+			<!-- Footer -->
+				{% include site/footer.html %}
+
+		<!-- Scripts -->
+		
+		<script src="/assets/js/jquery.min.js"></script>
+		<script src="/assets/js/jquery.dropotron.min.js"></script>
+		<script src="/assets/js/browser.min.js"></script>
+		<script src="/assets/js/breakpoints.min.js"></script>
+		<script src="/assets/js/util.js"></script>
+		<script src="/assets/js/main.js"></script>
+		<script src="/assets/js/site-lang.js"></script>
+		<!-- <script> 
+			$(function(){
+			$("#inject_footer").load("footer.html"); 
+			});
+		</script> -->
+
+	</body>
+</html>

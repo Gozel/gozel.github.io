@@ -18,7 +18,7 @@ layout: tt-base
 				<div class="container">
 					<article class="tt-post" lang="{{ lang }}">
 
-						<a class="tt-back" href="think-tank/">{{ t.back }}</a>
+						<a class="tt-back" href="{% if lang != 'en' %}{{ lang }}/{% endif %}think-tank/">{{ t.back }}</a>
 
 						<p class="tt-meta">
 							<time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%Y-%m-%d" }}</time>

@@ -1,0 +1,388 @@
+---
+# Built once per language: see the pages that use this layout (e.g. index.html, fr/index.html).
+# Texts come from lang/<lang>.json; edit them there.
+---
+{%- include site/lang-vars.html -%}
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="{{ lang }}">
+	<head>
+		<title>{{ t.innovation.title | default: en.innovation.title | strip_html }} | Shakeri et al.</title>
+		{% include site/head-meta.html description='innovation.subtitle' %}
+		<meta charset="utf-8" />
+		<base href="/" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/fontawesome-all.min.css" media="print" onload="this.media='all'" />
+		<noscript><link rel="stylesheet" href="/assets/css/fontawesome-all.min.css" /></noscript>
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" />
+		<link rel="stylesheet" href="/assets/css/fresh.css" />
+		<link rel="icon" href="/images/logo/favicon.ico">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-DVME2JVJE7"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-DVME2JVJE7');
+		</script>
+	</head>
+	<body class="homepage is-preload fresh">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<!-- Logo -->
+						<!--<h1><a href="{% include site/url.html to='envirofy.eu' %}">Envirofy</a></h1>-->
+						<div class="container">
+							<div class="row">
+								<div class="col-4 col-4-medium col-6-small">
+									<a href="{% include site/url.html to='' %}" class="image featured" aria-label="Shakeri et al. home"><img src="/images/logo/shakeri_et_al.svg" width="166" height="38" alt="" class="site-logo"/></a>
+									
+								</div>
+								<div class="col-8 col-12-medium col-12-small">
+									<div class="container">
+									<nav id="nav" style="text-align: right;">
+										<ul>
+											<li><a id="nav-approach" href="{% include site/url.html to='approach' %}">{{ t.nav.approach | default: en.nav.approach }}</a></li>
+											<li class="current"><a id="nav-services" href="">{{ t.nav.services | default: en.nav.services }}</a>
+												<ul id="nav-serviceslist">
+													<li><a id="nav-servicesconsultancy" href="{% include site/url.html to='services-consultancy' %}">{{ t.nav.servicesconsultancy | default: en.nav.servicesconsultancy }}</a></li>
+													<li><a id="nav-servicesresearch" href="{% include site/url.html to='services-research' %}" title="{{ t.nav.servicesresearch }}">{{ t.nav.servicesresearch | default: en.nav.servicesresearch }}</a></li>
+													<li><a id="nav-serviceseducation"href="{% include site/url.html to='services-education' %}">{{ t.nav.serviceseducation | default: en.nav.serviceseducation }}</a></li>
+													<li><a id="nav-servicesinnovation"href="{% include site/url.html to='services-innovation' %}">{{ t.nav.servicesinnovation | default: en.nav.servicesinnovation }}</a></li>
+												</ul>
+											</li>
+											
+											<li><a id="nav-about" href="">{{ t.nav.about | default: en.nav.about }}</a>
+												<ul id="nav-aboutlist">
+													<li><a id="nav-aboutgozel" href="{% include site/url.html to='gozel' %}">{{ t.nav.aboutgozel | default: en.nav.aboutgozel }}</a></li>
+													<!-- <li><a id="nav-aboutHCD" href="{% include site/url.html to='designthinking' %}">{{ t.nav.aboutHCD | default: en.nav.aboutHCD }}</a></li> -->
+													<li><a id="nav-aboutpublications" href="{% include site/url.html to='publications' %}">{{ t.nav.aboutpublications | default: en.nav.aboutpublications }}</a></li>
+													<li><a id="nav-abouttalks" href="{% include site/url.html to='talks' %}">{{ t.nav.abouttalks | default: en.nav.abouttalks }}</a></li>
+												</ul>
+											</li>
+											<li><a id="nav-thinktank" href="{% include site/url.html to='think-tank/' %}">{{ t.nav.thinktank | default: en.nav.thinktank }}</a></li>
+											<li><a id="nav-contact" href="{% include site/url.html to='contact' %}">{{ t.nav.contact | default: en.nav.contact }}</a></li>
+											<li class="lang-li"><div class="lang-switch" role="group" aria-label="Language"><button type="button" data-set-lang="en" data-href="{{ alt_en }}">EN</button><button type="button" data-set-lang="fr" data-href="{{ alt_fr }}">FR</button><button type="button" data-set-lang="de" data-href="{{ alt_de }}">DE</button></div></li>
+										</ul>
+									</nav>
+								</div>
+								</div>
+							</div>
+						</div>
+				</section>
+
+				<!-- <section id="banner" class="innovation">
+					<header>
+						<div class="row">
+							<div class="col-6 col-6-medium col-12-small">
+								<h2 style="text-align: center; color: white;">Innovation</h2>
+							</div>
+							<div class="col-6 col-6-medium col-12-small">
+									<header style="background-color: #d52349">
+										<p style="text-align: center; color: white;">Collaborate creatively and solve problems effectively with <u><a href="{% include site/url.html to='designthinking' %}" style="color: white;">human-centered design</a></u>.</p>
+									</header>
+							</div>
+					</header>
+				</section> -->
+
+				<section id="banner">
+					<header>
+						<div class="row">
+							<div class="col-6 col-6-medium col-12-small banner-text">
+								<p id="innovation-nav">{{ t.innovation.nav | default: en.innovation.nav }}</p>
+								<h2 id="innovation-title">{{ t.innovation.title | default: en.innovation.title }}</h2>
+								<p id="innovation-subtitle">{{ t.innovation.subtitle | default: en.innovation.subtitle }}</p>
+							</div>
+							<div class="col-6 col-6-medium col-12-small">
+								<img src="/images/gallery/innovate.webp" width="100%"/>
+								<!-- </div> -->
+							</div>
+						</div>
+					</header>
+				</section>
+
+			<!-- Main -->
+				<section id="main" class="rp-page">
+
+					<!-- 1. THREE WORKSHOP FORMATS  |  names/descriptions: innovation > what, how, who (+ …answers); details: innovationpage > f1… f3… -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="ip-formatseyebrow">{{ t.innovationpage.formatseyebrow | default: en.innovationpage.formatseyebrow }}</p>
+								<h2 class="fh-h2" id="ip-formatstitle">{{ t.innovationpage.formatstitle | default: en.innovationpage.formatstitle }}</h2>
+							</div>
+							<div class="fh-grid fh-grid-3">
+								<article class="fh-card rp-format">
+									<h3 id="innovation-what">{{ t.innovation.what | default: en.innovation.what }}</h3>
+									<p class="rp-question" id="ip-f1q">{{ t.innovationpage.f1q | default: en.innovationpage.f1q }}</p>
+									<p class="rp-desc" id="innovation-whatanswers">{{ t.innovation.whatanswers | default: en.innovation.whatanswers }}</p>
+									<dl class="rp-facts">
+										<dt class="ip-lenlabel">{{ t.innovationpage.lenlabel | default: en.innovationpage.lenlabel }}</dt><dd id="ip-f1len">{{ t.innovationpage.f1len | default: en.innovationpage.f1len }}</dd>
+										<dt class="ip-sizelabel">{{ t.innovationpage.sizelabel | default: en.innovationpage.sizelabel }}</dt><dd id="ip-f1size">{{ t.innovationpage.f1size | default: en.innovationpage.f1size }}</dd>
+										<dt class="ip-getlabel">{{ t.innovationpage.getlabel | default: en.innovationpage.getlabel }}</dt><dd id="ip-f1get">{{ t.innovationpage.f1get | default: en.innovationpage.f1get }}</dd>
+									</dl>
+								</article>
+								<article class="fh-card rp-format">
+									<h3 id="innovation-how">{{ t.innovation.how | default: en.innovation.how }}</h3>
+									<p class="rp-question" id="ip-f2q">{{ t.innovationpage.f2q | default: en.innovationpage.f2q }}</p>
+									<p class="rp-desc" id="innovation-howanswers">{{ t.innovation.howanswers | default: en.innovation.howanswers }}</p>
+									<dl class="rp-facts">
+										<dt class="ip-lenlabel">{{ t.innovationpage.lenlabel | default: en.innovationpage.lenlabel }}</dt><dd id="ip-f2len">{{ t.innovationpage.f2len | default: en.innovationpage.f2len }}</dd>
+										<dt class="ip-sizelabel">{{ t.innovationpage.sizelabel | default: en.innovationpage.sizelabel }}</dt><dd id="ip-f2size">{{ t.innovationpage.f2size | default: en.innovationpage.f2size }}</dd>
+										<dt class="ip-getlabel">{{ t.innovationpage.getlabel | default: en.innovationpage.getlabel }}</dt><dd id="ip-f2get">{{ t.innovationpage.f2get | default: en.innovationpage.f2get }}</dd>
+									</dl>
+								</article>
+								<article class="fh-card rp-format">
+									<h3 id="innovation-who">{{ t.innovation.who | default: en.innovation.who }}</h3>
+									<p class="rp-question" id="ip-f3q">{{ t.innovationpage.f3q | default: en.innovationpage.f3q }}</p>
+									<p class="rp-desc" id="innovation-whoanswers">{{ t.innovation.whoanswers | default: en.innovation.whoanswers }}</p>
+									<dl class="rp-facts">
+										<dt class="ip-lenlabel">{{ t.innovationpage.lenlabel | default: en.innovationpage.lenlabel }}</dt><dd id="ip-f3len">{{ t.innovationpage.f3len | default: en.innovationpage.f3len }}</dd>
+										<dt class="ip-sizelabel">{{ t.innovationpage.sizelabel | default: en.innovationpage.sizelabel }}</dt><dd id="ip-f3size">{{ t.innovationpage.f3size | default: en.innovationpage.f3size }}</dd>
+										<dt class="ip-getlabel">{{ t.innovationpage.getlabel | default: en.innovationpage.getlabel }}</dt><dd id="ip-f3get">{{ t.innovationpage.f3get | default: en.innovationpage.f3get }}</dd>
+									</dl>
+								</article>
+							</div>
+							<p class="rp-unsure" id="ip-choose4">{{ t.innovationpage.choose4 | default: en.innovationpage.choose4 }}</p>
+						</div>
+					</section>
+
+					<!-- 3. WHAT A DESIGN SPRINT LOOKS LIKE  |  innovationpage > d1name/d1text … d5name/d5text -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="ip-sprinteyebrow">{{ t.innovationpage.sprinteyebrow | default: en.innovationpage.sprinteyebrow }}</p>
+								<h2 class="fh-h2" id="ip-sprinttitle">{{ t.innovationpage.sprinttitle | default: en.innovationpage.sprinttitle }}</h2>
+							</div>
+							<ol class="rp-steps rp-steps-5">
+								<li class="rp-step">
+									<span class="rp-step-num">1</span>
+									<h3 id="ip-d1name">{{ t.innovationpage.d1name | default: en.innovationpage.d1name }}</h3>
+									<p id="ip-d1text">{{ t.innovationpage.d1text | default: en.innovationpage.d1text }}</p>
+								</li>
+								<li class="rp-step">
+									<span class="rp-step-num">2</span>
+									<h3 id="ip-d2name">{{ t.innovationpage.d2name | default: en.innovationpage.d2name }}</h3>
+									<p id="ip-d2text">{{ t.innovationpage.d2text | default: en.innovationpage.d2text }}</p>
+								</li>
+								<li class="rp-step">
+									<span class="rp-step-num">3</span>
+									<h3 id="ip-d3name">{{ t.innovationpage.d3name | default: en.innovationpage.d3name }}</h3>
+									<p id="ip-d3text">{{ t.innovationpage.d3text | default: en.innovationpage.d3text }}</p>
+								</li>
+								<li class="rp-step">
+									<span class="rp-step-num">4</span>
+									<h3 id="ip-d4name">{{ t.innovationpage.d4name | default: en.innovationpage.d4name }}</h3>
+									<p id="ip-d4text">{{ t.innovationpage.d4text | default: en.innovationpage.d4text }}</p>
+								</li>
+								<li class="rp-step">
+									<span class="rp-step-num">5</span>
+									<h3 id="ip-d5name">{{ t.innovationpage.d5name | default: en.innovationpage.d5name }}</h3>
+									<p id="ip-d5text">{{ t.innovationpage.d5text | default: en.innovationpage.d5text }}</p>
+								</li>
+							</ol>
+						</div>
+					</section>
+
+					<!-- 4. BUILT ON OUR METHOD  |  approach > problemtitle, step1… step3 (title, text) -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="ip-methodeyebrow">{{ t.innovationpage.methodeyebrow | default: en.innovationpage.methodeyebrow }}</p>
+								<h2 class="fh-h2" id="approach-problemtitle">{{ t.approach.problemtitle | default: en.approach.problemtitle }}</h2>
+							</div>
+							<div class="fh-dimensions rp-method">
+								<div class="fh-dimension">
+									<span class="fh-pillar-icon rp-pillar-icon"><img src="/images/gallery/reframe.png" alt=""/></span>
+									<h3 id="approach-step1title">{{ t.approach.step1title | default: en.approach.step1title }}</h3>
+									<p id="approach-step1text">{{ t.approach.step1text | default: en.approach.step1text }}</p>
+								</div>
+								<div class="fh-dimension">
+									<span class="fh-pillar-icon rp-pillar-icon"><img src="/images/gallery/imagine.png" alt=""/></span>
+									<h3 id="approach-step2title">{{ t.approach.step2title | default: en.approach.step2title }}</h3>
+									<p id="approach-step2text">{{ t.approach.step2text | default: en.approach.step2text }}</p>
+								</div>
+								<div class="fh-dimension">
+									<span class="fh-pillar-icon rp-pillar-icon"><img src="/images/gallery/synergise.png" alt=""/></span>
+									<h3 id="approach-step3title">{{ t.approach.step3title | default: en.approach.step3title }}</h3>
+									<p id="approach-step3text">{{ t.approach.step3text | default: en.approach.step3text }}</p>
+								</div>
+							</div>
+							<p class="rp-creds-more"><a href="{% include site/url.html to='approach' %}" class="fh-more-link"><span id="ip-methodlink">{{ t.innovationpage.methodlink | default: en.innovationpage.methodlink }}</span> →</a></p>
+						</div>
+					</section>
+
+					<!-- 5. HOW IT WORKS  |  innovationpage > s1name/s1text … s3name/s3text -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="ip-processeyebrow">{{ t.innovationpage.processeyebrow | default: en.innovationpage.processeyebrow }}</p>
+								<h2 class="fh-h2" id="ip-processtitle">{{ t.innovationpage.processtitle | default: en.innovationpage.processtitle }}</h2>
+							</div>
+							<ol class="rp-steps rp-steps-3">
+								<li class="rp-step">
+									<span class="rp-step-num">1</span>
+									<h3 id="ip-s1name">{{ t.innovationpage.s1name | default: en.innovationpage.s1name }}</h3>
+									<p id="ip-s1text">{{ t.innovationpage.s1text | default: en.innovationpage.s1text }}</p>
+								</li>
+								<li class="rp-step">
+									<span class="rp-step-num">2</span>
+									<h3 id="ip-s2name">{{ t.innovationpage.s2name | default: en.innovationpage.s2name }}</h3>
+									<p id="ip-s2text">{{ t.innovationpage.s2text | default: en.innovationpage.s2text }}</p>
+								</li>
+								<li class="rp-step">
+									<span class="rp-step-num">3</span>
+									<h3 id="ip-s3name">{{ t.innovationpage.s3name | default: en.innovationpage.s3name }}</h3>
+									<p id="ip-s3text">{{ t.innovationpage.s3text | default: en.innovationpage.s3text }}</p>
+								</li>
+							</ol>
+						</div>
+					</section>
+
+					<!-- 6. OUTCOMES  |  innovation > outcomes, outcomesanswers -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="innovation-outcomes">{{ t.innovation.outcomes | default: en.innovation.outcomes }}</p>
+							</div>
+							<div class="rp-outcomes-html" id="innovation-outcomesanswers">{{ t.innovation.outcomesanswers | default: en.innovation.outcomesanswers }}</div>
+						</div>
+					</section>
+
+					<!-- 7. EVIDENCE  |  innovationpage > case1…, c1… c3, quote; -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="ip-proofeyebrow">{{ t.innovationpage.proofeyebrow | default: en.innovationpage.proofeyebrow }}</p>
+								<h2 class="fh-h2" id="ip-prooftitle">{{ t.innovationpage.prooftitle | default: en.innovationpage.prooftitle }}</h2>
+							</div>
+							<div class="fh-grid fh-grid-2">
+								<article class="fh-card rp-case">
+									<h3 id="ip-case1name">{{ t.innovationpage.case1name | default: en.innovationpage.case1name }}</h3>
+									<p id="ip-case1text">{{ t.innovationpage.case1text | default: en.innovationpage.case1text }}</p>
+								</article>
+							</div>
+							<div class="rp-creds">
+								<div class="rp-cred"><p class="rp-cred-num" id="ip-c1num">{{ t.innovationpage.c1num | default: en.innovationpage.c1num }}</p><p id="ip-c1">{{ t.innovationpage.c1 | default: en.innovationpage.c1 }}</p></div>
+								<div class="rp-cred"><p class="rp-cred-num" id="ip-c2num">{{ t.innovationpage.c2num | default: en.innovationpage.c2num }}</p><p id="ip-c2">{{ t.innovationpage.c2 | default: en.innovationpage.c2 }}</p></div>
+								<div class="rp-cred"><p class="rp-cred-num" id="ip-c3num">{{ t.innovationpage.c3num | default: en.innovationpage.c3num }}</p><p id="ip-c3">{{ t.innovationpage.c3 | default: en.innovationpage.c3 }}</p></div>
+							</div>
+							<!-- Testimonial: hidden until there is a quote. Fill in innovationpage > quote, quotecite, then remove these comment markers.
+							<blockquote class="rp-quote">
+								<p id="ip-quote">{{ t.innovationpage.quote | default: en.innovationpage.quote }}</p>
+								<cite id="ip-quotecite">{{ t.innovationpage.quotecite | default: en.innovationpage.quotecite }}</cite>
+							</blockquote> -->
+						</div>
+					</section>
+
+					<!-- 8. TOOLKITS WE RECOMMEND  |  innovationpage > k1… k4… (links are set here in the HTML) -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="ip-toolseyebrow">{{ t.innovationpage.toolseyebrow | default: en.innovationpage.toolseyebrow }}</p>
+								<h2 class="fh-h2" id="ip-toolstitle">{{ t.innovationpage.toolstitle | default: en.innovationpage.toolstitle }}</h2>
+							</div>
+							<div class="fh-grid fh-grid-4">
+								<a class="fh-card rp-link-card" href="http://www.designkit.org/" target="_blank" rel="noopener">
+									<h3 id="ip-k1name">{{ t.innovationpage.k1name | default: en.innovationpage.k1name }}</h3>
+									<p id="ip-k1text">{{ t.innovationpage.k1text | default: en.innovationpage.k1text }}</p>
+									<span class="rp-link-more"><span class="ip-toolopen">{{ t.innovationpage.toolopen | default: en.innovationpage.toolopen }}</span> →</span>
+								</a>
+								<a class="fh-card rp-link-card" href="https://www.systemicdesigntoolkit.org/" target="_blank" rel="noopener">
+									<h3 id="ip-k2name">{{ t.innovationpage.k2name | default: en.innovationpage.k2name }}</h3>
+									<p id="ip-k2text">{{ t.innovationpage.k2text | default: en.innovationpage.k2text }}</p>
+									<span class="rp-link-more"><span class="ip-toolopen">{{ t.innovationpage.toolopen | default: en.innovationpage.toolopen }}</span> →</span>
+								</a>
+								<a class="fh-card rp-link-card" href="https://imaginari.es/new-metaphors/" target="_blank" rel="noopener">
+									<h3 id="ip-k3name">{{ t.innovationpage.k3name | default: en.innovationpage.k3name }}</h3>
+									<p id="ip-k3text">{{ t.innovationpage.k3text | default: en.innovationpage.k3text }}</p>
+									<span class="rp-link-more"><span class="ip-toolopen">{{ t.innovationpage.toolopen | default: en.innovationpage.toolopen }}</span> →</span>
+								</a>
+								<a class="fh-card rp-link-card" href="https://www.designinginsights.com/" target="_blank" rel="noopener">
+									<h3 id="ip-k4name">{{ t.innovationpage.k4name | default: en.innovationpage.k4name }}</h3>
+									<p id="ip-k4text">{{ t.innovationpage.k4text | default: en.innovationpage.k4text }}</p>
+									<span class="rp-link-more"><span class="ip-toolopen">{{ t.innovationpage.toolopen | default: en.innovationpage.toolopen }}</span> →</span>
+								</a>
+							</div>
+						</div>
+					</section>
+
+					<!-- 9. FAQ  |  innovationpage > faq1q/faq1a … faq5q/faq5a -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="ip-faqeyebrow">{{ t.innovationpage.faqeyebrow | default: en.innovationpage.faqeyebrow }}</p>
+								<h2 class="fh-h2" id="ip-faqtitle">{{ t.innovationpage.faqtitle | default: en.innovationpage.faqtitle }}</h2>
+							</div>
+							<div class="rp-faq">
+								<details class="rp-faq-item">
+									<summary id="ip-faq1q">{{ t.innovationpage.faq1q | default: en.innovationpage.faq1q }}</summary>
+									<p id="ip-faq1a">{{ t.innovationpage.faq1a | default: en.innovationpage.faq1a }}</p>
+								</details>
+								<details class="rp-faq-item">
+									<summary id="ip-faq2q">{{ t.innovationpage.faq2q | default: en.innovationpage.faq2q }}</summary>
+									<p id="ip-faq2a">{{ t.innovationpage.faq2a | default: en.innovationpage.faq2a }}</p>
+								</details>
+								<details class="rp-faq-item">
+									<summary id="ip-faq3q">{{ t.innovationpage.faq3q | default: en.innovationpage.faq3q }}</summary>
+									<p id="ip-faq3a">{{ t.innovationpage.faq3a | default: en.innovationpage.faq3a }}</p>
+								</details>
+								<details class="rp-faq-item">
+									<summary id="ip-faq4q">{{ t.innovationpage.faq4q | default: en.innovationpage.faq4q }}</summary>
+									<p id="ip-faq4a">{{ t.innovationpage.faq4a | default: en.innovationpage.faq4a }}</p>
+								</details>
+								<details class="rp-faq-item">
+									<summary id="ip-faq5q">{{ t.innovationpage.faq5q | default: en.innovationpage.faq5q }}</summary>
+									<p id="ip-faq5a">{{ t.innovationpage.faq5a | default: en.innovationpage.faq5a }}</p>
+								</details>
+							</div>
+						</div>
+					</section>
+
+					<!-- 10. CROSS-LINKS + CALL TO ACTION  |  innovationpage > crosslinks; innovation > contact, more -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<p class="rp-crosslinks" id="ip-crosslinks">{{ t.innovationpage.crosslinks | default: en.innovationpage.crosslinks }}</p>
+							<div class="fh-band">
+								<div class="fh-band-text">
+									<h2 id="innovation-contact">{{ t.innovation.contact | default: en.innovation.contact }}</h2>
+								</div>
+								<a href="{% include site/url.html to='contact' %}" class="fh-btn fh-btn-sun" id="innovation-more">{{ t.innovation.more | default: en.innovation.more }}</a>
+							</div>
+						</div>
+					</section>
+
+				</section>
+
+			<!-- Footer -->
+			{% include site/footer.html %}
+
+		</div>
+
+		<!-- Scripts -->
+		
+		<script src="/assets/js/jquery.min.js"></script>
+		<script src="/assets/js/jquery.dropotron.min.js"></script>
+		<script src="/assets/js/browser.min.js"></script>
+		<script src="/assets/js/breakpoints.min.js"></script>
+		<script src="/assets/js/util.js"></script>
+		<script src="/assets/js/main.js"></script>
+		<script src="/assets/js/site-lang.js"></script>
+		<!-- <script> 
+		$(function(){
+		$("#inject_footer").load("footer.html"); 
+		});
+		</script> -->
+
+	</body>
+</html>

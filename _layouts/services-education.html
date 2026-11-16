@@ -1,0 +1,369 @@
+---
+# Built once per language: see the pages that use this layout (e.g. index.html, fr/index.html).
+# Texts come from lang/<lang>.json; edit them there.
+---
+{%- include site/lang-vars.html -%}
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="{{ lang }}">
+	<head>
+		<title>{{ t.education.title | default: en.education.title | strip_html }} | Shakeri et al.</title>
+		{% include site/head-meta.html description='education.subtitle' %}
+		<meta charset="utf-8" />
+		<base href="/" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/fontawesome-all.min.css" media="print" onload="this.media='all'" />
+		<noscript><link rel="stylesheet" href="/assets/css/fontawesome-all.min.css" /></noscript>
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" />
+		<link rel="stylesheet" href="/assets/css/fresh.css" />
+		<link rel="icon" href="/images/logo/favicon.ico">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-DVME2JVJE7"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-DVME2JVJE7');
+		</script>
+	</head>
+	<body class="homepage is-preload fresh">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<!-- Logo -->
+						<!--<h1><a href="{% include site/url.html to='envirofy.eu' %}">Envirofy</a></h1>-->
+						<div class="container">
+							<div class="row">
+								<div class="col-4 col-4-medium col-6-small">
+									<a href="{% include site/url.html to='' %}" class="image featured" aria-label="Shakeri et al. home"><img src="/images/logo/shakeri_et_al.svg" width="166" height="38" alt="" class="site-logo"/></a>
+									
+								</div>
+								<div class="col-8 col-12-medium col-12-small">
+									<div class="container">
+									<nav id="nav" style="text-align: right;">
+										<ul>
+											<li><a id="nav-approach" href="{% include site/url.html to='approach' %}">{{ t.nav.approach | default: en.nav.approach }}</a></li>
+											<li class="current"><a id="nav-services" href="">{{ t.nav.services | default: en.nav.services }}</a>
+												<ul id="nav-serviceslist">
+													<li><a id="nav-servicesconsultancy" href="{% include site/url.html to='services-consultancy' %}">{{ t.nav.servicesconsultancy | default: en.nav.servicesconsultancy }}</a></li>
+													<li><a id="nav-servicesresearch" href="{% include site/url.html to='services-research' %}" title="{{ t.nav.servicesresearch }}">{{ t.nav.servicesresearch | default: en.nav.servicesresearch }}</a></li>
+													<li><a id="nav-serviceseducation"href="{% include site/url.html to='services-education' %}">{{ t.nav.serviceseducation | default: en.nav.serviceseducation }}</a></li>
+													<li><a id="nav-servicesinnovation"href="{% include site/url.html to='services-innovation' %}">{{ t.nav.servicesinnovation | default: en.nav.servicesinnovation }}</a></li>
+												</ul>
+											</li>
+											
+											<li><a id="nav-about" href="">{{ t.nav.about | default: en.nav.about }}</a>
+												<ul id="nav-aboutlist">
+													<li><a id="nav-aboutgozel" href="{% include site/url.html to='gozel' %}">{{ t.nav.aboutgozel | default: en.nav.aboutgozel }}</a></li>
+													<!-- <li><a id="nav-aboutHCD" href="{% include site/url.html to='designthinking' %}">{{ t.nav.aboutHCD | default: en.nav.aboutHCD }}</a></li> -->
+													<li><a id="nav-aboutpublications" href="{% include site/url.html to='publications' %}">{{ t.nav.aboutpublications | default: en.nav.aboutpublications }}</a></li>
+													<li><a id="nav-abouttalks" href="{% include site/url.html to='talks' %}">{{ t.nav.abouttalks | default: en.nav.abouttalks }}</a></li>
+												</ul>
+											</li>
+											<li><a id="nav-thinktank" href="{% include site/url.html to='think-tank/' %}">{{ t.nav.thinktank | default: en.nav.thinktank }}</a></li>
+											<li><a id="nav-contact" href="{% include site/url.html to='contact' %}">{{ t.nav.contact | default: en.nav.contact }}</a></li>
+											<li class="lang-li"><div class="lang-switch" role="group" aria-label="Language"><button type="button" data-set-lang="en" data-href="{{ alt_en }}">EN</button><button type="button" data-set-lang="fr" data-href="{{ alt_fr }}">FR</button><button type="button" data-set-lang="de" data-href="{{ alt_de }}">DE</button></div></li>
+										</ul>
+									</nav>
+								</div>
+								</div>
+							</div>
+						</div>
+				</section>
+
+				<section id="banner" id="education">
+					<header>
+						<div class="row">
+							<div class="col-6 col-6-medium col-12-small banner-text">
+								<p id="education-nav">{{ t.education.nav | default: en.education.nav }}</p>
+								<h2 id="education-title">{{ t.education.title | default: en.education.title }}</h2>
+								<p id="education-subtitle">{{ t.education.subtitle | default: en.education.subtitle }}</p>
+							</div>
+							<div class="col-6 col-6-medium col-12-small">
+								<img src="/images/gallery/education_training.webp" width="100%"/>
+								<!-- </div> -->
+							</div>
+						</div>
+					</header>
+				</section>
+
+			<!-- Main -->
+				<section id="main" class="rp-page">
+
+					<!-- 1. THREE WAYS TO LEARN WITH US  |  lang/*.json > educationpage > f1… f3… -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="ep-formatseyebrow">{{ t.educationpage.formatseyebrow | default: en.educationpage.formatseyebrow }}</p>
+								<h2 class="fh-h2" id="ep-formatstitle">{{ t.educationpage.formatstitle | default: en.educationpage.formatstitle }}</h2>
+							</div>
+							<div class="fh-grid fh-grid-3">
+								<article class="fh-card rp-format">
+									<h3 id="ep-f1name">{{ t.educationpage.f1name | default: en.educationpage.f1name }}</h3>
+									<p class="rp-question" id="ep-f1q">{{ t.educationpage.f1q | default: en.educationpage.f1q }}</p>
+									<dl class="rp-facts">
+										<dt class="ep-lenlabel">{{ t.educationpage.lenlabel | default: en.educationpage.lenlabel }}</dt><dd id="ep-f1len">{{ t.educationpage.f1len | default: en.educationpage.f1len }}</dd>
+										<dt class="ep-sizelabel">{{ t.educationpage.sizelabel | default: en.educationpage.sizelabel }}</dt><dd id="ep-f1size">{{ t.educationpage.f1size | default: en.educationpage.f1size }}</dd>
+										<dt class="ep-getlabel">{{ t.educationpage.getlabel | default: en.educationpage.getlabel }}</dt><dd id="ep-f1get">{{ t.educationpage.f1get | default: en.educationpage.f1get }}</dd>
+										<dt class="ep-forlabel">{{ t.educationpage.forlabel | default: en.educationpage.forlabel }}</dt><dd id="ep-f1for">{{ t.educationpage.f1for | default: en.educationpage.f1for }}</dd>
+									</dl>
+								</article>
+								<article class="fh-card rp-format">
+									<h3 id="ep-f2name">{{ t.educationpage.f2name | default: en.educationpage.f2name }}</h3>
+									<p class="rp-question" id="ep-f2q">{{ t.educationpage.f2q | default: en.educationpage.f2q }}</p>
+									<dl class="rp-facts">
+										<dt class="ep-lenlabel">{{ t.educationpage.lenlabel | default: en.educationpage.lenlabel }}</dt><dd id="ep-f2len">{{ t.educationpage.f2len | default: en.educationpage.f2len }}</dd>
+										<dt class="ep-sizelabel">{{ t.educationpage.sizelabel | default: en.educationpage.sizelabel }}</dt><dd id="ep-f2size">{{ t.educationpage.f2size | default: en.educationpage.f2size }}</dd>
+										<dt class="ep-getlabel">{{ t.educationpage.getlabel | default: en.educationpage.getlabel }}</dt><dd id="ep-f2get">{{ t.educationpage.f2get | default: en.educationpage.f2get }}</dd>
+										<dt class="ep-forlabel">{{ t.educationpage.forlabel | default: en.educationpage.forlabel }}</dt><dd id="ep-f2for">{{ t.educationpage.f2for | default: en.educationpage.f2for }}</dd>
+									</dl>
+								</article>
+								<article class="fh-card rp-format">
+									<h3 id="ep-f3name">{{ t.educationpage.f3name | default: en.educationpage.f3name }}</h3>
+									<p class="rp-question" id="ep-f3q">{{ t.educationpage.f3q | default: en.educationpage.f3q }}</p>
+									<dl class="rp-facts">
+										<dt class="ep-lenlabel">{{ t.educationpage.lenlabel | default: en.educationpage.lenlabel }}</dt><dd id="ep-f3len">{{ t.educationpage.f3len | default: en.educationpage.f3len }}</dd>
+										<dt class="ep-sizelabel">{{ t.educationpage.sizelabel | default: en.educationpage.sizelabel }}</dt><dd id="ep-f3size">{{ t.educationpage.f3size | default: en.educationpage.f3size }}</dd>
+										<dt class="ep-getlabel">{{ t.educationpage.getlabel | default: en.educationpage.getlabel }}</dt><dd id="ep-f3get">{{ t.educationpage.f3get | default: en.educationpage.f3get }}</dd>
+										<dt class="ep-forlabel">{{ t.educationpage.forlabel | default: en.educationpage.forlabel }}</dt><dd id="ep-f3for">{{ t.educationpage.f3for | default: en.educationpage.f3for }}</dd>
+									</dl>
+								</article>
+							</div>
+							<p class="rp-unsure" id="ep-choose4">{{ t.educationpage.choose4 | default: en.educationpage.choose4 }}</p>
+						</div>
+					</section>
+
+					<!-- 3. WHO IT'S FOR  |  educationpage > aud1… aud4… -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="ep-audeyebrow">{{ t.educationpage.audeyebrow | default: en.educationpage.audeyebrow }}</p>
+								<h2 class="fh-h2" id="ep-audtitle">{{ t.educationpage.audtitle | default: en.educationpage.audtitle }}</h2>
+							</div>
+							<div class="fh-grid fh-grid-4">
+								<article class="fh-card rp-audience">
+									<h3 id="ep-aud1name">{{ t.educationpage.aud1name | default: en.educationpage.aud1name }}</h3>
+									<p id="ep-aud1text">{{ t.educationpage.aud1text | default: en.educationpage.aud1text }}</p>
+								</article>
+								<article class="fh-card rp-audience">
+									<h3 id="ep-aud2name">{{ t.educationpage.aud2name | default: en.educationpage.aud2name }}</h3>
+									<p id="ep-aud2text">{{ t.educationpage.aud2text | default: en.educationpage.aud2text }}</p>
+								</article>
+								<article class="fh-card rp-audience">
+									<h3 id="ep-aud3name">{{ t.educationpage.aud3name | default: en.educationpage.aud3name }}</h3>
+									<p id="ep-aud3text">{{ t.educationpage.aud3text | default: en.educationpage.aud3text }}</p>
+								</article>
+								<article class="fh-card rp-audience">
+									<h3 id="ep-aud4name">{{ t.educationpage.aud4name | default: en.educationpage.aud4name }}</h3>
+									<p id="ep-aud4text">{{ t.educationpage.aud4text | default: en.educationpage.aud4text }}</p>
+								</article>
+							</div>
+						</div>
+					</section>
+
+					<!-- 4. TOPICS + HOW WE TEACH  |  tags: educationpage > t1… t6; teaching: education > how, howanswers -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<div class="fh-grid fh-grid-2">
+								<article class="fh-card">
+									<h2 id="education-what">{{ t.education.what | default: en.education.what }}</h2>
+									<ul class="rp-tags">
+										<li id="ep-t1">{{ t.educationpage.t1 | default: en.educationpage.t1 }}</li>
+										<li id="ep-t2">{{ t.educationpage.t2 | default: en.educationpage.t2 }}</li>
+										<li id="ep-t3">{{ t.educationpage.t3 | default: en.educationpage.t3 }}</li>
+										<li id="ep-t4">{{ t.educationpage.t4 | default: en.educationpage.t4 }}</li>
+										<li id="ep-t5">{{ t.educationpage.t5 | default: en.educationpage.t5 }}</li>
+										<li id="ep-t6">{{ t.educationpage.t6 | default: en.educationpage.t6 }}</li>
+									</ul>
+								</article>
+								<article class="fh-card rp-questions">
+									<h2 id="education-how">{{ t.education.how | default: en.education.how }}</h2>
+									<div id="education-howanswers">{{ t.education.howanswers | default: en.education.howanswers }}</div>
+								</article>
+							</div>
+						</div>
+					</section>
+
+					<!-- 5. HOW IT WORKS  |  educationpage > s1name/s1text … s4name/s4text -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="ep-processeyebrow">{{ t.educationpage.processeyebrow | default: en.educationpage.processeyebrow }}</p>
+								<h2 class="fh-h2" id="ep-processtitle">{{ t.educationpage.processtitle | default: en.educationpage.processtitle }}</h2>
+							</div>
+							<ol class="rp-steps">
+								<li class="rp-step">
+									<span class="rp-step-num">1</span>
+									<h3 id="ep-s1name">{{ t.educationpage.s1name | default: en.educationpage.s1name }}</h3>
+									<p id="ep-s1text">{{ t.educationpage.s1text | default: en.educationpage.s1text }}</p>
+								</li>
+								<li class="rp-step">
+									<span class="rp-step-num">2</span>
+									<h3 id="ep-s2name">{{ t.educationpage.s2name | default: en.educationpage.s2name }}</h3>
+									<p id="ep-s2text">{{ t.educationpage.s2text | default: en.educationpage.s2text }}</p>
+								</li>
+								<li class="rp-step">
+									<span class="rp-step-num">3</span>
+									<h3 id="ep-s3name">{{ t.educationpage.s3name | default: en.educationpage.s3name }}</h3>
+									<p id="ep-s3text">{{ t.educationpage.s3text | default: en.educationpage.s3text }}</p>
+								</li>
+								<li class="rp-step">
+									<span class="rp-step-num">4</span>
+									<h3 id="ep-s4name">{{ t.educationpage.s4name | default: en.educationpage.s4name }}</h3>
+									<p id="ep-s4text">{{ t.educationpage.s4text | default: en.educationpage.s4text }}</p>
+								</li>
+							</ol>
+						</div>
+					</section>
+
+					<!-- 6. WHAT PARTICIPANTS GAIN  |  educationpage > o1 … o4 -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="ep-outcomeseyebrow">{{ t.educationpage.outcomeseyebrow | default: en.educationpage.outcomeseyebrow }}</p>
+							</div>
+							<ul class="rp-outcomes rp-outcomes-2">
+								<li id="ep-o1">{{ t.educationpage.o1 | default: en.educationpage.o1 }}</li>
+								<li id="ep-o2">{{ t.educationpage.o2 | default: en.educationpage.o2 }}</li>
+								<li id="ep-o3">{{ t.educationpage.o3 | default: en.educationpage.o3 }}</li>
+								<li id="ep-o4">{{ t.educationpage.o4 | default: en.educationpage.o4 }}</li>
+							</ul>
+						</div>
+					</section>
+
+					<!-- 7. FREE RESOURCES  |  educationpage > r1… r3… (links are set here in the HTML) -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="ep-reseyebrow">{{ t.educationpage.reseyebrow | default: en.educationpage.reseyebrow }}</p>
+								<h2 class="fh-h2" id="ep-restitle">{{ t.educationpage.restitle | default: en.educationpage.restitle }}</h2>
+							</div>
+							<div class="fh-grid fh-grid-3">
+								<a class="fh-card rp-link-card" href="{% include site/url.html to='fact-checker' %}">
+									<h3 id="ep-r1name">{{ t.educationpage.r1name | default: en.educationpage.r1name }}</h3>
+									<p id="ep-r1text">{{ t.educationpage.r1text | default: en.educationpage.r1text }}</p>
+									<span class="rp-link-more"><span class="ep-resopen">{{ t.educationpage.resopen | default: en.educationpage.resopen }}</span> →</span>
+								</a>
+								<a class="fh-card rp-link-card" href="{% include site/url.html to='science-search' %}">
+									<h3 id="ep-r2name">{{ t.educationpage.r2name | default: en.educationpage.r2name }}</h3>
+									<p id="ep-r2text">{{ t.educationpage.r2text | default: en.educationpage.r2text }}</p>
+									<span class="rp-link-more"><span class="ep-resopen">{{ t.educationpage.resopen | default: en.educationpage.resopen }}</span> →</span>
+								</a>
+								<a class="fh-card rp-link-card" href="/resources/media%20literacy/Shakeri%20-%20Media%20Literacy%20Starter%20Kit.pdf" target="_blank" rel="noopener">
+									<h3 id="ep-r3name">{{ t.educationpage.r3name | default: en.educationpage.r3name }}</h3>
+									<p id="ep-r3text">{{ t.educationpage.r3text | default: en.educationpage.r3text }}</p>
+									<span class="rp-link-more"><span class="ep-resopen">{{ t.educationpage.resopen | default: en.educationpage.resopen }}</span> →</span>
+								</a>
+							</div>
+						</div>
+					</section>
+
+					<!-- 8. EVIDENCE  |  educationpage > p1 … p8 (places), c1… c3 (credentials), quote, quotecite -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="ep-proofeyebrow">{{ t.educationpage.proofeyebrow | default: en.educationpage.proofeyebrow }}</p>
+								<h2 class="fh-h2" id="ep-prooftitle">{{ t.educationpage.prooftitle | default: en.educationpage.prooftitle }}</h2>
+							</div>
+							<ul class="rp-tags rp-places">
+								<li id="ep-p1">{{ t.educationpage.p1 | default: en.educationpage.p1 }}</li>
+								<li id="ep-p2">{{ t.educationpage.p2 | default: en.educationpage.p2 }}</li>
+								<li id="ep-p3">{{ t.educationpage.p3 | default: en.educationpage.p3 }}</li>
+								<li id="ep-p4">{{ t.educationpage.p4 | default: en.educationpage.p4 }}</li>
+								<li id="ep-p5">{{ t.educationpage.p5 | default: en.educationpage.p5 }}</li>
+								<li id="ep-p6">{{ t.educationpage.p6 | default: en.educationpage.p6 }}</li>
+								<li id="ep-p7">{{ t.educationpage.p7 | default: en.educationpage.p7 }}</li>
+								<li id="ep-p8">{{ t.educationpage.p8 | default: en.educationpage.p8 }}</li>
+							</ul>
+							<div class="rp-creds">
+								<div class="rp-cred"><p class="rp-cred-num" id="ep-c1num">{{ t.educationpage.c1num | default: en.educationpage.c1num }}</p><p id="ep-c1">{{ t.educationpage.c1 | default: en.educationpage.c1 }}</p></div>
+								<div class="rp-cred"><p class="rp-cred-num" id="ep-c2num">{{ t.educationpage.c2num | default: en.educationpage.c2num }}</p><p id="ep-c2">{{ t.educationpage.c2 | default: en.educationpage.c2 }}</p></div>
+								<div class="rp-cred"><p class="rp-cred-num" id="ep-c3num">{{ t.educationpage.c3num | default: en.educationpage.c3num }}</p><p id="ep-c3">{{ t.educationpage.c3 | default: en.educationpage.c3 }}</p></div>
+							</div>
+							<!-- Testimonial: hidden until there is a quote. Fill in educationpage > quote, quotecite, then remove these comment markers.
+							<blockquote class="rp-quote">
+								<p id="ep-quote">{{ t.educationpage.quote | default: en.educationpage.quote }}</p>
+								<cite id="ep-quotecite">{{ t.educationpage.quotecite | default: en.educationpage.quotecite }}</cite>
+							</blockquote> -->
+						</div>
+					</section>
+
+					<!-- 9. FAQ  |  educationpage > faq1q/faq1a … faq5q/faq5a -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<div class="fh-section-head">
+								<p class="fh-eyebrow" id="ep-faqeyebrow">{{ t.educationpage.faqeyebrow | default: en.educationpage.faqeyebrow }}</p>
+								<h2 class="fh-h2" id="ep-faqtitle">{{ t.educationpage.faqtitle | default: en.educationpage.faqtitle }}</h2>
+							</div>
+							<div class="rp-faq">
+								<details class="rp-faq-item">
+									<summary id="ep-faq1q">{{ t.educationpage.faq1q | default: en.educationpage.faq1q }}</summary>
+									<p id="ep-faq1a">{{ t.educationpage.faq1a | default: en.educationpage.faq1a }}</p>
+								</details>
+								<details class="rp-faq-item">
+									<summary id="ep-faq2q">{{ t.educationpage.faq2q | default: en.educationpage.faq2q }}</summary>
+									<p id="ep-faq2a">{{ t.educationpage.faq2a | default: en.educationpage.faq2a }}</p>
+								</details>
+								<details class="rp-faq-item">
+									<summary id="ep-faq3q">{{ t.educationpage.faq3q | default: en.educationpage.faq3q }}</summary>
+									<p id="ep-faq3a">{{ t.educationpage.faq3a | default: en.educationpage.faq3a }}</p>
+								</details>
+								<details class="rp-faq-item">
+									<summary id="ep-faq4q">{{ t.educationpage.faq4q | default: en.educationpage.faq4q }}</summary>
+									<p id="ep-faq4a">{{ t.educationpage.faq4a | default: en.educationpage.faq4a }}</p>
+								</details>
+								<details class="rp-faq-item">
+									<summary id="ep-faq5q">{{ t.educationpage.faq5q | default: en.educationpage.faq5q }}</summary>
+									<p id="ep-faq5a">{{ t.educationpage.faq5a | default: en.educationpage.faq5a }}</p>
+								</details>
+							</div>
+						</div>
+					</section>
+
+					<!-- 10. CROSS-LINKS + CALL TO ACTION  |  educationpage > crosslinks; education > contact, more -->
+					<section class="fh-section">
+						<div class="fh-wrap">
+							<p class="rp-crosslinks" id="ep-crosslinks">{{ t.educationpage.crosslinks | default: en.educationpage.crosslinks }}</p>
+							<div class="fh-band">
+								<div class="fh-band-text">
+									<h2 id="education-contact">{{ t.education.contact | default: en.education.contact }}</h2>
+								</div>
+								<a href="{% include site/url.html to='contact' %}" class="fh-btn fh-btn-sun" id="education-more">{{ t.education.more | default: en.education.more }}</a>
+							</div>
+						</div>
+					</section>
+
+				</section>
+
+			<!-- Footer -->
+			{% include site/footer.html %}
+
+		</div>
+
+		<!-- Scripts -->
+		 
+		<script src="/assets/js/jquery.min.js"></script>
+		<script src="/assets/js/jquery.dropotron.min.js"></script>
+		<script src="/assets/js/browser.min.js"></script>
+		<script src="/assets/js/breakpoints.min.js"></script>
+		<script src="/assets/js/util.js"></script>
+		<script src="/assets/js/main.js"></script>
+		<script src="/assets/js/site-lang.js"></script>
+		<!-- <script> 
+		$(function(){
+		$("#inject_footer").load("footer.html"); 
+		});
+		</script> -->
+
+	</body>
+</html>

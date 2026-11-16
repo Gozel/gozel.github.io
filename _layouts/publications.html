@@ -1,0 +1,263 @@
+---
+# Built once per language: see the pages that use this layout (e.g. index.html, fr/index.html).
+# Texts come from lang/<lang>.json; edit them there.
+---
+{%- include site/lang-vars.html -%}
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="{{ lang }}">
+	<head>
+		<title>{{ t.publications.title | default: en.publications.title | strip_html }} | Shakeri et al.</title>
+		{% include site/head-meta.html description='publications.abstract' %}
+		<meta charset="utf-8" />
+		<base href="/" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/fontawesome-all.min.css" media="print" onload="this.media='all'" />
+		<noscript><link rel="stylesheet" href="/assets/css/fontawesome-all.min.css" /></noscript>
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" />
+		<link rel="stylesheet" href="/assets/css/fresh.css" />
+		
+		<link rel="icon" href="/images/logo/favicon.ico">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-DVME2JVJE7"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-DVME2JVJE7');
+		</script>
+	</head>
+	<body class="no-sidebar is-preload fresh">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<!-- Logo -->
+						<!--<h1><a href="{% include site/url.html to='' %}">Envirofy</a></h1>-->
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+
+									<!-- Portfolio -->
+									<section>
+										<div class="row">
+											<div class="col-4 col-4-medium col-6-small">
+												<a href="{% include site/url.html to='' %}" class="image featured" aria-label="Shakeri et al. home"><img src="/images/logo/shakeri_et_al.svg" width="166" height="38" alt="" class="site-logo"/></a>
+												
+											</div>
+											<div class="col-8 col-6-medium col-12-small">
+												<div class="container">
+													<nav id="nav" style="text-align: right;">
+														<ul>
+															<li><a id="nav-approach" href="{% include site/url.html to='approach' %}">{{ t.nav.approach | default: en.nav.approach }}</a></li>
+															<li><a id="nav-services" href="">{{ t.nav.services | default: en.nav.services }}</a>
+																<ul id="nav-serviceslist">
+																	<li><a id="nav-servicesconsultancy" href="{% include site/url.html to='services-consultancy' %}">{{ t.nav.servicesconsultancy | default: en.nav.servicesconsultancy }}</a></li>
+																	<li><a id="nav-servicesresearch" href="{% include site/url.html to='services-research' %}" title="{{ t.nav.servicesresearch }}">{{ t.nav.servicesresearch | default: en.nav.servicesresearch }}</a></li>
+																	<li><a id="nav-serviceseducation"href="{% include site/url.html to='services-education' %}">{{ t.nav.serviceseducation | default: en.nav.serviceseducation }}</a></li>
+																	<li><a id="nav-servicesinnovation"href="{% include site/url.html to='services-innovation' %}">{{ t.nav.servicesinnovation | default: en.nav.servicesinnovation }}</a></li>
+																</ul>
+															</li>
+															
+															<li class="current"><a id="nav-about" href="">{{ t.nav.about | default: en.nav.about }}</a>
+																<ul id="nav-aboutlist">
+																	<li><a id="nav-aboutgozel" href="{% include site/url.html to='gozel' %}">{{ t.nav.aboutgozel | default: en.nav.aboutgozel }}</a></li>
+																	<!-- <li><a id="nav-aboutHCD" href="{% include site/url.html to='designthinking' %}">{{ t.nav.aboutHCD | default: en.nav.aboutHCD }}</a></li> -->
+																	<li><a id="nav-aboutpublications" href="{% include site/url.html to='publications' %}">{{ t.nav.aboutpublications | default: en.nav.aboutpublications }}</a></li>
+																	<li><a id="nav-abouttalks" href="{% include site/url.html to='talks' %}">{{ t.nav.abouttalks | default: en.nav.abouttalks }}</a></li>
+																</ul>
+															</li>
+															<li><a id="nav-thinktank" href="{% include site/url.html to='think-tank/' %}">{{ t.nav.thinktank | default: en.nav.thinktank }}</a></li>
+															<li><a id="nav-contact" href="{% include site/url.html to='contact' %}">{{ t.nav.contact | default: en.nav.contact }}</a></li>
+															<li class="lang-li"><div class="lang-switch" role="group" aria-label="Language"><button type="button" data-set-lang="en" data-href="{{ alt_en }}">EN</button><button type="button" data-set-lang="fr" data-href="{{ alt_fr }}">FR</button><button type="button" data-set-lang="de" data-href="{{ alt_de }}">DE</button></div></li>
+														</ul>
+													</nav>
+												</div>
+											</div>
+										</div>
+									</section>
+
+								</div>
+							</div>
+						</div>
+
+				</section>
+
+				<section id="banner" id="publications">
+					<header>
+						<div class="row">
+							<div class="col-6 col-6-medium col-12-small banner-text">
+								<h2 id="publications-title">{{ t.publications.title | default: en.publications.title }}</h2>
+								<p id="publications-abstract">{{ t.publications.abstract | default: en.publications.abstract }}</p>
+								<p></p>
+							</div>
+							<div class="col-6 col-6-medium col-12-small">
+								<img src="/images/gallery/publications.webp" width="100%"/>
+								
+							</div>
+						</div>
+					</header>
+					<!-- <header>
+						<div class="row" style="padding: 5em 5em 0em 5em;">
+							<div class="col-6 col-6-medium col-12-small">
+								<h2 style="text-align: center; color: white;" id="publications-title">{{ t.publications.title | default: en.publications.title }}</h2>
+							</div>
+							<div class="col-6 col-6-medium col-12-small">
+									<header style="background-color: #d52349">
+										<p style="text-align: center; color: white;" id="publications-abstract" >{{ t.publications.abstract | default: en.publications.abstract }}</p>
+									</header>
+							</div>
+						</div>
+					</header> -->
+				</section>
+
+			<!-- Main -->
+				<section id="main" id="publications">
+					<div class="container">
+							<article class="box post">
+								
+								<header>
+									<h3><a name="publications" id="publications-list">{{ t.publications.list | default: en.publications.list }}</a></h3>
+								</header>	
+									<header>
+										<h4><a name="2025">2025</a></h4>
+									</header>
+									<ul>
+										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">L. Kuijer, K. Kaipainen, N.J. Bidwell, M. Fiedler, A. Friday, M. Hassenzahl, C. Lallemand, M. Laschke, D. Lockton, T. Olsson, A. Raake, K. Väänänen, E. Sari, G. Shakeri</span>: <span class="envirofy-papers-title">Towards a HCI Community that Prioritises Environmental Sustainability: Reflections on a Collection of Fictions</span> In <span class="envirofy-papers-publication">CHI</span>, 2025.<a class="papercite_doi" href="https://doi.org/10.1145/3706599.3716223"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
+									</ul>
+									<header>
+										<h4><a name="2024">2024</a></h4>
+									</header>
+									<ul>
+										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Yu, T., Shakeri, G., Koelle, M.</span>: <span class="envirofy-papers-title">"If you don't feel guilty, you won't take responsibility" - Co-Speculating on Digital Technologies That Encourage Sustainable Consumption </span> In <span class="envirofy-papers-publication">NordiCHI</span>, 2024.<a class="papercite_doi" href="https://dl.acm.org/doi/10.1145/3679318.3685374"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
+										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Di Campli San Vito, P., Yang, X., Ross, J., Shakeri, G., Brewster, S., Venkatesh, S., Street, A., Fachner, J., Fernie, P., Muller-Rodriguez, L., Hung Hsu, M., Odell-Miller, H., Shaji, H., Itaborai, P., Farina, N., Banerjee, S., Kirke, A., and Miranda, E.</span>: <span class="envirofy-papers-title">RadioMe: Adaptive Radio with Music Intervention and Reminder System for People with Dementia in Their Own Home </span> In <span class="envirofy-papers-publication">Augmented Humans</span>, 2024.<a class="papercite_doi" href="https://eprints.gla.ac.uk/323067/"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
+										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">N. Kumar, A. Friday, A. Light, J. Jacques, M.L. Mauriello, K. Gerling, R. Soden, G. Shakeri , N.J. Bidwell, V. Sharma</span>: <span class="envirofy-papers-title">There is no Plan(et) B: On sustainability in/and HCI</span> In <span class="envirofy-papers-publication">IX Interactions</span>, 2024.<a class="papercite_doi" href="https://interactions.acm.org/blog/view/there-is-no-planet-b-on-sustainability-and-hci"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
+										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Kaiser, J.-N., Yu, T., Koelle, M., Shakeri, G.</span>: <span class="envirofy-papers-title">Scan for Sustainability: Designing Interventions with the Behaviour Change Wheel to Support In-Store Sustainable Grocery Shopping.</span> In <span class="envirofy-papers-publication">Arxiv</span>, 2024.<a class="papercite_doi" href="/publications/.pdf"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
+									</ul>	
+									<header>
+										<h4><a name="2023">2023</a></h4>
+									</header>
+									<ul>
+										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Shakeri, G., Jung, F., Galeote, D., Altarriba-Bertran, F., Friday, A.</span>: <span class="envirofy-papers-title">Towards Supporting Sustainable Grocery Shopping through Joyful Technology: Annotated Portfolio of Speculative Ideas.</span> In <span class="envirofy-papers-publication">arxiv.org</span>, 2023.<a class="papercite_doi" href="https://arxiv.org/abs/2309.05670"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
+										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Druschba, M., Shakeri, G.</span>: <span class="envirofy-papers-title">Scale-Score: Food Label to Support Nutritious and Sustainable Online Grocery Shopping.</span> In <span class="envirofy-papers-publication">ICT4S</span>, 2023.<a class="papercite_doi" href="https://arxiv.org/abs/2309.03233"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
+										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Druschba, M., Shakeri, G.</span>: <span class="envirofy-papers-title">Scale-Score: Investigation of a Meta yet Multi-level Label to Support Nutritious and Sustainable Food Choices When Online Grocery Shopping.</span> In <span class="envirofy-papers-publication">arxiv.org</span>, 2023.<a class="papercite_doi" href="https://arxiv.org/abs/2309.04024"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
+										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Di Campli San Vito, P., Shakeri, G., Ross, J. Yang, X., Brewster, S.</span>: <span class="envirofy-papers-title">Development of a Real-Time Stress Detection System for Older Adults with Heart Rate Data.</span> In <span class="envirofy-papers-publication">PETRA</span>, 2023.<a class="papercite_doi" href="https://doi.org/10.1145/3594806.3594817"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
+										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Shakeri, G.</span>: <span class="envirofy-papers-title">Hedonistic Sustainability: Joy as a Fundamental Component in Sustainability Communication.</span> In <span class="envirofy-papers-publication">CHI 2023 Workshop: HCI for Climate Change: Imagining Sustainable Futures</span>, 2023.<a class="papercite_doi" href="/publications/CHI2023_Workshop.pdf"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
+									</ul>
+
+									<header>
+										<h4><a name="2022">2022</a></h4>
+									</header>
+									<ul>
+										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Shakeri, G.</span>: <span class="envirofy-papers-title">Characteristics of a CS Graduate Student.</span> In <span class="envirofy-papers-publication">ARXIV</span>, 2022.<a class="papercite_doi" href="/publications/CS2023_Characteristics_of_a_CS_Graduate_Student.pdf"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
+										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Shakeri, G., Jung, F., Altarriban, F. B., Galeote, D., Friday, A.</span>: <span class="envirofy-papers-title">Eco-Joy: Imagining Sustainable and Joyful Food Eco-label Futures.</span> In <span class="envirofy-papers-publication">NordiCHI 2022 Workshop</span>, 2022.<a class="papercite_doi" href="/publications/NordiCHI_2022_EcoJoy_Workshop.pdf"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
+										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Shakeri, G.</span>: <span class="envirofy-papers-title">Digital Sustainable Future?: A Chat with Scientists.</span> In <span class="envirofy-papers-publication">CHI 2022 Online Workshop: Feminist Voices about Ecological Issues in HCI</span>, 2022.<a class="papercite_doi" href="/publications/CHI_2022_Eco_Feminism.pdf"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
+									</ul>
+
+									<header>
+										<h4><a name="2021">2021</a></h4>
+									</header>
+									<ul>
+										<!--<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Last, F., Last, F., Last, F.</span>: <span class="envirofy-papers-title">Amazing Paper Title.</span> In <span class="envirofy-papers-publication">Amazing Venue</span>, 2021.<a class="papercite_doi" href="#"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>-->
+										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Nicolas Farina, Alex Street, Alexis Kirke, Jörg Fachner, Helen Odell-Miller, David Moffat, Satvik Venkatesh, Gözel Shakeri, Stephen Brewster, Sube Banerjee, and Eduardo Reck Miranda</span>: <span class="envirofy-papers-title">Real-time radio remixing for people with mild to moderate dementia who live alone, incorporating agitation reduction, and reminders (RadioMe): A Protocol paper.</span> Submitted to <span class="envirofy-papers-publication">International Journal of Human-Computer Studies</span>, Special Issue on <span class="envirofy-papers-publication">Advances in Human-Centred Dementia Technology</span>, 2021 <a class="papercite_doi" href=""><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a> </li>
+										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Shakeri, G., McCallum, C. H.</span>: <span class="envirofy-papers-title">Envirofy: Behaviour Change Wheel based Tool for Sustainable Online Grocery Shopping.</span> In <span class="envirofy-papers-publication">INTERACT</span>, 2021.<a class="papercite_doi" href="/publications/Interact_2021_Envirofy_Workshop.pdf"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
+										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Shakeri, G., McCallum, C. H.</span>: <span class="envirofy-papers-title">Envirofy your Shop:  a real time tool to support eco-friendly food purchases online.</span> <span class="envirofy-papers-publication">Climate Exp0</span>, 2021.</li>
+											<ul>
+												<li><a href="https://youtu.be/LJzZp3XXfVg">2 minute presentation; Climate Exp0 2021</a></li>
+												<li><a href="/publications/ClimateExpo_2021_Poster.pdf">Poster</a></li>
+											</ul>
+										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Shakeri, G., McCallum, C. H.</span>: <span class="envirofy-papers-title">Envirofy: a Real-time Tool to Support Eco-friendly Food Purchases Online.</span> In <span class="envirofy-papers-publication">CHI Workshops/Symposia</span>, 2021.<a class="papercite_doi" href="/publications/CHI_2021_Envirofy_HumanFoodInteraction_Workshop.pdf"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
+										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Shakeri, G., McCallum, C. H.</span>: <span class="envirofy-papers-title">Envirofy your Shop: Development of a Real-time Tool to Support Eco-friendly Food Purchases Online.</span> In <span class="envirofy-papers-publication">CHI Late-Breaking-Work</span>, 2021.<a class="papercite_doi" href="/publications/CHI_2021_LBW_Envirofy Your Shop.pdf"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a> 
+											<ul>
+												<li><a href="https://youtu.be/wnGr3ecfH2Y">5 minute presentation; CHI 2021</a></li>
+												<li><a href="https://youtu.be/xO3nlv6LWto">30 second preview; CHI 2021</a></li>
+												<li><a href="/publications/CHI2021_LBW_Envirofy_Poster.pdf">Poster</a></li>
+											</ul>
+										</li>
+										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Shakeri, G., Brewster, S., Vankatesh, S., Moffat, D., Kirke, A., Fachner, J., Odell-Miller, H., Street, A., Farina, N., Banerjee, S., Reck Miranda, E.</span>: <span class="envirofy-papers-title">RadioMe:  challenges during the development of a real time tool to support People with Dementia.</span> In <span class="envirofy-papers-publication">CHI Workshops on Designing Interactions for the Ageing Populations – AddressingGlobal Challenges</span>, 2021.<a class="papercite_doi" href="/publications/CHI_2021_AgingPopulations_Workshop.pdf"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
+										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Vankatesh, S., Moffat, D., Kirke, A., Shakeri, G., Brewster, S., Fachner, J., Odell-Miller, H., Street, A., Farina, N., Banerjee, S., Reck Miranda, E.</span>: <span class="envirofy-papers-title">Artificially Synthesising Data for Audio Classification and Segmentation to Improve Speech and Music Detection in Radio Broadcast.</span> In <span class="envirofy-papers-publication">ICASSP</span>, 2021.<a class="papercite_doi" href="https://doi.org/10.1109/icassp39728.2021.9413597"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
+										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Shakeri, G., Brewster, S.</span>: <span class="envirofy-papers-title">Dynamic Cutaneous Push Messages from the Steering Wheel.</span> In <span class="envirofy-papers-publication">ARXIV</span>, 2021.<a class="papercite_doi" href="/publications/WorldHaptics_2021_Dynamic_Cutaneous_Push.pdf"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
+										
+									</ul>
+
+									<header>
+										<h4><a name="2020">2020</a></h4>
+									</header>
+									<ul>
+										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Shakeri, G.</span>: <span class="envirofy-papers-title">Multimodal feedback for mid-air gestures when driving.</span> In <span class="envirofy-papers-publication">Ph.D. Thesis</span>, 2020.<a class="papercite_doi" href="/publications/2020_Dissertation.pdf"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
+										<ul>
+											<li class="envirofy-papers-entry">Short-listed for <span class="envirofy-papers-title">SICSA Best Thesis Award</span>, 2020.<a class="papercite_doi" href="/publications/SICSA_2020 PhD Thesis Award Presentation - Multimodal Feedback for Mid-air Gestures when Driving.pptx"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
+											<li class="envirofy-papers-entry">2nd prize at <span class="envirofy-papers-title">Science Slam</span>, 2018.<a class="papercite_doi" href="https://www.youtube.com/watch?v=-kEmFw36Pxs"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
+										</ul>
+										
+									</ul>
+
+									<header>
+										<h4><a name="2019">2019</a></h4>
+									</header>
+									<ul>
+										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Shakeri, G., Freeman, E., Andersson, C., Frier, W., Iodice, M., Long, B., Georgiou, O.</span>: <span class="envirofy-papers-title">Three-in-one: Levitation, ParametricAudio, and Mid-Air Haptic Feedback.</span> In <span class="envirofy-papers-publication">CHI</span>, 2019.<a class="papercite_doi" href="/publications/CHI_2019_Three-in-one: Levitation, ParametricAudio, and Mid-Air Haptic Feedback.pdf"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
+										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Di Campli San Vito, P., Shakeri, G., Brewster, S., Pollick, F., Brown, E., Skrypchuk, L., Mouzakitis, A.</span>: <span class="envirofy-papers-title">Haptic Navigation Cues on the Steering Wheel.</span> In <span class="envirofy-papers-publication">CHI</span>, 2019.<a class="papercite_doi" href="/publications/CHI_2019_Paddy_Haptic_Navigation_on_the_Steering_Wheel_internal.pdf"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
+										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Shakeri, G., Freeman, E., Brewster, S.</span>: <span class="envirofy-papers-title">Multimodal Feedback for Mid-Air Gestures during the Lane Change Task.</span> In <span class="envirofy-papers-publication">ARXIV</span>, 2019.<a class="papercite_doi" href="/publications/AutoUI2019.pdf"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
+									</ul>
+
+									<header>
+										<h4><a name="2018">2018</a></h4>
+									</header>
+									<ul>
+										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Shakeri, G., Williamson, J. H., Brewsters, S.</span>: <span class="envirofy-papers-title">May  the  Force  Be  with  You:   Ultrasound  Haptic  Feedback  for  Mid-Air  Gesture Interaction in Cars.</span> In <span class="envirofy-papers-publication">AutoUI</span>, 2018.<a class="papercite_doi" href="/publications/AutoUI_2018_May the Force Be with You: Ultrasound Haptic Feedback forMid-Air Gesture Interaction in Cars.pdf"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
+									</ul>
+
+									<header>
+										<h4><a name="2017">2017</a></h4>
+									</header>
+									<ul>
+										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Loriet, A., Shakeri, G.</span>: <span class="envirofy-papers-title">Agent  Metaphor  for  Autonomous  Driving.</span> In <span class="envirofy-papers-publication">DIS Workshops on Setting the Stage with Metaphors for Interaction</span>, 2017.</li>
+										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Shakeri, G., Williamson, J. H., Brewsters, S.</span>: <span class="envirofy-papers-title">Bimodal  Feedback  for  In-Car  Mid-Air  Gesture  Interaction.</span> In <span class="envirofy-papers-publication">ICMI</span>, 2017.<a class="papercite_doi" href="/publications/ICMI_2017_Bimodal Feedback for In-Car Mid-Air Gesture Interaction.pdf"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
+										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Shakeri, G., Williamson, J. H., Brewsters, S.</span>: <span class="envirofy-papers-title">Novel Multimodal Feedback Techniques for In-Car Mid-Air Gesture Interaction.</span> In <span class="envirofy-papers-publication">AutoUI</span>, 2017.<a class="papercite_doi" href="/publications/AutoUI_2017_Novel Multimodal Feedback Techniques for In-Car Mid-AirGesture Interaction.pdf"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
+									</ul>
+
+									<header>
+										<h4><a name="2016">2016</a></h4>
+									</header>
+									<ul>
+										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Shakeri, G., Ng, A., Williamson, J. H., Brewsters, S.</span>: <span class="envirofy-papers-title">Evaluating  Haptic  Patterns  on  a  Steering  Wheel.</span> In <span class="envirofy-papers-publication">AutoUI</span>, 2016.<a class="papercite_doi" href="/publications/AutoUI_2016_Evaluation of Haptic Patterns on a Steering Wheel.pdf"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
+										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Shakeri, G.</span>: <span class="envirofy-papers-title">Novel Multimodal Mid-Air Gesture Displays for Drivers.</span> In <span class="envirofy-papers-publication">SICSA HCI DC</span>, 2016.<a class="papercite_doi" href="/publications/SICSA_2016_HCI_DC.pdf"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
+										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Shakeri, G., Ng, A., Williamson, J. H., Brewsters, S.</span>: <span class="envirofy-papers-title">Evaluating Haptic Feedback on a Steering Wheel in a Simulated Driving Scenario.</span> In <span class="envirofy-papers-publication">CHI LBW</span>, 2016.<a class="papercite_doi" href="/publications/CHI_2016_Evaluating Haptic Feedback on aSteering Wheel in a Simulated DrivingScenario.pdf"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
+										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Freeman E., Vo D., Wilson G., Shakeri G., and Brewster S.</span>: <span class="envirofy-papers-title">Towards Mid-Air Haptic Widgets.</span> In <span class="envirofy-papers-publication">CHI Workshops on Mid-Air Haptics and Displays:  Systems forUn-instrumented Mid-Air Interactions.</span>, 2016.<a class="papercite_doi" href="/publications/CHI_2016_MidAirHaptics.pdf"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
+									</ul>
+								
+							</article>
+
+					</div>
+				</section>
+
+			<!-- Footer -->
+				{% include site/footer.html %}
+
+		<!-- Scripts -->
+		
+		<script src="/assets/js/jquery.min.js"></script>
+		<script src="/assets/js/jquery.dropotron.min.js"></script>
+		<script src="/assets/js/browser.min.js"></script>
+		<script src="/assets/js/breakpoints.min.js"></script>
+		<script src="/assets/js/util.js"></script>
+		<script src="/assets/js/main.js"></script>
+		<script src="/assets/js/site-lang.js"></script>
+		<!-- <script> 
+			$(function(){
+			$("#inject_footer").load("footer.html"); 
+			});
+		</script> -->
+
+	</body>
+</html>
