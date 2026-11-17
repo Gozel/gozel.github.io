@@ -1943,3 +1943,38 @@ body.fresh .tt-post {
 	}
 
 }
+
+/* LinkedIn link (footer, Contact, About Gözel) */
+body.fresh .linkedin-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+}
+
+	body.fresh .linkedin-link span {
+		font-style: normal;
+	}
+
+	body.fresh .linkedin-icon {
+		flex: none;
+	}
+
+	body.fresh #footer .footer-social .linkedin-link {
+		opacity: 0.85;
+	}
+
+	body.fresh #footer .footer-social .linkedin-link:hover {
+		opacity: 1;
+	}
+
+	body.fresh .contact-actions {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 12px;
+	}
+
+		body.fresh .contact-actions .button,
+		body.fresh .contact-actions .fh-btn {
+			margin: 0;
+		}

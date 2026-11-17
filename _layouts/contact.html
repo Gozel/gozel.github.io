@@ -111,7 +111,7 @@
 							 <h2 id="contact-collab">{{ t.contact.collab | default: en.contact.collab }}</h2>
 						</header>
 						<p id="contact-content">{{ t.contact.content | default: en.contact.content }}</p>
-						<p><a href="mailto:gozel@shakeri.eu?subject=Discovery Chat&body=[Note:%20Please%20don't%20forget%20to%20provide%20Name,%20Organisation,%20and Website%20(if%20applicable).]" class="button" id="contact-more">{{ t.contact.more | default: en.contact.more }}</a></p>
+						<p class="contact-actions"><a href="mailto:gozel@shakeri.eu?subject=Discovery Chat&body=[Note:%20Please%20don't%20forget%20to%20provide%20Name,%20Organisation,%20and Website%20(if%20applicable).]" class="button" id="contact-more">{{ t.contact.more | default: en.contact.more }}</a> {% include site/linkedin.html class="fh-btn fh-btn-ghost" label="LinkedIn" %}</p>
 					</article>
 
 				</div>
