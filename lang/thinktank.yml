@@ -1,11 +1,17 @@
 # Interface labels for Think Tank pages, per language of the piece.
 # category / audience: the keys on the left are what you write in a piece's header
 # (e.g. "category: research-digest"); the text on the right is what readers see.
+# filter_*: the filter buttons on the overview page.
 de:
   name: Deutsch
   back: "← Alle Think-Tank-Beiträge"
   readmore: Weiterlesen
   for: "Für:"
+  filter_by: Filtern nach
+  filter_category: "Format:"
+  filter_audience: "Für:"
+  filter_all: Alle
+  filter_none: "Keine Beiträge für diese Auswahl."
   category:
     think-piece: Denkanstoß
     conversation: Gespräch
@@ -23,6 +29,11 @@ fr:
   back: "← Toutes les publications"
   readmore: Lire la suite
   for: "Pour&nbsp;:"
+  filter_by: Filtrer par
+  filter_category: "Format&nbsp;:"
+  filter_audience: "Pour&nbsp;:"
+  filter_all: Tout
+  filter_none: "Aucune publication pour cette sélection."
   category:
     think-piece: Tribune
     conversation: Conversation
@@ -40,6 +51,11 @@ en:
   back: "← All think tank pieces"
   readmore: Read more
   for: "For:"
+  filter_by: Filter by
+  filter_category: "Format:"
+  filter_audience: "For:"
+  filter_all: All
+  filter_none: "No pieces for this selection."
   category:
     think-piece: Think piece
     conversation: Conversation

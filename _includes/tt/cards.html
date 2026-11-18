@@ -17,7 +17,9 @@
 	{%- assign versions = en_version | concat: other_versions %}
 	{%- assign langs = versions | map: "slug" | join: " / " | upcase %}
 	{%- assign shown = versions | where: "slug", include.lang | first | default: versions.first %}
-	<div class="tt-piece">
+	{%- assign first = versions.first %}
+	{%- assign piece_audience = first.audience | join: "," | split: "," | join: " " | strip %}
+	<div class="tt-piece" data-category="{{ first.category }}" data-audience="{{ piece_audience }}">
 		{%- for doc in versions %}
 		{%- assign t = site.data.thinktank[doc.slug] | default: site.data.thinktank.en %}
 		{%- capture cover %}{% if doc.cover %}{% include tt/src.html src=doc.cover piece=piece.name %}{% endif %}{% endcapture %}

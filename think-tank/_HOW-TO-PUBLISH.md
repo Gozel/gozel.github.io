@@ -38,9 +38,13 @@ think-tank/
 4. Write the text below the header.
 
 Category and audience appear as tags on the overview card and above the title, translated
-into the piece's language. The translations live in `_data/thinktank.yml`: add a line there
+into the piece's language. The translations live in `lang/thinktank.yml`: add a line there
 to create a new category or audience. A value missing from that file is shown exactly as
 written, so a typo is easy to spot.
+
+The overview page has filter buttons for format (category) and audience. They build
+themselves from the published pieces: a row only appears once there are at least two
+different values to choose from, and pieces for `everybody` show under every audience.
 
 Only want one language? Delete the other file. The language buttons disappear automatically.
 

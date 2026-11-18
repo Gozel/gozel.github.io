@@ -65,3 +65,54 @@ if (document.querySelector(".tt-grid")) {
 		});
 	});
 }
+
+/* ---------- Overview filters ---------- */
+
+// Buttons from _includes/tt/filters.html. One choice per group; the choice is kept in
+// the address (e.g. ?category=think-piece&audience=business) so a filtered view can be shared.
+const ttFilters = document.querySelector(".tt-filters");
+if (ttFilters) {
+	const groups = [...ttFilters.querySelectorAll("[data-filter]")];
+	const none = ttFilters.querySelector(".tt-filter-none");
+	const params = new URLSearchParams(location.search);
+
+	const choice = group => group.querySelector('.tt-filter[aria-pressed="true"]')?.dataset.value || "";
+
+	const select = (group, value) => {
+		const buttons = [...group.querySelectorAll(".tt-filter")];
+		const target = buttons.find(b => b.dataset.value === value) || buttons[0];
+		buttons.forEach(b => b.setAttribute("aria-pressed", b === target ? "true" : "false"));
+	};
+
+	const apply = () => {
+		const chosen = {};
+		groups.forEach(g => { chosen[g.dataset.filter] = choice(g); });
+		let shown = 0;
+		ttPieces.forEach(piece => {
+			const audiences = (piece.dataset.audience || "").split(" ");
+			const ok = (!chosen.category || piece.dataset.category === chosen.category)
+				&& (!chosen.audience || audiences.includes(chosen.audience) || audiences.includes("everybody"));
+			piece.hidden = !ok;
+			if (ok) shown++;
+		});
+		none.hidden = shown > 0;
+		const url = new URL(location.href);
+		groups.forEach(g => {
+			if (chosen[g.dataset.filter]) url.searchParams.set(g.dataset.filter, chosen[g.dataset.filter]);
+			else url.searchParams.delete(g.dataset.filter);
+		});
+		history.replaceState(null, "", url);
+	};
+
+	groups.forEach(g => {
+		select(g, params.get(g.dataset.filter) || "");
+		g.addEventListener("click", e => {
+			const button = e.target.closest(".tt-filter");
+			if (!button) return;
+			select(g, button.dataset.value);
+			apply();
+		});
+	});
+	ttFilters.hidden = false;
+	apply();
+}

@@ -1,0 +1,47 @@
+{%- comment -%}
+	Filter buttons above the Think Tank cards (overview page only). Built from the
+	category / audience of the published pieces: a group only appears when there are
+	at least two choices. "everybody" is not a choice: those pieces match every audience.
+	Labels come from lang/thinktank.yml. Hidden until think-tank.js turns it on.
+	{% include tt/filters.html lang=lang %}
+{%- endcomment -%}
+{%- assign f = site.data.thinktank[include.lang] | default: site.data.thinktank.en -%}
+{%- assign used_categories = site.thinktank | map: "category" | uniq -%}
+{%- assign used_audiences = site.thinktank | map: "audience" | join: "," | split: "," -%}
+{%- capture category_buttons -%}
+	{%- for pair in site.data.thinktank.en.category -%}
+	{%- assign key = pair[0] -%}
+	{%- if used_categories contains key %}<button type="button" class="tt-filter" data-value="{{ key }}" aria-pressed="false">{{ f.category[key] | default: pair[1] }}</button>{% endif -%}
+	{%- endfor -%}
+{%- endcapture -%}
+{%- capture audience_buttons -%}
+	{%- for pair in site.data.thinktank.en.audience -%}
+	{%- assign key = pair[0] -%}
+	{%- if key != "everybody" -%}{%- assign found = false -%}
+	{%- for a in used_audiences -%}{%- assign a2 = a | strip -%}{%- if a2 == key -%}{%- assign found = true -%}{%- endif -%}{%- endfor -%}
+	{%- if found %}<button type="button" class="tt-filter" data-value="{{ key }}" aria-pressed="false">{{ f.audience[key] | default: pair[1] }}</button>{% endif -%}
+	{%- endif -%}
+	{%- endfor -%}
+{%- endcapture -%}
+{%- assign n_category = category_buttons | split: "<button" | size | minus: 1 -%}
+{%- assign n_audience = audience_buttons | split: "<button" | size | minus: 1 -%}
+{%- if n_category > 1 or n_audience > 1 %}
+<div class="tt-filters" hidden>
+	<div class="tt-filter-row">
+		<span class="tt-filter-title">{{ f.filter_by | default: site.data.thinktank.en.filter_by }}</span>
+	{%- if n_category > 1 %}
+		<div class="tt-filter-group" role="group" aria-label="{{ f.filter_category | strip_html | remove: ':' | remove: '&nbsp;' | strip }}" data-filter="category">
+			<span class="tt-filter-label">{{ f.filter_category }}</span>
+			<button type="button" class="tt-filter" data-value="" aria-pressed="true">{{ f.filter_all }}</button>{{ category_buttons }}
+		</div>
+	{%- endif %}
+	{%- if n_audience > 1 %}
+		<div class="tt-filter-group" role="group" aria-label="{{ f.filter_audience | strip_html | remove: ':' | remove: '&nbsp;' | strip }}" data-filter="audience">
+			<span class="tt-filter-label">{{ f.filter_audience }}</span>
+			<button type="button" class="tt-filter" data-value="" aria-pressed="true">{{ f.filter_all }}</button>{{ audience_buttons }}
+		</div>
+	{%- endif %}
+	</div>
+	<p class="tt-filter-none" role="status" hidden>{{ f.filter_none }}</p>
+</div>
+{%- endif %}

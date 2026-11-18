@@ -1978,3 +1978,43 @@ body.fresh .linkedin-link {
 		body.fresh .contact-actions .fh-btn {
 			margin: 0;
 		}
+
+/* Think Tank filters (overview) */
+body.fresh .tt-filter-title {
+	color: var(--fg-ink) !important;
+	font-family: var(--fg-display);
+	font-size: 1.05em;
+}
+
+body.fresh .tt-filter-label {
+	color: var(--fg-muted) !important;
+	font-family: var(--fg-text);
+}
+
+	body.fresh .tt-filters button.tt-filter {
+		border-color: var(--fg-line);
+		background: var(--fg-surface);
+		color: var(--fg-muted) !important;
+		font-family: var(--fg-text);
+		transition: background 0.15s, border-color 0.15s, color 0.15s;
+	}
+
+	body.fresh .tt-filters button.tt-filter:hover {
+		border-color: var(--fg-primary);
+		color: var(--fg-primary) !important;
+	}
+
+	body.fresh .tt-filters button.tt-filter[aria-pressed="true"] {
+		background: var(--fg-primary);
+		border-color: var(--fg-primary);
+		color: #FFFFFF !important;
+	}
+
+	body.fresh .tt-filters button.tt-filter:focus-visible {
+		outline: 2px solid var(--fg-primary);
+		outline-offset: 2px;
+	}
+
+	body.fresh .tt-filter-none {
+		color: var(--fg-muted) !important;
+	}
