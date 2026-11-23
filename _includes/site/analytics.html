@@ -1,0 +1,14 @@
+{%- comment -%}
+	Google Analytics, switched on/off with google_analytics in _config.yml.
+	If you switch it on, also mention it in the privacy policy (and ask visitors' consent).
+{%- endcomment -%}
+{%- if site.google_analytics and site.google_analytics != "" %}
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', '{{ site.google_analytics }}');
+		</script>
+{%- endif %}

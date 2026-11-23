@@ -8,7 +8,7 @@ title: "Nachhaltiges Verhalten gestalten"
 lead: "5 Design-Leitlinien aus der Sustainable-UX-Forschung"
 date: 2026-11-04                	# YYYY-MM-DD — the overview sorts by this
 category: research-digest           # think-piece | conversation | research-digest | tools | report
-audience: business             	# researchers | policymakers | business | citizens | everybody — or a list: [business, policymakers]
+audience: [business,researchers,policymakers]             	# researchers | policymakers | business | citizens | everybody — or a list: [business, policymakers]
 cover: engineered-human.webp         # file in think-tank/images/<folder>/ — add when you have one
 # cover_alt: ""
 # description: "Optional: text for Google & link previews (otherwise the lead is used)"
@@ -52,7 +52,7 @@ Diese Leitlinien sind ein Ausgangspunkt, keine universelle Checkliste. Der näch
 
 Für Innovator:innen bedeutet das auch, offen für neue Perspektiven, Bedürfnisse und Möglichkeiten zu bleiben. Die nächste große Innovation könnte daraus entstehen, *mit* der Natur statt ausschließlich für Menschen zu gestalten. Ich bin überzeugt, dass More-than-Human-Denken Designpraxis und Industrie zunehmend prägen wird – nicht nur als nächster Design-Hype, sondern als notwendige Weiterentwicklung über nutzerzentriertes Design hinaus.
 
-Mehr zu *More-than-Human Design* in meinem nächsten Post! :-) Die Referenzen findet ihr unten.
+Mehr zu *More-than-Human Design* [hier](http://shakeri.eu/think-tank/more-than-human-terminology/de/). Die Referenzen findet ihr unten.
 
 #Nachhaltigkeit #SustainableHCI #NachhaltigesDesign #WünschenswerteZukünfte #Verhaltensänderung
 

@@ -28,15 +28,7 @@
 		<link rel="stylesheet" href="/assets/css/fresh.css" />
 		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-DVME2JVJE7"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'G-DVME2JVJE7');
-		</script>
+		{% include site/analytics.html %}
 	</head>
 	<body class="homepage is-preload fresh">
 		<div id="page-wrapper">
@@ -106,12 +98,36 @@
 				<div class="container">
 
 					<article class="box post" style="text-align: left;">
+						<section class="contact-offer" id="offer" aria-labelledby="contact-offer-title">
+							<h2 id="contact-offer-title">{{ t.contact.offertitle | default: en.contact.offertitle }}</h2>
+							<p>{{ t.contact.offer1 | default: en.contact.offer1 }}</p>
+							<p>{{ t.contact.offer2 | default: en.contact.offer2 }}</p>
+							<p class="contact-offer-why">{{ t.contact.offer3 | default: en.contact.offer3 }}</p>
+							{%- if site.contact_form != "" and site.contact_form %}
+							<p class="contact-offer-action"><a href="#cf-name" class="button" data-topic="{{ en.contact.formtopicsparring | escape }}">{{ t.contact.offerbutton | default: en.contact.offerbutton }}</a></p>
+							{%- else %}
+							<p class="contact-offer-action"><a href="mailto:gozel@shakeri.eu?subject={{ en.contact.formtopicsparring | uri_escape }}" class="button">{{ t.contact.offerbutton | default: en.contact.offerbutton }}</a></p>
+							{%- endif %}
+						</section>
 						<header>
 							<!-- <h3 style="text-align: center;">I’m available for public speaking engagements to inspire and share insights on innovation and design.</h3> -->
 							 <h2 id="contact-collab">{{ t.contact.collab | default: en.contact.collab }}</h2>
 						</header>
+						{%- if site.contact_form != "" and site.contact_form %}
+						<div class="row contact-with-form">
+							<div class="col-5 col-12-medium">
+								<p id="contact-content">{{ t.contact.content | default: en.contact.content }}</p>
+								<p class="contact-or">{{ t.contact.formor | default: en.contact.formor }}</p>
+								<p class="contact-actions">{% include site/linkedin.html class="fh-btn fh-btn-ghost" label="LinkedIn" %}</p>
+							</div>
+							<div class="col-7 col-12-medium">
+								{% include site/contact-form.html %}
+							</div>
+						</div>
+						{%- else %}
 						<p id="contact-content">{{ t.contact.content | default: en.contact.content }}</p>
 						<p class="contact-actions"><a href="mailto:gozel@shakeri.eu?subject=Discovery Chat&body=[Note:%20Please%20don't%20forget%20to%20provide%20Name,%20Organisation,%20and Website%20(if%20applicable).]" class="button" id="contact-more">{{ t.contact.more | default: en.contact.more }}</a> {% include site/linkedin.html class="fh-btn fh-btn-ghost" label="LinkedIn" %}</p>
+						{%- endif %}
 					</article>
 
 				</div>
@@ -173,6 +189,9 @@
 		<script src="/assets/js/util.js"></script>
 		<script src="/assets/js/main.js"></script>
 		<script src="/assets/js/site-lang.js"></script>
+		{%- if site.contact_form != "" and site.contact_form %}
+		<script src="/assets/js/contact-form.js"></script>
+		{%- endif %}
 		<!-- <script> 
 		$(function(){
 		$("#inject_footer").load("footer.html"); 

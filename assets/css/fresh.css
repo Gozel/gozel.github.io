@@ -2018,3 +2018,267 @@ body.fresh .tt-filter-label {
 	body.fresh .tt-filter-none {
 		color: var(--fg-muted) !important;
 	}
+
+/* ---------- Contact form ---------- */
+
+body.fresh .contact-with-form {
+	row-gap: 2em;
+}
+
+	body.fresh .contact-or {
+		margin: 2em 0 0.75em 0;
+		font-weight: 700;
+		color: var(--fg-ink);
+	}
+
+body.fresh .contact-form {
+	background: var(--fg-ground);
+	border: 1px solid var(--fg-line);
+	border-radius: 22px;
+	padding: 2em;
+	margin: 0;
+}
+
+	body.fresh .contact-form h3 {
+		font-family: var(--fg-display);
+		color: var(--fg-ink);
+		font-size: 1.4em;
+		margin: 0 0 1em 0;
+	}
+
+	body.fresh .contact-form-row {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 0 1.25em;
+	}
+
+	body.fresh .contact-form-field {
+		margin: 0 0 1.1em 0;
+	}
+
+	body.fresh .contact-form label {
+		display: block;
+		font-weight: 600;
+		font-size: 0.9em;
+		color: var(--fg-ink);
+		margin: 0 0 0.35em 0;
+	}
+
+	body.fresh .contact-form input[type=text],
+	body.fresh .contact-form input[type=email],
+	body.fresh .contact-form select,
+	body.fresh .contact-form textarea {
+		display: block;
+		width: 100%;
+		border: 1px solid var(--fg-line);
+		border-radius: 12px;
+		background: var(--fg-surface);
+		color: var(--fg-ink);
+		font-size: 1em;
+		padding: 0.7em 0.9em;
+		box-shadow: none;
+	}
+
+	body.fresh .contact-form select {
+		-webkit-appearance: none;
+		appearance: none;
+		background-image: linear-gradient(45deg, transparent 50%, var(--fg-muted) 50%), linear-gradient(135deg, var(--fg-muted) 50%, transparent 50%);
+		background-position: calc(100% - 20px) 50%, calc(100% - 14px) 50%;
+		background-size: 6px 6px;
+		background-repeat: no-repeat;
+		padding-right: 2.5em;
+	}
+
+	body.fresh .contact-form textarea {
+		height: auto;
+		min-height: 10em;
+		resize: vertical;
+	}
+
+	body.fresh .contact-form input:focus,
+	body.fresh .contact-form select:focus,
+	body.fresh .contact-form textarea:focus {
+		outline: 2px solid var(--fg-primary);
+		outline-offset: 1px;
+		border-color: var(--fg-primary);
+		box-shadow: none;
+	}
+
+	body.fresh .contact-form-hint,
+	body.fresh .contact-form-privacy {
+		display: block;
+		color: var(--fg-muted);
+		font-size: 0.85em;
+		line-height: 1.5em;
+		margin-top: 0.4em;
+	}
+
+	body.fresh .contact-form-send {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 0.75em 1.25em;
+		margin: 0.5em 0 0 0;
+	}
+
+		body.fresh .contact-form-send .button {
+			margin: 0;
+			border: 0;
+		}
+
+		body.fresh .contact-form-send .button:disabled {
+			opacity: 0.6;
+			cursor: wait;
+		}
+
+		body.fresh .contact-form-privacy {
+			flex: 1 1 14em;
+			margin: 0;
+		}
+
+		body.fresh .contact-form-privacy a {
+			color: var(--fg-primary);
+		}
+
+	body.fresh .contact-form-trap {
+		position: absolute;
+		left: -9999px;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		opacity: 0;
+	}
+
+	body.fresh .contact-form-status {
+		margin: 1em 0 0 0;
+		padding: 0.9em 1.1em;
+		border-radius: 12px;
+		font-weight: 600;
+	}
+
+	body.fresh .contact-form-thanks {
+		display: none;
+		outline: none;
+		background: var(--fg-tint);
+		color: var(--fg-primary);
+	}
+
+	body.fresh .contact-form.is-sent .contact-form-thanks,
+	body.fresh .contact-form-thanks:target {
+		display: block;
+	}
+
+	body.fresh .contact-form-error {
+		background: #FBE9E7;
+		color: #8A1F11;
+	}
+
+		body.fresh .contact-form-error[hidden] {
+			display: none;
+		}
+
+	@media screen and (max-width: 736px) {
+		body.fresh .contact-form {
+			padding: 1.5em 1.25em;
+		}
+
+		body.fresh .contact-form-row {
+			grid-template-columns: 1fr;
+		}
+	}
+
+/* ---------- Contact page: offer panel ---------- */
+
+body.fresh .contact-offer {
+	background: var(--fg-tint);
+	border-radius: 22px;
+	padding: 2.25em 2.5em;
+	margin: 0 0 3em 0;
+}
+
+	body.fresh .contact-offer h2 {
+		font-family: var(--fg-display);
+		color: var(--fg-ink);
+		margin: 0 0 0.75em 0;
+	}
+
+	body.fresh .contact-offer p {
+		color: var(--fg-ink);
+		max-width: 52em;
+	}
+
+	body.fresh .contact-offer b {
+		font-weight: 700;
+	}
+
+	body.fresh .contact-offer .contact-offer-why {
+		font-style: italic;
+		color: var(--fg-primary);
+		font-weight: 600;
+	}
+
+	body.fresh .contact-offer-action {
+		margin: 1.5em 0 0 0;
+	}
+
+		body.fresh .contact-offer-action .button {
+			margin: 0;
+		}
+
+	@media screen and (max-width: 736px) {
+		body.fresh .contact-offer {
+			padding: 1.5em 1.25em;
+		}
+	}
+
+/* ---------- Home page: offer teaser (full offer on the Contact page) ---------- */
+
+.fh-offer-section {
+	padding-top: 48px;
+}
+
+.fh-offer {
+	background: var(--fg-tint);
+	border-radius: 28px;
+	padding: 32px 40px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px 40px;
+}
+
+	.fh-offer-text {
+		flex: 1 1 480px;
+		min-width: 0;
+	}
+
+		.fh-offer-text .fh-eyebrow {
+			margin: 0 0 8px 0;
+		}
+
+		.fh-offer-text p#landing-offertext {
+			margin: 0;
+			font-size: 19px;
+			line-height: 1.55;
+			color: var(--fg-ink);
+		}
+
+		.fh-offer-text b {
+			font-weight: 700;
+		}
+
+	.fh-offer .fh-btn {
+		flex: none;
+		margin: 0;
+	}
+
+	@media screen and (max-width: 736px) {
+		.fh-offer {
+			padding: 24px 22px;
+		}
+
+		.fh-offer-text p#landing-offertext {
+			font-size: 17px;
+		}
+	}

@@ -8,7 +8,7 @@ title: "Engineering sustainable behaviour"
 lead: "5 design guidelines from Sustainable UX research"
 date: 2026-11-04                	# YYYY-MM-DD — the overview sorts by this
 category: research-digest           # think-piece | conversation | research-digest | tools | report
-audience: business             	# researchers | policymakers | business | citizens | everybody — or a list: [business, policymakers]
+audience: [business,researchers,policymakers]             	# researchers | policymakers | business | citizens | everybody — or a list: [business, policymakers]
 cover: engineered-human.webp         # file in think-tank/images/<folder>/ — add when you have one
 # cover_alt: ""
 # description: "Optional: text for Google & link previews (otherwise the lead is used)"
@@ -52,7 +52,7 @@ These guidelines are a starting point, not a universal checklist. The next step 
 
 For innovators, this also means staying open to new perspectives, needs and opportunities. The next breakthrough might come from designing *with* nature rather than simply designing for people. I predict that more-than-human thinking will increasingly shape design practice and industry—not just as the next design hype, but as a necessary evolution beyond user-centred design.
 
-More on *More-than-Human Design* in my next post! :-) References below. 
+More on *More-than-Human Design* [here](http://shakeri.eu/think-tank/more-than-human-terminology/en/). References below. 
 
 #Sustainability #SustainableHCI #SustainableDesign #FuturesWorthBuilding #BehaviourChange
 

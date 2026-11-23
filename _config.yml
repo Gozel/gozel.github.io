@@ -18,6 +18,16 @@ defaults:
       layout: think-tank
       author: "Gözel Shakeri"
 
+# Google Analytics: put the measurement ID here (e.g. "G-DVME2JVJE7") to switch it on,
+# leave empty ("") to switch it off. If you switch it on, the privacy policy must mention it,
+# and visitors should be asked for consent first (cookie banner).
+google_analytics: ""
+
+# Contact form (Formward, EU-hosted). Paste the form's address from the Formward dashboard,
+# e.g. "https://forms.formward.eu/f/abc123". Leave empty ("") to hide the form; the Contact
+# page then shows only the email and LinkedIn buttons. Restart "jekyll serve" after changing it.
+contact_form: "https://forms.formward.eu/f/cdb61a86-5baf-4ca5-8ec1-43cb2da8eeb2"
+
 # Texts of all pages: lang/en.json, lang/fr.json, lang/de.json (plus lang/thinktank.yml for Think Tank labels).
 # Jekyll reads them as site.data.en etc.; they are also published so the other pages can load them in the browser.
 data_dir: lang

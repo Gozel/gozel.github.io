@@ -8,7 +8,7 @@ title: "Concevoir des comportements durables"
 lead: "5 principes de conception issus de la recherche en UX durable"
 date: 2026-11-04                	# YYYY-MM-DD — the overview sorts by this
 category: research-digest           # think-piece | conversation | research-digest | tools | report
-audience: business             	# researchers | policymakers | business | citizens | everybody — or a list: [business, policymakers]
+audience: [business,researchers,policymakers]             	# researchers | policymakers | business | citizens | everybody — or a list: [business, policymakers]
 cover: engineered-human.webp         # file in think-tank/images/<folder>/ — add when you have one
 # cover_alt: ""
 # description: "Optional: text for Google & link previews (otherwise the lead is used)"
@@ -52,7 +52,7 @@ Ces principes constituent un point de départ, pas une liste de règles universe
 
 Pour les innovateurs, cela signifie aussi rester ouverts à de nouvelles perspectives, de nouveaux besoins et de nouvelles opportunités. La prochaine grande innovation pourrait bien venir d'une conception *avec* la nature, plutôt que simplement pour les humains. Je prédis que la pensée more-than-human prendra une place croissante dans les pratiques de conception et dans l'industrie — non pas comme une simple nouvelle tendance, mais comme une évolution nécessaire au-delà du design centré sur l'utilisateur.
 
-Plus sur le *More-than-Human Design* dans mon prochain post ! :-) Références ci-dessous.
+Plus sur le *More-than-Human Design* [ici](http://shakeri.eu/think-tank/more-than-human-terminology/fr/). Références ci-dessous.
 
 #Durabilité #SustainableHCI #DesignDurable #FutursDésirables #ChangementDeComportement
 

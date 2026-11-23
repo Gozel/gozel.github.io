@@ -25,15 +25,8 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" />
 		<link rel="stylesheet" href="/assets/css/fresh.css" />
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-DVME2JVJE7"></script>
 		<!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'G-DVME2JVJE7');
-		</script>
+		{% include site/analytics.html %}
 	</head>
 	<body class="homepage is-preload fresh">
 		<div id="page-wrapper">
@@ -138,6 +131,19 @@
 									<p id="landing-stat">{{ t.landing.stat | default: en.landing.stat }}</p>
 									<p class="fh-stat-source" id="landing-statsource">{{ t.landing.statsource | default: en.landing.statsource }}</p>
 								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- Offer teaser (full offer on the Contact page) -->
+					<section class="fh-section fh-offer-section" id="offer">
+						<div class="fh-wrap">
+							<div class="fh-offer">
+								<div class="fh-offer-text">
+									<p class="fh-eyebrow" id="landing-offereyebrow">{{ t.landing.offereyebrow | default: en.landing.offereyebrow }}</p>
+									<p id="landing-offertext">{{ t.landing.offertext | default: en.landing.offertext }}</p>
+								</div>
+								<a href="{% include site/url.html to='contact' %}#offer" class="fh-btn fh-btn-primary" id="landing-offerlink">{{ t.landing.offerlink | default: en.landing.offerlink }} &rarr;</a>
 							</div>
 						</div>
 					</section>

@@ -1,0 +1,55 @@
+{%- comment -%}
+	Contact form, sent to Formward (EU-hosted form service). The address is set in
+	_config.yml (contact_form); texts are contact.form* in lang/*.json.
+	With JavaScript (assets/js/contact-form.js) the message is sent without leaving the page.
+	Without it, Formward sends the visitor back to this page at #sent, which shows the thank-you note.
+	_gotcha is a trap field for spam bots: people never see it.
+{%- endcomment -%}
+{%- assign c = t.contact -%}{%- assign ce = en.contact -%}
+<form class="contact-form" action="{{ site.contact_form }}" method="POST" accept-charset="UTF-8"
+	data-sending="{{ c.formsending | default: ce.formsending | escape }}">
+	<h3>{{ c.formtitle | default: ce.formtitle }}</h3>
+	<input type="hidden" name="_subject" value="New message via shakeri.eu">
+	<input type="hidden" name="_redirect" value="{{ site.url }}{{ base }}/contact#sent">
+	<input type="hidden" name="language" value="{{ lang | upcase }}">
+	<div class="contact-form-trap" aria-hidden="true">
+		<label>Leave this field empty <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label>
+	</div>
+	<div class="contact-form-row">
+		<p class="contact-form-field">
+			<label for="cf-name">{{ c.formname | default: ce.formname }}</label>
+			<input type="text" id="cf-name" name="name" autocomplete="name" required maxlength="200">
+		</p>
+		<p class="contact-form-field">
+			<label for="cf-email">{{ c.formemail | default: ce.formemail }}</label>
+			<input type="email" id="cf-email" name="email" autocomplete="email" required maxlength="200">
+		</p>
+	</div>
+	<div class="contact-form-row">
+		<p class="contact-form-field">
+			<label for="cf-org">{{ c.formorg | default: ce.formorg }}</label>
+			<input type="text" id="cf-org" name="organisation" autocomplete="organization" maxlength="200">
+		</p>
+		<p class="contact-form-field">
+			<label for="cf-topic">{{ c.formtopic | default: ce.formtopic }}</label>
+			<select id="cf-topic" name="topic">
+				{%- assign topics = "consultancy,research,innovation,education,speaking,sparring,other" | split: "," %}
+				{%- for k in topics %}
+				{%- assign key = "formtopic" | append: k %}
+				<option value="{{ ce[key] | escape }}">{{ c[key] | default: ce[key] }}</option>
+				{%- endfor %}
+			</select>
+		</p>
+	</div>
+	<p class="contact-form-field">
+		<label for="cf-message">{{ c.formmessage | default: ce.formmessage }}</label>
+		<textarea id="cf-message" name="message" rows="7" required maxlength="5000" aria-describedby="cf-message-hint"></textarea>
+		<small id="cf-message-hint" class="contact-form-hint">{{ c.formmessagehint | default: ce.formmessagehint }}</small>
+	</p>
+	<p class="contact-form-send">
+		<button type="submit" class="button">{{ c.formsend | default: ce.formsend }}</button>
+		<small class="contact-form-privacy">{{ c.formprivacy | default: ce.formprivacy }} <a href="{% include site/url.html to='privacy_policy' %}#contact-form">{{ c.formprivacylink | default: ce.formprivacylink }}</a></small>
+	</p>
+	<p class="contact-form-status contact-form-thanks" id="sent" role="status" tabindex="-1">{{ c.formthanks | default: ce.formthanks }}</p>
+	<p class="contact-form-status contact-form-error" role="alert" hidden>{{ c.formerror | default: ce.formerror }}</p>
+</form>
