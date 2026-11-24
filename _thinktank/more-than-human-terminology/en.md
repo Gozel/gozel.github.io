@@ -6,7 +6,7 @@
 # ───────────────────────────────────────────────────────────────────────────
 published: true                # true = live on the site (and on the overview)
 title: "'More-than-human'"
-lead: "Are we still centring the human?"
+lead: "Are we still centring the human? Read this pointless exercise in terminology."
 date: 2026-11-17                # YYYY-MM-DD — the overview sorts by this
 category: think-piece            # think-piece | conversation | research-digest | tools | report
 audience: everybody             # researchers | policymakers | business | citizens | everybody — or a list: [business, policymakers]

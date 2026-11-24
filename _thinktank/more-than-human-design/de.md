@@ -7,10 +7,10 @@ published: true                # true = live on the site (and on the overview)
 title: "More-than-Human Design"
 lead: "Erfahren Sie, wohin sich die HCI-Forschung als Nächstes bewegt – und wie neue Designansätze Ihnen helfen können, Veränderungen vorauszusehen, Innovationschancen zu entdecken und widerstandsfähigere Unternehmen aufzubauen."
 date: 2026-11-24                # YYYY-MM-DD — the overview sorts by this
-category: think-piece            # think-piece | conversation | research-digest | tools | report
+category: research-digest            # think-piece | conversation | research-digest | tools | report
 audience: everybody             # researchers | policymakers | business | citizens | everybody — or a list: [business, policymakers]
 cover: more-than-human-design.png                # file in think-tank/images/<folder>/ — delete line for no cover
-cover_alt: "TBD"
+cover_alt: "Zwei Bilder. Links: „Wir haben die Erde aus dem Zentrum des Universums gerückt.“ über einer Darstellung der Milchstraße, ein Pfeil markiert am Rand „Wir sind hier“. Rechts: „Als Nächstes müssen wir den Menschen aus dem Zentrum des Designs rücken.“ über der Zeichnung eines Rasens: ein kleiner Mensch im Hintergrund, markiert mit „Wir sind hier“, ein Mähroboter vor einem Igel sowie Bienen und Blumen im Gras, „Lebensraum für Würmer, Bienen und Pilze“."
 # cover_caption: "Von: Gözel Shakeri"
 # description: "Optional: Text für Google & Link-Vorschauen (sonst wird der Lead verwendet)"
 # author: "Andere Autor:in"     # optional, default: Gözel Shakeri
