@@ -2282,3 +2282,84 @@ body.fresh .contact-offer {
 			font-size: 17px;
 		}
 	}
+
+/* Innovation page: recommended toolkits, at most three per row */
+@media screen and (min-width: 981px) {
+	.ip-tools-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+/* Consultancy page: resources we recommend (website + publications per card) */
+body.fresh .cp-res-card {
+	display: flex;
+	flex-direction: column;
+}
+
+	body.fresh .cp-res-card h3 {
+		font-size: 20px;
+	}
+
+	body.fresh .cp-res-card p a,
+	body.fresh .cp-res-buy a {
+		color: var(--fg-primary);
+		font-weight: 600;
+		text-decoration: underline;
+		text-underline-offset: 3px;
+	}
+
+	body.fresh .cp-res-buy {
+		margin: 4px 0 10px 0;
+		color: var(--fg-ink);
+	}
+
+		body.fresh .cp-res-free {
+			display: inline-block;
+			background: var(--fg-bright);
+			color: var(--fg-ink);
+			font-weight: 700;
+			padding: 1px 10px;
+			border-radius: 999px;
+		}
+
+	body.fresh .cp-res-papers {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+		body.fresh .cp-res-papers li {
+			position: relative;
+			padding: 0 0 0 22px;
+			margin: 0 0 8px 0;
+			font-size: 15px;
+			line-height: 1.45;
+		}
+
+		body.fresh .cp-res-papers li:before {
+			content: "↗";
+			position: absolute;
+			left: 0;
+			color: var(--fg-primary);
+		}
+
+		body.fresh .cp-res-papers a {
+			color: var(--fg-ink);
+			text-decoration: underline;
+			text-decoration-color: var(--fg-line);
+			text-underline-offset: 3px;
+		}
+
+		body.fresh .cp-res-papers a:hover {
+			color: var(--fg-primary);
+			text-decoration-color: var(--fg-primary);
+		}
+
+
+	body.fresh .cp-res-intro {
+		max-width: 760px;
+		margin: 4px 0 0 0;
+		color: var(--fg-muted);
+		font-size: 18px;
+		line-height: 1.6;
+	}
