@@ -31,21 +31,21 @@ Durch die Brille des menschzentrierten Designs hat die HCI einst radikale Ideen 
 
 # Warum verlagert die Forschung also ihren Fokus?
 
-In den letzten zehn Jahren haben sich immer mehr HCI-Forschende mit Systemdenken und More-than-Human Design beschäftigt.
+In den letzten zehn Jahren haben sich immer mehr HCI-Forschende mit Systemdenken und More-than-Human Design beschäftigt <span class="tt-cite">[<a href="#ref-2">2</a>, <a href="#ref-7">7</a>]</span>.
 
-Warum? Weil wir, wenn wir uns so stark auf die menschlichen Nutzer:innen konzentrieren, manchmal das große Ganze aus den Augen verlieren: Menschen sind Teil vernetzter sozialer und ökologischer Systeme. Wir sind von ihnen abhängig, beeinflussen sie und werden von ihnen beeinflusst.
+Warum? Weil wir, wenn wir uns so stark auf die menschlichen Nutzer:innen konzentrieren, manchmal das große Ganze aus den Augen verlieren: Menschen sind Teil vernetzter sozialer und ökologischer Systeme <span class="tt-cite">[<a href="#ref-3">3</a>, <a href="#ref-10">10</a>]</span>. Wir sind von ihnen abhängig, beeinflussen sie und werden von ihnen beeinflusst.
 
 Nehmen wir KI. Intelligente Systeme haben wir weitgehend auf menschliche Bequemlichkeit, Produktivität und Personalisierung ausgerichtet. Aber was ist mit der Energie und dem Wasser, die sie verbrauchen? Den Rohstoffen und Lieferketten hinter der Hardware? Den Folgen für Arbeitskräfte, Gemeinschaften und Ökosysteme?
 
 Das sind keine getrennten Themen. Sie sind miteinander verbundene Teile desselben Systems.
 
-Und vielleicht ist genau das einer der blinden Flecken des menschzentrierten Designs: **Wir können Technologie schaffen, die für ihre Nutzer:innen hervorragend funktioniert, und dabei die weitergehenden Kosten und Folgen übersehen**.
+Und vielleicht ist genau das einer der blinden Flecken des menschzentrierten Designs: **Wir können Technologie schaffen, die für ihre Nutzer:innen hervorragend funktioniert, und dabei die weitergehenden Kosten und Folgen übersehen** <span class="tt-cite">[<a href="#ref-3">3</a>, <a href="#ref-5">5</a>]</span>.
 
-HCI-Forschende setzen sich zunehmend mit dieser Herausforderung auseinander – in einer neuen Forschungsrichtung: **More-than-Human Computer Interaction**.
+HCI-Forschende setzen sich zunehmend mit dieser Herausforderung auseinander – in einer neuen Forschungsrichtung: **More-than-Human Computer Interaction** <span class="tt-cite">[<a href="#ref-1">1</a>, <a href="#ref-2">2</a>]</span>.
 
-More-than-Human Design untersucht, wie sich Technologie über die unmittelbaren Bedürfnisse menschlicher Nutzer:innen hinaus gestalten lässt – unter Berücksichtigung anderer Arten, natürlicher Umwelten, Materialien, Infrastrukturen und der Beziehungen zwischen ihnen.
+More-than-Human Design untersucht, wie sich Technologie über die unmittelbaren Bedürfnisse menschlicher Nutzer:innen hinaus gestalten lässt – unter Berücksichtigung anderer Arten, natürlicher Umwelten, Materialien, Infrastrukturen und der Beziehungen zwischen ihnen <span class="tt-cite">[<a href="#ref-4">4</a>, <a href="#ref-5">5</a>, <a href="#ref-8">8</a>, <a href="#ref-9">9</a>, <a href="#ref-11">11</a>]</span>.
 
-Kurz gesagt: **Systemdenken** in HCI und Design bringen.
+Kurz gesagt: **Systemdenken** in HCI und Design bringen <span class="tt-cite">[<a href="#ref-6">6</a>, <a href="#ref-7">7</a>]</span>.
 
 # Warum sollten sich Unternehmen und Innovator:innen dafür interessieren?
 
@@ -76,23 +76,34 @@ Nutzen Sie es, um über die unmittelbaren Nutzer:innen hinauszublicken, weiterge
 ## Literatur {#references}
 
 [1] Wolmet Barendregt, Tilde Bekker, Arne Berger, Peter Dalsgaard, Eva Eriksson, Christopher Frauenberger, Batya Friedman, Elisa Giaccardi, AnneMarie Hansen, Rikke Hagensby Jensen, Ann Light, Joseph Lindley, Iohanna Nicenboim, Elisabet M. Nilsson, Johan Redström, Natalie Sontopski, Ron Wakkary, Mikael Wiberg, and Daisy Yoo. 2025. The Future of More-Than-Human Design: A Computing Practice in Crisis?. In *Adjunct Proceedings of the Sixth Decennial Aarhus Conference: Computing X Crisis* (AAR Adjunct 2025), August 18–22, 2025, Aarhus N, Denmark. ACM, New York, NY, USA, 4 pages. <https://doi.org/10.1145/3737609.3747092>
+{: #ref-1}
 
 [2] Eva Eriksson, Daisy Yoo, Tilde Bekker, and Elisabet M. Nilsson. 2024. More-than-Human Perspectives in Human-Computer Interaction Research: A Scoping Review. In *Nordic Conference on Human-Computer Interaction* (NordiCHI 2024), October 13–16, 2024, Uppsala, Sweden. ACM, New York, NY, USA, 18 pages. <https://doi.org/10.1145/3679318.3685408>
+{: #ref-2}
 
 [3] Laura Forlano. 2017. Posthumanism and Design. *She Ji: The Journal of Design, Economics, and Innovation* 3, 1 (2017), 16–29. <https://doi.org/10.1016/j.sheji.2017.08.001>
+{: #ref-3}
 
-[4] Elisa Giaccardi and Johan Redström. 2020. Technology and More-Than-Human Design. *Design Issues* 36, 4 (2020), 33–44. <https://doi.org/10.1162/desi_a_00612>
+[4] Batya Friedman and David G. Hendry. 2019. *Value Sensitive Design: Shaping Technology with Moral Imagination*. The MIT Press, Cambridge, MA, USA. ISBN 978-0-262-03953-6. <https://mitpressbookstore.mit.edu/book/9780262039536>
+{: #ref-4}
 
-[5] Anton Poikolainen Rosén, Yuxi Chen, Suzanna Törnroth, İdil Gaziulusoy, and Tatu Marttila. 2024. Four Questions for Systemic More-Than-Human Design in Practice. In *More-Than-Human Design in Practice*, Anton Poikolainen Rosén, Antti Salovaara, Andrea Botero, and Marie Louise Juul Søndergaard (Eds.). Routledge, London, 132–149. <https://doi.org/10.4324/9781003467731-13>
+[5] Elisa Giaccardi and Johan Redström. 2020. Technology and More-Than-Human Design. *Design Issues* 36, 4 (2020), 33–44. <https://doi.org/10.1162/desi_a_00612>
+{: #ref-5}
 
-[6] Anton Poikolainen Rosén, Maria Normark, and Mikael Wiberg. 2022. Towards More-Than-Human-Centred Design: Learning from Gardening. *International Journal of Design* 16, 3 (2022), 21–36. <https://doi.org/10.57698/v16i3.02>
+[6] Mike Pinder. [n. d.]. *Systems Mapping Toolkit for Beginners* (v1.1). Explorer Labs. Miro template. Retrieved November 24, 2026 from <https://miro.com/miroverse/systems-mapping-toolkit-for-beginners/>. See also <https://www.explorerlabs.co/tools>
+{: #ref-6}
 
-[7] Eike Schneiders, Steve Benford, Alan Chamberlain, Clara Mancini, Simon Castle-Green, Victor Ngo, Ju Row Farr, Matt Adams, Nick Tandavanitj, and Joel Fischer. 2024. Designing Multispecies Worlds for Robots, Cats, and Humans. In *Proceedings of the CHI Conference on Human Factors in Computing Systems* (CHI '24), May 11–16, 2024, Honolulu, HI, USA. ACM, New York, NY, USA, 16 pages. <https://doi.org/10.1145/3613904.3642115>
+[7] Anton Poikolainen Rosén, Yuxi Chen, Suzanna Törnroth, İdil Gaziulusoy, and Tatu Marttila. 2024. Four Questions for Systemic More-Than-Human Design in Practice. In *More-Than-Human Design in Practice*, Anton Poikolainen Rosén, Antti Salovaara, Andrea Botero, and Marie Louise Juul Søndergaard (Eds.). Routledge, London, 132–149. <https://doi.org/10.4324/9781003467731-13>
+{: #ref-7}
 
-[8] Batya Friedman and David G. Hendry. 2019. *Value Sensitive Design: Shaping Technology with Moral Imagination*. The MIT Press, Cambridge, MA, USA. ISBN 978-0-262-03953-6. <https://mitpressbookstore.mit.edu/book/9780262039536>
+[8] Anton Poikolainen Rosén, Maria Normark, and Mikael Wiberg. 2022. Towards More-Than-Human-Centred Design: Learning from Gardening. *International Journal of Design* 16, 3 (2022), 21–36. <https://doi.org/10.57698/v16i3.02>
+{: #ref-8}
 
-[9] Mike Pinder. [n. d.]. *Systems Mapping Toolkit for Beginners* (v1.1). Explorer Labs. Miro template. Retrieved November 24, 2026 from <https://miro.com/miroverse/systems-mapping-toolkit-for-beginners/>. See also <https://www.explorerlabs.co/tools>
+[9] Eike Schneiders, Steve Benford, Alan Chamberlain, Clara Mancini, Simon Castle-Green, Victor Ngo, Ju Row Farr, Matt Adams, Nick Tandavanitj, and Joel Fischer. 2024. Designing Multispecies Worlds for Robots, Cats, and Humans. In *Proceedings of the CHI Conference on Human Factors in Computing Systems* (CHI '24), May 11–16, 2024, Honolulu, HI, USA. ACM, New York, NY, USA, 16 pages. <https://doi.org/10.1145/3613904.3642115>
+{: #ref-9}
 
 [10] Anna Lowenhaupt Tsing. 2015. *The Mushroom at the End of the World: On the Possibility of Life in Capitalist Ruins*. Princeton University Press, Princeton, NJ, USA. <https://doi.org/10.1515/9781400873548>
+{: #ref-10}
 
 [11] Ron Wakkary. 2021. *Things We Could Design: For More Than Human-Centered Worlds*. The MIT Press, Cambridge, MA, USA. <https://doi.org/10.7551/mitpress/13649.001.0001>
+{: #ref-11}

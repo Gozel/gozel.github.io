@@ -49,6 +49,10 @@ layout: tt-base
 {{ content }}
 						</div>
 
+						{%- if site.contact_form and content contains "tt-gated" %}
+						{% include tt/download-gate.html %}
+						{%- endif %}
+
 					</article>
 				</div>
 			</section>

@@ -12,6 +12,16 @@ de:
   filter_audience: "Für:"
   filter_all: Alle
   filter_none: "Keine Beiträge für diese Auswahl."
+  gate_title: "Toolkit herunterladen"
+  gate_text: "Bitte geben Sie Ihre E-Mail-Adresse ein. Danach startet der Download sofort."
+  gate_email: "Ihre E-Mail-Adresse"
+  gate_submit: "Weiter zum Download"
+  gate_sending: "Wird gesendet …"
+  gate_thanks: "Danke! Ihr Download startet."
+  gate_download: "PDF öffnen"
+  gate_error: "Das hat leider nicht geklappt. Bitte versuchen Sie es noch einmal."
+  gate_privacy: "Wir nutzen Ihre Adresse nur, um zu sehen, wer das Toolkit verwendet, und um Sie gelegentlich nach Feedback oder zu neuen Versionen zu fragen. Keine Werbung, keine Weitergabe. <a href='de/privacy_policy#downloads' target='_blank'>Datenschutzerklärung</a>"
+  gate_close: "Schließen"
   category:
     think-piece: Denkanstoß
     conversation: Gespräch
@@ -34,6 +44,16 @@ fr:
   filter_audience: "Pour&nbsp;:"
   filter_all: Tout
   filter_none: "Aucune publication pour cette sélection."
+  gate_title: "Télécharger la boîte à outils"
+  gate_text: "Merci d’indiquer votre adresse e-mail. Le téléchargement démarre ensuite immédiatement."
+  gate_email: "Votre adresse e-mail"
+  gate_submit: "Continuer vers le téléchargement"
+  gate_sending: "Envoi en cours…"
+  gate_thanks: "Merci ! Votre téléchargement démarre."
+  gate_download: "Ouvrir le PDF"
+  gate_error: "Cela n’a malheureusement pas fonctionné. Veuillez réessayer."
+  gate_privacy: "Nous utilisons votre adresse uniquement pour savoir qui utilise la boîte à outils et, de temps en temps, vous demander votre avis ou vous informer d’une nouvelle version. Pas de publicité, aucune transmission à des tiers. <a href='fr/privacy_policy#downloads' target='_blank'>Politique de confidentialité</a>"
+  gate_close: "Fermer"
   category:
     think-piece: Tribune
     conversation: Conversation
@@ -56,6 +76,16 @@ en:
   filter_audience: "For:"
   filter_all: All
   filter_none: "No pieces for this selection."
+  gate_title: "Download the toolkit"
+  gate_text: "Please enter your email address. Your download starts straight away."
+  gate_email: "Your email address"
+  gate_submit: "Continue to download"
+  gate_sending: "Sending…"
+  gate_thanks: "Thank you! Your download is starting."
+  gate_download: "Open the PDF"
+  gate_error: "Sorry, that didn't work. Please try again."
+  gate_privacy: "We use your address only to see who uses the toolkit and, now and then, to ask for feedback or tell you about a new version. No advertising, never passed on. <a href='privacy_policy#downloads' target='_blank'>Privacy policy</a>"
+  gate_close: "Close"
   category:
     think-piece: Think piece
     conversation: Conversation

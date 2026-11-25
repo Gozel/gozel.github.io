@@ -1,0 +1,37 @@
+{%- comment -%}
+	"Please enter your email" box for downloads in Think Tank pieces.
+	In a piece, give a download link the class tt-gated, e.g.
+	  [Download the PDF](/resources/file.pdf){:.tt-gated target="_blank" rel="noopener"}
+	Clicking it opens this box; the address is sent to Formward (contact_form in _config.yml),
+	then the download starts. Readers who already gave their address are not asked again
+	on this device. Without JavaScript the link simply opens the file.
+	Texts: gate_* in lang/thinktank.yml.
+{%- endcomment -%}
+<dialog class="tt-gate" aria-labelledby="tt-gate-title">
+	<form class="contact-form tt-gate-form" action="{{ site.contact_form }}" method="POST" accept-charset="UTF-8" data-sending="{{ t.gate_sending | escape }}">
+		<button type="button" class="tt-gate-close" aria-label="{{ t.gate_close | escape }}">&times;</button>
+		<h3 id="tt-gate-title">{{ t.gate_title }}</h3>
+		<p class="tt-gate-text">{{ t.gate_text }}</p>
+		<input type="hidden" name="_subject" value="Download via shakeri.eu">
+		<input type="hidden" name="file" value="">
+		<input type="hidden" name="page" value="{{ page.url | absolute_url }}">
+		<input type="hidden" name="language" value="{{ lang | upcase }}">
+		<div class="contact-form-trap" aria-hidden="true">
+			<label>Leave this field empty <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label>
+		</div>
+		<p class="contact-form-field">
+			<label for="tt-gate-email">{{ t.gate_email }}</label>
+			<input type="email" id="tt-gate-email" name="email" autocomplete="email" required maxlength="200">
+		</p>
+		<div class="contact-form-send">
+			<button type="submit" class="button">{{ t.gate_submit }}</button>
+			<small class="contact-form-privacy">{{ t.gate_privacy }}</small>
+		</div>
+		<p class="contact-form-status contact-form-error" role="alert" hidden>{{ t.gate_error }}</p>
+		<div class="tt-gate-done" hidden>
+			<p class="contact-form-status tt-gate-thanks" tabindex="-1">{{ t.gate_thanks }}</p>
+			<p><a class="button tt-gate-link" href="#" target="_blank" rel="noopener">{{ t.gate_download }}</a></p>
+		</div>
+	</form>
+</dialog>
+<script src="assets/js/download-gate.js"></script>

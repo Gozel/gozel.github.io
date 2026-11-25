@@ -2363,3 +2363,78 @@ body.fresh .cp-res-card {
 		font-size: 18px;
 		line-height: 1.6;
 	}
+
+/* ---------- Think Tank: email box before downloads (_includes/tt/download-gate.html) ---------- */
+
+body.fresh .tt-gate {
+	border: 0;
+	padding: 0;
+	background: transparent;
+	width: min(34em, calc(100% - 2em));
+	max-width: none;
+}
+
+	body.fresh .tt-gate::backdrop {
+		background: rgba(15, 42, 32, 0.55);
+	}
+
+	body.fresh .tt-gate .contact-form {
+		position: relative;
+		background: var(--fg-surface);
+		box-shadow: 0 20px 60px rgba(15, 42, 32, 0.25);
+	}
+
+	body.fresh .tt-gate h3 {
+		padding-right: 1.5em;
+	}
+
+	body.fresh .tt-gate-text {
+		color: var(--fg-muted);
+		margin: -0.5em 0 1.2em 0;
+	}
+
+	body.fresh .tt-gate-close {
+		position: absolute;
+		top: 0.6em;
+		right: 0.7em;
+		width: 2em;
+		height: 2em;
+		padding: 0;
+		border: 0;
+		border-radius: 50%;
+		background: transparent !important;
+		color: var(--fg-muted) !important;
+		font-size: 1.4em;
+		line-height: 2em;
+		cursor: pointer;
+	}
+
+		body.fresh .tt-gate-close:hover {
+			background: var(--fg-tint) !important;
+			color: var(--fg-ink) !important;
+		}
+
+	body.fresh .tt-gate-form.is-done .contact-form-field,
+	body.fresh .tt-gate-form.is-done .contact-form-send,
+	body.fresh .tt-gate-form.is-done .tt-gate-text {
+		display: none;
+	}
+
+	body.fresh .tt-gate-thanks {
+		outline: none;
+		background: var(--fg-tint);
+		color: var(--fg-primary);
+	}
+
+	body.fresh .tt-gate-done .button {
+		margin: 0.5em 0 0 0;
+	}
+
+/* Numbered citations in Think Tank pieces, e.g. [2, 7] */
+body.fresh .tt-body .tt-cite {
+	white-space: nowrap;
+}
+
+	body.fresh .tt-body .tt-cite a {
+		text-decoration: none;
+	}
