@@ -57,7 +57,7 @@ Every step page includes the same worked example: a robot lawn mower in a privat
 
 The toolkit is free to use in workshops and teaching. [Download the PDF](/resources/More-than-Human-Systems-Mapping-Toolkit.pdf){:target="_blank" rel="noopener"}
 
-I'd love to hear how you use it: what worked, what didn't, and what it helped you notice. **Let's discuss on LinkedIn:** [link]
+I'd love to hear how you use it: what worked, what didn't, and what it helped you notice. **Let's discuss on LinkedIn:** [link](https://www.linkedin.com/pulse/how-tech-design-research-shifting-away-from-g%25C3%25B6zel-shakeri-phd-9nsje){:target="_blank" rel="noopener"}
 
 ## References
 

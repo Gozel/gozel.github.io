@@ -57,7 +57,7 @@ Jede Seite mit einem Schritt enthält dasselbe Beispiel: einen Mähroboter in ei
 
 Das Toolkit ist für Workshops und Lehre frei nutzbar. [PDF herunterladen](/resources/More-than-Human-Systems-Mapping-Toolkit.pdf){:target="_blank" rel="noopener"} (auf Englisch)
 
-Ich freue mich zu hören, wie Sie es einsetzen: was funktioniert hat, was nicht, und was es Ihnen bewusst gemacht hat. **Lassen Sie uns auf LinkedIn diskutieren:** [link]
+Ich freue mich zu hören, wie Sie es einsetzen: was funktioniert hat, was nicht, und was es Ihnen bewusst gemacht hat. **Lassen Sie uns auf LinkedIn diskutieren:** [Link](https://www.linkedin.com/pulse/how-tech-design-research-shifting-away-from-g%25C3%25B6zel-shakeri-phd-9nsje){:target="_blank" rel="noopener"}
 
 ## Literatur
 

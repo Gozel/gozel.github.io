@@ -57,7 +57,7 @@ Chaque page d’étape reprend le même exemple : une tondeuse robot dans un jar
 
 La boîte à outils est libre d’utilisation pour les ateliers et l’enseignement. [Télécharger le PDF](/resources/More-than-Human-Systems-Mapping-Toolkit.pdf){:target="_blank" rel="noopener"} (en anglais)
 
-J’aimerais beaucoup savoir comment vous l’utilisez : ce qui a fonctionné, ce qui n’a pas marché et ce qu’elle vous a permis de remarquer. **Échangeons sur LinkedIn :** [link]
+J’aimerais beaucoup savoir comment vous l’utilisez : ce qui a fonctionné, ce qui n’a pas marché et ce qu’elle vous a permis de remarquer. **Échangeons sur LinkedIn :** [lien](https://www.linkedin.com/pulse/how-tech-design-research-shifting-away-from-g%25C3%25B6zel-shakeri-phd-9nsje){:target="_blank" rel="noopener"}
 
 ## Références
 
