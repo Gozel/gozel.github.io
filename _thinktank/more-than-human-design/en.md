@@ -5,8 +5,8 @@
 #   _thinktank/sustainability-has-a-branding-problem/en.md  →  shakeri.eu/think-tank/sustainability-has-a-branding-problem/en/
 # ───────────────────────────────────────────────────────────────────────────
 published: true                # true = live on the site (and on the overview)
-title: "More-than-human Design"
-lead: "Discover where HCI research is heading next — and how emerging design approaches can help you anticipate change, uncover innovation opportunities and build more resilient businesses."
+title: "Still designing human-centred?"
+lead: "Discover where research is heading — and how emerging design approaches can help you anticipate change, uncover innovation opportunities and build more resilient businesses."
 date: 2026-11-24                # YYYY-MM-DD — the overview sorts by this
 category: research-digest            # think-piece | conversation | research-digest | tools | report
 audience: everybody             # researchers | policymakers | business | citizens | everybody — or a list: [business, policymakers]
@@ -18,7 +18,7 @@ cover_alt: "Two panels. Left: “We moved the Earth out of the centre of the uni
 ---
 
 
-# But human-centred design does such a great job!
+# What?!? Why? Human-centred design does such a great job!
 
 I am a researcher in Human-Computer Interaction (HCI) and I agree, it’s great! Human-centred design has fundamentally shaped how we design and interact with technology today. Let's take a look at HCI’s milestones.
 
@@ -76,24 +76,24 @@ Use it to look beyond the immediate user, explore wider interdependencies and id
 
 ## References {#references}
 
-- Wolmet Barendregt, Tilde Bekker, Arne Berger, Peter Dalsgaard, Eva Eriksson, Christopher Frauenberger, Batya Friedman, Elisa Giaccardi, AnneMarie Hansen, Rikke Hagensby Jensen, Ann Light, Joseph Lindley, Iohanna Nicenboim, Elisabet M. Nilsson, Johan Redström, Natalie Sontopski, Ron Wakkary, Mikael Wiberg, and Daisy Yoo. 2025. The Future of More-Than-Human Design: A Computing Practice in Crisis?. In *Adjunct Proceedings of the Sixth Decennial Aarhus Conference: Computing X Crisis* (AAR Adjunct 2025), August 18–22, 2025, Aarhus N, Denmark. ACM, New York, NY, USA, 4 pages. <https://doi.org/10.1145/3737609.3747092>
+[1] Wolmet Barendregt, Tilde Bekker, Arne Berger, Peter Dalsgaard, Eva Eriksson, Christopher Frauenberger, Batya Friedman, Elisa Giaccardi, AnneMarie Hansen, Rikke Hagensby Jensen, Ann Light, Joseph Lindley, Iohanna Nicenboim, Elisabet M. Nilsson, Johan Redström, Natalie Sontopski, Ron Wakkary, Mikael Wiberg, and Daisy Yoo. 2025. The Future of More-Than-Human Design: A Computing Practice in Crisis?. In *Adjunct Proceedings of the Sixth Decennial Aarhus Conference: Computing X Crisis* (AAR Adjunct 2025), August 18–22, 2025, Aarhus N, Denmark. ACM, New York, NY, USA, 4 pages. <https://doi.org/10.1145/3737609.3747092>
 
-- Eva Eriksson, Daisy Yoo, Tilde Bekker, and Elisabet M. Nilsson. 2024. More-than-Human Perspectives in Human-Computer Interaction Research: A Scoping Review. In *Nordic Conference on Human-Computer Interaction* (NordiCHI 2024), October 13–16, 2024, Uppsala, Sweden. ACM, New York, NY, USA, 18 pages. <https://doi.org/10.1145/3679318.3685408>
+[2] Eva Eriksson, Daisy Yoo, Tilde Bekker, and Elisabet M. Nilsson. 2024. More-than-Human Perspectives in Human-Computer Interaction Research: A Scoping Review. In *Nordic Conference on Human-Computer Interaction* (NordiCHI 2024), October 13–16, 2024, Uppsala, Sweden. ACM, New York, NY, USA, 18 pages. <https://doi.org/10.1145/3679318.3685408>
 
-- Laura Forlano. 2017. Posthumanism and Design. *She Ji: The Journal of Design, Economics, and Innovation* 3, 1 (2017), 16–29. <https://doi.org/10.1016/j.sheji.2017.08.001>
+[3] Laura Forlano. 2017. Posthumanism and Design. *She Ji: The Journal of Design, Economics, and Innovation* 3, 1 (2017), 16–29. <https://doi.org/10.1016/j.sheji.2017.08.001>
 
-- Elisa Giaccardi and Johan Redström. 2020. Technology and More-Than-Human Design. *Design Issues* 36, 4 (2020), 33–44. <https://doi.org/10.1162/desi_a_00612>
+[4] Elisa Giaccardi and Johan Redström. 2020. Technology and More-Than-Human Design. *Design Issues* 36, 4 (2020), 33–44. <https://doi.org/10.1162/desi_a_00612>
 
-- Anton Poikolainen Rosén, Yuxi Chen, Suzanna Törnroth, İdil Gaziulusoy, and Tatu Marttila. 2024. Four Questions for Systemic More-Than-Human Design in Practice. In *More-Than-Human Design in Practice*, Anton Poikolainen Rosén, Antti Salovaara, Andrea Botero, and Marie Louise Juul Søndergaard (Eds.). Routledge, London, 132–149. <https://doi.org/10.4324/9781003467731-13>
+[5] Anton Poikolainen Rosén, Yuxi Chen, Suzanna Törnroth, İdil Gaziulusoy, and Tatu Marttila. 2024. Four Questions for Systemic More-Than-Human Design in Practice. In *More-Than-Human Design in Practice*, Anton Poikolainen Rosén, Antti Salovaara, Andrea Botero, and Marie Louise Juul Søndergaard (Eds.). Routledge, London, 132–149. <https://doi.org/10.4324/9781003467731-13>
 
-- Anton Poikolainen Rosén, Maria Normark, and Mikael Wiberg. 2022. Towards More-Than-Human-Centred Design: Learning from Gardening. *International Journal of Design* 16, 3 (2022), 21–36. <https://doi.org/10.57698/v16i3.02>
+[6] Anton Poikolainen Rosén, Maria Normark, and Mikael Wiberg. 2022. Towards More-Than-Human-Centred Design: Learning from Gardening. *International Journal of Design* 16, 3 (2022), 21–36. <https://doi.org/10.57698/v16i3.02>
 
-- Eike Schneiders, Steve Benford, Alan Chamberlain, Clara Mancini, Simon Castle-Green, Victor Ngo, Ju Row Farr, Matt Adams, Nick Tandavanitj, and Joel Fischer. 2024. Designing Multispecies Worlds for Robots, Cats, and Humans. In *Proceedings of the CHI Conference on Human Factors in Computing Systems* (CHI '24), May 11–16, 2024, Honolulu, HI, USA. ACM, New York, NY, USA, 16 pages. <https://doi.org/10.1145/3613904.3642115>
+[7] Eike Schneiders, Steve Benford, Alan Chamberlain, Clara Mancini, Simon Castle-Green, Victor Ngo, Ju Row Farr, Matt Adams, Nick Tandavanitj, and Joel Fischer. 2024. Designing Multispecies Worlds for Robots, Cats, and Humans. In *Proceedings of the CHI Conference on Human Factors in Computing Systems* (CHI '24), May 11–16, 2024, Honolulu, HI, USA. ACM, New York, NY, USA, 16 pages. <https://doi.org/10.1145/3613904.3642115>
 
-- Batya Friedman and David G. Hendry. 2019. *Value Sensitive Design: Shaping Technology with Moral Imagination*. The MIT Press, Cambridge, MA, USA. ISBN 978-0-262-03953-6. <https://mitpressbookstore.mit.edu/book/9780262039536>
+[8] Batya Friedman and David G. Hendry. 2019. *Value Sensitive Design: Shaping Technology with Moral Imagination*. The MIT Press, Cambridge, MA, USA. ISBN 978-0-262-03953-6. <https://mitpressbookstore.mit.edu/book/9780262039536>
 
-- Mike Pinder. [n. d.]. *Systems Mapping Toolkit for Beginners* (v1.1). Explorer Labs. Miro template. Retrieved November 24, 2026 from <https://miro.com/miroverse/systems-mapping-toolkit-for-beginners/>. See also <https://www.explorerlabs.co/tools>
+[9] Mike Pinder. [n. d.]. *Systems Mapping Toolkit for Beginners* (v1.1). Explorer Labs. Miro template. Retrieved November 24, 2026 from <https://miro.com/miroverse/systems-mapping-toolkit-for-beginners/>. See also <https://www.explorerlabs.co/tools>
 
-- Anna Lowenhaupt Tsing. 2015. *The Mushroom at the End of the World: On the Possibility of Life in Capitalist Ruins*. Princeton University Press, Princeton, NJ, USA. <https://doi.org/10.1515/9781400873548>
+[10] Anna Lowenhaupt Tsing. 2015. *The Mushroom at the End of the World: On the Possibility of Life in Capitalist Ruins*. Princeton University Press, Princeton, NJ, USA. <https://doi.org/10.1515/9781400873548>
 
-- Ron Wakkary. 2021. *Things We Could Design: For More Than Human-Centered Worlds*. The MIT Press, Cambridge, MA, USA. <https://doi.org/10.7551/mitpress/13649.001.0001>
+[11] Ron Wakkary. 2021. *Things We Could Design: For More Than Human-Centered Worlds*. The MIT Press, Cambridge, MA, USA. <https://doi.org/10.7551/mitpress/13649.001.0001>
