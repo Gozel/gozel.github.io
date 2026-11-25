@@ -1,12 +1,18 @@
 {%- comment -%} description: "block.key" of the text used as the page summary for search engines and link previews {%- endcomment -%}
-{%- assign dparts = include.description | split: "." -%}{%- assign k1 = dparts[0] -%}{%- assign k2 = dparts[1] -%}
+{%- if include.description -%}
+		{%- assign dparts = include.description | split: "." -%}{%- assign k1 = dparts[0] -%}{%- assign k2 = dparts[1] %}
 		<meta name="description" content="{{ t[k1][k2] | default: en[k1][k2] | strip_html | strip_newlines | escape }}" />
+		{%- endif %}
+		{%- if site.prerendered contains slug %}
 		<link rel="canonical" href="{{ site.url }}{% if lang == 'en' %}{{ alt_en }}{% elsif lang == 'fr' %}{{ alt_fr }}{% else %}{{ alt_de }}{% endif %}" />
 		<link rel="alternate" hreflang="en" href="{{ site.url }}{{ alt_en }}" />
 		<link rel="alternate" hreflang="fr" href="{{ site.url }}{{ alt_fr }}" />
 		<link rel="alternate" hreflang="de" href="{{ site.url }}{{ alt_de }}" />
 		<link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ alt_en }}" />
-				<script>window.sitePrerendered = {{ site.prerendered | jsonify }};</script>
-		{%- if lang == "en" %}
+		{%- else %}
+		<link rel="canonical" href="{{ site.url }}/{{ slug }}" />
+		{%- endif %}
+		<script>window.sitePrerendered = {{ site.prerendered | jsonify }};</script>
+		{%- if lang == "en" and site.prerendered contains slug %}
 		<script>/* readers who chose French or German before get that version */try{var l=localStorage.getItem("lang");if(l==="fr")location.replace("{{ alt_fr }}"+location.hash);else if(l==="de")location.replace("{{ alt_de }}"+location.hash)}catch(e){}</script>
 		{%- endif %}

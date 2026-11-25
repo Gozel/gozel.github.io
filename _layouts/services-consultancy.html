@@ -1,78 +1,12 @@
 ---
 # Built once per language: see the pages that use this layout (e.g. index.html, fr/index.html).
 # Texts come from lang/<lang>.json; edit them there.
+layout: default
+title: consultancypage.title
+description: consultancypage.subtitle
+nav: services
 ---
 {%- include site/lang-vars.html -%}
-<!DOCTYPE HTML>
-<!--
-	Dopetrope by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html lang="{{ lang }}">
-	<head>
-		<title>{{ t.consultancypage.title | default: en.consultancypage.title | strip_html }} | Shakeri et al.</title>
-		{% include site/head-meta.html description='consultancypage.subtitle' %}
-		<meta charset="utf-8" />
-		<base href="/" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="/assets/css/fontawesome-all.min.css" media="print" onload="this.media='all'" />
-		<noscript><link rel="stylesheet" href="/assets/css/fontawesome-all.min.css" /></noscript>
-		<link rel="stylesheet" href="/assets/css/main.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" />
-		<link rel="stylesheet" href="/assets/css/fresh.css" />
-		<link rel="icon" href="/images/logo/favicon.ico">
-		{% include site/analytics.html %}
-	</head>
-	<body class="homepage is-preload fresh">
-		<div id="page-wrapper">
-
-			<!-- Header -->
-				<section id="header">
-
-					<!-- Logo -->
-						<!--<h1><a href="{% include site/url.html to='envirofy.eu' %}">Envirofy</a></h1>-->
-						<div class="container">
-							<div class="row">
-								<div class="col-4 col-4-medium col-6-small">
-									<a href="{% include site/url.html to='' %}" class="image featured" aria-label="Shakeri et al. home"><img src="/images/logo/shakeri_et_al.svg" width="166" height="38" alt="" class="site-logo"/></a>
-									
-								</div>
-								<div class="col-8 col-12-medium col-12-small">
-									<div class="container">
-									<nav id="nav" style="text-align: right;">
-										<ul>
-											<li><a id="nav-approach" href="{% include site/url.html to='approach' %}">{{ t.nav.approach | default: en.nav.approach }}</a></li>
-											<li class="current"><a id="nav-services" href="">{{ t.nav.services | default: en.nav.services }}</a>
-												<ul id="nav-serviceslist">
-													<li><a id="nav-servicesconsultancy" href="{% include site/url.html to='services-consultancy' %}">{{ t.nav.servicesconsultancy | default: en.nav.servicesconsultancy }}</a></li>
-													<li><a id="nav-servicesresearch" href="{% include site/url.html to='services-research' %}" title="{{ t.nav.servicesresearch }}">{{ t.nav.servicesresearch | default: en.nav.servicesresearch }}</a></li>
-													<li><a id="nav-serviceseducation"href="{% include site/url.html to='services-education' %}">{{ t.nav.serviceseducation | default: en.nav.serviceseducation }}</a></li>
-													<li><a id="nav-servicesinnovation"href="{% include site/url.html to='services-innovation' %}">{{ t.nav.servicesinnovation | default: en.nav.servicesinnovation }}</a></li>
-												</ul>
-											</li>
-											
-											<li><a id="nav-about" href="">{{ t.nav.about | default: en.nav.about }}</a>
-												<ul id="nav-aboutlist">
-													<li><a id="nav-aboutgozel" href="{% include site/url.html to='gozel' %}">{{ t.nav.aboutgozel | default: en.nav.aboutgozel }}</a></li>
-													<!-- <li><a id="nav-aboutHCD" href="{% include site/url.html to='designthinking' %}">{{ t.nav.aboutHCD | default: en.nav.aboutHCD }}</a></li> -->
-													<li><a id="nav-aboutpublications" href="{% include site/url.html to='publications' %}">{{ t.nav.aboutpublications | default: en.nav.aboutpublications }}</a></li>
-													<li><a id="nav-abouttalks" href="{% include site/url.html to='talks' %}">{{ t.nav.abouttalks | default: en.nav.abouttalks }}</a></li>
-												</ul>
-											</li>
-											<li><a id="nav-thinktank" href="{% include site/url.html to='think-tank/' %}">{{ t.nav.thinktank | default: en.nav.thinktank }}</a></li>
-											<li><a id="nav-contact" href="{% include site/url.html to='contact' %}">{{ t.nav.contact | default: en.nav.contact }}</a></li>
-											<li class="lang-li"><div class="lang-switch" role="group" aria-label="Language"><button type="button" data-set-lang="en" data-href="{{ alt_en }}">EN</button><button type="button" data-set-lang="fr" data-href="{{ alt_fr }}">FR</button><button type="button" data-set-lang="de" data-href="{{ alt_de }}">DE</button></div></li>
-										</ul>
-									</nav>
-								</div>
-								</div>
-							</div>
-						</div>
-				</section>
-
 				<section id="banner">
 					<header>
 						<div class="row">
@@ -253,11 +187,7 @@
 								<div class="rp-cred"><p class="rp-cred-num" id="cp-c2num">{{ t.consultancypage.c2num | default: en.consultancypage.c2num }}</p><p id="cp-c2">{{ t.consultancypage.c2 | default: en.consultancypage.c2 }}</p></div>
 								<div class="rp-cred"><p class="rp-cred-num" id="cp-c3num">{{ t.consultancypage.c3num | default: en.consultancypage.c3num }}</p><p id="cp-c3">{{ t.consultancypage.c3 | default: en.consultancypage.c3 }}</p></div>
 							</div>
-							<!-- Testimonial: hidden until there is a quote. Fill in consultancypage > quote, quotecite, then remove these comment markers.
-							<blockquote class="rp-quote">
-								<p id="cp-quote">{{ t.consultancypage.quote | default: en.consultancypage.quote }}</p>
-								<cite id="cp-quotecite">{{ t.consultancypage.quotecite | default: en.consultancypage.quotecite }}</cite>
-							</blockquote> -->
+
 						</div>
 					</section>
 
@@ -338,25 +268,4 @@
 
 				</section>
 
-			<!-- Footer -->
-			{% include site/footer.html %}
-
-		</div>
-
-		<!-- Scripts -->
-		
-		<script src="/assets/js/jquery.min.js"></script>
-		<script src="/assets/js/jquery.dropotron.min.js"></script>
-		<script src="/assets/js/browser.min.js"></script>
-		<script src="/assets/js/breakpoints.min.js"></script>
-		<script src="/assets/js/util.js"></script>
-		<script src="/assets/js/main.js"></script>
-		<script src="/assets/js/site-lang.js"></script>
-		<!-- <script> 
-		$(function(){
-		$("#inject_footer").load("footer.html"); 
-		});
-		</script> -->
-
-	</body>
-</html>
+			

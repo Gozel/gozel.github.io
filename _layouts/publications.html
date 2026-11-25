@@ -1,89 +1,13 @@
 ---
 # Built once per language: see the pages that use this layout (e.g. index.html, fr/index.html).
 # Texts come from lang/<lang>.json; edit them there.
+layout: default
+title: publications.title
+description: publications.abstract
+nav: about
+body_class: no-sidebar
 ---
 {%- include site/lang-vars.html -%}
-<!DOCTYPE HTML>
-<!--
-	Dopetrope by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html lang="{{ lang }}">
-	<head>
-		<title>{{ t.publications.title | default: en.publications.title | strip_html }} | Shakeri et al.</title>
-		{% include site/head-meta.html description='publications.abstract' %}
-		<meta charset="utf-8" />
-		<base href="/" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="/assets/css/fontawesome-all.min.css" media="print" onload="this.media='all'" />
-		<noscript><link rel="stylesheet" href="/assets/css/fontawesome-all.min.css" /></noscript>
-		<link rel="stylesheet" href="/assets/css/main.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" />
-		<link rel="stylesheet" href="/assets/css/fresh.css" />
-		
-		<link rel="icon" href="/images/logo/favicon.ico">
-		{% include site/analytics.html %}
-	</head>
-	<body class="no-sidebar is-preload fresh">
-		<div id="page-wrapper">
-
-			<!-- Header -->
-				<section id="header">
-
-					<!-- Logo -->
-						<!--<h1><a href="{% include site/url.html to='' %}">Envirofy</a></h1>-->
-						<div class="container">
-							<div class="row">
-								<div class="col-12">
-
-									<!-- Portfolio -->
-									<section>
-										<div class="row">
-											<div class="col-4 col-4-medium col-6-small">
-												<a href="{% include site/url.html to='' %}" class="image featured" aria-label="Shakeri et al. home"><img src="/images/logo/shakeri_et_al.svg" width="166" height="38" alt="" class="site-logo"/></a>
-												
-											</div>
-											<div class="col-8 col-6-medium col-12-small">
-												<div class="container">
-													<nav id="nav" style="text-align: right;">
-														<ul>
-															<li><a id="nav-approach" href="{% include site/url.html to='approach' %}">{{ t.nav.approach | default: en.nav.approach }}</a></li>
-															<li><a id="nav-services" href="">{{ t.nav.services | default: en.nav.services }}</a>
-																<ul id="nav-serviceslist">
-																	<li><a id="nav-servicesconsultancy" href="{% include site/url.html to='services-consultancy' %}">{{ t.nav.servicesconsultancy | default: en.nav.servicesconsultancy }}</a></li>
-																	<li><a id="nav-servicesresearch" href="{% include site/url.html to='services-research' %}" title="{{ t.nav.servicesresearch }}">{{ t.nav.servicesresearch | default: en.nav.servicesresearch }}</a></li>
-																	<li><a id="nav-serviceseducation"href="{% include site/url.html to='services-education' %}">{{ t.nav.serviceseducation | default: en.nav.serviceseducation }}</a></li>
-																	<li><a id="nav-servicesinnovation"href="{% include site/url.html to='services-innovation' %}">{{ t.nav.servicesinnovation | default: en.nav.servicesinnovation }}</a></li>
-																</ul>
-															</li>
-															
-															<li class="current"><a id="nav-about" href="">{{ t.nav.about | default: en.nav.about }}</a>
-																<ul id="nav-aboutlist">
-																	<li><a id="nav-aboutgozel" href="{% include site/url.html to='gozel' %}">{{ t.nav.aboutgozel | default: en.nav.aboutgozel }}</a></li>
-																	<!-- <li><a id="nav-aboutHCD" href="{% include site/url.html to='designthinking' %}">{{ t.nav.aboutHCD | default: en.nav.aboutHCD }}</a></li> -->
-																	<li><a id="nav-aboutpublications" href="{% include site/url.html to='publications' %}">{{ t.nav.aboutpublications | default: en.nav.aboutpublications }}</a></li>
-																	<li><a id="nav-abouttalks" href="{% include site/url.html to='talks' %}">{{ t.nav.abouttalks | default: en.nav.abouttalks }}</a></li>
-																</ul>
-															</li>
-															<li><a id="nav-thinktank" href="{% include site/url.html to='think-tank/' %}">{{ t.nav.thinktank | default: en.nav.thinktank }}</a></li>
-															<li><a id="nav-contact" href="{% include site/url.html to='contact' %}">{{ t.nav.contact | default: en.nav.contact }}</a></li>
-															<li class="lang-li"><div class="lang-switch" role="group" aria-label="Language"><button type="button" data-set-lang="en" data-href="{{ alt_en }}">EN</button><button type="button" data-set-lang="fr" data-href="{{ alt_fr }}">FR</button><button type="button" data-set-lang="de" data-href="{{ alt_de }}">DE</button></div></li>
-														</ul>
-													</nav>
-												</div>
-											</div>
-										</div>
-									</section>
-
-								</div>
-							</div>
-						</div>
-
-				</section>
-
 				<section id="banner" id="publications">
 					<header>
 						<div class="row">
@@ -94,32 +18,21 @@
 							</div>
 							<div class="col-6 col-6-medium col-12-small">
 								<img src="/images/gallery/publications.webp" width="100%"/>
-								
+
 							</div>
 						</div>
 					</header>
-					<!-- <header>
-						<div class="row" style="padding: 5em 5em 0em 5em;">
-							<div class="col-6 col-6-medium col-12-small">
-								<h2 style="text-align: center; color: white;" id="publications-title">{{ t.publications.title | default: en.publications.title }}</h2>
-							</div>
-							<div class="col-6 col-6-medium col-12-small">
-									<header style="background-color: #d52349">
-										<p style="text-align: center; color: white;" id="publications-abstract" >{{ t.publications.abstract | default: en.publications.abstract }}</p>
-									</header>
-							</div>
-						</div>
-					</header> -->
+
 				</section>
 
 			<!-- Main -->
 				<section id="main" id="publications">
 					<div class="container">
 							<article class="box post">
-								
+
 								<header>
 									<h3><a name="publications" id="publications-list">{{ t.publications.list | default: en.publications.list }}</a></h3>
-								</header>	
+								</header>
 									<header>
 										<h4><a name="2025">2025</a></h4>
 									</header>
@@ -134,7 +47,7 @@
 										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Di Campli San Vito, P., Yang, X., Ross, J., Shakeri, G., Brewster, S., Venkatesh, S., Street, A., Fachner, J., Fernie, P., Muller-Rodriguez, L., Hung Hsu, M., Odell-Miller, H., Shaji, H., Itaborai, P., Farina, N., Banerjee, S., Kirke, A., and Miranda, E.</span>: <span class="envirofy-papers-title">RadioMe: Adaptive Radio with Music Intervention and Reminder System for People with Dementia in Their Own Home </span> In <span class="envirofy-papers-publication">Augmented Humans</span>, 2024.<a class="papercite_doi" href="https://eprints.gla.ac.uk/323067/"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
 										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">N. Kumar, A. Friday, A. Light, J. Jacques, M.L. Mauriello, K. Gerling, R. Soden, G. Shakeri , N.J. Bidwell, V. Sharma</span>: <span class="envirofy-papers-title">There is no Plan(et) B: On sustainability in/and HCI</span> In <span class="envirofy-papers-publication">IX Interactions</span>, 2024.<a class="papercite_doi" href="https://interactions.acm.org/blog/view/there-is-no-planet-b-on-sustainability-and-hci"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
 										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Kaiser, J.-N., Yu, T., Koelle, M., Shakeri, G.</span>: <span class="envirofy-papers-title">Scan for Sustainability: Designing Interventions with the Behaviour Change Wheel to Support In-Store Sustainable Grocery Shopping.</span> In <span class="envirofy-papers-publication">Arxiv</span>, 2024.<a class="papercite_doi" href="/publications/.pdf"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
-									</ul>	
+									</ul>
 									<header>
 										<h4><a name="2023">2023</a></h4>
 									</header>
@@ -159,7 +72,7 @@
 										<h4><a name="2021">2021</a></h4>
 									</header>
 									<ul>
-										<!--<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Last, F., Last, F., Last, F.</span>: <span class="envirofy-papers-title">Amazing Paper Title.</span> In <span class="envirofy-papers-publication">Amazing Venue</span>, 2021.<a class="papercite_doi" href="#"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>-->
+
 										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Nicolas Farina, Alex Street, Alexis Kirke, Jörg Fachner, Helen Odell-Miller, David Moffat, Satvik Venkatesh, Gözel Shakeri, Stephen Brewster, Sube Banerjee, and Eduardo Reck Miranda</span>: <span class="envirofy-papers-title">Real-time radio remixing for people with mild to moderate dementia who live alone, incorporating agitation reduction, and reminders (RadioMe): A Protocol paper.</span> Submitted to <span class="envirofy-papers-publication">International Journal of Human-Computer Studies</span>, Special Issue on <span class="envirofy-papers-publication">Advances in Human-Centred Dementia Technology</span>, 2021 <a class="papercite_doi" href=""><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a> </li>
 										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Shakeri, G., McCallum, C. H.</span>: <span class="envirofy-papers-title">Envirofy: Behaviour Change Wheel based Tool for Sustainable Online Grocery Shopping.</span> In <span class="envirofy-papers-publication">INTERACT</span>, 2021.<a class="papercite_doi" href="/publications/Interact_2021_Envirofy_Workshop.pdf"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
 										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Shakeri, G., McCallum, C. H.</span>: <span class="envirofy-papers-title">Envirofy your Shop:  a real time tool to support eco-friendly food purchases online.</span> <span class="envirofy-papers-publication">Climate Exp0</span>, 2021.</li>
@@ -168,7 +81,7 @@
 												<li><a href="/publications/ClimateExpo_2021_Poster.pdf">Poster</a></li>
 											</ul>
 										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Shakeri, G., McCallum, C. H.</span>: <span class="envirofy-papers-title">Envirofy: a Real-time Tool to Support Eco-friendly Food Purchases Online.</span> In <span class="envirofy-papers-publication">CHI Workshops/Symposia</span>, 2021.<a class="papercite_doi" href="/publications/CHI_2021_Envirofy_HumanFoodInteraction_Workshop.pdf"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
-										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Shakeri, G., McCallum, C. H.</span>: <span class="envirofy-papers-title">Envirofy your Shop: Development of a Real-time Tool to Support Eco-friendly Food Purchases Online.</span> In <span class="envirofy-papers-publication">CHI Late-Breaking-Work</span>, 2021.<a class="papercite_doi" href="/publications/CHI_2021_LBW_Envirofy Your Shop.pdf"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a> 
+										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Shakeri, G., McCallum, C. H.</span>: <span class="envirofy-papers-title">Envirofy your Shop: Development of a Real-time Tool to Support Eco-friendly Food Purchases Online.</span> In <span class="envirofy-papers-publication">CHI Late-Breaking-Work</span>, 2021.<a class="papercite_doi" href="/publications/CHI_2021_LBW_Envirofy Your Shop.pdf"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a>
 											<ul>
 												<li><a href="https://youtu.be/wnGr3ecfH2Y">5 minute presentation; CHI 2021</a></li>
 												<li><a href="https://youtu.be/xO3nlv6LWto">30 second preview; CHI 2021</a></li>
@@ -178,7 +91,7 @@
 										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Shakeri, G., Brewster, S., Vankatesh, S., Moffat, D., Kirke, A., Fachner, J., Odell-Miller, H., Street, A., Farina, N., Banerjee, S., Reck Miranda, E.</span>: <span class="envirofy-papers-title">RadioMe:  challenges during the development of a real time tool to support People with Dementia.</span> In <span class="envirofy-papers-publication">CHI Workshops on Designing Interactions for the Ageing Populations – AddressingGlobal Challenges</span>, 2021.<a class="papercite_doi" href="/publications/CHI_2021_AgingPopulations_Workshop.pdf"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
 										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Vankatesh, S., Moffat, D., Kirke, A., Shakeri, G., Brewster, S., Fachner, J., Odell-Miller, H., Street, A., Farina, N., Banerjee, S., Reck Miranda, E.</span>: <span class="envirofy-papers-title">Artificially Synthesising Data for Audio Classification and Segmentation to Improve Speech and Music Detection in Radio Broadcast.</span> In <span class="envirofy-papers-publication">ICASSP</span>, 2021.<a class="papercite_doi" href="https://doi.org/10.1109/icassp39728.2021.9413597"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
 										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Shakeri, G., Brewster, S.</span>: <span class="envirofy-papers-title">Dynamic Cutaneous Push Messages from the Steering Wheel.</span> In <span class="envirofy-papers-publication">ARXIV</span>, 2021.<a class="papercite_doi" href="/publications/WorldHaptics_2021_Dynamic_Cutaneous_Push.pdf"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
-										
+
 									</ul>
 
 									<header>
@@ -190,7 +103,7 @@
 											<li class="envirofy-papers-entry">Short-listed for <span class="envirofy-papers-title">SICSA Best Thesis Award</span>, 2020.<a class="papercite_doi" href="/publications/SICSA_2020 PhD Thesis Award Presentation - Multimodal Feedback for Mid-air Gestures when Driving.pptx"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
 											<li class="envirofy-papers-entry">2nd prize at <span class="envirofy-papers-title">Science Slam</span>, 2018.<a class="papercite_doi" href="https://www.youtube.com/watch?v=-kEmFw36Pxs"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
 										</ul>
-										
+
 									</ul>
 
 									<header>
@@ -227,29 +140,10 @@
 										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Shakeri, G., Ng, A., Williamson, J. H., Brewsters, S.</span>: <span class="envirofy-papers-title">Evaluating Haptic Feedback on a Steering Wheel in a Simulated Driving Scenario.</span> In <span class="envirofy-papers-publication">CHI LBW</span>, 2016.<a class="papercite_doi" href="/publications/CHI_2016_Evaluating Haptic Feedback on aSteering Wheel in a Simulated DrivingScenario.pdf"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
 										<li class="envirofy-papers-entry"><span class="envirofy-papers-author">Freeman E., Vo D., Wilson G., Shakeri G., and Brewster S.</span>: <span class="envirofy-papers-title">Towards Mid-Air Haptic Widgets.</span> In <span class="envirofy-papers-publication">CHI Workshops on Mid-Air Haptics and Displays:  Systems forUn-instrumented Mid-Air Interactions.</span>, 2016.<a class="papercite_doi" href="/publications/CHI_2016_MidAirHaptics.pdf"><i class="fa fa-external-link papercite_doi"></i>&nbsp;Link.</a></li>
 									</ul>
-								
+
 							</article>
 
 					</div>
 				</section>
 
-			<!-- Footer -->
-				{% include site/footer.html %}
-
-		<!-- Scripts -->
-		
-		<script src="/assets/js/jquery.min.js"></script>
-		<script src="/assets/js/jquery.dropotron.min.js"></script>
-		<script src="/assets/js/browser.min.js"></script>
-		<script src="/assets/js/breakpoints.min.js"></script>
-		<script src="/assets/js/util.js"></script>
-		<script src="/assets/js/main.js"></script>
-		<script src="/assets/js/site-lang.js"></script>
-		<!-- <script> 
-			$(function(){
-			$("#inject_footer").load("footer.html"); 
-			});
-		</script> -->
-
-	</body>
-</html>
+			

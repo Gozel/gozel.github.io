@@ -1,0 +1,43 @@
+{%- comment -%}
+	Page of a Google Programmable Search Engine (Fact Checker, Science Engine).
+	block = the texts' block in lang/<lang>.json (factchecker or scienceengine).
+	The search box itself comes from cse.google.com, loaded via head_scripts in the layout.
+{%- endcomment -%}
+{%- assign b = include.block -%}
+<section id="main">
+	<div class="container">
+
+		<article class="box post">
+			<header style="text-align: center;">
+				<h2 id="{{ b }}-title">{{ t[b].title | default: en[b].title }}</h2>
+				<p id="{{ b }}-subtitle">{{ t[b].subtitle | default: en[b].subtitle }}</p>
+			</header>
+			<div class="gcse-search"></div>
+		</article>
+
+		<section>
+			<div class="row">
+				<div class="col-6 col-6-medium col-12-small">
+					<section class="box" style="text-align: left;">
+						<p id="{{ b }}-sources">{{ t[b].sources | default: en[b].sources }}</p>
+					</section>
+				</div>
+				<div class="col-6 col-6-medium col-12-small">
+					<section class="box search-engine-note">
+						<p id="{{ b }}-howIbuilt">{{ t[b].howIbuilt | default: en[b].howIbuilt }}</p>
+					</section>
+					<section class="box" style="text-align: center;">
+						<header>
+							<h3 id="{{ b }}-contact">{{ t[b].contact | default: en[b].contact }}</h3>
+						</header>
+						<p><a href="{% include site/url.html to='contact' %}" class="button" id="{{ b }}-more">{{ t[b].more | default: en[b].more }}</a></p>
+					</section>
+					<section class="box" style="text-align: left;">
+						<p id="{{ b }}-resources">{{ t[b].resources | default: en[b].resources }}</p>
+					</section>
+				</div>
+			</div>
+		</section>
+
+	</div>
+</section>

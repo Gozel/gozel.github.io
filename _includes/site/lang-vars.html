@@ -1,7 +1,7 @@
 {%- comment -%}
 	Language of the page being built (page.lang: en, fr or de) and its texts from lang/<lang>.json.
 	t = texts in this language, en = English texts (used when a text is not translated yet).
-	base = "" for English, "/fr" or "/de" otherwise. alt_xx = this page in language xx.
+	base = "" for English, "/fr" or "/de" otherwise. alt_xx = this page in language xx; slug = its English address (page.slug_en).
 {%- endcomment -%}
 {%- if page.collection == "thinktank" -%}{%- assign lang = page.slug -%}{%- else -%}{%- assign lang = page.lang | default: "en" -%}{%- endif -%}
 {%- assign t = site.data[lang] -%}
@@ -11,3 +11,5 @@
 {%- assign alt_en = "/" | append: slug -%}
 {%- assign alt_fr = "/fr/" | append: slug -%}
 {%- assign alt_de = "/de/" | append: slug -%}
+{%- comment %} pages that exist in English only: the language switch opens the home page in that language {% endcomment -%}
+{%- unless site.prerendered contains slug -%}{%- assign alt_fr = "/fr/" -%}{%- assign alt_de = "/de/" -%}{%- endunless -%}

@@ -21,7 +21,7 @@
 	{%- assign piece_audience = first.audience | join: "," | split: "," | join: " " | strip %}
 	<div class="tt-piece" data-category="{{ first.category }}" data-audience="{{ piece_audience }}">
 		{%- for doc in versions %}
-		{%- assign t = site.data.thinktank[doc.slug] | default: site.data.thinktank.en %}
+		{%- assign tt_labels = site.data.thinktank[doc.slug] | default: site.data.thinktank.en %}
 		{%- capture cover %}{% if doc.cover %}{% include tt/src.html src=doc.cover piece=piece.name %}{% endif %}{% endcapture %}
 		{%- if include.absolute %}{% assign href = doc.url %}{% else %}{% assign href = doc.url | remove_first: "/" %}{% endif %}
 		<article class="tt-card" data-lang="{{ doc.slug }}" lang="{{ doc.slug }}"{% if doc.url != shown.url %} hidden{% endif %}>
@@ -35,7 +35,7 @@
 				{%- if doc.lead %}
 				<p>{{ doc.lead }}</p>
 				{%- endif %}
-				<a href="{{ href }}" class="tt-card-more">{{ t.readmore }} &rarr;</a>
+				<a href="{{ href }}" class="tt-card-more">{{ tt_labels.readmore }} &rarr;</a>
 			</div>
 		</article>
 		{%- endfor %}

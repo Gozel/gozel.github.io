@@ -99,6 +99,26 @@ The key-takeaways box wraps normal Markdown:
 `think-tank/images/<folder name>/`. A path containing `/` is used as written,
 starting from the site root, e.g. `images/gallery/network.jpg`.
 
+**Citations** (ACM style): number the references at the end and give each an anchor,
+then link to it in the text:
+
+```markdown
+… as recent research shows <span class="tt-cite">[<a href="#ref-2">2</a>, <a href="#ref-7">7</a>]</span>.
+
+## References
+
+[2] Eva Eriksson, … 2024. More-than-Human Perspectives … <https://doi.org/…>
+{: #ref-2}
+```
+
+**Downloads behind an email box:** give the link the class `tt-gated`. Readers are asked
+for their email address first (sent via Formward, see `contact_form` in `_config.yml`),
+then the file opens:
+
+```markdown
+[Download the PDF](/resources/file.pdf){:.tt-gated target="_blank" rel="noopener"}
+```
+
 **Text containing double quotes** inside an `include` (`caption="…"`): use
 single quotes around it instead (`caption='He said "yes"'`).
 

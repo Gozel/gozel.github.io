@@ -1,0 +1,62 @@
+{%- comment -%}
+	Base layout of every page except the Think Tank (see tt-base.html): head, header, footer and scripts.
+	A page layout sets these in its front matter and contains only the page's own content:
+	  title:       "block.key" of the page title in lang/<lang>.json, or a plain title (" | Shakeri et al." is added)
+	  title_plain: true to use the title exactly as written (home page)
+	  description: "block.key" of the summary for search engines and link previews (optional)
+	  nav:         menu item to highlight: approach, services, about, thinktank or contact
+	  body_class:  "homepage" (default) or "no-sidebar", from the Dopetrope template
+	  scripts:     extra scripts from assets/js/, e.g. [contact-form.js]
+	Dopetrope by HTML5 UP, html5up.net | @ajlkn. Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+{%- endcomment -%}
+{%- include site/lang-vars.html -%}
+{%- if layout.title contains "." -%}
+	{%- assign tparts = layout.title | split: "." -%}{%- assign tk1 = tparts[0] -%}{%- assign tk2 = tparts[1] -%}
+	{%- assign page_title = t[tk1][tk2] | default: en[tk1][tk2] | strip_html -%}
+{%- else -%}
+	{%- assign page_title = layout.title -%}
+{%- endif -%}
+<!DOCTYPE HTML>
+<html lang="{{ lang }}">
+	<head>
+		<title>{{ page_title }}{% unless layout.title_plain %} | Shakeri et al.{% endunless %}</title>
+		{% include site/head-meta.html description=layout.description %}
+		<meta charset="utf-8" />
+		<base href="/" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" href="/images/logo/favicon.ico">
+		<link rel="stylesheet" href="/assets/css/fontawesome-all.min.css" media="print" onload="this.media='all'" />
+		<noscript><link rel="stylesheet" href="/assets/css/fontawesome-all.min.css" /></noscript>
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" />
+		<link rel="stylesheet" href="/assets/css/fresh.css" />
+		{%- for src in layout.head_scripts %}
+		<script async src="{{ src }}"></script>
+		{%- endfor %}
+		{% include site/analytics.html %}
+	</head>
+	<body class="{{ layout.body_class | default: 'homepage' }} is-preload fresh">
+		<div id="page-wrapper">
+
+			{% include site/header.html current=layout.nav %}
+
+{{ content }}
+
+			{% include site/footer.html %}
+
+		</div>
+
+		<script src="/assets/js/jquery.min.js"></script>
+		<script src="/assets/js/jquery.dropotron.min.js"></script>
+		<script src="/assets/js/browser.min.js"></script>
+		<script src="/assets/js/breakpoints.min.js"></script>
+		<script src="/assets/js/util.js"></script>
+		<script src="/assets/js/main.js"></script>
+		{%- for script in layout.scripts %}
+		<script src="/assets/js/{{ script }}"></script>
+		{%- endfor %}
+		<script src="/assets/js/site-lang.js"></script>
+	</body>
+</html>

@@ -1,0 +1,12 @@
+---
+# Built once per language: see the pages that use this layout (science-search.html, fr/science-search.html, de/science-search.html).
+# Texts come from lang/<lang>.json (scienceengine.*); edit them there.
+layout: default
+title: scienceengine.title
+description: scienceengine.subtitle
+nav: services
+body_class: no-sidebar
+head_scripts: ["https://cse.google.com/cse.js?cx=b6e8e88c97f634e68"]
+---
+{%- include site/lang-vars.html -%}
+{% include site/search-engine.html block="scienceengine" %}

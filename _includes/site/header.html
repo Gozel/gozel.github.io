@@ -1,0 +1,41 @@
+{%- comment -%}
+	Site header: logo, menu and language switch. Used by every page.
+	current = the menu item to highlight: approach, services, about, thinktank or contact (or nothing).
+	Menu texts: nav.* in lang/<lang>.json. alt_en/alt_fr/alt_de come from site/lang-vars.html.
+{%- endcomment -%}
+<section id="header">
+	<div class="container">
+		<div class="row">
+			<div class="col-4 col-4-medium col-6-small">
+				<a href="{% include site/url.html to='' %}" class="image featured" aria-label="Shakeri et al. home"><img src="/images/logo/shakeri_et_al.svg" width="166" height="38" alt="" class="site-logo"/></a>
+			</div>
+			<div class="col-8 col-6-medium col-12-small">
+				<div class="container">
+					<nav id="nav" style="text-align: right;">
+						<ul>
+							<li{% if include.current == "approach" %} class="current"{% endif %}><a id="nav-approach" href="{% include site/url.html to='approach' %}">{{ t.nav.approach | default: en.nav.approach }}</a></li>
+							<li{% if include.current == "services" %} class="current"{% endif %}><a id="nav-services" href="">{{ t.nav.services | default: en.nav.services }}</a>
+								<ul id="nav-serviceslist">
+									<li><a id="nav-servicesconsultancy" href="{% include site/url.html to='services-consultancy' %}">{{ t.nav.servicesconsultancy | default: en.nav.servicesconsultancy }}</a></li>
+									<li><a id="nav-servicesresearch" href="{% include site/url.html to='services-research' %}" title="{{ t.nav.servicesresearch }}">{{ t.nav.servicesresearch | default: en.nav.servicesresearch }}</a></li>
+									<li><a id="nav-serviceseducation" href="{% include site/url.html to='services-education' %}">{{ t.nav.serviceseducation | default: en.nav.serviceseducation }}</a></li>
+									<li><a id="nav-servicesinnovation" href="{% include site/url.html to='services-innovation' %}">{{ t.nav.servicesinnovation | default: en.nav.servicesinnovation }}</a></li>
+								</ul>
+							</li>
+							<li{% if include.current == "about" %} class="current"{% endif %}><a id="nav-about" href="">{{ t.nav.about | default: en.nav.about }}</a>
+								<ul id="nav-aboutlist">
+									<li><a id="nav-aboutgozel" href="{% include site/url.html to='gozel' %}">{{ t.nav.aboutgozel | default: en.nav.aboutgozel }}</a></li>
+									<li><a id="nav-aboutpublications" href="{% include site/url.html to='publications' %}">{{ t.nav.aboutpublications | default: en.nav.aboutpublications }}</a></li>
+									<li><a id="nav-abouttalks" href="{% include site/url.html to='talks' %}">{{ t.nav.abouttalks | default: en.nav.abouttalks }}</a></li>
+								</ul>
+							</li>
+							<li{% if include.current == "thinktank" %} class="current"{% endif %}><a id="nav-thinktank" href="{% include site/url.html to='think-tank/' %}">{{ t.nav.thinktank | default: en.nav.thinktank }}</a></li>
+							<li{% if include.current == "contact" %} class="current"{% endif %}><a id="nav-contact" href="{% include site/url.html to='contact' %}">{{ t.nav.contact | default: en.nav.contact }}</a></li>
+							<li class="lang-li"><div class="lang-switch" role="group" aria-label="Language"><button type="button" data-set-lang="en" data-href="{{ alt_en }}">EN</button><button type="button" data-set-lang="fr" data-href="{{ alt_fr }}">FR</button><button type="button" data-set-lang="de" data-href="{{ alt_de }}">DE</button></div></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

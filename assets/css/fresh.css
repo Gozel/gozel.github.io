@@ -2438,3 +2438,9 @@ body.fresh .tt-body .tt-cite {
 	body.fresh .tt-body .tt-cite a {
 		text-decoration: none;
 	}
+
+/* Fact Checker / Science Engine: "How I built it" box (_includes/site/search-engine.html) */
+body.fresh .search-engine-note {
+	text-align: left;
+	background: var(--fg-tint);
+}
