@@ -776,9 +776,10 @@
     "own": "Von Shakeri et al.",
     "badge_own": "Shakeri et al.",
     "free": "Kostenlos",
-    "badge_free": "Kostenlos",
-    "badge_paid": "Kostenpflichtig",
     "open": "Öffnen",
+    "website": "Website",
+    "copylink": "Link zu diesem Abschnitt kopieren",
+    "copied": "Link kopiert",
     "download": "Herunterladen",
     "none": "Keine Ressourcen für diese Auswahl.",
     "kindtool": "Online-Tool",
@@ -790,7 +791,7 @@
     "kindcourse": "Kurs",
     "topics": "Nach Themen stöbern",
     "featuredeyebrow": "Unser kostenloses Toolkit",
-    "featuredtext": "Kartieren Sie ein System mit Menschen und der gesamten belebten Welt: sieben Schritte, vier Leitfragen und ein durchgehendes Beispiel auf jeder Seite. Frei nutzbar für Workshops und Lehre.",
+    "featuredtext": "Kartieren Sie ein System mit Menschen und der gesamten belebten Welt: sieben Schritte, vier Leitfragen und ein durchgehendes Beispiel auf jeder Seite. <strong>Kostenlos</strong> nutzbar für Workshops und Lehre.",
     "featuredaction": "Zum Toolkit"
   }
 }

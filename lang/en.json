@@ -776,9 +776,10 @@
     "own": "By Shakeri et al.",
     "badge_own": "Shakeri et al.",
     "free": "Free",
-    "badge_free": "Free",
-    "badge_paid": "Paid",
     "open": "Open",
+    "website": "Website",
+    "copylink": "Copy link to this section",
+    "copied": "Link copied",
     "download": "Download",
     "none": "No resources for this choice.",
     "kindtool": "Online tool",
@@ -790,7 +791,7 @@
     "kindcourse": "Course",
     "topics": "Browse by topic",
     "featuredeyebrow": "Our free toolkit",
-    "featuredtext": "Map a system with people and the wider living world: seven steps, four guiding questions and a worked example on every page. Free to use in workshops and teaching.",
+    "featuredtext": "Map a system with people and the wider living world: seven steps, four guiding questions and a worked example on every page. <strong>Free</strong> to use in workshops and teaching.",
     "featuredaction": "Get the toolkit"
   }
 }

@@ -50,7 +50,7 @@ scripts: [resources.js]
 					<div class="fh-wrap">
 						<div class="fh-section-head">
 							<p class="fh-eyebrow">{{ forloop.index | prepend: "0" | slice: -2, 2 }}</p>
-							<h2 class="fh-h2">{{ c.title[lang] | default: c.title.en }}</h2>
+							<h2 class="fh-h2">{{ c.title[lang] | default: c.title.en }}<a class="res-anchor" href="#{{ c.id }}" data-copied="{{ r.copied | default: re.copied | escape }}" aria-label="{{ r.copylink | default: re.copylink | escape }}" title="{{ r.copylink | default: re.copylink | escape }}"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg></a></h2>
 							<p>{{ c.text[lang] | default: c.text.en }}</p>
 						</div>
 						<div class="fh-grid res-grid">
@@ -58,7 +58,7 @@ scripts: [resources.js]
 							{%- comment %} where the resource is: another website, a file of this site, or a page of this site {% endcomment -%}
 							{%- assign first = item.url | slice: 0 -%}
 							{%- if item.url contains "://" -%}
-								{%- assign href = item.url -%}{%- assign external = true -%}{%- assign action = r.open | default: re.open -%}
+								{%- assign href = item.url -%}{%- assign external = true -%}{%- assign action = r.website | default: re.website -%}
 							{%- elsif first == "/" -%}
 								{%- assign href = item.url -%}{%- assign external = true -%}{%- assign action = r.download | default: re.download -%}
 							{%- elsif item.url contains "think-tank/" -%}
@@ -74,7 +74,6 @@ scripts: [resources.js]
 								<p class="fh-eyebrow">{{ r.featuredeyebrow | default: re.featuredeyebrow }}</p>
 								{%- endif %}
 								<p class="res-tags">
-									{%- if item.free %}<span class="res-access res-free">{{ r.badge_free | default: re.badge_free }}</span>{% else %}<span class="res-access res-paid">{{ r.badge_paid | default: re.badge_paid }}</span>{% endif %}
 									{%- if item.own %}<span class="res-badge">{{ r.badge_own | default: re.badge_own }}</span>{% endif %}
 									{%- if item.kind %}<span class="res-kind">{{ r[kindkey] | default: re[kindkey] }}</span>{% endif %}
 								</p>
@@ -88,10 +87,10 @@ scripts: [resources.js]
 									{%- if item.featured %}
 									<a class="button res-featured-button" href="{{ href }}"{% if external %} target="_blank" rel="noopener"{% endif %}>{{ r.featuredaction | default: re.featuredaction }} →</a>
 									{%- else %}
-									<a class="rp-link-more" href="{{ href }}"{% if external %} target="_blank" rel="noopener"{% endif %} tabindex="-1" aria-hidden="true">{{ action }} →</a>
+									<a class="rp-link-more" href="{{ href }}"{% if external %} target="_blank" rel="noopener"{% endif %}>{{ action }} →</a>
 									{%- endif %}
-									{%- if item.extra %}
-									<a class="res-extra" href="{{ item.extra.url }}" target="_blank" rel="noopener">{{ item.extra[lang] | default: item.extra.en }} ↗</a>
+									{%- if item.free_link %}
+									<a class="res-free-link" href="{{ item.free_link.url }}" target="_blank" rel="noopener">{{ item.free_link[lang] | default: item.free_link.en }} ↗</a>
 									{%- endif %}
 								</p>
 								{%- if item.featured and item.image %}

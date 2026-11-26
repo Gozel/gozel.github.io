@@ -34,3 +34,23 @@
 	const initial = new URLSearchParams(location.search).get("show");
 	if (initial === "own" || initial === "free") show(initial);
 })();
+
+// Link button next to each topic heading: copies the address of that section
+// (e.g. shakeri.eu/resources#sustainable-business-models) so it can be sent to someone.
+document.querySelectorAll(".res-anchor").forEach(link => {
+	link.addEventListener("click", async e => {
+		const id = link.getAttribute("href").split("#")[1];
+		const url = location.origin + location.pathname + "#" + id;
+		history.replaceState(null, "", location.pathname + location.search + "#" + id); // full path: <base href="/"> would turn "#id" into the home page
+		if (!navigator.clipboard) return; // the browser jumps to the section; copy the address bar
+		e.preventDefault();
+		try {
+			await navigator.clipboard.writeText(url);
+			link.classList.add("is-copied");
+			link.setAttribute("data-label", link.dataset.copied);
+			setTimeout(() => link.classList.remove("is-copied"), 2000);
+		} catch (err) {
+			location.hash = id;
+		}
+	});
+});

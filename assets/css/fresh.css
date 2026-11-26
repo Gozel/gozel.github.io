@@ -2512,10 +2512,33 @@ body.fresh .res-card {
 		gap: 0.5em 1.25em;
 	}
 
-	body.fresh .res-extra {
-		color: var(--fg-muted);
-		font-weight: 600;
+	/* "free" in the card text and the link to the free version */
+	body.fresh .res-card p strong {
+		font-weight: 700;
+		color: var(--fg-primary);
+		background: var(--fg-tint);
+		padding: 0 0.25em;
+		border-radius: 4px;
+	}
+
+	body.fresh .res-free-link {
+		font-weight: 700;
 		font-size: 0.9em;
+		color: var(--fg-primary);
+		background: var(--fg-tint);
+		padding: 0.2em 0.7em;
+		border-radius: 999px;
+		text-decoration: none;
+	}
+
+	body.fresh .res-free-link:hover {
+		background: var(--fg-primary);
+		color: #FFFFFF;
+	}
+
+	body.fresh .rp-page .res-card.res-featured p strong {
+		color: var(--fg-ink);
+		background: var(--fg-bright);
 	}
 
 body.fresh .res-tags {
@@ -2535,23 +2558,10 @@ body.fresh .res-tags {
 		line-height: 1.6;
 	}
 
-	body.fresh .res-access,
 	body.fresh .res-badge {
 		padding: 0.25em 0.75em;
 		border-radius: 999px;
 		line-height: 1.6;
-	}
-
-	/* Free or paid: the first thing readers see on each card */
-	body.fresh .res-free {
-		background: var(--fg-primary);
-		color: #FFFFFF;
-	}
-
-	body.fresh .res-paid {
-		background: var(--fg-ground);
-		color: var(--fg-muted);
-		border: 1px solid var(--fg-line);
 	}
 
 	body.fresh .res-badge {
@@ -2659,5 +2669,60 @@ body.fresh .res-grid {
 @media screen and (max-width: 736px) {
 	body.fresh .res-grid {
 		grid-template-columns: 1fr;
+	}
+}
+
+/* Link button next to each Resources topic heading (copies the section's address) */
+body.fresh .res-anchor {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 1.5em;
+	height: 1.5em;
+	margin-left: 0.35em;
+	border-radius: 50%;
+	vertical-align: middle;
+	font-size: 0.6em;
+	color: var(--fg-muted);
+	text-decoration: none;
+	opacity: 0.55;
+	transition: opacity 0.15s, background 0.15s, color 0.15s;
+}
+
+	body.fresh .res-cluster h2:hover .res-anchor,
+	body.fresh .res-anchor:focus-visible,
+	body.fresh .res-anchor.is-copied {
+		opacity: 1;
+		background: var(--fg-tint);
+		color: var(--fg-primary);
+	}
+
+	body.fresh .res-anchor svg {
+		width: 0.85em;
+		height: 0.85em;
+	}
+
+	/* "Link copied" bubble */
+	body.fresh .res-anchor.is-copied::after {
+		content: attr(data-label);
+		position: absolute;
+		left: 50%;
+		bottom: 100%;
+		transform: translate(-50%, -6px);
+		white-space: nowrap;
+		padding: 0.3em 0.7em;
+		border-radius: 999px;
+		background: var(--fg-ink);
+		color: #FFFFFF;
+		font-family: var(--fg-text);
+		font-size: 14px;
+		font-weight: 600;
+		letter-spacing: 0;
+	}
+
+@media (hover: none) {
+	body.fresh .res-anchor {
+		opacity: 1;
 	}
 }

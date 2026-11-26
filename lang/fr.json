@@ -776,9 +776,10 @@
     "own": "Par Shakeri et al.",
     "badge_own": "Shakeri et al.",
     "free": "Gratuites",
-    "badge_free": "Gratuit",
-    "badge_paid": "Payant",
     "open": "Ouvrir",
+    "website": "Site web",
+    "copylink": "Copier le lien vers cette section",
+    "copied": "Lien copié",
     "download": "Télécharger",
     "none": "Aucune ressource pour ce choix.",
     "kindtool": "Outil en ligne",
@@ -790,7 +791,7 @@
     "kindcourse": "Formation",
     "topics": "Parcourir par thème",
     "featuredeyebrow": "Notre boîte à outils gratuite",
-    "featuredtext": "Cartographiez un système avec les humains et l’ensemble du monde vivant : sept étapes, quatre questions directrices et un exemple concret sur chaque page. Libre d’utilisation pour les ateliers et l’enseignement.",
+    "featuredtext": "Cartographiez un système avec les humains et l’ensemble du monde vivant : sept étapes, quatre questions directrices et un exemple concret sur chaque page. Libre et <strong>gratuit</strong> pour les ateliers et l’enseignement.",
     "featuredaction": "Obtenir la boîte à outils"
   }
 }
