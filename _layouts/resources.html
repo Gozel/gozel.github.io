@@ -1,75 +1,111 @@
 ---
-# Built once per language: see the pages that use this layout (e.g. index.html, fr/index.html).
-# Texts come from lang/<lang>.json; edit them there.
+# Resources page, built once per language (resources.html, fr/resources.html, de/resources.html).
+# The list of resources is lang/resources.yml; the page texts are resourcespage.* in lang/<lang>.json.
 layout: default
-title: Free Resources
-body_class: no-sidebar
+title: resourcespage.title
+description: resourcespage.intro
+nav: resources
+scripts: [resources.js]
 ---
 {%- include site/lang-vars.html -%}
-			<section id="banner" class="resources">
+{%- assign r = t.resourcespage -%}{%- assign re = en.resourcespage -%}
+			<section id="banner">
 				<header>
-					<h2>Free Resources</h2>
-
-					<!-- simple tools ... social innovation -->
+					<div class="row">
+						<div class="col-6 col-6-medium col-12-small banner-text">
+							<p>{{ r.eyebrow | default: re.eyebrow }}</p>
+							<h2>{{ r.title | default: re.title }}</h2>
+							<p>{{ r.intro | default: re.intro }}</p>
+						</div>
+						<div class="col-6 col-6-medium col-12-small">
+							<img src="/images/gallery/resources.webp" alt="" width="100%"/>
+						</div>
+					</div>
 				</header>
 			</section>
 
-			<!-- Main -->
-				<section id="main">
-					<div class="container">
+			<section id="main" class="rp-page">
 
-						<article class="box post" style="background-color: #d52349">
-							<header>
-								<h3 style="text-align: center; color: white;">Explore valuable resources on design thinking and digital transformation.</h3>
-							</header>
-						</article>
+				<div class="fh-wrap">
+					<article class="fh-card res-topics">
+						<h2>{{ r.topics | default: re.topics }}</h2>
+						<ul class="rp-tags">
+							{%- for c in site.data.resources.clusters %}
+							<li><a href="#{{ c.id }}">{{ c.title[lang] | default: c.title.en }}</a></li>
+							{%- endfor %}
+						</ul>
+					</article>
+					<div class="tt-filters res-filters">
+						<div class="tt-filter-group" role="group" aria-label="{{ r.show | default: re.show | strip_html | remove: ':' | remove: '&nbsp;' | strip }}">
+							<span class="tt-filter-label">{{ r.show | default: re.show }}</span>
+							<button type="button" class="tt-filter" data-show="all" aria-pressed="true">{{ r.all | default: re.all }}</button>
+							<button type="button" class="tt-filter" data-show="free" aria-pressed="false">{{ r.free | default: re.free }}</button>
+							<button type="button" class="tt-filter" data-show="own" aria-pressed="false">{{ r.own | default: re.own }}</button>
+						</div>
+					</div>
+				</div>
 
-						<!-- Content -->
-							<article class="box post">
-
-								<section>
-
-									<ul class="dates">
-
-										<li>
-											<span class="date"></span>
-											<h3>Digital Transformation</h3>
-
-											<ol>
-												<p>G&#246;zel's <a href="">7-step Guide to Developing a Digital Transformation Strategy</a> (coming soon)</p>
-												<p><a href="https://european-digital-innovation-hubs.ec.europa.eu/open-dma">The European Commission's Digital Maturity Assessment Tool</a></p>
-												<p><a href="https://www.prosci.com/change-management">Change Management - ADKAR model</a></p>
-
-											</ol>
-										</li>
-										<li>
-											<span class="date"></span>
-											<h3>Design Thinking</h3>
-
-											<ol>
-												<p><a href="http://www.designkit.org/index.html">Human-centered Design Kit</a></p>
-												<p><a href="https://www.designinginsights.com/">Improv Games for Remote Design + Collaboration</a></p>
-												<p><a href="https://www.systemicdesigntoolkit.org/">Systemic Design Toolkit</a></p>
-												<p><a href="https://imaginari.es/new-metaphors/">New Metaphors</a></p>
-												<p><a href="https://designthinkmakebreakrepeat.com/">Design Think Make Break Repeat</a></p>
-												<p><a href="https://apphaus.sap.com/">AppHaus</a></p>
-												<p><a href="https://www.strategyzer.com/">Strategyzer</a></p>
-											</ol>
-										</li>
-										<li>
-											<span class="date"></span>
-											<h3>Media Literacy</h3>
-											<ol>
-												<p>G&#246;zel's <a href="{% include site/url.html to='fact-checker' %}">Fact Checker</a></p>
-												<p>G&#246;zel's <a href="{% include site/url.html to='science-search' %}">Science Engine</a></p>
-												<p>G&#246;zel's <a href="/resources/media literacy/Shakeri - Media Literacy Starter Kit.pdf">Media Literacy Starter Kit</a></p>
-
-											</ol>
-										</li>
-									</ul>
-								</section>
+				{%- for c in site.data.resources.clusters %}
+				<section class="fh-section res-cluster" id="{{ c.id }}">
+					<div class="fh-wrap">
+						<div class="fh-section-head">
+							<p class="fh-eyebrow">{{ forloop.index | prepend: "0" | slice: -2, 2 }}</p>
+							<h2 class="fh-h2">{{ c.title[lang] | default: c.title.en }}</h2>
+							<p>{{ c.text[lang] | default: c.text.en }}</p>
+						</div>
+						<div class="fh-grid res-grid">
+							{%- for item in c.items %}
+							{%- comment %} where the resource is: another website, a file of this site, or a page of this site {% endcomment -%}
+							{%- assign first = item.url | slice: 0 -%}
+							{%- if item.url contains "://" -%}
+								{%- assign href = item.url -%}{%- assign external = true -%}{%- assign action = r.open | default: re.open -%}
+							{%- elsif first == "/" -%}
+								{%- assign href = item.url -%}{%- assign external = true -%}{%- assign action = r.download | default: re.download -%}
+							{%- elsif item.url contains "think-tank/" -%}
+								{%- assign href = "/" | append: item.url | append: lang | append: "/" -%}{%- assign external = false -%}{%- assign action = r.open | default: re.open -%}
+							{%- else -%}
+								{%- capture href %}{% include site/url.html to=item.url %}{% endcapture -%}{%- assign external = false -%}{%- assign action = r.open | default: re.open -%}
+							{%- endif -%}
+							{%- assign kindkey = "kind" | append: item.kind %}
+							<article class="fh-card res-card{% if item.own %} res-own{% endif %}{% if item.featured %} res-featured{% endif %}" data-own="{% if item.own %}true{% else %}false{% endif %}" data-free="{% if item.free %}true{% else %}false{% endif %}">
+								{%- if item.featured and item.image %}
+								<a class="res-featured-image" href="{{ href }}" tabindex="-1" aria-hidden="true"><img src="/{{ item.image }}" alt="" loading="lazy"/></a>
+								<div class="res-featured-body">
+								<p class="fh-eyebrow">{{ r.featuredeyebrow | default: re.featuredeyebrow }}</p>
+								{%- endif %}
+								<p class="res-tags">
+									{%- if item.free %}<span class="res-access res-free">{{ r.badge_free | default: re.badge_free }}</span>{% else %}<span class="res-access res-paid">{{ r.badge_paid | default: re.badge_paid }}</span>{% endif %}
+									{%- if item.own %}<span class="res-badge">{{ r.badge_own | default: re.badge_own }}</span>{% endif %}
+									{%- if item.kind %}<span class="res-kind">{{ r[kindkey] | default: re[kindkey] }}</span>{% endif %}
+								</p>
+								<h3><a href="{{ href }}"{% if external %} target="_blank" rel="noopener"{% endif %}>{{ item.name }}</a></h3>
+								{%- if item.featured %}
+								<p>{{ r.featuredtext | default: re.featuredtext }}</p>
+								{%- else %}
+								<p>{{ item[lang] | default: item.en }}</p>
+								{%- endif %}
+								<p class="res-links">
+									{%- if item.featured %}
+									<a class="button res-featured-button" href="{{ href }}"{% if external %} target="_blank" rel="noopener"{% endif %}>{{ r.featuredaction | default: re.featuredaction }} →</a>
+									{%- else %}
+									<a class="rp-link-more" href="{{ href }}"{% if external %} target="_blank" rel="noopener"{% endif %} tabindex="-1" aria-hidden="true">{{ action }} →</a>
+									{%- endif %}
+									{%- if item.extra %}
+									<a class="res-extra" href="{{ item.extra.url }}" target="_blank" rel="noopener">{{ item.extra[lang] | default: item.extra.en }} ↗</a>
+									{%- endif %}
+								</p>
+								{%- if item.featured and item.image %}
+								</div>
+								{%- endif %}
 							</article>
+							{%- endfor %}
+						</div>
 					</div>
 				</section>
+				{%- endfor %}
 
-			
+				<div class="fh-wrap">
+					<p class="tt-filter-none res-none" hidden>{{ r.none | default: re.none }}</p>
+				</div>
+
+			</section>

@@ -2444,3 +2444,220 @@ body.fresh .search-engine-note {
 	text-align: left;
 	background: var(--fg-tint);
 }
+
+/* ---------- Resources page (_layouts/resources.html, list in lang/resources.yml) ---------- */
+
+body.fresh .res-filters {
+	margin: 1.5em 0 0 0;
+}
+
+body.fresh .res-topics {
+	margin: 2.5em 0 0 0;
+}
+
+	body.fresh .res-topics h2 {
+		margin: 0 0 0.75em 0;
+	}
+
+	body.fresh .res-topics .rp-tags li {
+		padding: 0;
+	}
+
+	body.fresh .res-topics .rp-tags a {
+		display: block;
+		padding: 6px 14px;
+		border-radius: 999px;
+		color: inherit;
+		text-decoration: none;
+		transition: background 0.15s, color 0.15s;
+	}
+
+	body.fresh .res-topics .rp-tags a:hover,
+	body.fresh .res-topics .rp-tags a:focus-visible {
+		background: var(--fg-primary);
+		color: #FFFFFF;
+	}
+
+	body.fresh .res-topics .rp-tags li[hidden] {
+		display: none;
+	}
+
+body.fresh .res-cluster {
+	scroll-margin-top: 90px;
+}
+
+	body.fresh .res-cluster[hidden],
+	body.fresh .res-card[hidden] {
+		display: none;
+	}
+
+body.fresh .res-card {
+	display: flex;
+	flex-direction: column;
+}
+
+	body.fresh .res-card h3 a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	body.fresh .res-card h3 a:hover {
+		color: var(--fg-primary);
+	}
+
+	body.fresh .res-card .res-links {
+		margin: auto 0 0 0;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5em 1.25em;
+	}
+
+	body.fresh .res-extra {
+		color: var(--fg-muted);
+		font-weight: 600;
+		font-size: 0.9em;
+	}
+
+body.fresh .res-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4em;
+	margin: 0 0 0.75em 0;
+	font-size: 0.75em;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+	body.fresh .res-kind {
+		padding: 0.25em 0.75em;
+		border-radius: 999px;
+		line-height: 1.6;
+	}
+
+	body.fresh .res-access,
+	body.fresh .res-badge {
+		padding: 0.25em 0.75em;
+		border-radius: 999px;
+		line-height: 1.6;
+	}
+
+	/* Free or paid: the first thing readers see on each card */
+	body.fresh .res-free {
+		background: var(--fg-primary);
+		color: #FFFFFF;
+	}
+
+	body.fresh .res-paid {
+		background: var(--fg-ground);
+		color: var(--fg-muted);
+		border: 1px solid var(--fg-line);
+	}
+
+	body.fresh .res-badge {
+		background: var(--fg-bright);
+		color: var(--fg-ink);
+	}
+
+	body.fresh .res-kind {
+		background: var(--fg-tint);
+		color: var(--fg-primary);
+	}
+
+body.fresh .res-own {
+	border-color: var(--fg-primary);
+}
+
+/* Narrow desktops (981–1280px): tighter menu so all items fit next to the logo */
+@media screen and (min-width: 981px) and (max-width: 1280px) {
+	body.fresh #nav > ul > li > a {
+		padding: 0.5em 0.6em;
+		font-size: 0.92em;
+	}
+
+	body.fresh #nav > ul > li > a#nav-contact {
+		padding: 0.5em 0.9em;
+		margin-left: 0.2em;
+	}
+
+	body.fresh {
+		--fg-hx-left: 32px;
+		--fg-hx-right: 24px;
+	}
+}
+
+/* Highlighted resource (featured: true in lang/resources.yml): full width, dark, with image */
+body.fresh .res-card.res-featured {
+	grid-column: 1 / -1;
+	display: grid;
+	grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+	gap: 2em;
+	align-items: center;
+	background: var(--fg-ink);
+	border-color: var(--fg-ink);
+	color: #E8EFE6;
+}
+
+	body.fresh .res-featured-image img {
+		display: block;
+		width: 100%;
+		border-radius: 14px;
+	}
+
+	body.fresh .rp-page .res-card.res-featured .fh-eyebrow {
+		color: var(--fg-bright) !important;
+		margin: 0 0 0.75em 0;
+	}
+
+	body.fresh .rp-page .res-card.res-featured p {
+		color: #D5E2D9;
+	}
+
+	body.fresh .res-featured h3 {
+		margin-top: 0.4em;
+	}
+
+	body.fresh .res-featured h3,
+	body.fresh .res-featured h3 a {
+		color: #FFFFFF;
+		font-size: 1.5em;
+	}
+
+	body.fresh .res-featured .res-kind {
+		background: rgba(255, 255, 255, 0.12);
+		color: #FFFFFF;
+	}
+
+	body.fresh .res-featured .res-links {
+		margin-top: 1em;
+	}
+
+	body.fresh .res-featured .res-featured-button {
+		margin: 0;
+		background: var(--fg-bright) !important;
+		color: var(--fg-ink) !important;
+	}
+
+@media screen and (max-width: 736px) {
+	body.fresh .res-card.res-featured {
+		grid-template-columns: 1fr;
+		gap: 1.25em;
+	}
+}
+
+/* Resources: three cards per row */
+body.fresh .res-grid {
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media screen and (max-width: 980px) {
+	body.fresh .res-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media screen and (max-width: 736px) {
+	body.fresh .res-grid {
+		grid-template-columns: 1fr;
+	}
+}

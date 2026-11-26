@@ -17,6 +17,7 @@
     "aboutpublications": "Publications",
     "abouttalks": "Conférences",
     "thinktank": "Think Tank",
+    "resources": "Ressources",
     "contact": "Contact"
   },
   "footer": {
@@ -765,5 +766,31 @@
     "crosslinks": "Besoin de données d’abord ? <a href='services-research'>Recherche →</a> &nbsp;·&nbsp; Vous voulez former votre équipe ? <a href='services-education'>Formation →</a> &nbsp;·&nbsp; Prêts pour un atelier ? <a href='services-innovation'>Innovation →</a>",
     "contact": "Menez le changement au lieu de le subir. Parlons de la manière dont la durabilité peut créer de la valeur pour vous.",
     "more": "Réserver un appel découverte"
+  },
+  "resourcespage": {
+    "eyebrow": "Ressources",
+    "title": "Outils, guides et lectures gratuits",
+    "intro": "Ce que nous utilisons dans nos propres projets, classé par thème. Certaines ressources sont les nôtres, les autres nous les recommandons. La plupart sont gratuites et utilisables immédiatement.",
+    "show": "Afficher&nbsp;:",
+    "all": "Toutes",
+    "own": "Par Shakeri et al.",
+    "badge_own": "Shakeri et al.",
+    "free": "Gratuites",
+    "badge_free": "Gratuit",
+    "badge_paid": "Payant",
+    "open": "Ouvrir",
+    "download": "Télécharger",
+    "none": "Aucune ressource pour ce choix.",
+    "kindtool": "Outil en ligne",
+    "kindtoolkit": "Boîte à outils",
+    "kindguide": "Guide",
+    "kindbook": "Livre",
+    "kindpaper": "Article",
+    "kindmethod": "Méthode",
+    "kindcourse": "Formation",
+    "topics": "Parcourir par thème",
+    "featuredeyebrow": "Notre boîte à outils gratuite",
+    "featuredtext": "Cartographiez un système avec les humains et l’ensemble du monde vivant : sept étapes, quatre questions directrices et un exemple concret sur chaque page. Libre d’utilisation pour les ateliers et l’enseignement.",
+    "featuredaction": "Obtenir la boîte à outils"
   }
 }

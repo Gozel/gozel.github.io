@@ -1,0 +1,193 @@
+# List of the Resources page (_layouts/resources.html), in all three languages.
+#
+# The page texts (title, filter labels, …) are resourcespage.* in lang/<lang>.json.
+# clusters: the topics, in the order they appear. Each resource has:
+#   name:   its name (proper names stay in English)
+#   url:    the address. Pages of this site: write the page name only, e.g. fact-checker;
+#           the page opens in the reader's language. "think-tank/<piece>/" adds the language too.
+#   own:    true = made by Shakeri et al.; leave out for resources by others
+#   free:   true = free to use (even if a paid book or print version also exists); false = paid only
+#   kind:   tool, toolkit, guide, book, paper, method or course (shown as a small label)
+#   featured: true = shown as a large highlighted card (with image: path from the site root)
+#   extra:  optional second link, e.g. a free paper: { url: ..., en: ..., fr: ..., de: ... }
+#   en/fr/de: one sentence on what it is and why it helps
+
+clusters:
+  - id: design
+    title:
+      en: Design & innovation methods
+      fr: Méthodes de design et d’innovation
+      de: Design- und Innovationsmethoden
+    text:
+      en: Understand the people you design for, generate ideas and test them quickly.
+      fr: Comprendre les personnes pour qui vous concevez, générer des idées et les tester rapidement.
+      de: Die Menschen verstehen, für die Sie gestalten, Ideen entwickeln und schnell testen.
+    items:
+      - name: Design Think Make Break Repeat
+        url: https://designthinkmakebreakrepeat.com/
+        free: true
+        kind: book
+        en: 80 design methods, from research and ideation to prototyping and evaluation. Templates and an online course are free; the book is paid.
+        fr: 80 méthodes de design, de la recherche et de l’idéation au prototypage et à l’évaluation. Modèles et cours en ligne gratuits ; le livre est payant.
+        de: 80 Designmethoden – von Recherche und Ideenfindung bis zu Prototyping und Evaluation. Vorlagen und Onlinekurs sind kostenlos, das Buch ist kostenpflichtig.
+      - name: New Metaphors
+        url: https://imaginari.es/new-metaphors/
+        free: true
+        kind: toolkit
+        en: A card-based toolkit for reframing problems and generating new ideas.
+        fr: Un jeu de cartes pour recadrer les problèmes et générer de nouvelles idées.
+        de: Ein kartenbasiertes Toolkit, um Probleme neu zu rahmen und Ideen zu entwickeln.
+      - name: Improv Games for Remote Design
+        url: https://www.designinginsights.com/
+        free: true
+        kind: method
+        en: Warm-ups and games that make remote collaboration creative and fun.
+        fr: Des jeux et échauffements pour une collaboration à distance créative et ludique.
+        de: Warm-ups und Spiele, die Remote-Zusammenarbeit kreativ und unterhaltsam machen.
+      - name: Human-centred Design Kit
+        url: https://www.designkit.org/
+        free: true
+        kind: toolkit
+        en: Methods and case studies from IDEO.org for designing with the people you serve.
+        fr: Des méthodes et études de cas d’IDEO.org pour concevoir avec les personnes que vous servez.
+        de: Methoden und Fallstudien von IDEO.org, um gemeinsam mit den Menschen zu gestalten, für die Sie arbeiten.
+      - name: SAP AppHaus
+        url: https://apphaus.sap.com/
+        free: true
+        kind: method
+        en: Human-centred design methods and templates from SAP’s design network.
+        fr: Des méthodes et modèles de conception centrée sur l’humain, issus du réseau de design de SAP.
+        de: Methoden und Vorlagen für menschzentriertes Design aus dem Designnetzwerk von SAP.
+
+  - id: systems
+    title:
+      en: Systems thinking & more-than-human design
+      fr: Pensée systémique et design more-than-human
+      de: Systemdenken und More-than-Human Design
+    text:
+      en: Look beyond the immediate user, see how things are connected and find where to intervene.
+      fr: Regarder au-delà de l’utilisateur immédiat, voir comment tout est lié et trouver où intervenir.
+      de: Über die unmittelbaren Nutzer:innen hinausblicken, Zusammenhänge erkennen und die richtigen Hebel finden.
+    items:
+      - name: More-than-Human Systems Mapping Toolkit
+        url: think-tank/systemic-more-than-human-design-toolkit/
+        free: true
+        own: true
+        kind: toolkit
+        featured: true
+        image: think-tank/images/systemic-more-than-human-design-toolkit/More-than-Human-Systems-Mapping-Toolkit.png
+        en: Our step-by-step workshop tool for mapping systems with people and the wider living world.
+        fr: Notre outil d’atelier, étape par étape, pour cartographier les systèmes avec les humains et l’ensemble du monde vivant.
+        de: Unser Workshop-Tool, um Schritt für Schritt Systeme zu kartieren – mit Menschen und der gesamten belebten Welt.
+      - name: Systemic Design Toolkit
+        url: https://www.systemicdesigntoolkit.org/
+        free: true
+        kind: toolkit
+        en: Tools to understand complex systems and design interventions within them.
+        fr: Des outils pour comprendre les systèmes complexes et y concevoir des interventions.
+        de: Werkzeuge, um komplexe Systeme zu verstehen und darin wirksam zu gestalten.
+      - name: Explorer Labs Tools
+        url: https://www.explorerlabs.co/tools
+        free: true
+        kind: toolkit
+        en: Free Miro canvases and cards for systems thinking, sustainable business models and foresight.
+        fr: Des canevas et cartes Miro gratuits pour la pensée systémique, les modèles d’affaires durables et la prospective.
+        de: Kostenlose Miro-Canvases und -Karten für Systemdenken, nachhaltige Geschäftsmodelle und strategische Vorausschau.
+
+  - id: business
+    title:
+      en: Sustainable business models
+      fr: Modèles d’affaires durables
+      de: Nachhaltige Geschäftsmodelle
+    text:
+      en: Proven patterns for earning money while creating ecological and social value.
+      fr: Des modèles éprouvés pour gagner de l’argent tout en créant de la valeur écologique et sociale.
+      de: Bewährte Muster, um Geld zu verdienen und dabei ökologischen und sozialen Mehrwert zu schaffen.
+    items:
+      - name: Sustainable Business Model Design
+        url: https://www.sustainablebusiness.design/
+        free: true
+        kind: book
+        en: 45 patterns for sustainable business models, with free workshop guides and pattern cards.
+        fr: 45 modèles pour des modèles d’affaires durables, avec guides d’atelier et cartes gratuits.
+        de: 45 Muster für nachhaltige Geschäftsmodelle, mit kostenlosen Workshop-Leitfäden und Musterkarten.
+        extra:
+          url: https://www.researchgate.net/publication/325957687_The_Sustainable_Business_Model_Pattern_Taxonomy_-_45_Patterns_to_Support_Sustainability-Oriented_Business_Model_Innovation
+          en: Free paper
+          fr: Article gratuit
+          de: Kostenloser Fachartikel
+      - name: St. Gallen Business Model Navigator
+        url: https://alexandria.unisg.ch/server/api/core/bitstreams/d71e2821-d8f8-4cc1-a1ee-97baff7d9e48/content
+        free: true
+        kind: paper
+        en: 55+ business model patterns used by successful companies, explained step by step (free PDF).
+        fr: Plus de 55 modèles d’affaires utilisés par des entreprises à succès, expliqués étape par étape (PDF gratuit).
+        de: Über 55 Geschäftsmodellmuster erfolgreicher Unternehmen, Schritt für Schritt erklärt (kostenloses PDF).
+        extra:
+          url: https://www.seconds-innovation.com/resources
+          en: Books and cards
+          fr: Livres et cartes
+          de: Bücher und Karten
+      - name: Circular Ecosystems
+        url: https://alexandria.unisg.ch/server/api/core/bitstreams/80845b25-a08c-4633-b118-3d2ae0682714/content
+        free: true
+        kind: paper
+        en: White paper on business model innovation for the circular economy, with 40 circular patterns (free PDF).
+        fr: Livre blanc sur l’innovation des modèles d’affaires pour l’économie circulaire, avec 40 modèles circulaires (PDF gratuit).
+        de: Whitepaper zur Geschäftsmodellinnovation für die Kreislaufwirtschaft, mit 40 zirkulären Mustern (kostenloses PDF).
+      - name: Triple Layered Business Model Canvas
+        url: https://www.academia.edu/download/82460258/Aula4_20-_20JoycePaquin.pdf
+        free: true
+        kind: paper
+        en: Adds an environmental (life-cycle) and a social (stakeholder) layer to the Business Model Canvas, so you design economic, ecological and social value together (free full text, PDF).
+        fr: Ajoute une couche environnementale (cycle de vie) et une couche sociale (parties prenantes) au Business Model Canvas, pour concevoir ensemble valeur économique, écologique et sociale (texte intégral gratuit, PDF).
+        de: Ergänzt das Business Model Canvas um eine ökologische (Lebenszyklus) und eine soziale Ebene (Stakeholder), damit Sie wirtschaftlichen, ökologischen und sozialen Wert gemeinsam gestalten (kostenloser Volltext, PDF).
+      - name: Sustainable Business Model Archetypes
+        url: https://www.sciencedirect.com/science/article/pii/S0959652613008032
+        free: true
+        kind: paper
+        en: Eight archetypes of sustainable business models, from maximising material efficiency to repurposing for society and the environment, with real examples (free full text).
+        fr: Huit archétypes de modèles d’affaires durables, de l’efficacité matérielle maximale à la réorientation au service de la société et de l’environnement, avec des exemples concrets (texte intégral gratuit).
+        de: Acht Archetypen nachhaltiger Geschäftsmodelle – von maximaler Materialeffizienz bis zur Neuausrichtung auf Gesellschaft und Umwelt –, mit Praxisbeispielen (kostenloser Volltext).
+      - name: Sustainable Business Model Innovation
+        url: https://www.fhnw.ch/plattformen/tt-bmi/wp-content/uploads/sites/270/SBMI-Foundation-Slides-v10_02032022.pdf
+        free: true
+        kind: course
+        en: "Free course slides from FHNW’s TT-BMI programme: why and how to innovate business models for people, planet and profit, with proven strategies, tools and an evaluation funnel (PDF)."
+        fr: "Les supports de cours gratuits du programme TT-BMI de la FHNW : pourquoi et comment innover dans les modèles d’affaires pour les personnes, la planète et le profit, avec stratégies éprouvées, outils et entonnoir d’évaluation (PDF)."
+        de: "Kostenlose Kursfolien des TT-BMI-Programms der FHNW: warum und wie man Geschäftsmodelle für Mensch, Planet und Profit erneuert – mit bewährten Strategien, Tools und einem Bewertungstrichter (PDF)."
+
+  - id: media
+    title:
+      en: Media literacy & trustworthy information
+      fr: Éducation aux médias et information fiable
+      de: Medienkompetenz und verlässliche Information
+    text:
+      en: Check claims, find sound evidence and spot misleading content.
+      fr: Vérifier les affirmations, trouver des preuves solides et repérer les contenus trompeurs.
+      de: Behauptungen prüfen, belastbare Belege finden und irreführende Inhalte erkennen.
+    items:
+      - name: Fact Checker
+        url: fact-checker
+        free: true
+        own: true
+        kind: tool
+        en: Our search engine across fact-checkers approved by the International Fact-Checking Network.
+        fr: Notre moteur de recherche parmi les vérificateurs de faits reconnus par l’International Fact-Checking Network.
+        de: Unsere Suchmaschine über Faktenchecker, die vom International Fact-Checking Network anerkannt sind.
+      - name: Science Engine
+        url: science-search
+        free: true
+        own: true
+        kind: tool
+        en: Our search engine across renowned, peer-reviewed scientific sources.
+        fr: Notre moteur de recherche parmi des sources scientifiques reconnues et évaluées par les pairs.
+        de: Unsere Suchmaschine über renommierte, begutachtete wissenschaftliche Quellen.
+      - name: Media Literacy Starter Kit
+        url: /resources/media%20literacy/Shakeri%20-%20Media%20Literacy%20Starter%20Kit.pdf
+        free: true
+        own: true
+        kind: guide
+        en: Our practical guide to evaluating information and spotting misleading content (PDF).
+        fr: Notre guide pratique pour évaluer l’information et repérer les contenus trompeurs (PDF).
+        de: Unser praktischer Leitfaden, um Informationen zu bewerten und irreführende Inhalte zu erkennen (PDF).

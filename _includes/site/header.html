@@ -1,6 +1,6 @@
 {%- comment -%}
 	Site header: logo, menu and language switch. Used by every page.
-	current = the menu item to highlight: approach, services, about, thinktank or contact (or nothing).
+	current = the menu item to highlight: approach, services, about, thinktank, resources or contact (or nothing).
 	Menu texts: nav.* in lang/<lang>.json. alt_en/alt_fr/alt_de come from site/lang-vars.html.
 {%- endcomment -%}
 <section id="header">
@@ -30,6 +30,7 @@
 								</ul>
 							</li>
 							<li{% if include.current == "thinktank" %} class="current"{% endif %}><a id="nav-thinktank" href="{% include site/url.html to='think-tank/' %}">{{ t.nav.thinktank | default: en.nav.thinktank }}</a></li>
+							<li{% if include.current == "resources" %} class="current"{% endif %}><a id="nav-resources" href="{% include site/url.html to='resources' %}">{{ t.nav.resources | default: en.nav.resources }}</a></li>
 							<li{% if include.current == "contact" %} class="current"{% endif %}><a id="nav-contact" href="{% include site/url.html to='contact' %}">{{ t.nav.contact | default: en.nav.contact }}</a></li>
 							<li class="lang-li"><div class="lang-switch" role="group" aria-label="Language"><button type="button" data-set-lang="en" data-href="{{ alt_en }}">EN</button><button type="button" data-set-lang="fr" data-href="{{ alt_fr }}">FR</button><button type="button" data-set-lang="de" data-href="{{ alt_de }}">DE</button></div></li>
 						</ul>

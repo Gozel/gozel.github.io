@@ -17,6 +17,7 @@
     "aboutpublications": "Publikationen",
     "abouttalks": "Vorträge & Keynotes",
     "thinktank": "Think Tank",
+    "resources": "Ressourcen",
     "contact": "Kontakt"
   },
   "footer": {
@@ -765,5 +766,31 @@
     "crosslinks": "Brauchen Sie zuerst Evidenz? <a href='services-research'>Forschung →</a> &nbsp;·&nbsp; Soll Ihr Team die Methoden lernen? <a href='services-education'>Bildung →</a> &nbsp;·&nbsp; Bereit für einen Workshop? <a href='services-innovation'>Innovation →</a>",
     "contact": "Gestalten Sie die Zukunft, statt sich ihr nur anzupassen. Lassen Sie uns besprechen, wo Nachhaltigkeit für Sie Wert schafft.",
     "more": "Erstgespräch buchen"
+  },
+  "resourcespage": {
+    "eyebrow": "Ressourcen",
+    "title": "Kostenlose Tools, Leitfäden und Lektüre",
+    "intro": "Was wir in unseren eigenen Projekten nutzen, nach Themen sortiert. Einiges haben wir selbst entwickelt, den Rest empfehlen wir. Das meiste ist kostenlos und sofort einsetzbar.",
+    "show": "Anzeigen:",
+    "all": "Alle",
+    "own": "Von Shakeri et al.",
+    "badge_own": "Shakeri et al.",
+    "free": "Kostenlos",
+    "badge_free": "Kostenlos",
+    "badge_paid": "Kostenpflichtig",
+    "open": "Öffnen",
+    "download": "Herunterladen",
+    "none": "Keine Ressourcen für diese Auswahl.",
+    "kindtool": "Online-Tool",
+    "kindtoolkit": "Toolkit",
+    "kindguide": "Leitfaden",
+    "kindbook": "Buch",
+    "kindpaper": "Fachartikel",
+    "kindmethod": "Methode",
+    "kindcourse": "Kurs",
+    "topics": "Nach Themen stöbern",
+    "featuredeyebrow": "Unser kostenloses Toolkit",
+    "featuredtext": "Kartieren Sie ein System mit Menschen und der gesamten belebten Welt: sieben Schritte, vier Leitfragen und ein durchgehendes Beispiel auf jeder Seite. Frei nutzbar für Workshops und Lehre.",
+    "featuredaction": "Zum Toolkit"
   }
 }

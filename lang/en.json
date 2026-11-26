@@ -17,6 +17,7 @@
     "aboutpublications": "Publications",
     "abouttalks": "Talks & Speaking",
     "thinktank": "Think Tank",
+    "resources": "Resources",
     "contact": "Contact"
   },
   "footer": {
@@ -765,5 +766,31 @@
     "crosslinks": "Need evidence first? <a href='services-research'>Research →</a> &nbsp;·&nbsp; Want your team to learn the methods? <a href='services-education'>Education →</a> &nbsp;·&nbsp; Ready for a workshop? <a href='services-innovation'>Innovation →</a>",
     "contact": "Lead the future, don’t just adapt to it. Let’s talk about where sustainability can create value for you.",
     "more": "Book a Discovery Call"
+  },
+  "resourcespage": {
+    "eyebrow": "Resources",
+    "title": "Free tools, guides and reading",
+    "intro": "What we use in our own projects, sorted by topic. Some we made ourselves, the others we recommend. Most are free and ready to use straight away.",
+    "show": "Show:",
+    "all": "All",
+    "own": "By Shakeri et al.",
+    "badge_own": "Shakeri et al.",
+    "free": "Free",
+    "badge_free": "Free",
+    "badge_paid": "Paid",
+    "open": "Open",
+    "download": "Download",
+    "none": "No resources for this choice.",
+    "kindtool": "Online tool",
+    "kindtoolkit": "Toolkit",
+    "kindguide": "Guide",
+    "kindbook": "Book",
+    "kindpaper": "Paper",
+    "kindmethod": "Method",
+    "kindcourse": "Course",
+    "topics": "Browse by topic",
+    "featuredeyebrow": "Our free toolkit",
+    "featuredtext": "Map a system with people and the wider living world: seven steps, four guiding questions and a worked example on every page. Free to use in workshops and teaching.",
+    "featuredaction": "Get the toolkit"
   }
 }
