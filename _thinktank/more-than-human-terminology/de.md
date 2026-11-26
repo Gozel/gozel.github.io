@@ -10,7 +10,7 @@ lead: "Stellen wir den Menschen noch immer in den Mittelpunkt? Lesen Sie diese s
 date: 2026-11-17                # YYYY-MM-DD — the overview sorts by this
 category: think-piece            # think-piece | conversation | research-digest | tools | report
 audience: everybody             # researchers | policymakers | business | citizens | everybody — or a list: [business, policymakers]
-cover: more-than-human-terminology.png                # file in think-tank/images/<folder>/ — delete line for no cover
+cover: more-than-human-terminology.jpg                # file in think-tank/images/<folder>/ — delete line for no cover
 cover_alt: "Handgezeichneter Comic mit zwei Bildern. Links: Eine gelangweilte Person sitzt zusammengesunken auf dem Sofa und denkt: „Ich will nicht mehr auf dem Sofa sitzen.“ Rechts: Dieselbe Person joggt fröhlich draußen und sagt: „Ich bin froh, dass ich mehr-als-auf-dem-Sofa-sitzen entdeckt habe!“ Bildunterschrift: „Warum steht das Sofa immer noch im Mittelpunkt des Denkens?“"
 # cover_caption: "Von: Gözel Shakeri"
 # description: "Optional: Text für Google & Link-Vorschauen (sonst wird der Lead verwendet)"

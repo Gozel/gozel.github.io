@@ -22,6 +22,10 @@ think-tank/
 1. Copy the folder `_thinktank/example` and rename it, e.g. `_thinktank/circular-food`.
    Use lowercase letters, numbers and dashes. The name becomes part of the web address.
 2. Put the images in `think-tank/images/circular-food/`.
+   **Keep images light, or the site gets slow:** at most 1200 pixels wide and under 200 KB.
+   Save photos and illustrations as `.jpg` (or `.webp`), not `.png`: a PNG cover can be
+   ten times heavier than the same image as JPG. Covers appear on the home page, the overview
+   and the piece itself, so a heavy cover slows down all three.
 3. In each language file, fill in the header between the two `---` lines:
 
    | Field | |

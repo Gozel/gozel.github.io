@@ -10,7 +10,7 @@ lead: "Plaçons-nous encore l’humain au centre ? Lisez cet exercice terminolog
 date: 2026-11-17                # YYYY-MM-DD — the overview sorts by this
 category: think-piece            # think-piece | conversation | research-digest | tools | report
 audience: everybody             # researchers | policymakers | business | citizens | everybody — or a list: [business, policymakers]
-cover: more-than-human-terminology.png                # file in think-tank/images/<folder>/ — delete line for no cover
+cover: more-than-human-terminology.jpg                # file in think-tank/images/<folder>/ — delete line for no cover
 cover_alt: "Bande dessinée en deux cases, dessinée à la main. À gauche : une personne qui s'ennuie, affalée sur un canapé, pense : « Je ne veux plus rester assise sur le canapé. » À droite : la même personne court joyeusement dehors et dit : « Je suis contente d'avoir découvert le plus-que-rester-assis-sur-le-canapé ! » Légende : « Pourquoi le canapé est-il toujours au centre de la réflexion ? »"
 # cover_caption: "Par : Gözel Shakeri"
 # description: "Optional: Text für Google & Link-Vorschauen (sonst wird der Lead verwendet)"

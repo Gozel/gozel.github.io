@@ -10,7 +10,7 @@ lead: "Discover where research is heading — and how emerging design approaches
 date: 2026-11-24                # YYYY-MM-DD — the overview sorts by this
 category: research-digest            # think-piece | conversation | research-digest | tools | report
 audience: everybody             # researchers | policymakers | business | citizens | everybody — or a list: [business, policymakers]
-cover: more-than-human-design.png                # file in think-tank/images/<folder>/ — delete line for no cover
+cover: more-than-human-design.jpg                # file in think-tank/images/<folder>/ — delete line for no cover
 cover_alt: "Two panels. Left: “We moved the Earth out of the centre of the universe.” above an image of the Milky Way, with an arrow marking “We are here” at its edge. Right: “We need to move the human out of the centre of design next.” above a drawing of a garden lawn: a small human in the background marked “We are here”, a robot lawn mower facing a hedgehog, and bees and flowers in the grass, “home to worms, bees and fungi”."
 # cover_caption: "By: Gözel Shakeri"
 # description: "Optional: Text für Google & Link-Vorschauen (sonst wird der Lead verwendet)"

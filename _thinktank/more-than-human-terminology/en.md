@@ -10,7 +10,7 @@ lead: "Are we still centring the human? Read this pointless exercise in terminol
 date: 2026-11-17                # YYYY-MM-DD — the overview sorts by this
 category: think-piece            # think-piece | conversation | research-digest | tools | report
 audience: everybody             # researchers | policymakers | business | citizens | everybody — or a list: [business, policymakers]
-cover: more-than-human-terminology.png                # file in think-tank/images/<folder>/ — delete line for no cover
+cover: more-than-human-terminology.jpg                # file in think-tank/images/<folder>/ — delete line for no cover
 cover_alt: "Two-panel hand-drawn comic. Left: a bored person slumped on a couch thinks, 'I don't want to sit on the couch anymore.' Right: the same person jogs happily outdoors, saying, 'I am glad I discovered more-than-sitting-on-the-couch!' Caption: 'Why is the couch still the centre of thinking?'"
 # cover_caption: "By: Gözel Shakeri"
 # description: "Optional: Text für Google & Link-Vorschauen (sonst wird der Lead verwendet)"

@@ -9,7 +9,7 @@ lead: "Découvrez vers où se dirige la recherche – et comment de nouvelles ap
 date: 2026-11-24                # YYYY-MM-DD — the overview sorts by this
 category: research-digest            # think-piece | conversation | research-digest | tools | report
 audience: everybody             # researchers | policymakers | business | citizens | everybody — or a list: [business, policymakers]
-cover: more-than-human-design.png                # file in think-tank/images/<folder>/ — delete line for no cover
+cover: more-than-human-design.jpg                # file in think-tank/images/<folder>/ — delete line for no cover
 cover_alt: "Deux images. À gauche : « Nous avons sorti la Terre du centre de l’univers. » au-dessus d’une vue de la Voie lactée, avec une flèche indiquant « Nous sommes ici » sur le bord. À droite : « Nous devons maintenant sortir l’humain du centre du design. » au-dessus du dessin d’une pelouse : un petit humain à l’arrière-plan marqué « Nous sommes ici », une tondeuse robot face à un hérisson, des abeilles et des fleurs dans l’herbe, « habitat des vers, des abeilles et des champignons »."
 # cover_caption: "Par : Gözel Shakeri"
 # description: "Optional: Text für Google & Link-Vorschauen (sonst wird der Lead verwendet)"
